@@ -1,0 +1,1436 @@
+Chemical
+Science
+                                                                                                                           Published on 11 April 2025
+    PERSPECTIVE                                                                                                            Licensed under CC-BY 4.0
+
+
+                                              The fellowship of the Grignard: 21st century
+Cite this: Chem. Sci., 2025, 16, 8196
+                                              computational tools for hundred-year-old
+   All publication charges for this article
+                                              chemistry
+have been paid for by the Royal Society
+of Chemistry                                  Michele Cascella,         *a Sigbjørn Løland Bore              a
+                                                                                                                 and Odile Eisenstein             *ab
+Received 11th February 2025
+Accepted 10th April 2025                      This perspective begins with the discovery of the Grignard reaction by a graduate student in the last years of
+                                              the 19th century, followed by describing why it has remained largely unexplained for more than a century.
+DOI: 10.1039/d5sc01078k
+                                              From the summary of what has been achieved, focusing on the computational aspects, it is now clear that
+rsc.li/chemical-science                       further studies of the chemistry of any chemical species that is highly sensitive to solvents, such as Group I
+                                              and II elements, require a holistic approach that includes the solute and the solvent together. Ab initio
+                                              molecular dynamics, which meets these requirements, has produced some results but has hit hard limits
+
+
+a
+ Department of Chemistry and Hylleraas Centre for Quantum Molecular Sciences,        b
+                                                                                      ICGM, Univ. Montpellier, CNRS, ENSCM, Montpellier 34293, France. E-mail: odile.
+University of Oslo, PO Box 1033 Blindern, 0315 Oslo, Norway. E-mail: michele.        eisenstein@umontpellier.fr
+cascella@kjemi.uio.no
+
+
+
+
+                                   Michele Cascella got his PhD in                                                   Sigbjørn Løland Bore got his
+                                   2004, with Paolo Carloni, in                                                      PhD in 2020, with Michele Cas-
+                                   statistical and biological physics                                                cella, in computational chem-
+                                   at the International School for                                                   istry from University of Oslo.
+                                   Advanced Studies (SISSA) in                                                       Aer nishing his PhD, he went
+                                   Trieste, Italy. From there, he                                                    on to do a postdoc at the
+                                   went to École Polytechnique                                                      University of California, San
+                                   Fédérale de Lausanne, Switzer-                                                  Diego, under the supervision of
+                                   land, for a postdoctoral experi-                                                  Francesco Paesani. Aer nish-
+                                   ence under the supervision of                                                     ing his postdoc in 2022, he went
+                                   Ursula Roethlisberger. Being                                                      back to the University of Oslo for
+                                   awarded a Swiss National                                                          a short postdoc with Cascella,
+                                   Science Foundation professor-                                                     before starting his own inde-
+        Michele Cascella                                                                 Sigbjørn Løland Bore
+                                   ship grant, in 2008, he began his                                                 pendent research group. Bore's
+independent career as an Assistant Professor at the University of                   research combines advanced sampling techniques with machine
+Bern, with a project dedicated to the development of multi-scale                    learning to understand, from rst principles, how water behaves
+models for biological systems. In 2014, he moved to the Depart-                     under exotic conditions. He is a Norwegian Academy of Science
+ment of Chemistry of the University of Oslo, where, since 2016, he                  YoungCAS fellow, leading the project “Can ice be described from
+has been a Full Professor in theoretical chemistry. MC's research is                rst principles?”, and a Research Council of Norway Young
+dedicated to the development and application of multi-scale and                     Researcher Talent, leading a research project that aims to under-
+multi-resolution methods for biochemical systems in the                             stand and develop high-conductivity metal–organic frameworks for
+condensed phase. His recent focus has been on so systems                           application as membranes in fuel cells.
+combining computer simulations with the SAXS/SANS experiment
+and on molecular modelling of main group organometallic
+compounds (Grignard reagents) using ab initio and machine
+learning approaches. MC has been a recipient of several national
+and international research recognitions and grants; he is currently
+Principal Investigator of the Norwegian Centre of Excellence
+Hylleraas Centre of Quantum Molecular Sciences and a Mercator
+Fellow of the Deutsche Forschungsgemeinscha.
+
+
+
+8196 | Chem. Sci., 2025, 16, 8196–8216                                                   © 2025 The Author(s). Published by the Royal Society of Chemistry
+Perspective                                                                                                              Chemical Science
+
+                                   due to its relatively high computational costs. In these days, it is becoming clear that data-driven methods,
+                                   including machine learning potentials and simulations driven by quantitative on-the-ﬂy calculation of
+                                   relevant observables, have the potential to better and more completely explore the very large chemical
+                                   space associated with the presence of a large number of species in solution. These methodologies have
+                                   the chance to give the keys to enter the challenging and still poorly explored world of chemical species
+                                   whose behaviour and reactivity are strongly inﬂuenced by the solvent and the experimental conditions.
+
+
+                                                                        le of his scholarship, was enrolled as a mathematics student at
+1     Victor Grignard and his discovery                                 the nearby University of Lyon. He got his BA in mathematics
+1.1   Chemistry was not his rst interest                               only on the second attempt and then started looking for a job.
+In December 1894, Victor Grignard (1871–1935, Fig. 1) took up           The exact details are unknown (need for a job or the good
+the post of a secondary technical assistant in the General              inuence of a schoolmate), but he took the job of ‘préparateur
+Chemistry Department of the University of Lyon. At the begin-           adjoint’ at the Department of General Chemistry. Although he
+ning of the academic year 1895, he was promoted to a technical          did not like chemistry at rst, he was fortunate enough to be
+assistant in Philippe Barbier's laboratory and also began to            able to work for a year with the not-much-older Louis Bouvault
+work on his doctorate. Chemistry had not been his rst love!1,2         (1864–1909), who completely overturned Grignard's prejudice
+   Being the son of a technician in the naval industry in Cher-         against chemistry.
+bourg, he was primarily interested in mathematics. He was in
+line to begin studies at École Normale Supérieure de Paris, but       1.2      The discovery of the reaction
+his scholarship was cancelled as the city ran out of funds aer
+                                                                        Philippe Barbier was a synthetic organic chemist with an open
+spending for the 1889 ‘Exposition Universelle’. He had to
+                                                                        and modern mind, as evidenced by his early acceptance of the
+change his plans and was accepted into the École Normale
+                                                                        atomic theory. Barbier was developing the synthesis of organic
+Supérieure de Cluny, which trained teachers for vocational
+                                                                        compounds related to natural oils and considering reactions
+schools, but this ‘École’ closed aer a general reorganisation of
+                                                                        shown in Fig. 2. Barbier wanted to use magnesium because he
+the country secondary schools. Grignard, who still had a year
+                                                                        expected it to be more reactive than zinc, which was used by
+                                                                        Saytzeﬀ to obtain tertiary alcohols from ketones.3 In fact, with
+                                                                        all the ingredients shown in Fig. 2 added together, the reaction
+                                 Odile Eisenstein is a CNRS             gave the expected alcohol, even though it was violent, diﬃcult to
+                                 Research Professor Emeritus at
+                                 the Université Montpellier and
+                                 a Professor Emeritus at Univer-
+                                 sity of Oslo within the Hylleraas
+                                 Center. Born near Paris, she ob-
+                                 tained her doctorate at the
+                                 University Paris-Sud (Orsay) with
+                                 Nguyen Trong Anh and Lionel
+                                 Salem. Aer holding post-
+                                 doctoral positions with Jack
+                                 Dunitz (ETH Zürich) and Roald
+                                 Hoﬀmann (Cornell University),
+         Odile Eisenstein
+                                 she returned to Orsay where she
+was a CNRS research Associate Professor. She held the position of
+Assistant Professor at University of Michigan and returned to
+France where she was promoted to a Research Professor. In 1996,
+she moved to the University of Montpellier where she set up
+a laboratory of computational chemistry. She had numerous invited
+positions in the USA, UK, Spain, Israel and Norway. She holds
+several Honorary degrees and is a member of several Academies
+(France, Norway, Amer. Acad. Arts Sciences, US NAS, and Royal
+Society). She uses computations to determine and understand the
+properties and reactivity of molecular species with a focus on
+organometallic compounds. She carries out her research in
+a constant dialogue with experimentalists. Her rst study con-
+cerned the nucleophilic addition for which she used very simple
+models and computational levels. She fullls a dream by returning       Fig. 1 Victor Grignard in 1912. Fotograv. - Generalstabens Litograﬁska
+to this topic with more appropriate tools.                              Anstalt Stockholm.
+
+
+
+© 2025 The Author(s). Published by the Royal Society of Chemistry                                        Chem. Sci., 2025, 16, 8196–8216 | 8197
+Chemical Science                                                                                                                Perspective
+
+                                                                          2.1 The Schlenk equilibrium and the quest to determine the
+                                                                          structures of magnesium species in organic solution
+                                                                          Although widely used and studied, the reaction remains poorly
+                                                                          understood. As mentioned by the late Dietmar Seyferth:
+Fig. 2The reaction run by Philippe Barbier, which, as studied by Victor
+                                                                          “Generally written as RMgX, the Grignard reagents in ethereal
+Grignard, led to the so-called Grignard reaction.
+                                                                          solution are more complicated than this simple formula indi-
+                                                                          cates”.7 This statement sums up the continuing diﬃculties in
+control, and had a low yield. Consequently, Barbier published             determining the structures of these species in solution and, thus,
+a note in the Comptes-Rendus de l’Académie des Sciences,                 the inability to know the nature of the reactive systems. The
+stating that he had established for the rst time that Zn could           simultaneous presence of several species is a direct consequence
+be replaced by Mg in the Saytzeﬀ reaction and that this modi-             of what was discovered by Schlenk and Schlenk – father and son –
+cation had enabled him to carry out some synthesis.4                     that RMgX is in equilibrium with R2Mg and MgX2 via an X/R
+   Even if he claimed that he wanted to study this reaction               exchange.8 This naturally suggests that polynuclear species (at
+further, he did not seem to pursue this line of research, sug-            least dimers), in which the exchange can occur, must also exist, at
+gesting it to Grignard as a topic for his doctorate thesis. Aer          least as intermediates. Considerable eﬀort has therefore been
+several unsuccessful trials, Grignard decided to try to identify an       devoted to characterising forms of the Grignard species. A crys-
+intermediate of the reaction. He discovered that the addition of          talline solid CH3MgI$(O(nC5H11)2)2 was isolated and identied as
+the alkyl halide to Mg in diethyl ether led to a clear solution that      such by elemental analysis (Mg and I) in 1908,9 but one had to
+did not spontaneously catch re in the air but reacted rapidly            wait about 60 years for the rst characterization of a single crystal
+with the added carbonyl substrate to yield, aer hydrolysis, an           of EtMgBr$(OEt2)2 by X-ray diﬀraction.10,11 The latter study
+alcohol. The reaction was considerably less violent than the rst         revealed a Mg/Br weak intermolecular interaction. Interestingly,
+attempt by Barbier, gave reasonable yields, and was easier to             no such interaction was seen in PhMgBr$(OEt2)2.12 At about the
+control. Furthermore, the scope of the reaction was large, which          same time, the dimeric dibromo-bridged species (NEt3)Mg(Et)(m-
+implied that it was general and thus synthetically useful.                Br2)Mg(Et)(NEt3) was isolated from an n-butyl ether solution and
+   Grignard wrote a three-page single author note to the                  characterized.13 The isolation of this dimeric species was attrib-
+Comptes-Rendus de l’ Académie des Sciences entitled: “Sur                uted to the smaller and, thus, more favorable steric environment
+quelques nouvelles combinaisons organométalliques du                     on the metal compared to the situation in the di-solvated
+magnésium et des applications à des synthèses d'alcools et             monomer. Aggregates of higher nuclearity such as tetrameric
+d'hydrocarbures” (On some new organometallic combinations                 species were also characterized by X-ray diﬀraction a few years
+with magnesium and their applications for the synthesis of                later.14 As pointed out by Seyferth, the key observation was that
+alcohols and hydrocarbons). Following tradition, the note was             “the species that crystallizes from a Grignard reagent solution
+presented at the Académie des Sciences by Henri Moissan (1906            does not necessarily directly reect what species are swimming
+Nobel Laureate for the discovery of uorine) and was accepted             around in the solution”.7 And, in fact, many other species were
+for publication.5 The Grignard reaction was born.                         shown to be swimming in solution through the use of a variety of
+   Grignard defended his PhD in 1901. In 1912, he shared the              spectroscopic and physical methods, including inter alia, ebul-
+Nobel prize in chemistry with Paul Sabatier. The motivation for           lioscopy,15,16 molecular weight determination,17 calorimetry,18,19
+the Nobel prize awarded to Grignard was: “for the discovery of            NMR and IR spectroscopy,20,21 large angle X-ray scattering LAXS,22
+the so-called Grignard reagent, which in recent years has greatly         and EXAFS.23
+advanced the progress of organic chemistry”. More details can                 It was found that the structures of the Grignard species were
+be found in the two articles mentioned above,1,2 with, in                 strongly dependent on their nature (R and X) and also on the
+particular, an interesting account of the personal relationship           experimental conditions (solvent, temperature, and concentra-
+between Barbier and Grignard.                                             tion). Thus, for instance, monomeric, dimeric and higher oligo-
+                                                                          meric species were present depending on the ethereal solvent,
+                                                                          such as the very frequently used diethyl ether (Et2O) or tetrahy-
+2 The Grignard reaction: Why so                                           drofuran (THF), the halogen used (oen Cl and Br) and the organic
+complicated?                                                              group R (usually a hydrocarbyl group).7,24 The numerous forms
+                                                                          adopted by the Grignard reagent led to a generalization of the
+The Grignard reaction is probably one of the best-known reac-             Schlenk equilibrium, which involved species like RMgCl(THF)n,
+tions in organic chemistry, one that is taught in all introductory        MgR2(m-Cl)2Mg(THF)5/4 and RMg(m-Cl)3Mg(THF)5.25,26
+courses of organic chemistry. It is widely used for making new
+C–C bonds, as the scope of the reaction includes a large variety
+of R groups, as well as a large diversity of unsaturated electro-         2.2   More tools, further study of structures
+philic substrates, among which aldehydes and ketones are the              Years aer these seminal early studies, the quest for the nature
+most common species. Its prevalence in the academic and                   of the Grignard in solution continued, beneting from the
+industrial environments is illustrated by the revenue associated          availability of novel methods. Thus, cold spray ionisation mass
+with the Grignard reagent of around $2.6 billion in 2016, which           spectrometry (CSI-MS) revealed the presence of neutral and
+is expected to reach $4.2 billion in 2030.6                               charged (cationic as well as anionic) species for MeMgCl in
+
+
+8198 | Chem. Sci., 2025, 16, 8196–8216                                       © 2025 The Author(s). Published by the Royal Society of Chemistry
+Perspective                                                                                                        Chemical Science
+
+solution.26 However, further studies of the same system indi-        Cl bond of CH3Cl was calculated using the Hartree–Fock method
+cated that the intact organometallic cations themselves were         and MP4 calculations.38 Diﬀerent values should be expected if the
+not present and that the charged species resulted from in-           solvent eﬀect was included and if the solid nature of Mg was
+source ion-molecule reactions.27 Some of these authors pursued       considered. The eﬀect of the solvent was nicely illustrated in
+this study, combining electrospray-ionisation (ESI) mass spec-       a computational study of the Schlenk equilibrium where non-
+trometry, electrical conductivity measurement, NMR spectros-         solvated and solvated (microsolvation) systems were compared.39
+copy (including DOSY), and density functional theory (DFT)           Without solvent, CH3Mg(m-Cl)2MgCH3 was calculated to have
+calculations. They also indicated the presence of charged            a free energy 50 kcal mol−1 lower than that of the separated
+species but attributed these ndings to the particular concen-       CH3MgCl monomers. However, in the presence of coordinating
+tration conditions in the droplets.28 Although these mass            Me2O, the formation of the dimer is exothermic (by a few kcal
+spectrometry experiments provided data for conditions that           mol−1) only if entropic eﬀects are included.
+were signicantly diﬀerent from those used in a standard
+Grignard reaction, they clearly showed how these species adopt       3.2      Determining the solvation of monomers
+structures that are strongly inuenced by the experimental
+                                                                     More recent computational studies have always introduced
+conditions. Finally, as expected, the solvation itself depends on
+                                                                     solvation eﬀects, usually by combining explicit (microsolvation)
+the solute. There is a general preference for the coordination of
+                                                                     and implicit (continuum eﬀects) representations. In agreement
+four ligands on Mg(II), but higher solvations have been
+                                                                     with earlier work,39 it was shown that the solvation energy
+observed, thus enlarging the rst coordination shell.29
+                                                                     increases in the order of Mg(CH3)2 < Mg(CH3)Cl < MgCl2. In
+                                                                     addition, it was also found that the solvation is stronger with
+2.3   Nature of the reaction: nucleophilic and SET                   THF than Et2O,40 a result supported by experiments.19 It was
+Even in the absence of detailed knowledge of the reactive            also shown that the enthalpy change in the Schlenk equilibrium
+species, chemists have attempted to determine the reaction           favours RMg in Et2O, but MgR2 and MgCl2 in THF, which is also
+mechanism. For many years, the Grignard reaction was                 consistent with experimental data. Furthermore, it was estab-
+considered to be a nucleophilic addition of an anion R− to the       lished that Mg could have more than four groups in its rst
+positively charged carbonyl carbon. However, evidence for the        coordination sphere when polar ligands are attached to Mg.
+reaction going through the formation of a radical species R$         Thus, four solvent molecules (THF) are close to Mg in MgCl2,
+called the single electron transfer (SET) reaction, was presented    resulting in a distorted octahedral geometry. Other early studies
+in previous studies.30–33 This proposition rationalized the          on the structures of Grignard reagents can be found in the
+formation of organic products that could not originate from          review by Yamabe and Yamazaki.37
+a Grignard addition of R− to the carbonyl, such as the dimer via
+the C–C bond of the two carbonyl substrates. Recent experi-          3.3      The reaction mechanism pathways
+ments fully claried this dichotomy. Thus, Woerpel et al.            There are few computational studies on the Grignard reaction
+established that the addition to aliphatic ketones does not          itself. It is interesting to mention a widely quoted six-membered
+favour single electron transfer and prefers the nucleophilic         ring mechanism proposed on experimental bases (Fig. 3a),41,42
+addition pathway.34 The SET reaction can occur with conjugated       which did not pass computational tests carried out many years
+ketones but is not the exclusive pathway. In the case of phenyl      later.43 What emerged from (DFT)44,45 calculations by Yamazaki
+ketone, the SET pathway was dominant only with tertiary alkyl
+like tert-butyl as the R group in RMgX. With a more electron-
+poor substrate like pentauorophenyl ketone, SET was observed
+even with the primary R group (but not when R = allyl),
+asserting a clear inuence of the substrate on the preferred
+reaction pathway.35 More details can be found in several
+reviews.7,24,36,37
+
+
+3 Early theoretical/computational
+studies
+3.1   Gas phase calculations
+Given the complexity of the experimental situation, it is not
+surprising that only a limited number of computational studies
+on the Grignard reagent and reaction have been carried out. Early
+calculations in the gas phase of very simplied models of the
+chemical systems provided qualitative insights on its intrinsic
+                                                                     Fig. 3 (a) Suggested non-computed 6-membered ring transition state
+tendency for bond formation, but its energetics could not be         for the Grignard reaction. (b) Reaction mechanism identiﬁed by
+directly compared with experimental data. A large energy gain of     DFT(B3LYP) calculations with CH3MgCl and formaldehyde (no solvent)
+50 kcal mol−1 for the insertion of a single atom of Mg into the C–   as models. Figure adapted from ref. 37.
+
+
+
+© 2025 The Author(s). Published by the Royal Society of Chemistry                                  Chem. Sci., 2025, 16, 8196–8216 | 8199
+Chemical Science                                                                                                          Perspective
+
+and Yamabe,43 using the B3LYP approximation of the exchange-         have a lower free energy than the dimeric forms. The role of the
+correlation (xc) functional,46,47 was the importance of keeping      solvent was again found to be important. The same study
+a dichloro-bridge between the two magnesium centres. The             investigated the nucleophilic pathway of the Grignard reaction.
+dinuclear magnesium complex and two molecules of substrate           The monomeric species was found to be signicantly less
+were considered as the starting point to include the 1 : 1 stoi-     reactive than a “linear” dimer with only one bridged chlorine
+chiometry between the substrate (formaldehyde) and Grignard          between the two magnesium centres (activation energy: 16.2
+reagent (CH3MgCl). The reaction mechanism was then studied           kcal mol−1 with CH3MgCl and 9.2 kcal mol−1 with the linear
+in the gas phase and with dimethyl ether as solvent. It was          dimer). In the preferred pathway, the substrate (acetone) and
+shown that the formaldehyde coordinated to a single magne-           the nucleophilic methyl were initially bonded to diﬀerent
+sium reacts preferentially with the methyl group of the other        magnesium centres.52 The solvation was allowed to vary to
+magnesium to form a dichloride-ethoxide-bridged species. This        stabilize intermediates when required.
+dinuclear species could undergo a further Grignard reaction             Despite relevant insights, these studies lacked identication
+with the remaining formaldehyde and methyl groups. The               of all the chemical species present in solution and that could
+complete pathway is shown in Fig. 3b. The energy barriers of         react, leaving the open question of the global mechanism for
+these reactions were found to be low, with the rst reaction         the Grignard reaction, likely more complex than that presented
+having a lower energy barrier than the second one. It was also       above. This evidence called for the employment of methods that
+found that the coordinating solvent (one Me2O per magnesium)         can widely explore the chemical space and correctly describe the
+did not change the global features, nor did the replacement of       thermodynamics of the solute/solvent ensemble.
+Cl by Br.
+    The authors also investigated the SET mechanism. In view of
+the experiments showing that the SET mechanism is favoured           4 The ab initio molecular dynamics
+for a conjugated carbonyl as the substrate and a tertiary alkyl R    method
+group, the computational model included acrolein as the
+substrate and a tert-butyl group as the R group. Using the           Numerous experimental facts point to an active role of the
+dinuclear dichloro-bridged complex previously found to be the        solvent in the Grignard reaction. In fact, the solvent directly
+preferred reactive system, they discovered that the nucleophilic     controls the energetics of the Grignard species in solution,
+addition could not be achieved and that an energetically             mainly through direct coordination to the metal by the ethereal
+accessible pathway was initiated by the homolytic cleavage of        oxygen. The solvent also controls the nuclearity of the Grignard
+the Mg–C(CH3)3 bond and the simultaneous displacement of             moieties and the reaction rates. Finally, it is chemically intuitive
+acrolein from a terminal coordination to one magnesium to            to consider solvent assistance in the ligand redistribution
+a bridging position to the two magnesium centres. It was also        dynamics of the Schlenk equilibrium as well as in the Grignard
+found that the spin density resulting from the cleavage of the       reaction since these two transformations require the rear-
+Mg–C(CH3)3 bond was almost entirely located on the bridging          rangement of groups ligated to the metals. An accurate inves-
+allyl oxide group with almost none remaining at the magnesium        tigation of reactive processes involving solvent dynamics/
+centre (Fig. 4).                                                     exchange at metal centres requires both a suﬃciently good
+    This study explains some experimental facts but not why the      quantum mechanical method to correctly describe the elec-
+reaction is strongly solvent dependent.7,48 It is also likely that   tronic structure of the species and an appropriate treatment of
+species other than the dichloro-bridged dinuclear system are         their conformational space, subject to the uxional dynamics of
+reactive since, for example, dialkyl magnesium itself adds to        the solvent. Clearly, this is the realm of ab initio molecular
+a carbonyl in the absence of halide delivering species.49–51         dynamics (AIMD).
+    In another study, the RISM-MP2 method was used to                   AIMD takes the ability of molecular dynamics to sample
+improve the representation of the dynamical electron correla-        statistically relevant microscopic congurations of a molecular
+tion and the eﬀect of the bulk solvent on the Schlenk equilib-       system while maintaining the modelling of the interactions at
+rium and the Grignard reaction.52 The monomeric species in           the quantum mechanical level. Since the breakthrough of
+diethyl ether (2 CH3MgCl and Mg(CH3)2 + MgCl2) were found to         AIMD, thanks to the extended Lagrangian formalism by R. Car
+                                                                     and M. Parrinello that allowed the on-the-y propagation of the
+                                                                     electronic degrees of freedom53,54 and with more recent devel-
+                                                                     opments allowing for the direct time evolution of the molecular
+                                                                     systems on the Born-Oppenheimer surface,55–57 AIMD has been
+                                                                     repeatedly used to characterise the structural and dynamical
+                                                                     properties of ions in solution. Historically, the most prominent
+                                                                     examples have been the characterization of the hydroxyl58 and
+                                                                     hydronium ions in water.59 Over the years, AIMD has helped
+                                                                     determine the solvation dynamics of several charged systems,
+Fig. 4 The species involved in the single electron transfer (SET)
+                                                                     for example, alkali and alkaline earths,60–63 transition
+mechanism of the Grignard reaction, as established by Yamabe and     metals,64–67 Al3+,65 Br−,68 lanthanides,69,70 as well as salts,71,72
+Yamasuki. Figure adapted form ref. 37.                               ionic liquids,73,74 and organic and organometallic ionic
+
+
+8200 | Chem. Sci., 2025, 16, 8196–8216                                 © 2025 The Author(s). Published by the Royal Society of Chemistry
+Perspective                                                                                                           Chemical Science
+
+compounds.75–79 Because of the large number of required elec-
+tronic structure calculations, the typical workhorse for AIMD is
+DFT. Still today, DFT permits the most advantageous balance
+between quality and computational costs, even though
+approaches to go beyond that are now being proposed in the
+literature.80
+    Despite the clear eﬀectiveness of AIMD in treating these
+problems, computational studies remained primarily limited to
+water solutions, ignoring other organic solvents. This is
+understandable considering the relatively high computational
+costs of AIMD compared to the molecular complexity of organic
+solvents, which impose longer simulation times due to slower
+internal and diﬀusional dynamics and may require larger              Fig. 5 The free energy map of solvation by THF of (CH3)Mg(m-Cl)2-
+simulation boxes to escape nite-size bias. In fact, thanks to the   Mg(CH3) by AIMD and metadynamics.86 The collective variables (CVs)
+steady increase in computational power, it is now possible to        refer to the coordination number of THF to the two Mg's, according to
+                                                                     eqn (1). Panels (a–c) indicate the structures corresponding to the free
+model organic solvent solutions using AIMD. However, another
+                                                                     energy basins. Figure adapted from ref. 82, under ACS AuthorChoice
+possible source of error in treating conventional organic            agreement.
+solvents is related to the fact that the cohesive energy of the
+liquid is oen dominated by weaker interactions (i.e., disper-
+sion forces) than the strong hydrogen-bond network charac-           preferred with a ratio of 0.07 : 0.1 : 0.01 for the di-, tri- and tetra-
+terising water. Nonetheless, already by using a local GGA            solvations. These relative proportions indicate that these
+functional (PBE) with a dispersion correction, it was possible to    diﬀerently solvated species are energetically close. The higher
+predict liquid THF with a density near that of the experiment.81     solvation of MgCl2 is a consequence of the higher polarity of the
+One can expect that other organic solvents can be treated            Mg–Cl bond relative to that of Mg–CH3, resulting in a higher
+equally well with AIMD, employing DFT functionals that               positive charge at Mg. Calculations of the structural preference
+include dispersion interactions in any form.                         of the dinuclear dichloro-bridged complex (CH3)Mg(m-Cl)2-
+                                                                     Mg(CH3) in THF also showed a diversity of solvation modes with
+                                                                     similar free energies for one or two THF molecules in the rst
+5 What is in the pot?                                                coordination sphere of each magnesium. There is indeed less
+                                                                     than 3 kcal mol−1 diﬀerence in free energies between
+5.1   AIMD studies of CH3MgCl in THF
+                                                                     (THF)(CH3)Mg(m-Cl)2Mg(CH3)(THF), DClCl       11   and (THF)2(CH3)
+As mentioned above, the diversity of structures representing         Mg(m-Cl)2Mg(CH3)(THF)2, DClCl22 (Fig. 5). At room temperature, in
+RMgX is large and also depends on R, X and the experimental          THF solution, all coordination modes for all the species can be
+conditions such as solvent, temperature, and concentration.          present, resulting in a highly dynamic rst coordination sphere
+Our rst study focused on the search for a subset of them,           at magnesium.
+limited to the monomeric and dimeric forms that could be                The search for other minima and associated transition states
+formed from CH3MgCl in THF at room temperature, and at               was carried out by studying the CH3/Cl exchange pathway for
+a 0.33M concentration.82 The solute and solvent were repre-          the Schlenk equilibrium using metadynamics,86 targeting the
+sented equally at the DFT level of theory, using the PBE xc          solvent coordination number of one Mg, and the diﬀerence in
+functional,83 including empirical dispersion corrections to
+minimise the bias in the computational exploration of the
+designed subset.84
+   The key information, which is the solvation of each magne-
+sium, was measured by the coordination number between the
+Mg centres and the oxygen of THF, dened by the distant-
+dependent sigmoid function:85
+                                             12
+                                  dðMgOi Þ
+                        X
+                        N THF
+                              1
+                                      d0
+               CNMgO ¼                      24         (1)
+                                  dðMgO   iÞ
+                         i¼1
+                              1
+                                      d0
+
+using d0 = 2.75 Å as the threshold parameter.
+    For the monomers, calculated data showed that a total
+coordination of four is favourable for the magnesium atom in
+                                                                     Fig. 6 The Schlenk equilibrium and associated solvent dynamics. Red
+all the species, so that (CH3MgCl)(THF)2, (CH3)2Mg(THF)2 and         arrows indicate solvent de-coordination, and green arrows indicate
+Cl2Mg(THF)2 are all plausible structures in solution (Fig. 5).       solvent coordination. Adapted from ref. 82, under ACS AuthorChoice
+However, for MgCl2 only, a higher solvation was found to be          agreement.
+
+
+
+© 2025 The Author(s). Published by the Royal Society of Chemistry                                    Chem. Sci., 2025, 16, 8196–8216 | 8201
+Chemical Science                                                                                                              Perspective
+
+coordination of the methyl group on the two Mg centres as              Table 1 Schlenk equilibrium (MgR2 + MgX2 # 2 RMgX) constant K for
+collective variables for the transformation.82 This led to the         various Grignard reagents and solvents, obtained using diﬀerent
+                                                                       experimental techniques; data from ref. 40
+identication of a reaction pathway which illustrates how the
+dynamics of the solvent is essential to assist the passage             Grignard         Solvent               Method             K
+between minima (Fig. 6). It should be noted that, due to the
+relatively small size of the simulation box, the determination of      CH3MgCl20        THF                   NMR                1.0  0.72
+the reaction pathway was stopped at a structure where the two          CH3MgCl87        THF                   IR                 4.5
+                                                                       CH3MgBr88        Et2O                  Calorimetry        320
+methyl groups are coordinated to the same magnesium. This is           CH3MgBr89,90     Et2O                  Kinetic + UV       450
+not the nal product of the reaction, which should be the more         CH3MgBr20        THF                   NMR                4.0  2.6
+stable separated MgCl2 and Mg(CH3)2.                                   CH3MgBr87        THF                   IR                 3.5
+   The resulting pathway for the Cl/CH3 exchange and asso-             EtMgCl18         THF                   Calorimetry        5.52
+ciated highly dynamic solvation is shown in Fig. 6. The key            EtMgBr17,91      Et2O                  Calorimetry        480
+                                                                       EtMgBr18         THF                   Calorimetry        5.09
+information from this study is that the solvation at the two           EtMgBr18         THF                   Calorimetry        1.66
+magnesium centres must vary during the reaction pathway                PhMgBr91         Et2O                  Calorimetry        55–62
+since the preferred solvation depends on the changeable                PhMgBr18         THF                   NMR                3.77
+positions (terminal or bridging) of the chloride and methyl            PhMgBr92,93      THF                   NMR                4.0  0.8
+groups. Despite the complexity of the chemical systems, some           PhMgBr94         THF                   NMR                7.46
+                                                                       EtMgBr95         MeOCH2CH2OMe          Polarography       2.2  0.3
+simple concepts have emerged: (i) it is diﬃcult to move the
+                                                                       PhMgBr95         MeOCH2CH2OMe          Polarography       6.1  0.3
+bridging chloride at maximal solvation (i.e. in (THF)2(CH3)
+Mg(m-Cl)2Mg(CH3)(THF)2) and at minimal solvation
+((THF)(CH3)Mg(m-Cl)2Mg(CH3)(THF)) of the two magnesium
+                                                                       Table 2 Temperature dependence of the Schlenk equilibrium
+centres; (ii) the unequal solvation of the two magnesium               constant K: tert-Bu2Mg + MgCl2 # 2 tert-BuMgCl; data from ref. 20
+centres results in a bridging chloride being attracted toward
+the less solvated magnesium to which it can give more electron                        T/°C                             K
+density. Thus, the partial over-solvation of one magnesium
+                                                                                      >65                              7.54
+facilitates the passage of a chloride from the bridging to the                         59                              5
+terminal position of the less solvated magnesium. Corre-                               51                              2.36
+spondingly, increasing the solvation at one magnesium assists                          42                              1.74
+the passage of an R group from a terminal to a bridging                                33                              1.12
+position. Thus, the change in solvation at each magnesium
+facilitates the transfer between the terminal and bridging
+positions for the chloride and methyl groups, thereby
+promoting the Schlenk equilibrium. It is worth noting that the         solvent that appears to play a determining role in the equilib-
+most abundant form of the dimers DClCl                                 rium constant of the R/X exchange.
+                                        11 is not directly on the
+Schlenk equilibrium pathway. The less solvated magnesium
+centres hold tight to the bridging chloride ligands and dis-
+favour any of their displacements.                                     5.3   The special case of tert-BuMgX
+                                                                       Some data were also obtained for the Grignard reagent with
+5.2   Variations on the theme: eﬀect of R, X, and the solvent          a tert-Bu group (Table 2).20 At high temperatures, tert-BuMgCl is
+                                                                       preferred over the redistribution products, while at low
+There is a question regarding to what extent the results ob-
+                                                                       temperatures there is a statistical distribution of species. The
+tained for CH3MgCl in THF can be generalised, since R, X, and
+                                                                       authors noted that the reaction was considerably slower than
+the ether solvent have a strong inuence on the behaviour of the
+                                                                       with smaller R groups but did not give quantitative data. The
+Grignard reagent. Another point of interest is the possibility of
+                                                                       experimental conditions are thus important to consider in order
+having in solution aggregates of higher nuclearity than dimers.
+                                                                       to understand the behaviour of all Grignard reagents.
+These points need to be considered to gain a deeper under-
+standing of these challenging species. Quantitative experi-
+mental information to validate the computational studies is
+unfortunately limited. The equilibrium constants 1/K of the            6 The Grignard reaction: CH3MgCl
+Schlenk equilibrium (2RMgX # R2Mg + MgX2) have been                    and acetaldehyde in THF
+determined for a few Grignard reagents in essentially only two
+solvents (Table 1, see ref. 40 and reported literature within). It     The central questions in understanding the Grignard reaction
+appears that Et2O favours RMgX over the redistribution prod-           are (i) which species present in an ethereal solution of Grignard
+ucts. This tendency is less pronounced with THF, which favours         reagent and substrate are reactive and (ii) what favours the
+a more balanced distribution of the three monomers. The                radical (SET) mechanism over the nucleophilic addition.
+inuence of R and the halide seems to be globally modest               Answers to these questions have been recently provided by
+according to the limited data available. Thus, it is essentially the   AIMD and DFT calculations.96
+
+
+8202 | Chem. Sci., 2025, 16, 8196–8216                                   © 2025 The Author(s). Published by the Royal Society of Chemistry
+Perspective                                                                                                              Chemical Science
+
+6.1      The nucleophilic addition                                     pathway (usually at the transition state or immediately before).
+                                                                       There is no report of this pathway in any previous study because
+    6.1.1 A mechanism with many pathways. In the early study
+                                                                       the methods were not adapted to model a solvent addition
+described above,37 a dinuclear magnesium complex was identi-
+                                                                       during a reaction. The activation barriers for these four-centre
+ed as being particularly reactive. The structure of the transition
+                                                                       geminal transition states are relatively low, ranging from 6.5 to
+state was hardly modied by the solvent coordinating at the
+                                                                       13 kcal mol−1. The small diﬀerences in energy are easily
+magnesium centres. Similarly, the activation energy was not
+                                                                       understood by the way the ancillary ligands manipulate the
+signicantly aﬀected by the presence of solvent in the initial and
+transition states. However, we saw that the solvent dynamics           nucleophilicity of the methyl group and by the rigidity of the
+could be fundamental.82 For this reason, we decided to use AIMD        molecule. Thus, the activation barrier is lower for Mg(CH3)2
+                                                                       (Bgem) than for Mg(CH3)(Cl) (Agem) because the ancillary CH3
+to study the reactivity of both monomers and dimers. As there are
+                                                                       group is more electron donating than Cl, as evidenced by NBO
+many candidates in each category and no reason to exclude
+                                                                       analysis,82 making the other methyl group more nucleophilic.
+anyone, we considered studying them all.
+                                                                       Egem has the same reactivity as Bgem since Mg has two methyl
+    The only hypothesis implemented in the study was that, in
+                                                                       ligands and a fourth ligand which is the chlorine of a di-
+order for the reaction to proceed, the substrate had to be
+                                                                       solvated MgCl2 group. This fourth ligand has a similar inuence
+coordinated to a magnesium centre. How the substrate enters
+the coordination sphere of the magnesium (putatively, by               on the reactive Mg as a coordinated solvent (Bgem). The lower
+ligand exchange with one solvent molecule) was not explicitly          reactivity of Cgem and Dgem can be understood by noting that the
+                                                                       two bridging chlorine ligands are weaker electron donors to the
+investigated. Considering all the locally stable structures iden-
+                                                                       reactive Mg and rigidify the coordination at the magnesium,
+tied during the study of the Schlenk equilibrium, we obtained
+                                                                       disfavouring the formation of a four-centre transition state
+an initial pool of possible reactant structures as shown in Fig. 7.
+                                                                       requiring a small bond angle (OAc–Mg–CH3). Cgem is apparently
+In the monomers, the substrate and the nucleophilic methyl
+                                                                       too rigid to allow a similar transition state, resulting in a higher
+group are coordinated to the same magnesium (geminal posi-
+                                                                       activation barrier. In Fig. 8, we illustrate, for the case of Bgem
+tion). In the dimeric species, the substrate and the nucleophilic
+methyl group can be either on the same (geminal), or on                how a nearby well-oriented THF solvent molecule enters the
+diﬀerent (vicinal) magnesium atoms. It can also be at a bridging       magnesium coordination sphere at the transition state, facili-
+                                                                       tating its development into the nal product.
+position.
+                                                                           The vicinal reactions also occur via a four-centre type tran-
+    The activation energy for the addition of the methyl group to
+                                                                       sition state, obtained by translocation of the carbonyl group
+the acetaldehyde carbon to form a magnesium-bound isopropyl
+                                                                       from a peripheral to a bridging position. However, the solvent
+alkoxide ligand was determined for each of these species. All
+                                                                       contribution is diﬀerent from that in the geminal reactions. Fvic
+ve geminal reactions induce a four-centre transition state
+                                                                       is associated with the lowest action energy of all species, while
+(C]O–Mg–CMe) which creates an electronic vacancy at the Mg
+centre associated with the cleavage of the Mg–methyl bond.             interestingly Cvic which diﬀers only by the degree of solvation
+Solvent is, therefore, required to ll the empty coordination site     from Fvic is associated with one of the highest activation ener-
+                                                                       gies. In the latter case, the rigidity of the minimally solvated
+and stabilise the magnesium species. Thus, all geminal reac-
+                                                                       dichloro bridged magnesium dimer is likely to be the reason for
+tions, on either a monomeric or a dimeric species, require the
+                                                                       the high activation energy as it was for Cgem. The major diﬀer-
+participation of a solvent that enters the magnesium rst
+                                                                       ence between the vicinal and geminal reactions is that in the
+coordination sphere at the appropriate moment of the reaction
+
+
+
+
+                                                                       Fig. 8 Comparison of the reaction mechanisms for monomeric (Bgem)
+                                                                       and dimeric (Fvic) complexes. In the ﬁrst case, the reaction is helped by
+Fig. 7 List of monomers and dimers considered as reagents and          an incoming solvent molecules coordinating Mg at the TS. In the
+associated free energy of activation in kcal mol−1, as determined by   second case, the initial higher coordination of the metal centres allows
+thermodynamic integration. Adapted from ref. 96, under CC-BY-NC-       reaching the TS without any major reorganisation of the environment.
+ND 4.0 license.                                                        Figure adapted from ref. 96, under CC-BY-NC-ND 4.0 license.
+
+
+
+© 2025 The Author(s). Published by the Royal Society of Chemistry                                      Chem. Sci., 2025, 16, 8196–8216 | 8203
+Chemical Science                                                                                                               Perspective
+
+former one, the two magnesium centres are involved in the               6.2   SET mechanism
+electrophilic activation of the acetaldehyde since the ligand is
+                                                                        Experiments have indicated that a SET mechanism could
+bound to both of them in the transition state. In addition, this
+                                                                        compete with, or be preferred to, the nucleophilic mechanism.
+bridged activated acetaldehyde is in close proximity to the
+                                                                        The SET mechanism was suggested to involve the formation of
+nucleophilic methyl group. Interestingly, the two chlorine
+                                                                        Rc radicals by homolytic cleavage of the Mg–R bond. However,
+atoms remain bridged to the two magnesium atoms, which also
+                                                                        quantum (DFT) static calculations give the bond dissociation
+helps to keep the free energy of this transition state low.
+                                                                        energy (BDE) of Mg–CH3 in CH3MgCl(THF) (i.e. formation of
+Another factor that helps to prevent an unfavourable decrease           H3Cc and ClMgc) as high as 66 kcal mol−1. This value, in very
+in entropy is that this highly solvated structure does not need         good agreement with the experimental value of 61 kcal mol−1
+the assistance of any additional incoming solvent molecule. The
+                                                                        obtained for CH3MgBr in diethyl ether,102 remains high even
+reason for this is that the substrate remains bonded to its
+                                                                        when increasing Mg solvation.96 Such a high BDE is incom-
+“original” magnesium and creates a new bond to the other
+                                                                        patible with a reaction running at room temperature or even
+magnesium. No empty coordination site is created at either
+                                                                        lower. Evidently, this discrepancy does not originate from the
+magnesium during the formation of the alkoxy group. The
+                                                                        computational method of choice but from the chemical model
+reaction pathway for this most favourable reaction is illustrated
+                                                                        selected to probe this mechanism. Indeed, there is no report of
+in Fig. 8 by the representation of three snapshots for the reac-        Grignard reagents producing radical species in the absence of
+tant, transition state and product.                                     a substrate. This suggests that the substrate has a direct role in
+    Finally, as expected, Dbrg has a very high activation since it is
+                                                                        selecting a SET mechanism. Therefore, it needs to be included
+evident that a bridging methyl group is a less good nucleophile
+                                                                        in the calculations of the homolytic cleavage of the Mg–R bond.
+than a terminal one. It should be noted that our study identies
+                                                                        The H3C–Mg BDE was thus calculated in (CH3)
+a dimeric complex as the most reactive species, as did the study
+                                                                        Mg(Cl)(substrate)(THF)n (n = 1, 2) where the substrates
+of Yamazaki and Yamabe.43 However, the coordination mode of
+                                                                        considered are shown in Table 3.96 Test calculations showed
+the substrate (formaldehyde in the prior study) in the transition
+                                                                        that similar values were obtained with Mg(CH3)2.
+state is diﬀerent in the two studies. In particular, in the former          The coordinated substrate considerably lowers the Mg–CH3
+study, the formaldehyde was found to be bound to only one               BDE. This eﬀect can be rationalised by noting that, in the
+magnesium centre at the transition state, and the inuence of           c
+                                                                          Mg(Cl)(substrate)(THF)n radical, the unpaired electron local-
+solvent on the nature of intermediates and transition states was
+                                                                        ises at the LUMO ðp*CO Þ of the coordinated substrate (Fig. 9),
+not considered.43 More importantly, the earlier study identied
+                                                                        while, in its absence, it remains on the magnesium. This elec-
+a single possible pathway, whereas the new study shows that
+                                                                        tron localisation was also obtained by Yamazaki and Yamabe.43
+many transition states, starting with monomeric and dimeric
+                                                                        The role of the substrate in assisting the Mg–R BDE is thus
+reagents, are close enough in energy to be considered as
+                                                                        clear. Substrates with a low reduction potential (i.e. low-lying
+competing nucleophilic pathways occurring in parallel under             p*CO LUMO) stabilize the magnesium radical and thus lower the
+standard experimental conditions.                                       BDE, as illustrated by the decreasing values in the order of
+    6.1.2 Structural features of the transition states in the
+                                                                        acetaldehyde, formaldehyde, diuoroketone, and uorenone
+geminal and vicinal pathways. In the 1970s, crystal structures
+                                                                        (Table 3). Other conjugated ketones like benzophenone should
+were used to determine the geometrical features of the nucle-
+                                                                        also give low Mg–R BDEs. This rationalizes the observation of
+ophilic addition to a carbonyl group.97 The examination of the
+                                                                        a SET mechanism for conjugated carbonyls.31,103 While the SET
+crystal structure data was completed with ab initio Hartree–Fock
+                                                                        mechanism is favoured by the presence of the low-lying empty
+calculations using H− as the nucleophile and H2CO as the
+                                                                        orbital of the conjugated substrate, the nucleophilic pathway is
+substrate, all in the gas phase due to the notorious computa-           found to be disfavoured by this substrate. The bulk of the
+tional limitations of the time.98 Both studies showed that              conjugated substituents at the carbonyl carbon hinders the
+the nucleophile, Nu, approaches the carbonyl carbon with
+                                                                        structural rearrangement of the coordination sphere at the
+a Nu/C–O angle larger than 90° (angle between 105 and 110°,
+                                                                        magnesium required during the reaction pathway. This was
+known as the Bürgi–Dunitz angle). This direction of approach
+                                                                        shown by AIMD calculations for Mg(CH3)2 and uorenone.96
+optimises the overlap between the nucleophile HOMO and the
+                                                                        This may also explain why, all things being equal, tert-BuMgX is
+substrate LUMO p*CO . This nding was at the heart of the
+rationalisation of the stereoselectivity of the nucleophilic
+addition, known as the Felkin–Anh rule.99–101 It should be noted        Table 3    Calculated magnesium-methyl carbon homolytic bond
+that these early studies of selectivity only considered the             dissociation energy in (H3C)–Mg(Cl)(substrate)(THF)n, at the DFT level
+                                                                        of theory, using the PBE XC functional. Values are in kcal mol−1. Data
+nucleophile and ignored the accompanying metal, which is
+                                                                        from ref. 96
+essential to enhance the electrophilicity of the substrate. Thus,
+it is of interest to determine whether the Bürgi–Dunitz angle is        Substrate                   BDE (n = 1)                   BDE (n = 2)
+also found in the AIMD computational study of the addition of
+CH3MgCl to acetaldehyde. The calculations found that it was             CH3CHO                      51                            38
+                                                                        CH2O                        45                            33
+indeed the case for the two preferred pathways (geminal and
+                                                                        CF2O                        35                            25
+vicinal). This result extends the range of validity of the Bürgi–       Fluorenone                  29                            16
+Dunitz angle.
+
+
+8204 | Chem. Sci., 2025, 16, 8196–8216                                     © 2025 The Author(s). Published by the Royal Society of Chemistry
+Perspective                                                                                                            Chemical Science
+
+                                                                         combining Mg and Li species, named the turbo Grignard
+                                                                         because of its high eﬃciency.112,113
+                                                                             The addition of LiCl to the reactive media improved all
+                                                                         aspects of the reaction and, in particular, allowed Cl/Mg
+                                                                         exchange between haloarenes, Ar-X, and Grignard reagents.
+                                                                         This was very useful for the in situ synthesis of a wide variety of
+                                                                         functionalized arylmagnesium and heteroaryl Grignard
+                                                                         reagents, Ar-MgX, from the reaction of iPrMgX (X = Cl, Br) with
+                                                                         a wide variety of Ar–X.112 The reason why lithium chloride
+                                                                         speeds up the reaction105 is of topical interest and is still
+                                                                         essentially not understood, although proposals have been made
+                                                                         based on DFT calculations.113,114 Both studies propose associa-
+Fig. 9Spin density localization on (a) cMg(Cl)(acetaldehyde)(THF)2 and   tions of the Grignard reagent, LiCl and substrate, and analyse
+      c
+(b) Mg(Cl)(ﬂuorenone)(THF)2. Adapted from ref. 96, under CC-BY-          the reactivity of these ensembles with appropriate DFT meth-
+NC-ND 4.0 license.
+                                                                         odology. Unfortunately, the existence of the proposed species in
+                                                                         solution under operando reaction conditions needs further
+                                                                         analysis. Indeed, any interpretation of the reactivity of the turbo
+associated with a greater tendency to proceed via a SET pathway.         Grignard should include an analysis of the accessibility of
+These results are in agreement with the experiments. As                  postulated structures formed by the association of RMgX and
+mentioned in the introduction, experimental data have estab-             LiCl in organic solvent, for which, unfortunately, related
+lished that alkyl ketones do not go via the SET mechanism and            experimental or theoretical studies are scarce.
+prefer the nucleophilic pathway and that oen the nucleophilic               Crystalline species were isolated from a solution of Grignard
+and SET pathways are both possible even with conjugated                  reagent and LiCl. Remarkably, no mixed Mg/Li species were
+carbonyl species.34,35                                                   characterised and, as it was already noted for the case of
+    In our opinion, the most important message emerging from             Grignard reagent alone, the isolated crystalline species115 may
+these calculations is the identication of a manifold of acces-          not be present in solution. Conicting results have also been
+sible pathways for the Grignard reaction. Many magnesium                 reported. For instance, NMR studies suggested that Mg/Li
+complexes are competent for a diversity of nucleophilic mech-            association is possible, whereas electrospray ionisation mass
+anisms. Furthermore, in the case of conjugated carbonyl                  spectrometry (ESI MS) study revealed the formation of Mg only
+substrates, the nucleophilic and SET pathways can also have              species with various numbers of Mg. These contrasting results
+similar activation barriers. The nature of the Grignard reagent,         highlight the inuence of the concentration (higher in droplets
+substrate and solvent also inuence the relative preference              than in the reactive media) on the nature of possible
+between the possible pathways, but it is unlikely that experi-           complexes.28 The challenging question of the nature of the
+mental conditions result in a strong preference for a single             RMgX$LiCl complex in solution also requires a fundamental
+pathway. This explains the diﬃculty in determining the reaction          understanding of the nature of LiCl alone in the relevant
+order. Additionally, this also accounts for the challenge of             organic solvent. This question was recently approached by us in
+rationalising the mechanism of this reaction for the ensemble            two ways. In a rst study, using AIMD, we provided a description
+of possible chemical species involved. Finally, this introduces          of the solvation structure of LiCl in THF and also determined its
+new perspectives on the way one should approach reaction                 aﬃnity with the Mg species involved in the Schlenk equilib-
+mechanisms in Mg chemistry.                                              rium. More recently, exploiting AIMD data, we calibrated
+                                                                         a machine-learning interaction potential to carry out a compre-
+                                                                         hensive study of the chemical space for LiX (X = Cl, Br and I) in
+7         Beyond the Grignard reaction                                   THF.
+
+7.1       The key role of lithium salts
+Grignard used only magnesium derivatives for his reaction. It            7.2 Simulating LiCl in THF and its interaction with
+had been an incredible breakthrough at that time, even though            CH3MgCl
+the process was not very eﬃcient, not so easy to handle, and not         Lithium halides tend to exhibit weak solubility in organic
+particularly selective. The choice of magnesium happened to be           solvents,116,117 giving rise to the current opinion that their
+a very good compromise between the poorly reactive zinc dia-             solubilised particles should anyway retain a certain degree of
+lkyl3 and the very reactive and hard to control calcium deriva-          aggregation, with the diamond ring (LiCl)2 representing an
+tives. Over the years, signicant improvements have come from            evident possible building block for higher-order structures.
+combining Grignard reagents with other metal derivatives.104–106         Consequently, a primary pertinent inquiry was to utilise AIMD
+Mastering the reactivity of calcium is also now becoming                 to ascertain whether solvated (LiCl)2(THF)4 would persist as
+possible, and recent studies have begun exploring the viability          a dimer or exhibit a tendency to form aggregates of higher
+of strontium.107–111 Here, we focus on the rst great improve-           nuclearity in THF solution, as they do in the solid state. Indeed,
+ment of the Grignard reaction, achieved by Paul Knochel by               AIMD calculations showed that (LiCl)2(THF)4 dimers, set at
+
+
+© 2025 The Author(s). Published by the Royal Society of Chemistry                                      Chem. Sci., 2025, 16, 8196–8216 | 8205
+Chemical Science                                                                                                                Perspective
+
+a relatively long distance, spontaneously form a tetramer
+without suﬀering any activation barrier during the partial des-
+olvation.118 This tetramer evolves toward a pseudo-cubane type
+species with a geometry similar to that observed in the solid
+state. However, AIMD simulations suggest that, at room
+temperature, this pseudo-cubane has high plasticity with
+a preference for a broken Li–Cl edge of the cube. We deduced
+from this result that this open edge could promote the inter-
+action with magnesium species through the formation of Mg–Cl
+and/or Li–Cl bonds between (LiCl)4 and magnesium derivatives.
+    Specically, our study investigated its interaction with CH3-
+MgCl, Mg(CH3)2 and MgCl2 – the endpoints of the Schlenk
+                                                                          Fig. 11 Time relaxation of solvated (LiCl)4 interacting with MgCl2 in
+equilibrium. Among these three forms, only MgCl2 binds to                 a 1 : 1 Mg : Li ratio. Figure adapted from ref. 118, under CC-BY 4.0
+(LiCl)4 to form MgCl2$(LiCl)4. In contrast, CH3MgCl has                   license.
+a marginal aﬃnity to (LiCl)4, and Mg(CH3)2 prefers to stay away
+from the lithium-chloride cluster. Thus, the preferred binding
+of (LiCl)4 to MgCl2 pushes the Schlenk equilibrium towards two            entities. This could facilitate the interaction between the
+homoleptic forms, decreasing the concentration of the standard            substrate and LiCl. However, the reactive entities remain
+CH3MgX species (Fig. 10).118                                              undened. MgR2 should be present in abundance, relative to
+    An analysis of the charge density in this mixed Li/Mg chlo-           RMgX, and dimers of RMgX should be disfavoured due to the
+ride aggregate indicates an electron density shi from (LiCl) to          possible shi of the Schlenk equilibrium. Thus, the remaining
+MgCl2, suggesting that MgCl2 could tend to disaggregate the               lingering question is: what are the reactive species?
+LiCl cluster. To probe this further, we studied a 1 : 1 concen-              In the study of the reaction of Grignard with a carbonyl
+tration of LiCl and MgCl2 in THF, analogous to Li : Mg stoi-              function, we have shown that several forms of Grignard
+chiometric ratios used in turbo-Grignard solutions. AIMD data             reagents have similar reactivity and in particular that a mono-
+show that the LiCl cluster evolves by successive cleavage of LiCl         mer and a dimer are among the most reactive forms. It is likely
+bonds and opening of the (LiCl)2 rhombus. Within 10 ps, we                that the reactivity with other substrates, particularly haloarene,
+found an essentially decomposed (LiCl)4 cluster with MgCl2                should follow a similar pattern. These are directions to consider
+coordinated on the outside of the unstructured lithium chloride           for a better understanding of the reactivity of the turbo
+moiety. There, almost all of the closed (LiCl)2 units had trans-          Grignard, especially its best representative, iPrMgX$LiCl, in the
+formed into linear moieties or mixed LiMgCl2 rings (Fig. 11).118          X/Mg exchange reaction with haloarenes.
+Although we are not able to substantiate this hypothesis yet, we             Before attempting this, we felt it was essential to have
+can speculate that this decomposed LiCl cluster could better              a better insight into the large chemical space of lithium halides
+interact with the substrate than the original, rather insoluble,          in THF. Clearly, structural characterization of LiX in solution,
+compact LiCl entities.                                                    and worse in the presence of Grignard compounds, is a combi-
+    This preliminary study118 revealed a complex dynamical                natorial puzzle composed of a large number of ways to assemble
+aspect for LiCl in THF, in the presence of Grignard reagents.             a number of Li–X, and Li–O bonds. A thorough exploration of
+MgCl2 can contribute to the formation of more dispersed, more             such a vast congurational space is a substantial challenge for
+accessible, more soluble and therefore more reactive LiCl                 a computationally expensive method like AIMD, even empow-
+                                                                          ered by enhanced sampling techniques. On the other hand,
+                                                                          quantum chemical accuracy is required in order to take into
+                                                                          account diﬀerent bond polarization energies that may occur in
+                                                                          the presence of a varying number of more or less strong elec-
+                                                                          tron-donating groups at the alkali centres. The necessity of
+                                                                          accurate energies and energy gradient, and eﬃcient confor-
+                                                                          mational sampling methods is today realised by the advent of
+                                                                          machine-learning interaction potentials. Here, we rst describe
+                                                                          the method before exploring its application to determine the
+                                                                          structure of Li-X (X = Cl, Br and I) in THF.
+
+
+                                                                          8 Machine-learning potentials: a brief
+                                                                          introduction
+Fig. 10 Interaction of the monomeric forms of the Grignard reagent
+                                                                          AIMD using DFT and plane-waves,53 which is among the fastest
+with a (LiCl)4 cluster. Free energies are in kcal mol−1. Figure adapted   ab initio approaches, can typically target systems involving
+from ref. 118, under CC-BY 4.0 license.                                   hundreds to few thousand atoms on timescales of tens to
+
+
+8206 | Chem. Sci., 2025, 16, 8196–8216                                       © 2025 The Author(s). Published by the Royal Society of Chemistry
+Perspective                                                                                                             Chemical Science
+
+                                                                              While previously gathered ab initio MD data can provide
+                                                                          a solid foundation for the training set, an MLP naively trained
+                                                                          on such data is typically unreliable and prone to catastrophic
+                                                                          failure due to gaps in the MLP surface. The critical concept of AL
+                                                                          involves systematically constructing the training set based on
+                                                                          molecular geometries collected from diﬀerent iterations of
+                                                                          MLPs. Typically, these new MD geometries are gathered using
+                                                                          MLP-based MD, supplemented by uncertainty estimation to add
+                                                                          only those geometries that the MLP poorly describes. Through
+                                                                          repeated iterations, this process reduces the diﬀerence in
+Fig. 12Ab initio vs. MLP approach for generating molecular dynamics
+                                                                          molecular geometries encountered during MLP-based MD and
+sampling.
+                                                                          the training set data, leading to reliable MLPs.
+                                                                              Mechanistic studies typically target rare events along specic
+hundreds of picoseconds. These time and size constraints limit            reaction coordinates. Not having suﬃcient data on the charac-
+which type of phenomenon can be targeted for mechanistic                  teristic geometries for such events in the training set and relying
+investigations. More and more, the eld is shiing away from              on the deduced MLPs to predict them is, at best, a hit-or-miss
+ab initio to machine learning potential (MLP)-based MD. The               and can, at worst, lead to incorrect mechanisms. To address this
+central idea is illustrated in Fig. 12. To do MD, we need the             issue, Parrinello and coworkers incorporated enhanced
+forces for a molecular geometry to integrate the equations of             sampling of the reaction coordinates as an integral part of the
+motion. In AIMD, this is done by numerically solving the                  AL process, as exemplied in their seminal study on urea
+Schrödinger equation, which is computationally costly. In MLP-            decomposition.119 Similarly, van Speybroeck and coworkers
+based MD, the forces of the same ab initio potential energy               have been developing impressive modular AL workows that
+surface are instead predicted by a neural network-based MLP               emphasize enhanced sampling.120 Perego and Bonati have
+powered by GPUs, which is orders of magnitude faster. As such,            created a code for AL of MLPs that are uniformly accurate along
+MLP-based MD can break the time and size constraints of                   the reaction coordinates, applying it to the study of ammonia
+traditional ab initio approaches.                                         decomposition over iron–cobalt alloy catalysts.121 Although it
+   In MLPs, the local geometric environment serves as the                 introduces added complexity, integrating enhanced sampling
+primary input, typically consisting of atomic species and the             simulations with AL oﬀers an excellent opportunity for more
+distance vectors to neighbouring atoms within a predened cut-            agile science, where hypotheses about mechanisms can be
+oﬀ radius. This geometric information is used to feed a neural            rened throughout the AL process.
+network, which subsequently outputs predictions for energy                    The reliability of neural-network-based MLPs hinges not only
+and forces. The task of determining the model parameters in an            on the quality of the training data but also fundamentally on the
+MLP can be formulated as a regression problem:                            neural network architecture. Early on, the importance of
+                                                                          incorporating symmetries was recognized.122 Crucially, the MLP
+                          yi = f(xi,b),                             (2)
+                                                                          architecture must account for the invariance of molecular
+                                                                          energy concerning translations, rotations, and permutations of
+where the model parameters, (b), are optimized using training
+                                                                          identical chemical species. This understanding led to the
+data that consist of geometries, (xi), to closely approximate
+                                                                          development of the seminal Behler–Parrinello network, which
+reference energies and forces, (yi), derived from ab initio
+                                                                          leverages symmetry functions to ensure these invariances are
+calculations. By using combinations of distance vectors, MLPs
+                                                                          respected.122 By employing invariant features such as inter-
+can represent many-body interactions. By combining this with
+                                                                          atomic distances and angles as inputs, the Behler–Parrinello
+a huge set of MLP parameters, the intricacies of the true
+                                                                          network eﬀectively captures the inherent symmetries of
+quantum mechanical interactions can be faithfully represented.
+                                                                          molecular systems, thereby enhancing the reliability and
+   However, MLP-based MD oﬀers no free lunch. First, the use
+                                                                          robustness of the models.
+of an MLP introduces the additional step of having to develop
+                                                                              However, while implementations of MLPs based on invariant
+a model, requiring the construction of a training set composed
+                                                                          features, such as DeePMD and ANI,123 are state-of-the-art in
+of molecular geometries and associated energy and forces from
+                                                                          terms of computational eﬃciency, the eld is progressively
+quantum chemical calculations and model training. Second,
+                                                                          shiing away such architectures. In particular, it has been
+the MLP is only, in principle, as good as the ab initio approach
+                                                                          found that using non-scalar inputs, such as distance vectors or
+used in constructing the training set, and, in practice, worse,
+                                                                          spherical harmonics, and having the neural networks transform
+due to reliability issues stemming from an inability to fully
+                                                                          internal features equivariantly. For instance, when a molecule's
+generalize from training set geometries to MD sampled geom-
+                                                                          geometry x is rotated, it transforms as R$x, where R is the
+etries. Ways to reduce computational costs for training MLP
+                                                                          rotation operation. Similarly, equivariant neural networks
+potentials, and increase their reliability, are today turning
+                                                                          incorporate layers f that ensure internal features transform
+around three main concepts: (i) active learning (AL) targeting
+                                                                          equivalently, maintaining the relationship f(R$x) = R$f(x). This
+reaction coordinates of interest; (ii) moving from invariant to
+                                                                          leads to MLPs that are more accurate and need less data for
+equivariant MLPs; (iii) foundational models and ne-tuning.
+                                                                          training. For example, NequIP, developed by the Kozinsky
+
+
+© 2025 The Author(s). Published by the Royal Society of Chemistry                                       Chem. Sci., 2025, 16, 8196–8216 | 8207
+Chemical Science                                                                                                          Perspective
+
+group, can achieve higher test set accuracy with 1000× fewer
+data than DeePMD for the water phase-diagram.124 There is also
+mounting evidence that such equivariant MLPs are better at
+avoiding catastrophic model failures,125 which is a frequent
+problem during the early iterations of AL. Moreover, methods
+and soware are constantly being improved; implementations
+such as PaiNN,126 NequIP,124 Allegro,127 and MACE128 have
+matured to the point where they are frequently being adopted
+for mechanistic studies.
+    As MLP technology improves, there is also a push to handle
+more complex tasks. One of the most active areas of research is
+developing general-purpose MLPs, oen called foundational
+models, which aim to represent any chemical system. These
+models use similar architectures but typically include more
+parameters and are trained on vast amounts of data collected
+over years of computational chemistry research. While this
+ambition might have once seemed futuristic, recent progress
+shows that these foundational models are maturing.129,130 In
+particular, a community eﬀort has led to the development of
+a MACE-based foundational model built on data from the
+Materials Project. This model demonstrated an ability to
+represent various chemical systems, including solids, liquids,
+gases, chemical reactions, interfaces, and even small
+proteins.131
+    While these advancements are impressive, the use of foun-
+dational models in mechanistic studies is still in its early stages   Fig. 13 Isolated and structurally characterized lithium halide
+                                                                      complexes. See de Giovanetti et al. (2024) and references within.81
+and they are not yet ready to be deployed out of the box.
+                                                                      Figure adapted from ref. 81, under CC-BY 3.0 license.
+However, in the short term, these foundational models oﬀer
+signicant value as the basis for pre-trained or ne-tuned MLPs.
+This approach, common in machine learning, involves initial-          shapes and include inter alia, dimers, tetramers, clusters, olig-
+izing the model parameters with those from another model              omers, and polymers (see ref. 81 and references within). Such
+previously trained on a diﬀerent dataset. By starting from            a rich ensemble of structures raises the following questions. Are
+a foundational model, an excellent starting point is established      all these species (and eventually other ones) also present
+that leverages pre-learned representations and patterns. This         simultaneously in THF solution, and in what relative abun-
+pre-training process accelerates convergence, enhances predic-        dance, or are the structurally characterised species simply
+tive performance, and reduces the quantity of new data required       driven by the Lewis bases and the ease with which crystalline
+for training. Furthermore, since less training data is needed,        phases can be formed?
+higher quality quantum chemistry data, such as coupled cluster            The number of experimental studies of lithium halides in
+calculations, can be employed to potentially mitigate one of the      solution is relatively limited and the information somewhat
+critical weaknesses of MLPs—being only as good, or worse, than        contradictory. 7Li NMR suggests that LiCl exists as a dimer in
+their low-quality training set data. Consequently, this approach      THF and that disaggregation to monomers can be induced by
+allows for the eﬃcient adaptation of MLPs to specic mecha-           the addition of excess hexamethylphosphoramide.134 In
+nistic studies, facilitating more robust and accurate simulations     contrast, LiBr would prefer a monomeric structure, whereas LiI
+in complex molecular systems. For excellent examples of how           would exist as a mixture of contact ion pairs, monomers and
+this can be implemented in practice, we suggest that readers          dimers.134 However, in another study using lithium NMR, it was
+refer to ref. 132 and 133.                                            concluded that all lithium halides (Cl, Br, and I) would prefer to
+                                                                      be a solvent-separated ion pair.135 LiBr was also reported to be
+                                                                      a cubic tetramer in toluene.136 Unfortunately, these experiments
+9 MLPs and main group chemistry –                                     were conducted with low concentrations of lithium halide to
+
+ﬁrst steps                                                            minimise signal broadening, which does not reect the exper-
+                                                                      imental conditions under which these salts are used. Further-
+9.1   Lithium halide polymorphism: experimental data                  more, the somewhat contradictory results may reect the very
+Numerous LiX aggregates have been isolated from organic               high sensitivity of these systems to experimental conditions.
+solution through coordination with diverse O- and N-Lewis             This is therefore an interesting challenge for a molecular
+bases and characterised by X-ray diﬀraction studies. A repre-         modelling study. For the reasons described earlier, a machine
+sentative but not comprehensive list of structures is shown in        learning potential approach was selected. With this MLP
+Fig. 13 The structures are highly diverse in nuclearity and           method, it was possible to study broadly the three lithium
+
+
+8208 | Chem. Sci., 2025, 16, 8196–8216                                  © 2025 The Author(s). Published by the Royal Society of Chemistry
+Perspective                                                                                                           Chemical Science
+
+halides LiCl, LiBr and LiI in THF. The extensive validation of the      THF), we also investigated the eﬀect of increasing LiCl
+MLP and the procedures used are described in the original               concentration on the preferred structures in solution. MLP
+article.81                                                              simulations showed that separate pseudo-cubane units merge
+                                                                        exothermically, and with a low energy barrier, to form hexag-
+                                                                        onal-packed structures (wurtzite-like lattices) that are likely to
+9.2   Computational study of lithium chloride                           be good starting particles towards the nucleation into the rock
+The Helmholtz free energy map is projected in two dimensions            salt structure of solid LiCl, similarly to what was previously re-
+using lithium solvation (CN2(Li–O)) and the cluster compact-            ported for aqueous solutions of NaCl.137
+ness (CN(Li–Cl)) as collective variables (Fig. 14). Using these
+indicators, highly clustered, poorly solvated structures (such as       9.3    Lithium bromide and lithium iodide
+pseudo-cubane) appear at low CN2(Li–O) and high CN(Li–Cl).              The free energy surface for (LiBr)4 is similar to that for the
+The free energy surface in Fig. 14 shows the presence of a large        chloride case, but there is a clear tendency towards a preference
+number of structures at similar energies. The pseudo-cubane,            for more solvated and less compact structures.81 The more
+C4, or edge-opened pseudo-cubane, C5, are among the most                stable structures are no longer the most compact pseudo-
+stable species. As the lithium solvation increases, the LiCl cubic      cubanes species but distorted variants with one or two broken
+cluster further degrades by cleaving more Li–Cl bonds. Diﬀerent         Li–Br bonds. The solvated dimers are more accessible than LiCl.
+structures appear, depending on the number and positions of             The behaviour of LiI extends the trends already visible with the
+the Li–Cl bonds, at slightly higher energies relative to the most       bromide – compact structures, notably the pseudo-cubanes, do
+stable C4 and C5. Species with (LiCl)2 rhombi are preferred over        not appear among the preferred structures, and, in contrast,
+rings of diverse sizes. Many of these structures (i.e. C4, B6, R7,      dimers and monomers become thermodynamically favoured.
+D4, etc.) correspond to species that have been isolated out of
+solution (see Fig. 13). Solvated monomers together with dimers
+                                                                        9.4    Why these trends?
+appear only at higher energies. Thus, the isolation of dimers
+and monomers in the solid state is likely to be promoted by the         These calculated trends are compatible with the increased
+interaction with powerful Lewis bases that are able to stabilize        solubility of LiX in the order Cl < Br < I.116,117 Even though there
+smaller clusters. This conrms that LiCl would not easily form          was no attempt to quantify solubilisation in our study, it is
+monomers or dimers without the assistance of additional                 interesting to note that the tendency for the clusters to break
+chemical species. This is compatible with the above presenta-           down into smaller units for heavier halides is compatible with
+tion of the deconstruction of (LiCl)4 by MgCl2.118                      the solubility trends. This compatibility between the FES and
+   Given that LiCl is oen used at a quasi-saturated concen-            the solubility trends further conrms the validity of the MLP
+tration (1 M for an experimental solubility of around 1.27 M in         calculations.
+                                                                            These results are easily understood from the polarity of the
+                                                                        Li–X bonds as a function of X and the shape of the aggregates.
+                                                                        The Li–X bond is more polar for lighter halides, as it was indi-
+                                                                        cated by the NBO charges.81 Similarly, the Li–X bond is more
+                                                                        polar when there are fewer X atoms bonded to each Li and fewer
+                                                                        Li bonded to each X. Therefore, the heterolytic cleavage of a Li–
+                                                                        X bond with the aid of a neutral incoming coordinated solvent
+                                                                        (THF) requires less energy for the less polar bonds. Thus, the
+                                                                        pseudo-cubane (LiX)4 is easier to cleave with heavier halides,
+                                                                        and the ease of cleavage decreases as the clusters become
+                                                                        smaller. This makes monomer formation energetically diﬃcult,
+                                                                        and more so for Cl than I. The increase in the ionic character of
+                                                                        Li–X as the size of the aggregates decreases has been experi-
+                                                                        mentally established in the case of Li–C and Li–N bonds.138 The
+                                                                        similarity between Li–C and Li–Cl ionic character has been
+                                                                        suggested to be a reason for the halide contamination in
+                                                                        lithium alkyl species.139
+
+
+                                                                        10 And now what, looking ahead?
+Fig. 14 Helmholtz free energy surface of the conformational land-
+scape of (LiCl)4, using an MLP. The coordination number of Cl around    10.1    When is AIMD important?
+Li, CN(Li–Cl), and the squared coordination number of O around Li,      Successes and challenges of computational methods for
+CN2(Li–O), are used as collective variables for the FES. Side graphs
+                                                                        studying the mechanisms and reactivities of chemical species in
+report the projections of the FES onto two respective axes. Repre-
+sentative structures corresponding to the basins of the FES are shown   solution have been the subject of perspectives and reviews.140–143
+as balls-and-sticks (Li in yellow, Cl in cyan, and THF as transparent   Historically, AIMD approaches have oen been considered as
+sticks). Figure adapted from ref. 81, under CC-BY 3.0 licence.          computationally expensive and have oen been disregarded in
+
+
+© 2025 The Author(s). Published by the Royal Society of Chemistry                                     Chem. Sci., 2025, 16, 8196–8216 | 8209
+Chemical Science                                                                                                          Perspective
+
+favour of more eﬃcient static, implicit solvent models. In fact,          A question relevant to this perspective is whether AIMD
+such static approaches commit to intrinsic approximations in          methods and in particular the use of MLPs would be useful to
+the representation of temperature eﬀects, in the dynamics of          better describe the chemical reactions of highly complex species
+the solute–solvent interactions, and in the appropriate               such as those of Group I and II elements and mixtures of them.
+ensemble averaging. This leads to diﬃculties in representing          We have already shown in this perspective how little was known
+the physics of the experimental systems and their thermody-           about the nature of the compounds and especially the reactive
+namics. AIMD has been able to overcome several of these               compounds under operando conditions. If a few years ago, AIMD
+limitations,144–149 especially for systems where conventional         studies of the Grignard species were limited to various forms of
+models are likely to introduce biases that could lead to signi-      monomers and dimers,96 recently, ML acceleration has allowed
+cant errors. Not surprisingly, AIMD has been used to study            investigation of the chemical spaces of lithium halides from
+reactions where the solvent itself is either a reagent or an          monomers to pre-nucleating crystalline forms.81 This opens up
+essential partner. The (incomplete) list of reactions comprises       the possibility of going much further, for example, delving into
+systems in water,149–155 or protic solvent (ref. 156 and references   reactive mixtures of RMgX and LiX, and its next step – adding
+therein), reactions of dihydrogenation, dihydrogen transfer,          a substrate to the mixed system and study the prototypical X/Mg
+and hydrogen evolution,157–160 water splitting or oxidation,161–165   exchange reactions enabled by this turbo Grignard reagent. This
+and reactions with several limiting pathways.166                      approach could establish the origin of its eﬃciency while avoid
+    The need for dynamic approaches becomes more and more             making speculative hypotheses on the nature of the Mg, Li and
+pressing as the strength of the ligand eld decreases. This may       Mg/Li species present in the solvent.112,114
+be the case for main-group elements (Groups I and II), charac-            Worthy of further computational exploration with MLPs are
+terised by uxional structures with labile coordination shells        the nature and reactivity of lithium alkyls, lithium amides and
+and considerable solvent/ligand exchange, as well as elements         related species for which interesting experimental information
+from Group X to at least Group XIII.167,168 For compounds con-        has been obtained. Lithium complexes have been studied in
+taining these elements, structures are oen exible and sensi-        particular by lithium NMR, which gives valuable information
+tive to the environment, and a method like AIMD can be useful         about their nature under conditions similar to the operando
+or even mandatory. It is remarkable that one of the rst appli-       conditions. They have also been studied by various computa-
+cations of AIMD in organometallic chemistry concerns the              tional methods usually involving dynamic approaches but with
+study of organolithium derivatives.169 This study of exotic dili-     limited exploration of the chemical spaces. Combination of
+thioethylene, carried out at that time in the absence of solvent,     AIMD simulations and NMR showed that 1JLi,C coupling is
+already highlighted the great diversity of ways in which lithium      mostly sensitive to the degree of aggregation and the rst
+can interact with a chemical group. Lanthanide complexes in           coordination shell.178 Dynamic QM/MM studies showed that
+solution also benet from an AIMD simulation, as shown in             lithium preferred tetracoordination and also indicated large Li–
+a recent publication.170                                              C distance uctuation, suggesting an easy access to open
+                                                                      structures.179 Mixed LiR/LiOR tetramers were shown to be ux-
+                                                                      ional.180 AIMD studies of (LiCH3)n (n = 1 – 8) in the gas phase
+                                                                      informed on intrinsic Li–C bonding properties of the clusters in
+10.2   Delving into Group I and II chemistry                          the absence of solvent. Thus, tetramers and hexamers are
+Focusing on Group I and II metals, organolithium species have         preferred, and temperature plays an important role in the
+an important role in numerous reactions.171 The nature of the         structural preference.181 The challenging mixed aggregates
+bonding between the metal centre and main group elements              nBuLi/RLi (R = Me, n-BuO) were studied by Li NMR using a new
+has been for long time a topic of interest, as illustrated by the     tool to perform 7Li–7Li scalar coupling and static calculations
+recent experimental and computational study of Li–C and Li–N          together with selected AIMD simulations.182 MeLi/LiCl exchange
+bonds.138 Characterization of complexes in the solid state172–175     in a lithium amide/LiCl aggregate was shown to occur through
+was complemented by NMR measurements to determine the                 an edge-to-edge interaction between the R2NLi/MeLi aggregate
+structure of aggregates in solution.176                               and (LiCl)2 by NMR and AIMD simulations.183 The remarkable
+    Our recent experience with LiX points to the need for             proposal that only dimers (MeLi)(LiCl) and no tetramers exist in
+a thorough exploration of the conformational space, in order to       a mixture of methyllithium and lithium chloride in THF has
+fully account for the diversity of species in solution, which can     been suggested by NMR measurements and static calcula-
+be achieved by integrating ab initio calculations with MLPs. The      tions.184 The protective role of lithium chloride against the
+use of MLPs to describe main group chemistry is further sup-          hydrolysis of lithium amide was suggested by mass spectro-
+ported by the evidence of their ability to address fundamental        scopic measurements and static DFT calculations.185
+chemical transformations, such as ammonia decomposition at                One obvious strategy to make exploration as broad and
+lithium imide surfaces, as recently shown by Parrinello and co-       complete as possible, while being compatible with computa-
+workers.177 It is easy to predict an increased eﬀort in this          tional time, is to drastically reduce the cost of computations,
+direction, benetting also from the rapid methodological              especially the electronic calculation part. We have successfully
+development aimed at the denition of more and more eﬃcient           explored this possibility in the case of lithium halides with the
+protocols for the calibration of MLPs and from the introduction       machine learning potential. However, a machine learning
+of numerically more robust neural networks.                           potential is specic to each problem, which raises the question
+
+
+8210 | Chem. Sci., 2025, 16, 8196–8216                                  © 2025 The Author(s). Published by the Royal Society of Chemistry
+Perspective                                                                                                            Chemical Science
+
+of its transferability. This needs to be further explored, as the        molecular collisions,194 photodissociation issues,195 and
+degree of synergy that could result from constructing MLPs for           computations of EPR parameters.196
+complex mixtures from those developed for each individual                    One possible way forward comes from the integration of
+subset of species (e.g., RMgX with LiY from separated RMgX and           relatively fast and accurate computational methods, such as
+LiY) needs to be established. If it works, this could facilitate the     MLPs, with experimental data in a synergistic strategy. The
+simulation of the whole experimental system, including                   possibility of driving molecular simulations, for example, by
+reagents, precatalysts, and additives from the modeling of the           imposing geometric restraints from NMR data, is an old idea,
+individual parts. In Group I and II chemistry, this would be             mainly explored in the eld of structural biology. Today, this
+helpful for the exploration of heterometallic systems and would          original rough idea is empowered by the ability to combine on-
+provide insight into the observed synergy resulting from the             the-y calculations of any property with MD and to use the
+addition of additives (such as lithium salt).105,185 It will also help   discrepancy between the predicted and experimental signals to
+to investigate the polar organometallic chemistry in bio-based           drive the exploration of the conformational space towards more
+solvents and water,186 which is largely computationally                  representative structures. Typically, the discrepancy is dened
+unexplored.187                                                           by a loss function to be minimised, such as the square devia-
+                                                                         tions between the two signals. The instantaneous bias force can
+                                                                         be introduced considering the likelihood that the instanta-
+                                                                         neous geometry explored during MD belongs to the ensemble of
+10.3   Integrative modelling – a possible way forward                    structures populating the experimental sample by Bayesian
+The studies of lithium chemistry presented in the paragraph              statistics. This inference method, taking the name Metainfer-
+above explored a relatively limited part of the conformational           ence,197 has been recently introduced for the determination of
+space. However, simulations were validated by the available              thermally accessible conformational ensembles in so/poly-
+experimental data, in particular by use of NMR measurements.             meric systems, prominently proteins and surfactants, matching
+Matching calculations with experiment is a productive way to             all-atom MD to 2D 1H and 15N NMR,197 as well as to small-angle
+validate the relevance of the structures considered in a study.          scattering data.198,199
+This is nicely evidenced by quantitative calculations of the NMR             Metainference, as well as other types of integrative data-
+data, which indeed require inclusion of conformational                   driven models, promises to provide a way toward quantitative
+dynamics to accurately reproduce the experimental values.188,189         agreement between simulation and experiment (Fig. 15). In its
+Nevertheless, the size of the combined chemical and confor-              general formalism, any quantity that can be inferred from
+mational spaces to be explored can easily become gigantic and            structural data, as well as any combination of multiple quanti-
+increase dramatically with each new species of interest added to         ties, can be used as a target. For example, one of us has recently
+the analysis. It is quite clear that a complete exploration is           used metainference to simultaneously address independent
+essentially beyond the scope of computational facilities and             data from small-angle X-ray and small-angle neutron scattering
+that chemical knowledge would and should still be a guide to             experiments to reveal the polymorphic nature of the self-
+exploring the most relevant parts of the chemical space in               assembly of non-ionic surfactants.200 The extension of this
+particular depth. However, one should not hesitate to explore            methodology to reveal the detailed nature of chemical, and in
+outside the “expected” zones of signicance where new data               particular organometallic compounds has not been attempted
+could probably be discovered and veried by quantitative                 yet, but all the technical elements are now in place.
+calculations of any physical property. An illustrative area is that          Possible elements of risk relate to the nature of the signal for
+of the allowed and forbidden pericyclic reactions which have             these systems, which, conned to NMR, to avoid an excessive
+essentially initiated the eld of computational studies of reac-         broadening of the peaks, may be recorded at signicantly lower
+tion mechanisms with semi-empirical methods and are now
+being studied quantitatively.190 It should be noted, however,
+that in these studies the reagents are well identied so that the
+improvements could focus on the accurate description of
+pathways of diﬀerent electronic nature (concerted, zwitterionic,
+diradical, etc.). The diﬃculty is thus considerably higher when
+the chemical species are not known at a molecular level.
+    The computational costly part is associated with the calcu-
+lations of the electronic structures and atomic forces. DFT with
+a preference for non-hybrid functionals was thus selected as
+a method of choice for the electronic structure calculations. So
+far, ML studies using post-HF wave-function-based methods are
+limited. However, they did show promising results in topics
+                                                                         Fig. 15 Possible workﬂow for a computational model incorporating
+where non-bonded interactions are essential, such as for inert
+                                                                         the development of a machine learning potential from ab initio data,
+molecules physisorbed or chemisorbed in porous materials,191             further reﬁned over experimental insights by exploiting data-driven
+as well as in strongly correlated systems like actinides under           approaches, to achieve quantitative agreement with experiment and
+radiation,192 zero eld splittings for lanthanide complexes,193          high predictivity.
+
+
+
+© 2025 The Author(s). Published by the Royal Society of Chemistry                                       Chem. Sci., 2025, 16, 8196–8216 | 8211
+Chemical Science                                                                                                        Perspective
+
+temperatures than the relevant operando conditions. For highly      Research Grant MetalSynergy (No. 314009), and the Young
+uxional systems such as main-group compounds, this may             Researcher Talent Grant H2O-MOF (No. 344993).
+lead to a bias in the structural diversity of the sample being
+observed. From a computational perspective, a signicant            Notes and references
+complicating factor can be the need of establishing suﬃciently
+accurate, and at the same time computationally non-                  1 H. Rheinboldt, J. Chem. Educ., 1950, 27, 476–488.
+demanding, on-the-y quantum-mechanical methods for                  2 G. Bram, E. Peralez, J.-C. Négrel and M. Chanon, C. R. Acad.
+determining chemical shis or J couplings, which may be                Sci. Paris, 1997, 325, 235–240.
+particularly sensitive to the local uctuations in both the          3 G. Wagner and A. Saytzeﬀ, Liebigs Ann., 1875, 175, 351–374.
+geometric structure and the solvent.188,189,201 Possible ways        4 P. Barbier, C.R. Acad. Sci. Paris, 1897, 128, 110–111.
+around this diﬃculty, without sacricing the quality of the          5 V. Grignard and C. Rend, Séances Heb. Acad. Sci. Paris, 1900,
+predicted properties of interest, may again be provided by             130, 1322–1325.
+machine learning approaches, for example, by exploiting the          6 N. Herzberg, Le gang des Grignard démasqué, Le Monde,
+active-learning sampling procedure to acquire information not          2024.
+only on the energy and forces associated with a given geometry       7 D. Seyferth, Organometallics, 2009, 28, 1598–1605.
+but also on specic properties of interest, which may promi-         8 W. Schlenk and W. Schlenk Jr, Ber. Dtsch. Chem. Ges. B,
+nently include NMR signals.202–206                                     1929, 62, 920–924.
+                                                                     9 Th. Zerewitinoﬀ and B. Dtsch, Chem. Ges., 1908, 41, 2244–
+10.4   What one could hope to do                                       2245.
+                                                                    10 L. J. Guggenberger and R. E. Rundle, J. Am. Chem. Soc.,
+By establishing protocols and computational methods that are
+                                                                       1964, 86, 5344–5345.
+practical and accurate for exploring the high complexity of
+                                                                    11 L. J. Guggenberger and R. E. Rundle, J. Am. Chem. Soc.,
+multi-component multi-step chemical transformations, one
+                                                                       1968, 90, 5375–5378.
+may be able to identify the nature and role of each species that
+                                                                    12 G. Stucky and R. E. Rundle, J. Am. Chem. Soc., 1964, 86,
+swims in the large and oen obscure pool of solution chemistry.
+                                                                       4825–4830.
+This is a desirable extension of our earlier study in which we
+                                                                    13 J. Toney and G. D. Stucky, Chem. Commun., 1967, 1168–
+attempted to identify the nature of the LiX species present in
+                                                                       1169.
+a pool of THF.81 These methodologies would hopefully give the
+                                                                    14 J. Toney and G. D. Stucky, J. Organomet. Chem., 1971, 28, 5–20.
+keys to enter the challenging and still poorly explored world of
+                                                                    15 E. C. Ashby and M. B. Smith, J. Am. Chem. Soc., 1964, 86,
+chemical species whose behaviour and reactivity are strongly
+                                                                       4363–4370.
+inuenced by the solvent and the experimental conditions. In
+                                                                    16 F. W. Walker and E. C. Ashby, J. Am. Chem. Soc., 1969, 91,
+this way, the chemistry of many metal species, which has been
+                                                                       3845–3850.
+challenging for decades, could be approached computationally
+                                                                    17 M. B. Smith and W. E. Becker, Tetrahedron Lett., 1965, 3843–
+with greater chance to give a fuller image of “what is going on”.
+                                                                       3847.
+                                                                    18 M. B. Smith and W. E. Becker, Tetrahedron, 1967, 23, 4215–
+Data availability                                                      4227.
+                                                                    19 J. F. Liebman, T. Holm and S. W. Slayden, in The
+No primary research results, soware or code has been                  thermochemistry of organomagnesium compounds, ed. Z.
+included, and no new data were generated or analysed as part of        Rappoport and I. Marek, Wiley, 2008, pp. 101–129.
+this perspective.                                                   20 E. C. Ashby and G. E. Parris, J. Am. Chem. Soc., 1971, 93,
+                                                                       1206–1213.
+Author contributions                                                21 E. C. Ashby, J. Nackashi and G. E. Parris, J. Am. Chem. Soc.,
+                                                                       1975, 97, 3162–3171.
+MC and OE proposed the topics and discussed the contents of         22 A. Wellmar, A. Hallberg and I. Persson, J.Organomet. Chem.,
+various sections. OE wrote the main body of the text. SLB wrote        1991, 415, 167–180.
+the section dedicated to MLPs. MC contributed to the writing in     23 L. Abraham, W. Hörner, T. S. Ertel and H. Bertagnolli,
+all the sections.                                                      Polyhedron, 1996, 22, 3993–4001.
+                                                                    24 E. C. Ashby, Q. Rev. Chem. Soc., 1967, 21, 259–285.
+Conﬂicts of interest                                                25 P. Sobota and B. Duda, J. Organomet. Chem., 1987, 332, 239–
+                                                                       245.
+There are no conicts to declare.                                   26 S. Sakamoto, T. Imamoto and K. Yamaguchi, Org. Lett.,
+                                                                       2001, 3, 1793–1795.
+Acknowledgements                                                    27 C. Schnegelsberg, T. D. Blümke and K. Koszinowski, J. Mass
+                                                                       Spectrom., 2015, 50, 1393–1395.
+The authors acknowledge the support of the Research Council         28 C. Schnegelsberg, S. Bachmann, M. Kolter, T. Auth,
+of Norway through the Centre of Excellence Hylleraas Centre for        M. John, D. Stalke and K. Koszinowski, Chem.–Eur. J.,
+Quantum Molecular Sciences (No. 262695), the Pioneer                   2016, 22, 7752–7762.
+
+
+8212 | Chem. Sci., 2025, 16, 8196–8216                                © 2025 The Author(s). Published by the Royal Society of Chemistry
+Perspective                                                                                                      Chemical Science
+
+ 29 M. Vestergren, B. Gustafsson, Ö. Davidsson and                     M. Taillefumier, A. S. Jakobovits, A. Lazzaro, H. Pabst,
+    M. Håkansson, Angew. Chem., Int. Ed., 2000, 112, 3577–             T. Müller, R. Schade, M. Guidon, S. Andermatt,
+    3579.                                                               N. Holmberg, G. K. Schenter, A. Hehn, A. Bussy,
+ 30 E. C. Ashby, I. G. Lopp and J. D. Buhler, J. Am. Chem. Soc.,        F. Belleamme, G. Tabacchi, A. Glöß, M. Lass, I. Bethune,
+    1975, 97, 1964–1966.                                                C. J. Mundy, C. Plessl, M. Watkins, J. VandeVondele,
+ 31 E. C. Ashby and J. R. Bowers Jr, J. Am. Chem. Soc., 1981, 103,      M. Krack and J. Hutter, J. Chem. Phys., 2020, 152, 194103.
+    2242–2250.                                                       58 D. Marx, M. E. Tuckerman, J. Hutter and M. Parrinello,
+ 32 E. C. Ashby and A. B. Goel, J. Am. Chem. Soc., 1981, 103,           Nature, 1999, 397, 601–604.
+    4983–4985.                                                       59 M. E. Tuckerman, D. Marx and M. Parrinello, Nature, 2002,
+ 33 E. C. Ashby, Acc. Chem. Res., 1988, 21, 414–421.                    417, 925–929.
+ 34 D. A. L. Otte and K. A. Woerpel, Org. Lett., 2015, 17, 3906–     60 A. P. Lyubartsev, K. Laasonen and A. D. Laaksonen, J. Chem.
+    3909.                                                               Phys., 2001, 114, 3120–3126.
+ 35 N. D. Bartolo and K. A. Woerpel, J. Org. Chem., 2020, 85,        61 I. Bako, J. Hutter and G. Palinkas, J. Chem. Phys., 2002, 117,
+    7848–7862.                                                          9838–9843.
+ 36 J. T. B. H. Jastrzebski, J. Boersma and G. van Koten, in         62 C. N. Rowley and B. Roux, J. Chem. Theory Comput., 2012, 8,
+    Structural organomagnesium chemistry, ed. Z. Rappoport              3526–3535.
+    and I. Marek, Wiley, 2008, pp. 1–99.                             63 Y. Zeng, J. Hu, Y. Yuan, X. Zhang and S. Ju, Chem. Phys. Lett.,
+ 37 S. Yamabe and S. Yamazaki, in Theoretical studies of the            2012, 538, 60–66.
+    addition of RMgX to carbonyl compounds, ed. Z. Rappoport         64 A. Pasquarello, I. Petri, P. S. Salmon, O. Parisel, R. Car,
+    and I. Marek, Wiley, 2008, pp. 369–402.                             É. Tóth, D. H. Powell, H. E. Fischer, L. Helm and
+ 38 S. R. Davis, J. Am. Chem. Soc., 1991, 113, 4145–4150.               A. E. Merbach, Science, 2001, 291, 856–859.
+ 39 J. Axten, J. Troy, P. Jiang, M. Trachtman and C. W. Bock,        65 S. Amira, D. Spångberg, V. Zelin, M. Probst and
+    Struct. Chem., 1994, 5, 99–108.                                     K. Hermansson, J. Phys. Chem. B, 2005, 109, 14235–14242.
+ 40 J. Tammiku-Taul, P. Burk and A. Tuulmets, J. Phys. Chem. A,      66 R. Spezia, M. Duvail, P. Vitorge, T. Cartailler, J. Tortajada,
+    2004, 108, 133–139.                                                 G. Chillemi, P. D‘Angelo and M.-P. Gaigeot, J. Phys. Chem.
+ 41 C. G. Swain and H. B. Boyles, J. Am. Chem. Soc., 1951, 73,          A, 2006, 110, 13081–13088.
+    870–872.                                                         67 J. Blumberger, I. Tavernelli, M. L. Klein and M. Sprik, J.
+ 42 E. C. Ashby, R. B. Duke and H. M. Neumann, J. Am. Chem.             Chem. Phys., 2006, 124, 064507.
+    Soc., 1967, 89, 1964–1965.                                       68 S. Raugei and M. L. Klein, J. Chem. Phys., 2002, 116, 196–
+ 43 S. Yamazaki and S. Yamabe, J. Org. Chem., 2002, 67, 9346–           202.
+    9353.                                                            69 T. Ikeda, M. Hirata and T. Kimura, J. Chem. Phys., 2005, 122,
+ 44 P. Hohenberg and W. Kohn, Phys. Rev., 1964, 136, B864.              024510.
+ 45 W. Kohn and L. J. Sham, Phys. Rev., 1965, 140, A1133.            70 C. Terrier, P. Vitorge, M.-P. Gaigeot, R. Spezia and
+ 46 A. D. Becke, J. Chem. Phys., 1992, 96, 2155–2160.                   R. Vuilleumier, J. Chem. Phys., 2010, 133, 044509.
+ 47 C. Lee, W. Yang and R. G. Parr, Phys. Rev. B: Condens. Matter    71 T. Todorova, P. H. Hünenberger and J. Hutter, J. Chem.
+    Mater. Phys., 1988, 37, 785.                                        Theory Comput., 2008, 4, 779–789.
+ 48 B. Miller, E. R. Matjeka and J. G. Haggerty, J. Org. Chem.,      72 A. Bankura, V. Carnevale and M. L. Klein, J. Chem. Phys.,
+    1984, 49, 3121–3127.                                                2013, 138, 014501.
+ 49 D. O. Cowan and H. S. Mosher, J. Org. Chem., 1962, 27, 1–5.      73 C. Spickermann, J. Thar, S. B. C. Lehmann, S. Zahn,
+ 50 H. G. Richey Jr and J. P. DeStephano, J. Org. Chem., 1990, 55,      J. Hunger, R. Buchner, P. A. Hunt, T. Welton and
+    3281–3286.                                                          B. Kirchner, J. Chem. Phys., 2008, 129, 104505.
+ 51 B. Bogdanović, P. Bons, S. Konstantinović, M. Schwickardi      74 M. H. Ghatee and A. R. Zolghadr, J. Phys. Chem. C, 2013,
+    and U. Westeppe, Chem. Ber., 1993, 126, 1371–1383.                  117, 2066–2077.
+ 52 T. Mori and S. Kato, Chem. Phys. Lett., 2007, 437, 159–163.      75 M. Bühl, A. Chaumont, R. Schurhammer and G. Wipﬀ, J.
+ 53 R. Car and M. Parrinello, Phys. Rev. Lett., 1985, 55, 2471–         Phys. Chem. B, 2005, 109, 18591–18599.
+    2474.                                                            76 P. P. Kumar, A. G. Kalinichev and R. J. Kirkpatrick, J. Phys.
+ 54 W. Andreoni and A. Curioni, Parallel Comput., 2000, 26,             Chem. B, 2009, 113, 794–802.
+    819–842.                                                         77 R. Spezia, C. Bresson, C. Den Auwer and M.-P. Gaigeot, J.
+ 55 M. Krack and M. Parrinello, in Quickstep: make the atoms            Phys. Chem. B, 2008, 112, 6490–6499.
+    dance, ed. J. Grotendorst, Citeseer, 2004, vol. 25, pp. 29–51.   78 M.-E. Moret, I. Tavernelli and U. Röthlisberger, J. Phys.
+ 56 J. VandeVondele, M. Krack, F. Mohamed, M. Parrinello,               Chem. B, 2009, 113, 7737–7744.
+    T. Chassaing and J. Hutter, Comput. Phys. Commun., 2005,         79 M.-E. Moret, I. Tavernelli, M. Chergui and U. Röthlisberger,
+    167, 103–128.                                                       Chem.–Eur. J., 2010, 16, 5889–5894.
+ 57 T. D. Kühne, M. Iannuzzi, M. Del Ben, V. V. Rybkin,              80 T. Kirsch, J. M. H. Olsen, V. Bolnykh, S. Meloni, E. Ippoliti,
+    P. Seewald, F. Stein, T. Laino, R. Z. Khaliullin, O. Schütt,        U. Rothlisberger, M. Cascella and J. Gauss, J. Chem. Theory
+    F. Schiﬀmann, D. Golze, J. Wilhelm, S. Chulkov,                     Comput., 2021, 18, 13–24.
+    M. H. Bani-Hashemian, V. Weber, U. Borštnik,
+
+
+© 2025 The Author(s). Published by the Royal Society of Chemistry                                 Chem. Sci., 2025, 16, 8196–8216 | 8213
+Chemical Science                                                                                                            Perspective
+
+ 81 M. de Giovanetti, S. H. Hopen Eliasson, S. L. Bore,                 112 A. Krasovskiy and P. Knochel, Angew. Chem., Int. Ed., 2004,
+    O. Eisenstein and M. Cascella, Chem. Sci., 2024, 15,                    43, 3333–3336.
+    20355–20364.                                                        113 A. Krasovskiy, B. F. Straub and P. Knochel, Angew. Chem.,
+ 82 R. Peltzer, O. Eisenstein, A. Nova and M. Cascella, J. Phys.            Int. Ed., 2006, 45, 159–162.
+    Chem. B, 2017, 121, 4226–4237.                                      114 A. Hermann, R. Seymen, L. Brieger, J. Kleinheider,
+ 83 J. P. Perdew, K. Burke and M. Ernzerhof, Phys. Rev. Lett.,              B. Grabe, W. Hiller and C. Strohmann, Angew. Chem., Int.
+    1996, 77, 3865–3868.                                                    Ed., 2023, 62, e202302489.
+ 84 S. Grimme, J. Antony, S. Ehrlich and H. Krieg, J. Chem.             115 F. Blasberg, M. Bolte, M. Wagner and H.-W. Lerner,
+    Phys., 2010, 132, 154104.                                               Organometallics, 2012, 31, 1001–1005.
+ 85 M. Sprik, Faraday Discuss., 1998, 110, 437–445.                     116 V. I. Mikheeva, S. M. Arkhipov and A. E. Pruntsev, Russ.
+ 86 A. Laio and M. Parrinello, Proc. Natl. Acad. Sci. U. S. A., 2002,       Chem. Bull., 1975, 24, 1535–1536.
+    99, 12562–12566.                                                    117 N. Xin, Y. Sun, M. He, C. J. Radke and J. M. Prausnitz, Fluid
+ 87 R. M. Salinger and H. S. Mosher, J. Am. Chem. Soc., 1964, 86,           Ph. Equilib., 2018, 461, 1–7.
+    1782–1786.                                                          118 M. de Giovanetti, S. H. Hopen Eliasson, A. C. Castro,
+ 88 T. Holm, Acta Chem. Scand., 1969, 23, 579–586.                          O. Eisenstein and M. Cascella, J. Am. Chem. Soc., 2023,
+ 89 E. C. Ashby, J. Laemmle and H. M. Neumann, J. Am. Chem.                 145, 16305–16309.
+    Soc., 1971, 93, 4601–4602.                                          119 M. Yang, L. Bonati, D. Polino and M. Parrinello, Catal.
+ 90 E. C. Ashby, J. Laemmle and H. M. Neumann, J. Am. Chem.                 Today, 2022, 387, 143–149.
+    Soc., 1972, 94, 5421–5434.                                          120 S. Vandenhaute, M. Cools-Ceuppens, S. DeKeyser,
+ 91 M. B. Smith and W. E. Becker, Tetrahedron, 1966, 22, 3027–              T. Verstraelen and V. Van Speybroeck, npj Comput. Mater.,
+    3036.                                                                   2023, 9, 19.
+ 92 D. F. Evans and G. V. Fazakerley, Chem. Commun., 1968,              121 S. Perego, L. Bonati, S. Tripathi and M. Parrinello, ACS
+    974–975.                                                                Catal., 2024, 14, 14652–14664.
+ 93 D. F. Evans and G. V. Fazakerley, J. Chem. Soc. A, 1971, 184–       122 J. Behler and M. Parrinello, Phys. Rev. Lett., 2007, 98,
+    189.                                                                    146401.
+ 94 P. R. Markies, R. M. Altink, A. Villena, O. S. Akkerman,            123 J. S. Smith, O. Isayev and A. E. Roitberg, Chem. Sci., 2017, 8,
+    F. Bickelhaupt, W. J. Smeets and A. L. Spek, J.Organomet.               3192–3203.
+    Chem., 1991, 402, 289–312.                                          124 S. Batzner, A. Musaelian, L. Sun, M. Geiger, J. P. Mailoa,
+ 95 T. Psarras and R. E. Dessy, J. Am. Chem. Soc., 1966, 88, 5132–          M. Kornbluth, N. Molinari, T. E. Smidt and B. Kozinsky,
+    5135.                                                                   Nat. Commun., 2022, 13, 2453.
+ 96 R. M. Peltzer, J. Gauss, O. Eisenstein and M. Cascella, J. Am.      125 X. Fu, Z. Wu, W. Wang, T. Xie, S. Keten, R. Gomez-
+    Chem. Soc., 2020, 142, 2984–2994.                                       Bombarelli and T. Jaakola, arXiv, 2023, vol. 2210,p. 07237.
+ 97 H.-B. Bürgi and J. D. Dunitz, Acc. Chem. Res., 1983, 16, 153–       126 K. Schütt, O. Unke and M. Gastegger, Proceedings of the 38th
+    161.                                                                    Conference on Machine Learning, 2021, vol. 139, pp. 9377–
+ 98 H.-B. Bürgi, J.-M. Lehn and G. Wipﬀ, J. Am. Chem. Soc.,                 9388.
+    1974, 96, 1956–1957.                                                127 A. Musaelian, S. Batzner, A. Johansson, L. Sun, C. J. Owen,
+ 99 N. T. Anh and O. Eisenstein, Nouv. J. Chim., 1977, 1, 61–70.            M. Kornbluth and B. Kozinsky, Nat. Commun., 2023, 14,
+100 D. González-Pinardo, F. M. Bickelhaupt and I. Fernández,              579.
+    Chem. Sci., 2024, 15, 12380–12387.                                  128 I. Batatia, D. P. Kovacs, G. Simm, C. Ortner and G. Csányi,
+101 O. Eisenstein, C. R. Acad. Sci., 2024, 27, 5–19.                        Adv. Neural Inf. Process. Syst., 2022, 11423–11436.
+102 T. Holm, J. Chem. Soc., Perkin Trans., 1981, 2, 464–467.            129 A. Merchant, S. Batzner, S. S. Schoenholz, M. Aykol,
+103 T. Holm, Acta Chem. Scand., Ser. B, 1983, 37, 567–584.                  G. Cheon and E. D. Cubuk, Nature, 2023, 624, 80–85.
+104 T. X. Gentner and R. E. Mulvey, Angew. Chem., Int. Ed., 2021,       130 B. Deng, P. Zhong, K. Jun, J. Riebesell, K. Han, C. J. Bartel
+    60, 9247–9262.                                                          and G. Ceder, Nat. Mach. Intell., 2023, 5, 1031–1041.
+105 S. D. Robertson, M. Uzelac and R. E. Mulvey, Chem. Rev.,            131 I. Batatia, P. Benner, Y. Chiang, A. M. Elena, D. P. Kovács,
+    2019, 119, 8332–8405.                                                   J. Riebesell, X. R. Advincula, M. Asta, M. Avaylon,
+106 J. M. Gil-Negrete and E. Hevia, Chem. Sci., 2021, 12, 1982–             W. J. Baldwin, F. Berger, N. Bernstein, A. Bhowmik,
+    1992.                                                                   S. M. Blau, V. Cǎrare, J. P. Darby, S. De, F. D. Pia,
+107 S. Harder, Chem. Rev., 2010, 110, 3852–3876.                            V. L. Deringer, R. Elijošius, Z. El-Machachi, F. Falcioni,
+108 C. Brinkmann, A. G. M. Barrett, M. S. Hill and                          E. Fako, A. C. Ferrari, A. Genreith-Schriever, J. George,
+    P. A. Procopiou, J. Am. Chem. Soc., 2012, 134, 2193–2207.               R. E. A. Goodall, C. P. Grey, P. Grigorev, S. Han,
+109 M. Köhler, J. Langer, H. Görls and M. Westerhausen,                     W. Handley, H. H. Heenen, K. Hermansson, C. Holm,
+    Organometallics, 2014, 33, 6381–6388.                                   J. Jaafar, S. Hofmann, K. S. Jakob, H. Jung, V. Kapil,
+110 M. Westerhausen, A. Koch, H. Görls and S. Krieck, Chem.–                A. D. Kaplan, N. Karimitari, J. R. Kermode, N. Kroupa,
+    Eur. J., 2017, 23, 1456–1483.                                           J. Kullgren, M. C. Kuner, D. Kuryla, G. Liepuoniute,
+111 K. G. Pearce, S. E. Neale, C. L. McMullin, M. F. Mahon and              J. T. Margraf, I.-B. Magdǎu, A. Michaelides, J. H. Moore,
+    M. S. Hill, Chem. Commun., 2024, 60, 7882–7885.                         A. A. Naik, S. P. Niblett, S. W. Norwood, N. O'Neill,
+
+
+8214 | Chem. Sci., 2025, 16, 8196–8216                                    © 2025 The Author(s). Published by the Royal Society of Chemistry
+Perspective                                                                                                        Chemical Science
+
+    C. Ortner, K. A. Persson, K. Reuter, A. S. Rosen, L. L. Schaaf,   156 X. Hu, X. Zhao, X. Lv, Y.-B. Wu, Y. Bu and G. Lu, Chem.–Eur.
+    C. Schran, B. X. Shi, E. Sivonxay, T. K. Stenczel, V. Svahn,          J., 2023, 29, e202203879.
+    C. Sutton, T. D. Swinburne, J. Tilly, C. van der Oord,            157 J.-W. Handgraaf and E. J. Meijer, J. Am. Chem. Soc., 2007,
+    E. Varga-Umbrich, T. Vegge, M. Vondrák, Y. Wang,                     129, 3099–3103.
+    W. C. Witt, F. Zills and G. Csányi, arXiv, 2024,                 158 A. Pavlova and E. J. Meijer, ChemPhysChem, 2012, 13, 3492–
+    2401.00096v2.                                                         3496.
+132 J. L. A. Gardner, K. T. Baker and V. L. Deringer, Mach.           159 J. Chen and P. H.-L. Sit, J. Phys. Chem. A, 2017, 121, 3515–
+    Learn.: Sci. Technol., 2024, 5, 015003.                               3525.
+133 H. Kaur, F. Della Pia, I. Batatia, X. R. Advincula, B. X. Shi,    160 V. Sinha, N. Govindarajan, B. de Bruin and E. J. Meijer, ACS
+    J. Lan, G. Csányi, A. Michaelides and V. Kapil, Faraday              Catal., 2018, 8, 6908–6913.
+    Discuss., 2025, 256, 120–138.                                     161 C. Ma, S. Piccinin and S. Fabris, ACS Catal., 2012, 2, 1500–
+134 H. J. Reich, J. P. Borst, R. R. Dykstra and P. D. Green, J. Am.       1506.
+    Chem. Soc., 1993, 115, 8728–8741.                                 162 N. Yamamoto, N. Koga and M. Nagaoka, J. Phys. Chem. B,
+135 I. Fernández, E. Martı́nez-Viviente, F. Breher and                   2012, 116, 14178–14182.
+    P. S. Pregosin, Chem.–Eur. J., 2005, 11, 1495–1506.               163 N. Govindarajan, A. Tiwari, B. Ensing and E. J. Meijer, Inorg.
+136 S. Desjardins, K. Flinois, H. Oulyadi, D. Davoust,                    Chem., 2018, 57, 13063–13066.
+    C. Giessner-Prettre, O. Parisel and J. Maddaluno,                 164 M. Schilling, R. A. Cunha and S. Luber, J. Chem. Theory
+    Organometallics, 2003, 22, 4090–4097.                                 Comput., 2020, 16, 2436–2449.
+137 F. Giberti, G. A. Tribello and M. Parrinello, J. Chem. Theory     165 K. R. Gorantla and B. S. Mallik, J. Phys. Chem. A, 2023, 127,
+    Comput., 2013, 9, 2526–2530.                                          3788–3795.
+138 A. Münch, L. Knauer, H. Ott, C. Sindlinger, R. Herbst-Irmer,      166 O. Sala, H. P. Lüthi, A. Togni, M. Iannuzzi and J. Hutter, J.
+    C. Strohmann and D. Stalke, J. Am. Chem. Soc., 2020, 142,             Comput. Chem., 2015, 36, 785–794.
+    15897–15906.                                                      167 J. Rio, Q. Pessemesse, M. Cascella, P.-A. Payard and
+139 J. Lebon, A. Mortis, C. Maichle-Mössmer, M. Manßen,                   M.-E. L. Perrin, ChemRxiv, 2024, DOI: 10.26434/chemrxiv–
+    P. Sirsch and R. Anwander, Angew. Chem., Int. Ed., 2023,              2024–0xd0x–v3.
+    62, e202214599.                                                   168 Q. Pessemesse, A. Perochon, C. Copéret, M.-E. L. Perrin and
+140 J. N. Harvey, F. Himo, F. Maseras and L. Perrin, ACS Catal.,          P.-A. Payard, ChemRxiv, 2024, DOI: 10.26434/chemrxiv–
+    2019, 9, 6803–6813.                                                   2024–lthtv.
+141 I. Funes-Ardoiz and F. Schoenebeck, Chem, 2020, 6, 1904–          169 U. Röthlisberger and M. L. Klein, J. Am. Chem. Soc., 1995,
+    1913.                                                                 117, 42–48.
+142 G. Norjmaa, G. Ujaque and A. Lledós, Top. Catal., 2022, 65,      170 T. J. Summers, D. Zhang, J. A. Sobrinho, A. de Bettencourt-
+    118–140.                                                              Dias, R. Rousseau, V.-A. Glezakou and D. C. Cantu, J. Chem.
+143 M. Besora, P. Vidossich, A. Lledós, G. Ujaque and                    Inf. Model., 2024, 64, 8926–8936.
+    F. Maseras, J. Phys. Chem. A, 2018, 122, 1392–1399.               171 H. J. Reich, Chem. Rev., 2013, 113, 7130–7178.
+144 F. De Angelis, S. Fantacci and A. Sgamellotti, Coord. Chem.       172 C. A. Ogle, B. K. Huckabee, H. C. Johnson IV, P. F. Sims,
+    Rev., 2006, 250, 1497–1513.                                           S. D. Winslow and A. A. Pinkerton, Organometallics, 1993,
+145 A. A. Hassanali, J. Cuny, V. Verdolino and M. Parrinello,             12, 1960–1963.
+    Phil. Trans. R. Soc. A, 2014, 372, 20120482.                      173 V. H. Gessner, C. Däschlein and C. Strohmann, Chem.–Eur.
+146 P. Vidossich, A. Lledós and G. Ujaque, Acc. Chem. Res., 2016,        J., 2009, 15, 3320–3334.
+    49, 1271–1278.                                                    174 A. Harrison-Marchand and F. Mongin, Chem. Rev., 2013,
+147 P. Vidossich and M. De Vivo, Chem Catal., 2021, 1, 69–87.             113, 7470–7562.
+148 M. Schilling, R. Ketkaew and S. Luber, Chimia, 2021, 75,          175 F. Mongin and A. Harrison-Marchand, Chem. Rev., 2013,
+    195–201.                                                              113, 7563–7727.
+149 A. Stirling, N. N. Nair, A. Lledós and G. Ujaque, Chem. Soc.     176 G. Hamdoun, M. Sebban, E. Cossoul, A. Harrison-
+    Rev., 2014, 43, 4940–4952.                                            Marchand, J. Maddaluno and H. Oulyadi, Chem.
+150 B. Ensing, F. Buda, M. C. M. Gribnau and E. J. Baerends, J.           Commun., 2014, 50, 4073–4075.
+    Am. Chem. Soc., 2004, 126, 4355–4365.                             177 M. Y. Yang, U. Raucci and M. Parrinello, Nat. Catal., 2023,
+151 A. Comas-Vives, A. Stirling, A. Lledós and G. Ujaque, Chem.–         6, 829–836.
+    Eur. J., 2010, 16, 8738–8747.                                     178 A. de la Lande, C. Fressigné, H. Gérard, J. Maddaluno and
+152 P. Vidossich, G. Ujaque and A. Lledós, Chem. Commun.,                O. Parisel, Chem.–Eur. J., 2007, 13, 3459–3469.
+    2012, 48, 1979–1981.                                              179 H. K. Khartabil, M. T. C. Martins-Costa, P. C. Gros, Y. Fort
+153 G. Kovács, A. Stirling, A. Lledós and G. Ujaque, Chem.–Eur.         and M. F. Ruiz-López, Theor. Chem. Acc., 2008, 121, 321–
+    J, 2012, 18, 5612–5619.                                               326.
+154 P. Vidossich, G. Ujaque and A. Lledós, Chem. Commun.,            180 H. K. Khartabil, M. T. C. Martins-Costa, P. C. Gros, Y. Fort
+    2014, 50, 661–663.                                                    and M. F. Ruiz-López, J. Phys. Chem. B, 2009, 113, 6459–
+155 C. D. Daub, V. Hänninen and L. Halonen, J. Phys. Chem. B,            6467.
+    2019, 123, 729–737.
+
+
+© 2025 The Author(s). Published by the Royal Society of Chemistry                                   Chem. Sci., 2025, 16, 8196–8216 | 8215
+Chemical Science                                                                                                         Perspective
+
+181 H. Gérard, A. de La Lande, J. Maddaluno, O. Parisel and         194 Y. Luo, T. Kreuscher, C. Kang, W. L. Hase, K.-M. Weitzel
+    M. E. Tuckerman, J. Phys. Chem. A, 2006, 110, 4787–4794.             and R. Sun, Int. J. Mass Spectr., 2021, 462, 116515.
+182 G. Hamdoun, M. Sebban, V. Tognetti, A. Harrison-                 195 S. Y. Y. Wong, P.-N. Roy and A. Brown, Can. J. Chem., 2009,
+    Marchand, L. Joubert, J. Maddaluno and H. Oulyadi,                   87, 1022–1029.
+    Organometallics, 2015, 34, 1932–1941.                            196 B. Sharma, V. A. Tran, T. Pongratz, L. Galazzo, I. Zhurko,
+183 F. Paté, H. Gérard, H. Oulyadi, A. de la Lande, A. Harrison-       E. Bordignon, S. M. Kast, F. Neese and D. Marx, J. Chem.
+    Marchand, O. Parisel and J. Maddaluno, Chem. Commun.,                Theory Comput., 2021, 17, 6366–6386.
+    2009, 319–321.                                                   197 M. Bonomi, C. Camilloni, A. Cavalli and M. Vendruscolo,
+184 B. Lecachey, H. Oulyadi, P. Lameiras, A. Harrison-                   Sci. Adv., 2016, 2, 1501177.
+    Marchand, H. Gérard and J. Maddaluno, J. Org. Chem.,            198 A. Jussupow, A. C. Messias, R. Stehle, A. Geerlof,
+    2010, 75, 5976–5983.                                                 S. M. O. Solbak, C. Paissoni, A. Bach, M. Sattler and
+185 Y. Gimbert, D. Lesage, C. Fressigné and J. Maddaluno, J.            C. Camilloni, Sci. Adv., 2020, 6, eabc3786.
+    Org. Chem., 2017, 82, 8141–8147.                                 199 H. M. Cezar and M. Cascella, J. Chem. Inf. Model., 2023, 63,
+186 J. Garcı́a-Álvarez, E. Hevia and V. Capriati, Chem.–Eur. J.,        4979–4985.
+    2018, 24, 14854–14863.                                           200 H. M. Cezar, V. A. Bjørnestad, S. Prévost, R. Lund and
+187 I. Manasi, M. Bortoli, D. T. Bowron, M. Campana,                     M. Cascella, Small Struct., 2024, 2400553, early access.
+    O. S. Hammond, T. Headen, J. Hooton, E. Hevia,                   201 A. C. Castro, M. Cascella, R. Perutz, C. Reynaud and
+    M. Cascella, O. Eisenstein and K. J. Edler, ChemRxiv,                O. Eisenstein, Inorg. Chem., 2023, 62, 4835–4846.
+    2024, DOI: 10.26434/chemrxiv–2024–74pzh–v2.                      202 F. M. Paruzzo, A. Hofstetter, F. Musil, S. De, M. Ceriotti and
+188 A. C. Castro, H. Fliegl, M. Cascella, T. Helgaker, M. Repisky,       L. Emsley, Nat. Commun., 2018, 9, 4501.
+    S. Komorovsky, M. A. Medrano, A. G. Quiroga and M. Swart,        203 S. Liu, J. Li, K. C. Bennett, B. Ganoe, T. Stauch, M. Head-
+    Dalton Trans., 2019, 48, 8076–8083.                                  Gordon, A. Hexemer, D. Ushizima and T. Head-Gordon, J.
+189 A. C. Castro, D. Balcells, M. Repisky, T. Helgaker and               Phys. Chem. Lett., 2019, 10, 4558–4565.
+    M. Cascella, Inorg. Chem., 2020, 59, 17509–17518.                204 M. Cordova, M. Balodis, A. Hofstetter, F. Paruzzo,
+190 Q. Zhou, G. Kukier, I. Gordiy, R. Hoﬀmann, J. I. Seeman              S. O. Nilsson Lill, E. S. Eriksson, P. Berruyer, B. Simões de
+    and K. N. Houk, J. Org. Chem., 2024, 89, 1018–1034.                  Almeida, M. J. Quayle, S. T. Norberg, et al., Nat. Commun.,
+191 D. Rocca, A. Dixit, M. Badawi, S. Lebègue, T. Gould and             2021, 12, 2964.
+    T. Bučko, Phys. Rev. Mater., 2019, 3, 040801.                   205 S. M. Aguilera-Segura, D. Dragún, R. Gaumard, F. Di Renzo,
+192 M. Jiang, H. Gong, B. Zhou, H. Xiao, H. Zhang, Z. Liu and            I. M. Ondı́k and T. Mineva, Phys. Chem. Chem. Phys., 2022,
+    X. Zu, J. Nucl. Mater., 2020, 540, 152379.                           24, 8820–8831.
+193 S. Khan, R. Pollet, R. Vuilleumier, J. Kowalewski and            206 M. Lin, J. Xiong, M. Su, F. Wang, X. Liu, Y. Hou, R. Fu,
+    M. Odelius, J. Chem. Phys., 2017, 147, 244306.                       Y. Yang and J. Cheng, Chem. Sci., 2022, 13, 7863–7872.
+
+
+
+
+8216 | Chem. Sci., 2025, 16, 8196–8216                                 © 2025 The Author(s). Published by the Royal Society of Chemistry
+

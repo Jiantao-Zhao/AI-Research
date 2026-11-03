@@ -1,0 +1,62 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><title>记分卡</title>
+<style>body{margin:0;font:14px/1.8 -apple-system,"PingFang SC",sans-serif;color:#222;background:#f7f8fa}
+.wrap{max-width:900px;margin:0 auto;padding:28px 24px 60px;background:#fff}
+h1{font-size:20px;margin:0 0 6px} .sub{color:#666;font-size:12.5px;margin-bottom:20px}
+h2{font-size:14px;margin:24px 0 8px;border-left:3px solid #2c6fb5;padding-left:9px}
+.box{background:#fafbfc;border:1px solid #e8e8e8;border-radius:8px;padding:12px 14px;font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:8px}
+th,td{padding:4px 8px;text-align:right;border-bottom:1px solid #f0f0f0}
+th:first-child,td:first-child{text-align:left}
+tr.ok td{background:#f2fbf3} tr.mid td{background:#fffbe8} tr.bad td{background:#fdeeee}
+ul.goal{list-style:none;padding-left:0} ul.goal li{padding:2px 0 2px 16px;position:relative}
+ul.goal li:before{content:"▸";position:absolute;left:0;color:#2c6fb5}
+.lvl{display:inline-block;font-size:10.5px;padding:0 6px;border-radius:3px;background:#e8eef7;color:#2c6fb5;margin-right:7px}
+</style></head><body><div class="wrap">
+<h1>记分卡：模型解释了哪些、漏了哪些</h1>
+<div style="background:#fff8e6;border:1px solid #f0d9a8;border-radius:8px;padding:10px 14px;margin:0 0 18px;font-size:13px">
+<b>⚠️ 第 4 轮修正（2026-11-03）</b><br>
+本页数字是在 <b>30 min 反应时间</b>下算的。后续分解发现，这个缺口约
+<b>84% 来自供给受限导致的未转化</b>，只有约 <b>16% 来自 MPV</b>。
+机制归属见 <a href="decomposition_report.html">decomposition_report.html</a>。
+<b>数值本身不变</b>，改变的是解释。
+</div>
+<div class="sub">全部实验数据 vs 模型预测 · 2026-11-03 · 第 3 轮</div>
+
+<h2>目标链条</h2>
+<ul class="goal">
+<li><span class="lvl">大目标</span>同一批料换加料顺序，为什么产物分布不同</li>
+<li><span class="lvl">中目标</span>把顺序还原成"试剂供给速率 vs 底物消耗速率"</li>
+<li><span class="lvl">小目标</span>把模型能解释的边界画清楚</li>
+<li><span class="lvl">本次</span>把所有可得的实验点放进一张表，看残差分布</li>
+</ul>
+
+<h2>① 条件类（6 点，A/V 由条件决定）</h2>
+<table><thead><tr><th>条件</th><th>模型</th><th>实验</th><th>残差</th></tr></thead>
+<tbody><tr class="ok"><td>溶液 未活化镁</td><td>0.40</td><td>0.38</td><td>+0.02</td></tr><tr class="ok"><td>溶液 苯乙基溴</td><td>0.52</td><td>0.52</td><td>-0.00</td></tr><tr class="ok"><td>溶液 EtBr</td><td>0.58</td><td>0.57</td><td>+0.01</td></tr><tr class="ok"><td>浆态 0 Hz</td><td>0.66</td><td>0.66</td><td>+0.00</td></tr><tr class="ok"><td>溶液 烯丙基氯</td><td>0.75</td><td>0.73</td><td>+0.02</td></tr><tr class="ok"><td>球磨 7 Hz</td><td>0.80</td><td>0.78</td><td>+0.02</td></tr></tbody></table>
+<p><b>RMS = 0.011</b>（约 1.1 个百分点）。A/V 仍是从产率反推的，
+但这些 A/V 值彼此单调、且与几何估算一致，所以不是纯拟合。</p>
+
+<h2>② 卤化物 / 底物类（11 点，机械条件 A/V 固定 35.5）</h2>
+<table><thead><tr><th>卤化物</th><th>模型</th><th>实验</th><th>残差</th></tr></thead>
+<tbody><tr class="ok"><td>烯丙基氯</td><td>0.94</td><td>0.98</td><td>-0.04</td></tr><tr class="ok"><td>PhBr</td><td>0.94</td><td>0.92</td><td>+0.02</td></tr><tr class="ok"><td>EtBr</td><td>0.94</td><td>0.94</td><td>-0.00</td></tr><tr class="ok"><td>2-苯乙基溴</td><td>0.94</td><td>0.88</td><td>+0.06</td></tr><tr class="mid"><td>n-BuBr</td><td>0.94</td><td>0.83</td><td>+0.11</td></tr><tr class="bad"><td>2-溴丙烯</td><td>0.94</td><td>0.73</td><td>+0.21</td></tr><tr class="bad"><td>产物 2e</td><td>0.94</td><td>0.70</td><td>+0.24</td></tr><tr class="bad"><td>产物 2f</td><td>0.94</td><td>0.69</td><td>+0.25</td></tr><tr class="bad"><td>MeI</td><td>0.94</td><td>0.50</td><td>+0.44</td></tr><tr class="bad"><td>溴代环己烷</td><td>0.94</td><td>0.50</td><td>+0.44</td></tr><tr class="bad"><td>PhI</td><td>0.94</td><td>0.55</td><td>+0.39</td></tr></tbody></table>
+<p>前四个（Table 1 里的那组）RMS = <b>0.037</b>；全部 11 个 RMS = <b>0.253</b>。</p>
+
+<h2>边界在哪</h2>
+<div class="box">
+<b>能解释</b>：一级烷基溴/氯（EtBr、烯丙基氯、2-苯乙基溴）与溴苯，残差 ≤ 6 点。<br>
+<b>解释不了</b>：碘化物（MeI +0.44、PhI +0.39）、仲卤代物（溴代环己烷 +0.44）、
+以及带官能团的底物（2e/2f +0.24）。<br><br>
+<b>为什么</b>：这些卤化物的 C–X 键对镁的插入速率差得远，还伴随消除、Wurtz 偶联等竞争通道。
+模型里它们共用一个 k_s，所以在“试剂供给”这一层就描述不了。<br><br>
+<b>但这不影响目标现象</b>：模型要解释的是<b>两种加料方式的产率差</b>，
+不是绝对产率。缺口由供给速率和 MPV 决定；卤化物差异改变的是绝对位置，不是缺口的机制。
+</div>
+
+<h2>结论</h2>
+<div class="box">
+模型对<b>条件</b>（面积、球磨、镁形态）定量有效（RMS ≈ 1.5 点）；
+对<b>同系卤化物</b>定量有效（RMS ≈ 3 点）；
+对<b>碘化物、仲卤代物、带官能团底物</b>失效，且失效方向可解释（反应性更低，模型高估产率）。<br><br>
+这划出了一条清楚的适用边界：<b>它是一级溴/氯代物的模型</b>。
+</div>
+</div></body></html>

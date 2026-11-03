@@ -1,0 +1,136 @@
+{
+  "Chen2012_OBC_GrignardFormation": {
+    "landing_status": 403,
+    "attempts": [
+      {
+        "url": "https://pubs.rsc.org/en/content/articlepdf/2012/ob/c2ob26658j",
+        "status": 200,
+        "ctype": "text/html",
+        "bytes": 119573,
+        "magic": "\r\n\r\n"
+      }
+    ],
+    "ok": false,
+    "file": null,
+    "final_url": "https://sso.rsc.org/connect/authorize?client_id=NjRkNmVhZDQtNzMyNS00YzhlLWE2NDktNTc4MzQ4NThiMzY2&redirect_uri=https%3A%2F%2Fpubs.rsc.org%2FExternalAuthentication%2FOIDCLogin&response_mode=form_post&response_type=code&scope=openid%20profile%20api&state=OpenIdConnect.AuthenticationProperties%3Djf_mqi1bZY9ihOXm8Y9xUnq8Imphvvc2bpc6fY7lpxEV72uIrm58u8Src7C55s_FBu-6ased6-G4nvlvXaaVSOuGap0ZmfjqynLOX0gzCEtLtiK-T5wIcPgV71Jf7vzvfrgx4Zj5C0zm8aUQwQsyeONKRapOXIDqddpyxdvWMuGirP-H-wSNo_anby0xyIMRd5PGTaQ6V9AX70s3TMtQ4DCMnpIl3N_KEXX8Wjch4gN_R_S0NDILtuJhbhYJfKzncX3DsWqUg0d5ERLBDarCg9cm3jCYk-j0Z9zfcE6FDTqYT3dp-sWjXg-kXhYcKFeN6RriMhVNH9ZK3jcW3w9gH_1_IrpBlYRuCF0CGfKEr49lxKRO-UVfmzvwToaNZoNJ6WuMaxJUXg-4MUuuPaXoqKitf4OCVHdxQNAW2p3AZepSOHmu&nonce=639291182978037965.YzdmNmNhNTYtMDM1ZC00YmZlLWE2ZWYtYjY3NTgwNmM4OWRjZjgyN2ViY2YtNzRjOS00NDZhLWExZGMtMzdjMTBiNTkwYzEy&code_challenge=Jt20xAj6Ah56vOTojZ3tQld1lOOJj9glNSY5gD7gJ0c&code_challenge_method=S256&prompt=none&x-client-SKU=ID_NET461&x-client-ver=5.3.0.0&error=true&errorType=SilentLoginFailed",
+    "landing_error": "Page.title: Execution context was destroyed, most likely because of a navigation"
+  },
+  "Yamazaki2002_JOC_Addition": {
+    "landing_status": 403,
+    "attempts": [
+      {
+        "url": "https://pubs.acs.org/doi/pdf/10.1021/jo026017c",
+        "status": 200,
+        "ctype": "text/html",
+        "bytes": 139364,
+        "magic": "\r\n\r\n"
+      }
+    ],
+    "ok": false,
+    "file": null,
+    "final_url": "https://pubs.acs.org/joceah/article-abstract/67/26/9346/3586978/A-Computational-Study-on-Addition-of-Grignard?redirectedFrom=fulltext",
+    "title": "A Computational Study on Addition of Grignard Reagents to Carbonyl Compounds | The Journal of Organic Chemistry | ACS Pu",
+    "shows_open_access": true
+  },
+  "Peltzer2017_JPCB_Schlenk": {
+    "landing_status": 200,
+    "attempts": [
+      {
+        "url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jpcb.7b02716",
+        "status": 200,
+        "ctype": "application/pdf",
+        "bytes": 3886301,
+        "magic": "%PDF"
+      }
+    ],
+    "ok": true,
+    "file": "Peltzer2017_JPCB_Schlenk.pdf",
+    "final_url": "https://pubs.acs.org/jpcbfk/article/121/16/4226/1106519/How-Solvent-Dynamics-Controls-the-Schlenk",
+    "title": "How Solvent Dynamics Controls the Schlenk Equilibrium of Grignard Reagents: A Computational Study of CH3MgCl in Tetrahyd",
+    "shows_open_access": false
+  },
+  "ChemSci2025_FellowshipReview": {
+    "landing_status": 200,
+    "attempts": [
+      {
+        "url": "https://pubs.rsc.org/en/content/articlepdf/2025/sc/d5sc01078k",
+        "status": 200,
+        "ctype": "application/pdf",
+        "bytes": 1826357,
+        "magic": "%PDF"
+      }
+    ],
+    "ok": true,
+    "file": "ChemSci2025_FellowshipReview.pdf",
+    "final_url": "https://pubs.rsc.org/sc/article/16/19/8196/910015/The-fellowship-of-the-Grignard-21st-century",
+    "title": "The fellowship of the Grignard: 21st century computational tools for hundred-year-old chemistry | Chemical Science | The",
+    "shows_open_access": true
+  },
+  "JACS2020_GrignardPuzzle": {
+    "landing_status": 200,
+    "attempts": [
+      {
+        "url": "https://pubs.acs.org/doi/pdf/10.1021/jacs.9b11829",
+        "status": 200,
+        "ctype": "application/pdf",
+        "bytes": 2184300,
+        "magic": "%PDF"
+      }
+    ],
+    "ok": true,
+    "file": "JACS2020_GrignardPuzzle.pdf",
+    "final_url": "https://pubs.acs.org/jacsat/article/142/6/2984/610643/The-Grignard-Reaction-Unraveling-a-Chemical-Puzzle",
+    "title": "The Grignard Reaction – Unraveling a Chemical Puzzle | Journal of the American Chemical Society | ACS Publications",
+    "shows_open_access": false
+  },
+  "JCAT2025_MLP_Schlenk": {
+    "landing_status": 200,
+    "attempts": [
+      {
+        "url": "https://hal.science/hal-05441570/document",
+        "status": 200,
+        "ctype": "text/html",
+        "bytes": 12611,
+        "magic": "<!do"
+      },
+      {
+        "url": "https://hal.science/hal-05441570v1/document",
+        "status": 200,
+        "ctype": "text/html",
+        "bytes": 12611,
+        "magic": "<!do"
+      }
+    ],
+    "ok": false,
+    "file": null,
+    "final_url": "https://hal.science/hal-05441570",
+    "title": "The influence of the organic residue and the solvent in the Schlenk equilibrium for Grignard reagents in THF. A molecula",
+    "shows_open_access": false
+  },
+  "ClusterModel2013_CTC": {
+    "landing_status": 403,
+    "attempts": [
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S2210271X13000820/pdfft",
+        "status": 403,
+        "ctype": "text/html",
+        "bytes": 832979,
+        "magic": "<!DO"
+      }
+    ],
+    "ok": false,
+    "file": null,
+    "final_url": "https://www.sciencedirect.com/science/article/pii/S2210271X13000820",
+    "title": "Just a moment...",
+    "shows_open_access": false
+  },
+  "Blomberg1977_Synthesis_Barbier": {
+    "landing_status": 200,
+    "attempts": [],
+    "ok": false,
+    "file": null,
+    "final_url": "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-1977-24261",
+    "title": "Thieme E-Journals - Synthesis / Abstract",
+    "shows_open_access": true
+  }
+}

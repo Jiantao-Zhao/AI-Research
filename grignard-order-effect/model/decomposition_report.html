@@ -1,0 +1,67 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><title>修正：缺口从哪来</title>
+<style>body{margin:0;font:14px/1.8 -apple-system,"PingFang SC",sans-serif;color:#222;background:#f7f8fa}
+.wrap{max-width:920px;margin:0 auto;padding:28px 24px 60px;background:#fff}
+h1{font-size:20px;margin:0 0 6px} .sub{color:#666;font-size:12.5px;margin-bottom:20px}
+h2{font-size:14px;margin:24px 0 8px;border-left:3px solid #2c6fb5;padding-left:9px}
+.box{background:#fafbfc;border:1px solid #e8e8e8;border-radius:8px;padding:12px 14px;font-size:13px}
+.warn{background:#fff8e6;border:1px solid #f0d9a8}
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:8px}
+th,td{padding:4px 8px;text-align:right;border-bottom:1px solid #f0f0f0}
+th:first-child,td:first-child{text-align:left} .red{color:#c0392b;font-weight:600}
+ul.goal{list-style:none;padding-left:0} ul.goal li{padding:2px 0 2px 16px;position:relative}
+ul.goal li:before{content:"▸";position:absolute;left:0;color:#2c6fb5}
+.lvl{display:inline-block;font-size:10.5px;padding:0 6px;border-radius:3px;background:#e8eef7;color:#2c6fb5;margin-right:7px}
+</style></head><body><div class="wrap">
+<h1>修正：那 39 个点里，多少是"没反应完"，多少是副反应</h1>
+<div class="sub">自纠错 · 2026-11-03 · 第 4 轮</div>
+
+<h2>目标链条</h2>
+<ul class="goal">
+<li><span class="lvl">大目标</span>同一批料换加料顺序，为什么产物分布不同</li>
+<li><span class="lvl">中目标</span>把顺序还原成"试剂供给速率 vs 底物消耗速率"</li>
+<li><span class="lvl">小目标</span>确认我报的 −0.385 到底是不是选择性差异</li>
+<li><span class="lvl">本次</span>把缺口拆成「未转化」与「副反应」两部分</li>
+</ul>
+
+<h2>发现的问题</h2>
+<div class="box warn">
+我一直报的「一锅法比预制法低 38.5 个点」，是在 <b>t_hold = 30 min</b> 下算的。
+那时一锅法里有 <b>33% 的醛根本没反应完</b>。所以那个缺口主要是
+<b>「来不及反应」</b>，不是<b>「反应掉了但变成副产物」</b>。<br><br>
+上一轮我把 t_hold 拉长到 2 h 以上，缺口立刻从 −0.385 掉到 −0.087。
+二者必须分开。
+</div>
+
+<h2>拆解：关掉 MPV，缺口还剩多少</h2>
+<table><thead><tr><th>反应时间 (min)</th><th>预制法</th><th>一锅法</th><th>缺口</th><th>残留醛</th></tr></thead>
+<tbody><tr><td>30</td><td>0.993</td><td>0.669</td><td>-0.324</td><td>0.33</td></tr><tr><td>60</td><td>0.993</td><td>0.879</td><td>-0.114</td><td>0.12</td></tr><tr><td>120</td><td>0.993</td><td>0.997</td><td>+0.004</td><td>-0.00</td></tr><tr><td>360</td><td>0.993</td><td>0.997</td><td>+0.004</td><td>-0.00</td></tr></tbody></table>
+<p><b>k_MPV = 0 时缺口仍有 −0.324</b>（30 min）。这部分完全来自供给受限导致的未转化。</p>
+
+<table><thead><tr><th>反应时间 (min)</th><th>预制法</th><th>一锅法</th><th>缺口</th><th>残留醛</th></tr></thead>
+<tbody><tr><td>30</td><td>0.992</td><td>0.606</td><td>-0.385</td><td>0.33</td></tr><tr><td>60</td><td>0.991</td><td>0.791</td><td>-0.199</td><td>0.12</td></tr><tr><td>120</td><td>0.988</td><td>0.902</td><td>-0.087</td><td>-0.00</td></tr><tr><td>360</td><td>0.980</td><td>0.902</td><td>-0.078</td><td>-0.00</td></tr></tbody></table>
+<p><b>k_MPV = 9.3×10⁻⁵（算出来的值）时缺口 −0.385</b>，只比上一行多 6 个点。
+也就是说 <b>MPV 只贡献了约 16%，其余 84% 是未转化</b>。</p>
+
+<h2>但这反而给出一个更硬的预言</h2>
+<div class="box">
+如果缺口主要来自"来不及"，那么<b>把反应时间延长，缺口应该收窄</b>：
+
+<table><thead><tr><th>反应时间</th><th>30 min</th><th>60 min</th><th>120 min</th></tr></thead>
+<tbody><tr><td>模型缺口</td><td>−0.385</td><td>−0.199</td><td class="red">−0.087</td></tr></tbody></table>
+
+<b>可检验</b>：同一个一锅法反应，淬灭时间从 30 min 延到 2 h，产率缺口应从约 35 点降到 10 点以内。
+如果实验上延长后缺口纹丝不动，说明主因不是供给受限，这个模型就错了。
+</div>
+
+<h2>与机械化学一致</h2>
+<div class="box">
+球磨的作用正是"在同样的时间里供给足够多的试剂"——等价于把有效反应时间拉长。
+所以机械化学能把缺口抹平（88–98%），和"延长时间收窄缺口"是同一件事的两种实现。
+</div>
+
+<h2>仍然缺的数据</h2>
+<div class="box">
+这篇论文没有报<b>未反应醛的回收率</b>，也没有报副产物 3 和 5 的定量。
+有了这两个数，就能直接定出"未转化 : 副反应"的比例，不必靠 k_MPV 反推。
+</div>
+</div></body></html>

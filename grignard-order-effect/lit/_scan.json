@@ -1,0 +1,662 @@
+{
+ "order_of_addition": [
+  {
+   "year": 1996,
+   "title": "Grignard Reaction of an Epoxide: A Mechanistic Study",
+   "doi": "10.1021/ed073p1196",
+   "venue": "Journal of Chemical Education",
+   "oa": false,
+   "cited": 2
+  },
+  {
+   "year": 2010,
+   "title": "The Grignard Reaction of Cyclodextrin‐6‐aldehydes Revisited: A Study of the Stereoselectivity Upon Addition of Organometallic Reagents to Aldehydes and Ketones",
+   "doi": "10.1002/ejoc.201000295",
+   "venue": "European Journal of Organic Chemistry",
+   "oa": false,
+   "cited": 16
+  },
+  {
+   "year": 2007,
+   "title": "Three-Component Coupling Reactions of Thioformamides with Organolithium and Grignard Reagents",
+   "doi": "10.1055/s-2007-968321",
+   "venue": "Synfacts",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 1989,
+   "title": "The reaction of arylmagnesium bromides with N‐(ω‐bromoalkyl)phthalimides",
+   "doi": "10.1002/jhet.5570260538",
+   "venue": "Journal of Heterocyclic Chemistry",
+   "oa": false,
+   "cited": 6
+  },
+  {
+   "year": 1951,
+   "title": "Displacement reactions of Grignard reagents in the mesitoylnaphthalenes",
+   "doi": "",
+   "venue": "Illinois Digital Environment for Access to Learning and Scholarship (University of Illinois at Urbana-Champaign)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 1964,
+   "title": "SELF-CONDENSATION OF p-CHLOROPHENACYL CHLORIDE IN THE PRESENCE OF GRIGNARD REAGENT",
+   "doi": "10.1139/v64-412",
+   "venue": "Canadian Journal of Chemistry",
+   "oa": true,
+   "cited": 3
+  },
+  {
+   "year": 2010,
+   "title": "Dialkyl Sulfide Stabilisation in a Catalytic Dicuprate 1,6-Dienone Addition Process",
+   "doi": "10.1021/op1002648",
+   "venue": "Organic Process Research & Development",
+   "oa": false,
+   "cited": 6
+  },
+  {
+   "year": 2026,
+   "title": "LaCl3-Enabled Synthesis of 2′- C -Substituted Galidesivir Analogues",
+   "doi": "10.1021/acs.orglett.6c03942",
+   "venue": "Organic Letters",
+   "oa": false,
+   "cited": 0
+  }
+ ],
+ "barbier_mechanism": [
+  {
+   "year": 2021,
+   "title": "Photocatalytic two-electron processes as alternatives to Barbier/Grignard-type reactions",
+   "doi": "10.5283/epub.41404",
+   "venue": "University of Regensburg Publication Server (University of Regensburg)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2015,
+   "title": "Effective Bismuth(III)-Promoted Barbier-Grignard-Type Reactions of Bromides with Aldehydes",
+   "doi": "10.6023/cjoc201506025",
+   "venue": "Chinese Journal of Organic Chemistry",
+   "oa": true,
+   "cited": 4
+  },
+  {
+   "year": 2013,
+   "title": "A simple and efficient copper oxide-catalyzed Barbier–Grignard reaction of unactivated aryl or alkyl bromides with ester",
+   "doi": "10.1016/j.tetlet.2013.12.042",
+   "venue": "Tetrahedron Letters",
+   "oa": false,
+   "cited": 15
+  },
+  {
+   "year": 2007,
+   "title": "Development of Barbier-Grignard-type alkylation reaction using unactivated alkyl halides in water.",
+   "doi": "",
+   "venue": "DR-NTU (Nanyang Technological University)",
+   "oa": false,
+   "cited": 0
+  },
+  {
+   "year": 2014,
+   "title": "The Barbier–Grignard-type arylation of aldehydes using unactivated aryl iodides in water",
+   "doi": "10.1038/ncomms5254",
+   "venue": "Nature Communications",
+   "oa": true,
+   "cited": 94
+  },
+  {
+   "year": 2017,
+   "title": "The introduction of the Barbier reaction into polymer chemistry",
+   "doi": "10.1038/s41467-017-01472-w",
+   "venue": "Nature Communications",
+   "oa": true,
+   "cited": 73
+  },
+  {
+   "year": 2016,
+   "title": "A Simple and Efficient Synthesis of Tertiary Alcohols via Ta2O5- Catalyzed Barbier-Grignard Addition of Unactivated Aryl Bromides to Aryl Acids",
+   "doi": "10.6023/cjoc201602025",
+   "venue": "Chinese Journal of Organic Chemistry",
+   "oa": true,
+   "cited": 1
+  },
+  {
+   "year": 2024,
+   "title": "Accessing the synthesis of natural products and their analogues enabled by the Barbier reaction: a review",
+   "doi": "10.1039/d4ra05646a",
+   "venue": "RSC Advances",
+   "oa": true,
+   "cited": 14
+  }
+ ],
+ "barbier_kinetics": [
+  {
+   "year": 2007,
+   "title": "Aqueous Barbier Allylation of Aldehydes Mediated by Tin",
+   "doi": "10.3390/12092089",
+   "venue": "Molecules",
+   "oa": true,
+   "cited": 21
+  },
+  {
+   "year": 2020,
+   "title": "A Mechanochemical Zinc-Mediated Barbier-Type Allylation Reaction under Ball-Milling Conditions",
+   "doi": "10.1021/acs.joc.9b02876",
+   "venue": "The Journal of Organic Chemistry",
+   "oa": true,
+   "cited": 62
+  },
+  {
+   "year": 2020,
+   "title": "Exploitation of Monofunctional Carbonyl Resources by Barbier Polymerization for Materials with Polymerization-Induced Emission",
+   "doi": "10.1016/j.xcrp.2020.100116",
+   "venue": "Cell Reports Physical Science",
+   "oa": true,
+   "cited": 29
+  },
+  {
+   "year": 2014,
+   "title": "Ultrasound-Induced CO2/H2O Emulsions as a Medium for Clean Product Formation and Separation: The Barbier Reaction as a Synthetic Example",
+   "doi": "10.1021/sc500112q",
+   "venue": "ACS Sustainable Chemistry & Engineering",
+   "oa": true,
+   "cited": 13
+  },
+  {
+   "year": 2024,
+   "title": "Investigation of the kinetics and intermediates of pyridyl and pyrimidyl substrates during the Soai reaction and Asymmetric alkylation of photoswitchable systems or by β-amino alcohol mediated catalysis",
+   "doi": "10.5282/edoc.34587",
+   "venue": "Electronic Theses of LMU Munich (Ludwig-Maximilians-Universität München)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2015,
+   "title": "Mechanisms of multielectron redox catalysis with low-valent cobalt: defining the roles of coordination number, stereoelectronics and field effects in selectivity for two-electron chemistry",
+   "doi": "",
+   "venue": "Illinois Digital Environment for Access to Learning and Scholarship (University of Illinois at Urbana-Champaign)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2024,
+   "title": "Mechanochemical generation of aryl barium nucleophiles from unactivated barium metal",
+   "doi": "10.1039/d4sc05361c",
+   "venue": "Chemical Science",
+   "oa": true,
+   "cited": 13
+  },
+  {
+   "year": 2021,
+   "title": "Preparation and reactions of polyfunctional magnesium and zinc organometallics in organic synthesis",
+   "doi": "10.1039/d1sc00685a",
+   "venue": "Chemical Science",
+   "oa": true,
+   "cited": 41
+  }
+ ],
+ "schlenk_kinetics": [
+  {
+   "year": 2026,
+   "title": "Dynamic Speciation as a Hidden Driver of Reactivity: Lessons from Organozinc Chemistry",
+   "doi": "10.1021/acs.accounts.6c00598",
+   "venue": "Accounts of Chemical Research",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2019,
+   "title": "Kinetics of Asymmetric Transfer Hydrogenation, Catalyst Deactivation, and Inhibition with Noyori Complexes As Revealed by Real-Time High-Resolution FlowNMR Spectroscopy",
+   "doi": "10.1021/acscatal.8b03530",
+   "venue": "ACS Catalysis",
+   "oa": true,
+   "cited": 63
+  },
+  {
+   "year": 2015,
+   "title": "Understanding Magnesium-ion Electrochemistry through Modification of Lewis Acid/Base Pairs.",
+   "doi": "",
+   "venue": "Deep Blue (University of Michigan)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2021,
+   "title": "Beyond Continuum Solvent Models in Computational Homogeneous Catalysis",
+   "doi": "10.1007/s11244-021-01520-2",
+   "venue": "Topics in Catalysis",
+   "oa": true,
+   "cited": 73
+  },
+  {
+   "year": 2016,
+   "title": "Computational Model of Magnesium Deposition and Dissolution for Property Determination via Cyclic Voltammetry",
+   "doi": "10.1149/2.0031609jes",
+   "venue": "Journal of The Electrochemical Society",
+   "oa": true,
+   "cited": 30
+  },
+  {
+   "year": 2019,
+   "title": "Mechanistic insights into the role of silver in asymmetric gold(I) catalyzed cycloisomerization OF 1,6-ene allenes",
+   "doi": "10.17615/xqhr-mf64",
+   "venue": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2020,
+   "title": "Metal-Mediated and Metal-Catalyzed Reactions Under Mechanochemical Conditions",
+   "doi": "10.1021/acscatal.0c00142",
+   "venue": "ACS Catalysis",
+   "oa": true,
+   "cited": 350
+  },
+  {
+   "year": 2018,
+   "title": "The highly surprising behaviour of diphosphine ligands in iron-catalysed Negishi cross-coupling",
+   "doi": "10.1038/s41929-018-0197-z",
+   "venue": "Nature Catalysis",
+   "oa": true,
+   "cited": 42
+  }
+ ],
+ "grignard_aggregation": [
+  {
+   "year": 2017,
+   "title": "How Solvent Dynamics Controls the Schlenk Equilibrium of Grignard Reagents: A Computational Study of CH3MgCl in Tetrahydrofuran",
+   "doi": "10.1021/acs.jpcb.7b02716",
+   "venue": "The Journal of Physical Chemistry B",
+   "oa": true,
+   "cited": 88
+  },
+  {
+   "year": 2010,
+   "title": "Diisopropylamide and TMP Turbo‐Grignard Reagents: A Structural Rationale for their Contrasting Reactivities",
+   "doi": "10.1002/anie.201000539",
+   "venue": "Angewandte Chemie International Edition",
+   "oa": true,
+   "cited": 96
+  },
+  {
+   "year": 1986,
+   "title": "Di-Grignard reagents and metallacycles",
+   "doi": "10.1351/pac198658040537",
+   "venue": "Pure and Applied Chemistry",
+   "oa": true,
+   "cited": 32
+  },
+  {
+   "year": 2018,
+   "title": "Asymmetric Titanium-Catalyzed Cyclopropanation of Nitriles with Grignard Reagents",
+   "doi": "10.1055/s-0036-1591933",
+   "venue": "SynOpen",
+   "oa": true,
+   "cited": 10
+  },
+  {
+   "year": 2013,
+   "title": "Stereochemical Inversion of a Cyano-Stabilized Grignard Reagent: Remarkable Effects of the Ethereal Solvent Structure and Concentration",
+   "doi": "10.1021/ja407348s",
+   "venue": "Journal of the American Chemical Society",
+   "oa": false,
+   "cited": 15
+  },
+  {
+   "year": 2010,
+   "title": "Novel reactivity in asymmetric conjugate addition and allylic alkylation with Grignard reagents",
+   "doi": "",
+   "venue": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2006,
+   "title": "Preparation of Polyfunctionalized Grignard Reagents and their Application in Aryne Chemistry",
+   "doi": "10.5282/edoc.6045",
+   "venue": "Elektronische Hochschulschriften der LMU München (Ludwig-Maximilians-Universität München)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2026,
+   "title": "Selective white phosphorus activation and functionalization with inorganic Grignard reagents",
+   "doi": "10.1039/d6sc01229a",
+   "venue": "Chemical Science",
+   "oa": true,
+   "cited": 2
+  }
+ ],
+ "insitu_grignard": [
+  {
+   "year": 2004,
+   "title": "Selective Iron-Catalyzed Cross-Coupling Reactions of Grignard Reagents with Enol Triflates, Acid Chlorides, and Dichloroarenes",
+   "doi": "10.1021/jo0498866",
+   "venue": "The Journal of Organic Chemistry",
+   "oa": false,
+   "cited": 340
+  },
+  {
+   "year": 2023,
+   "title": "Synthesis of Sterically Encumbered Alkaline‐Earth Metal Amides Applying the In Situ Grignard Reagent Formation",
+   "doi": "10.1002/chem.202300035",
+   "venue": "Chemistry - A European Journal",
+   "oa": true,
+   "cited": 9
+  },
+  {
+   "year": 2023,
+   "title": "Impact of residence time distributions in reacting magnesium packed beds on Grignard reagent formation – selectivity of Grignard reagent formation (part 2)",
+   "doi": "10.1039/d3re00191a",
+   "venue": "Reaction Chemistry & Engineering",
+   "oa": true,
+   "cited": 10
+  },
+  {
+   "year": 2000,
+   "title": "Asymmetric Induction in the Arenethiolatocopper(I)-Catalyzed Substitution Reaction of Grignard Reagents with Allylic Substrates",
+   "doi": "10.1016/s0040-4020(00)00145-9",
+   "venue": "Tetrahedron",
+   "oa": true,
+   "cited": 80
+  },
+  {
+   "year": 2022,
+   "title": "In Situ Grignard Metalation Method for the Synthesis of Hauser Bases",
+   "doi": "10.1002/chem.202201359",
+   "venue": "Chemistry - A European Journal",
+   "oa": true,
+   "cited": 13
+  },
+  {
+   "year": 2023,
+   "title": "In Situ Generation of Magnesium‐ and Calcium‐Based Grignard Reagents for Amide Synthesis",
+   "doi": "10.1002/chem.202300833",
+   "venue": "Chemistry - A European Journal",
+   "oa": true,
+   "cited": 39
+  },
+  {
+   "year": 1996,
+   "title": "Grignard Reagents and Silanes",
+   "doi": "10.1201/b16932-35",
+   "venue": "CRC Press eBooks",
+   "oa": true,
+   "cited": 2
+  },
+  {
+   "year": 2016,
+   "title": "Grignard Reagents and Palladium",
+   "doi": "10.1515/psr-2016-0018",
+   "venue": "Physical Sciences Reviews",
+   "oa": true,
+   "cited": 1
+  }
+ ],
+ "grignard_surface": [
+  {
+   "year": 1980,
+   "title": "Electron, Transfer from Metal Surfaces. Formation of Lithium and Grignard Reagents1",
+   "doi": "10.1002/bscb.19800891011",
+   "venue": "Bulletin des Sociétés Chimiques Belges",
+   "oa": false,
+   "cited": 47
+  },
+  {
+   "year": 2010,
+   "title": "About the Inhibition of Grignard Reagent Formation by p‐Dinitrobenzene: Comparing the Mechanism of Grignard Reagent Formation and the SRN1 Mechanism",
+   "doi": "10.1002/ejoc.200901469",
+   "venue": "European Journal of Organic Chemistry",
+   "oa": false,
+   "cited": 4
+  },
+  {
+   "year": 1998,
+   "title": "Electron transfer at the solid liquid interface; new insights on the mechanism of formation of the grignard reagent",
+   "doi": "10.1002/masy.19981340104",
+   "venue": "Macromolecular Symposia",
+   "oa": false,
+   "cited": 9
+  },
+  {
+   "year": 2006,
+   "title": "Alkyl halides reactions with cathodes or with magnesium. Grignard reagent studied with radical clocks. What is the step competing with the isomerisation of the intermediate radical?",
+   "doi": "10.1002/poc.1045",
+   "venue": "Journal of Physical Organic Chemistry",
+   "oa": false,
+   "cited": 15
+  },
+  {
+   "year": 1995,
+   "title": "Reaction of magnesium with benzyl halides in an optically active solvent",
+   "doi": "10.1016/0022-328x(94)05394-q",
+   "venue": "Journal of Organometallic Chemistry",
+   "oa": false,
+   "cited": 10
+  },
+  {
+   "year": 1980,
+   "title": "A detailed description of the mechanism of reaction of Grignard reagents with ketones",
+   "doi": "10.1351/pac198052030545",
+   "venue": "Pure and Applied Chemistry",
+   "oa": true,
+   "cited": 159
+  },
+  {
+   "year": 2020,
+   "title": "The Grignard Reaction – Unraveling a Chemical Puzzle",
+   "doi": "10.1021/jacs.9b11829",
+   "venue": "Journal of the American Chemical Society",
+   "oa": true,
+   "cited": 158
+  },
+  {
+   "year": 2023,
+   "title": "In Situ Generation of Magnesium‐ and Calcium‐Based Grignard Reagents for Amide Synthesis",
+   "doi": "10.1002/chem.202300833",
+   "venue": "Chemistry - A European Journal",
+   "oa": true,
+   "cited": 39
+  }
+ ],
+ "microkinetic_om": [
+  {
+   "year": 2021,
+   "title": "Computational Organometallic Catalysis: Where We Are, Where We Are Going",
+   "doi": "10.1002/ejic.202100330",
+   "venue": "European Journal of Inorganic Chemistry",
+   "oa": true,
+   "cited": 36
+  },
+  {
+   "year": 2021,
+   "title": "Computational mechanistic study in organometallic catalysis: Why prediction is still a challenge",
+   "doi": "10.1002/wcms.1590",
+   "venue": "Wiley Interdisciplinary Reviews Computational Molecular Science",
+   "oa": true,
+   "cited": 36
+  },
+  {
+   "year": 2026,
+   "title": "Acid-assisted water loss in perrhenate-catalysed deoxydehydration: an agent-assisted reaction-network search with microkinetic modelling",
+   "doi": "10.1039/d6sc06865k",
+   "venue": "Chemical Science",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2019,
+   "title": "Operando Insights into Nanoparticle Transformations during Catalysis",
+   "doi": "10.1021/acscatal.9b01831",
+   "venue": "ACS Catalysis",
+   "oa": true,
+   "cited": 187
+  },
+  {
+   "year": 2021,
+   "title": "Influence of solvent structure and hydrogen bonding on catalysis at solid–liquid interfaces",
+   "doi": "10.1039/d1cs00539a",
+   "venue": "Chemical Society Reviews",
+   "oa": true,
+   "cited": 190
+  },
+  {
+   "year": 2024,
+   "title": "The functional interface in catalysis",
+   "doi": "10.24820/ark.5550190.p012.178",
+   "venue": "ARKIVOC",
+   "oa": true,
+   "cited": 4
+  },
+  {
+   "year": 2018,
+   "title": "Predictive kinetics in homogeneous catalysis",
+   "doi": "",
+   "venue": "Communities in ADDI (Universidad del Pais Vasco)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2021,
+   "title": "Heterolytic cleavage of dihydrogen (HCD) in metal nanoparticle catalysis",
+   "doi": "10.1039/d0cy02399j",
+   "venue": "Catalysis Science & Technology",
+   "oa": true,
+   "cited": 45
+  }
+ ],
+ "grignard_aging": [
+  {
+   "year": 1973,
+   "title": "Reactivities of Grignard’s Reagent Hexamethylphosphoramide Systems as Initiators for the Polymerization of α-Methylstyrene",
+   "doi": "10.1295/polymj.5.195",
+   "venue": "Polymer Journal",
+   "oa": false,
+   "cited": 11
+  },
+  {
+   "year": 2013,
+   "title": "Comparative performance evaluation and systematic screening of solvents in a range of Grignard reactions",
+   "doi": "10.1039/c3gc40702k",
+   "venue": "Green Chemistry",
+   "oa": true,
+   "cited": 109
+  },
+  {
+   "year": 2004,
+   "title": "Insights into the Cerium Chloride‐Catalyzed Grignard Addition to Esters",
+   "doi": "10.1002/adsc.200404075",
+   "venue": "Advanced Synthesis & Catalysis",
+   "oa": true,
+   "cited": 34
+  },
+  {
+   "year": 1974,
+   "title": "Asymmetric Induction in Grignard Reactions in a Chiral Solvent",
+   "doi": "",
+   "venue": "ScholarWorks - WMU (Western Michigan University)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 1976,
+   "title": "Ketoins from Primary Alkylhalides, Grignard Compounds and Carbonmonoxide in Ether-HMPT",
+   "doi": "10.2533/chimia.1976.199",
+   "venue": "CHIMIA International Journal for Chemistry",
+   "oa": true,
+   "cited": 2
+  },
+  {
+   "year": 2006,
+   "title": "New Insights into the Classic Chiral Grignard Reagent (1R,2S,5R)‐Menthylmagnesium Chloride",
+   "doi": "10.1002/ange.200602091",
+   "venue": "Angewandte Chemie",
+   "oa": true,
+   "cited": 5
+  },
+  {
+   "year": 2018,
+   "title": "Development of customized 3D printed stainless steel reactors with inline oxygen sensors for aerobic oxidation of Grignard reagents in continuous flow",
+   "doi": "10.1039/c8re00278a",
+   "venue": "Reaction Chemistry & Engineering",
+   "oa": true,
+   "cited": 44
+  },
+  {
+   "year": 2012,
+   "title": "An efficient and recyclable iron(III)-containing imidazolium salt catalyst for cross-coupling of aryl Grignard reagents with alkyl halides",
+   "doi": "10.1007/s11434-011-4660-3",
+   "venue": "Chinese Science Bulletin",
+   "oa": true,
+   "cited": 18
+  }
+ ],
+ "mixing_order": [
+  {
+   "year": 2009,
+   "title": "Mutations to the histone H3 αN region selectively alter the outcome of ATP-dependent nucleosome-remodelling reactions",
+   "doi": "10.1093/nar/gkp114",
+   "venue": "Nucleic Acids Research",
+   "oa": true,
+   "cited": 24
+  },
+  {
+   "year": 2020,
+   "title": "Regio-selectivity prediction with a machine-learned reaction representation and on-the-fly quantum mechanical descriptors",
+   "doi": "10.1039/d0sc04823b",
+   "venue": "Chemical Science",
+   "oa": true,
+   "cited": 171
+  },
+  {
+   "year": 2012,
+   "title": "Sensitive and selective amplification of methylated DNA sequences using helper-dependent chain reaction in combination with a methylation-dependent restriction enzymes",
+   "doi": "10.1093/nar/gks831",
+   "venue": "Nucleic Acids Research",
+   "oa": true,
+   "cited": 21
+  },
+  {
+   "year": 2011,
+   "title": "DEEP MIXING IN EVOLVED STARS. I. THE EFFECT OF REACTION RATE REVISIONS FROM C TO Al",
+   "doi": "10.1088/0004-637x/729/1/3",
+   "venue": "The Astrophysical Journal",
+   "oa": true,
+   "cited": 134
+  },
+  {
+   "year": 2023,
+   "title": "CsrA selectively modulates sRNA-mRNA regulator outcomes",
+   "doi": "10.3389/fmolb.2023.1249528",
+   "venue": "Frontiers in Molecular Biosciences",
+   "oa": true,
+   "cited": 18
+  },
+  {
+   "year": 2024,
+   "title": "Optimized Substrate Positioning Enables Switches in the C–H Cleavage Site and Reaction Outcome in the Hydroxylation–Epoxidation Sequence Catalyzed by Hyoscyamine 6β-Hydroxylase",
+   "doi": "10.1021/jacs.4c04406",
+   "venue": "Journal of the American Chemical Society",
+   "oa": true,
+   "cited": 36
+  },
+  {
+   "year": 2012,
+   "title": "Exploring and exploiting selectivity in Rhodium-catalysed hydroacylation reactions",
+   "doi": "10.5287/ora-aoqmajyry",
+   "venue": "OpenGrey (Institut de l'Information Scientifique et Technique)",
+   "oa": true,
+   "cited": 0
+  },
+  {
+   "year": 2019,
+   "title": "A selective inhibitor of mitofusin 1-βIIPKC association improves heart failure outcome in rats",
+   "doi": "10.1038/s41467-018-08276-6",
+   "venue": "Nature Communications",
+   "oa": true,
+   "cited": 99
+  }
+ ]
+}

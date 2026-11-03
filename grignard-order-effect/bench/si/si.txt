@@ -1,0 +1,88 @@
+                           Supporting information for:
+
+The Grignard Reaction – Unraveling a Chemical
+                   Puzzle
+
+
+   Raphael Mathias Peltzer,†Jürgen Gauss,‡ Odile Eisenstein,*,†, ¶ and
+                         Michele Cascella*,†
+
+
+  † Department of Chemistry, and Hylleraas Centre for Quantum Molecular Sciences, University of
+                                   Oslo, Oslo 0315, Norway
+       ‡
+           Department Chemie, Johannes Gutenberg-Universität Mainz, Mainz 55128, Germany
+
+               ¶ ICGM, Université de Montpellier, CNRS, ENSCM, Montpellier, France
+
+
+             E-mail: odile.eisenstein@umontpellier.fr; michele.cascella@kjemi.uio.no
+
+
+
+
+Table of contents:
+
+Benchmark calculations for bond dissociation energy                          S2
+Structure of Mg(CH3)2(THF)2                                                  S3
+Structure of Mg(CH3)2(CH3C(O)H)(THF)                                         S3
+Structure of Mg(CH3)(OCH(CH3)2)(THF)2                                        S4
+
+
+
+
+                                               S1
+                                                                         .
+
+                                                                         +
+
+
+
+
+                          QM
+                                         Basis set        DE (kcal mol-1)
+                         method
+                         CCSD(T)           PDZV                 43.6
+                         CCSD(T)           PTZV                 41.4
+                          PBE0           6-31(d,p)              34.6
+                          B3LYP          6-31(d,p)              32.5
+                         M06-2X          6-31(d,p)              42.7
+                          B97x           6-31(d,p)              39.4
+                          TPSSh          6-31(d,p)              32.5
+                           PBE           6-31(d,p)              37.2
+
+
+Table S1 Bond dissociation energies for a model Grignard reagent bound to formaldehyde (Top panel).
+
+The M06-2X xc functional is the best in reproducing CC data, in particular, showing a discrepancy not
+higher than 1.2 kcal mol-1 in the dissociation energy. The GGA PBE functional, used in the AIMD runs
+thanks to its computational efficiency, shows a reasonable performance, even though it tends to
+underestimate homolytic dissociation energies by about 4 kcal mol-1.
+
+
+
+
+                                                 S2
+Figure S1: Structure of Mg(CH3)2 in THF. The four ligands form a distorted butterfly structure, with an
+average CH3-Mg-CH3 angle of 135 ± 9o, while the average (THF)-Mg-(THF) angle is 92 ± 8 o.
+
+
+
+
+Figure S2: Structure of Mg(CH3)2 bound to CH3C(O)H in THF. The four ligands form a distorted planar
+structure, with an average Me-Mg-Me angle of 153 ± 9o, while the average (CH3C(O)H)-Mg-(THF) angle
+is 137 ± 9o.
+
+
+
+
+                                                  S3
+Figure S3: Structure of Mg(CH3)(OCH(CH3)2) in THF. The four ligands form a distorted butterfly structure
+similar to the one of Mg(CH3)2 in THF, with an average ((CH3)2CHO)-Mg-CH3 angle of 134 ± 8o, and an
+average (THF)-Mg-(THF) angle of 93 ± 7o.
+
+
+
+
+                                                  S4
+

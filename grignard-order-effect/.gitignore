@@ -1,0 +1,15 @@
+# 出版商 PDF，不随仓库分发
+lit/*.pdf
+protocol-lit/*.pdf
+*.pdf
+
+# Python / 系统
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+
+# 缓存与大中间文件
+.tmp/
+*.log

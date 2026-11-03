@@ -1,0 +1,58 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><title>酮类检验</title>
+<style>body{margin:0;font:14px/1.8 -apple-system,"PingFang SC",sans-serif;color:#222;background:#f7f8fa}
+.wrap{max-width:920px;margin:0 auto;padding:28px 24px 60px;background:#fff}
+h1{font-size:20px;margin:0 0 6px} .sub{color:#666;font-size:12.5px;margin-bottom:20px}
+h2{font-size:14px;margin:24px 0 8px;border-left:3px solid #2c6fb5;padding-left:9px}
+.box{background:#fafbfc;border:1px solid #e8e8e8;border-radius:8px;padding:12px 14px;font-size:13px}
+.bad{background:#fdeeee;border:1px solid #f0c0c0}
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:8px}
+th,td{padding:4px 8px;text-align:right;border-bottom:1px solid #f0f0f0}
+th:first-child,td:first-child{text-align:left}
+ul.goal{list-style:none;padding-left:0} ul.goal li{padding:2px 0 2px 16px;position:relative}
+ul.goal li:before{content:"▸";position:absolute;left:0;color:#2c6fb5}
+.lvl{display:inline-block;font-size:10.5px;padding:0 6px;border-radius:3px;background:#e8eef7;color:#2c6fb5;margin-right:7px}
+</style></head><body><div class="wrap">
+<h1>第二类底物：酮。结果——框架不成立</h1>
+<div class="sub">Table 3 数据 · 5 个卤化物 × 2 条件 · 2026-11-03 · 第 5 轮</div>
+
+<h2>目标链条</h2>
+<ul class="goal">
+<li><span class="lvl">大目标</span>同一批料换加料顺序，为什么产物分布不同</li>
+<li><span class="lvl">中目标</span>把顺序还原成"试剂供给速率 vs 底物消耗速率"</li>
+<li><span class="lvl">小目标</span>换成酮（副反应是烯醇化）之后，同一框架还成立吗</li>
+<li><span class="lvl">本次</span>用 NH<sub>4</sub>Cl 淬灭作对照，检验副反应通道的定量能力</li>
+</ul>
+
+<h2>怎么做的</h2>
+<div class="box">
+酮 <b>7</b> 与卤化物在机械化学条件下生成叔醇 <b>6</b>。<br>
+条件 <b>A</b>（无添加）：碱性醇盐促进烯醇化 → 缩合副产物 <b>8</b>。<br>
+条件 <b>D</b>（加 1 当量 NH<sub>4</sub>Cl）：醇盐被质子化封端，烯醇化关闭。<br><br>
+做法：用条件 D 的产率<b>校准</b>每个卤化物的有效 A/V（不许碰 A 的数据），
+再打开烯醇化通道（唯一参数 k<sub>enol</sub>），预测条件 A。
+</div>
+
+<h2>结果</h2>
+<table><thead><tr><th>entry</th><th>实测 A</th><th>实测 D</th><th>校准 A/V</th><th>预测 A</th><th>残差</th></tr></thead>
+<tbody><tr><td>1</td><td>0.78</td><td>0.92</td><td>30</td><td>0.86</td><td>+0.08</td></tr><tr><td>2 EtBr</td><td>0.57</td><td>0.78</td><td>24</td><td>0.71</td><td>+0.14</td></tr><tr><td>3 PhBr</td><td>0.33</td><td>0.68</td><td>20</td><td>0.61</td><td>+0.28</td></tr><tr><td>4</td><td>0.53</td><td>0.49</td><td>14</td><td>0.43</td><td>-0.10</td></tr><tr><td>5 PhCH2Br</td><td>0.67</td><td>0.82</td><td>26</td><td>0.76</td><td>+0.09</td></tr></tbody></table>
+<p>RMS = <b>0.16</b>（约 16 个百分点）。最好的情况（k<sub>enol</sub>=10⁻⁴）下，
+预测的"A−D 落差"是 2–8 个百分点，而实验是 14–35 个百分点。</p>
+
+<h2>结论：不成立</h2>
+<div class="box bad">
+<b>框架迁移失败。</b>原因很清楚：<br>
+· 烯醇化速率取决于酮的 α-H 酸性和醇盐的碱性，而这两者随卤化物（MgX<sub>2</sub> 的 Lewis 酸性）变化；<br>
+· 一个全局 k<sub>enol</sub> 无法同时给出 14 点和 35 点的落差；<br>
+· entry 4 更反常：加淬灭剂反而降了 4 点，模型在结构上不可能产生这种结果（它总是预测 A &lt; D）。<br><br>
+<b>所以模型的适用范围是：醛（MPV 型副反应）+ 一级溴/氯代物。</b>
+酮类需要按底物逐个处理，不能靠一个通道。
+</div>
+
+<h2>这对目标意味着什么</h2>
+<div class="box">
+目标要求检验"多个底物"的预测能力。这一轮给出了明确答案：
+<b>醛这个组分内，模型定量有效；换到酮，失效。</b><br>
+这不是调参能修好的，因为失效来自模型结构（单一副反应通道、单一速率常数），
+不是来自参数取值。
+</div>
+</div></body></html>

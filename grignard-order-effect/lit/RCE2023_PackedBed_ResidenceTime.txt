@@ -1,0 +1,742 @@
+Reaction
+Chemistry &
+Engineering
+                                                                                                                   Published on 28 June 2023
+    PAPER                                                                                                          Licensed under CC-BY 4.0
+
+
+                                          Impact of residence time distributions in reacting
+Cite this: React. Chem. Eng., 2023,
+                                          magnesium packed beds on Grignard reagent
+8, 2717                                   formation – selectivity of Grignard reagent
+                                          formation (part 2)†
+                                          Eva Deitmann,ab Michael Maskos,a
+                                          Gabriele Menges-Flanagan *a and Dirk Ziegenbalg                         *b
+
+                                          Grignard reagents are used as intermediates in the production of complex molecules, since they can be
+                                          used to form new carbon–carbon bonds, e.g. in the formation of active pharmaceutical ingredients. Side
+                                          product formation like Wurtz coupling diminishes the selectivity in Grignard reagent formation and
+                                          therefore side product formation needs to be reduced. It was found that the different pumping behaviours
+Received 30th March 2023,                 of a syringe pump, a valveless rotary piston pump and a micro annular gear pump and the obtained
+Accepted 26th June 2023
+                                          residence time distributions have an impact on the selectivity of the Grignard reagent formation. Selectivity
+                                          can also be enhanced by the available magnesium surface and by choosing a tubular flow reactor instead
+DOI: 10.1039/d3re00191a
+                                          of a batch reactor, showing the importance of choosing the right equipment and parameters for the
+rsc.li/reaction-engineering               specific reaction system.
+
+
+Introduction                                                                         of the Grignard reagent and the purity of the product obtained.
+                                                                                     Thus, the formation of the Wurtz coupling product must be
+Organomagnesium halides, better known as Grignard reagents,                          avoided as much as possible. The formation of the Wurtz
+are formed by the exothermic reaction of metallic magnesium                          coupling product can be reduced by various means: low
+(usually turnings or powder) with a halide in an anhydrous,                          reaction temperatures, low halide concentrations and low
+etheric solvent. Grignard reagents can be used for the                               addition rates as well as a large magnesium surface area and
+formation of new carbon–carbon bonds and are one of the                              therewith mass transport.1 However, these approaches
+most important intermediates in such reactions.1 Both on a                           contradict the requirements of sustainability. A reduction of
+small scale in a glass flask in chemical laboratories and on a                       the halide concentration leads to an increase of the solvent
+larger scale in stirred vessels in the chemical industry, Grignard                   content. Lowering of the cooling temperature causes reduced
+reagents are prepared in a dosing-controlled semi-batch                              reaction rates and increasing operating costs. Some
+process based on placing a certain mass of magnesium                                 publications refer to changing the solvent from the commonly
+together with a small amount of the halide in the solvent in                         used      tetrahydrofuran     to    the     more      expensive
+the stirred vessel and then slowly adding the remaining halide–                      2-methyltetrahydrofuran to minimize the amount of Wurtz
+solvent mixture.2 Because of the exothermic nature of the                            coupling product.3,4 Considering the principles of green
+reaction, the reaction temperatures must be closely controlled                       chemistry, the use of 2-methyltetrahydofuran is favourable,
+to avoid thermal runaway and hazardous situations. A                                 since the solvent can be made from renewable raw materials
+challenge of the synthesis of Grignard reagents is the Wurtz                         and since it is immiscible with water, having the potential to
+coupling product. This side product is formed by reaction of                         facilitate post-reaction processing.5 However, changing the
+already-formed Grignard reagent with the halide reactant
+(Fig. 1). The formation of this side product decreases the yield
+
+a
+  Fraunhofer IMM, Carl-Zeiss-Strasse 18-20, 55129 Mainz, Germany.
+E-mail: gabriele.menges-flanagan@imm.fraunhofer.de
+b
+  Ulm University, Helmholtz-Strasse 16, 89081 Ulm, Germany.
+E-mail: dirk.ziegenbalg@uni-ulm.de
+† Electronic supplementary information (ESI) available: Distribution functions for   Fig. 1 Formation of Grignard reagent RMgX from halide RX and
+residence time measurements, pictures of Grignard reagent synthesis in a stirred     magnesium Mg and subsequent formation of the Wurtz coupling
+tank (semi-continuous batch mode), explanation of benzyl alcohol formation,          product RR by reaction of Grignard reagent RMgX with halide
+conversions and selectivity. See DOI: https://doi.org/10.1039/d3re00191a             reactant RX.
+
+
+
+This journal is © The Royal Society of Chemistry 2023                                                     React. Chem. Eng., 2023, 8, 2717–2728 | 2717
+Paper                                                                                                Reaction Chemistry & Engineering
+
+solvent is not only more cost-intensive (at least for now) but            oscillating flow on the selectivity of the benzylmagnesium
+also accompanied by a change in the whole reaction system.                bromide synthesis in a non-homogeneous, randomly packed
+Since Grignard reagents are still purchasable mostly in                   bed of non-uniform, non-spherical magnesium turnings are
+tetrahydrofuran, the use of 2-methyltetrahydrofuran is not                investigated.
+further considered in this publication. Alternatively,
+continuously operated, magnesium-filled plug flow reactor                 Experimental section
+systems can be used to ideally keep contact times of the
+already-made Grignard reagent and the not yet reacted halide              Materials and equipment
+educt as short as possible. High surface-to-volume ratios, as             All solvents and reagents are used without further
+they can be realized in micro- and millistructured reactors,              purification. The chemicals used and their suppliers were
+ensure beneficial heat transfer to avoid hotspots within the              (bromomethyl)benzene (99%, Thermo Fisher Scientific Inc.),
+magnesium bed which would enhance Wurtz coupling.                         2-phenylethylbenzene (99%, Thermo Fisher Scientific Inc.),
+Reaction networks involving consecutive reactions, like the               1,1′-biphenyl (≥99.5%, Glentham Life Sciences Ltd.),
+Grignard reaction system, can be controlled by providing the              bromobenzene (≥99%, Merck KGaA), methanol (≥99.9%,
+required processing experience to the molecules.6 Thus,                   Honeywell International Inc.), magnesium turnings (coarse:
+controlling the residence time distribution represents a                  Merck KGaA, fine: Almamet GmbH), 1,2-xylene (99% pure,
+meaningful strategy to achieve high yield and suppress                    Thermo Fisher Scientific Inc.), butan-2-ol (99%, anhydrous,
+undesired side product formation. Despite the laminar flow                Thermo Fisher Scientific Inc.), tetrahydrofuran (>99.9%, p.a.,
+conditions in small-sized channels, micro- and millistructured            Th. Geyer GmbH & Co. KG), and toluene (≥99.7%, Honeywell
+reactors frequently possess narrow residence time                         International Inc.).
+distributions, potentially approaching plug flow behaviour, and              Temperatures are measured using thermocouples (type K,
+the impact of this reactor technology to achieve a high degree            RS Components) and logged by a data logger (Expert Key
+of reaction control has been reported earlier.7–9                         200L, Delphin Technology).
+    The residence time distribution in packed-bed reactors is                To conduct the experiments, the following pumps are
+more complicated than in empty channels. In part 1 of this                used: Postnova syringe pump with 2.5 mL Hamilton glass
+contribution, the influence of the pumping characteristics                syringes, programmable Landgraf syringe pump, HNP micro
+and the properties of magnesium turnings on the residence                 annular gear pump, and Ismatec valveless rotary piston
+time distribution in a reactor cartridge filled with non-                 pump. Pump specifications are listed in Table 1.
+uniform, non-spherical metal turnings, has been reported. It                 For tempering of the reactor cartridge, a thermostatic bath
+was found that application of an oscillating flow influences              (F31-C) from Julabo GmbH is used.
+the residence time distribution, and axial dispersion can be                 Analysis of benzylmagnesium bromide and phenylmagnesium
+reduced by adjusting the amplitude and frequency of the                   bromide is done by thermometric titration (Metrohm AG) in
+oscillation. Since the magnesium reacts during the Grignard               toluene with 1 mol L−1 butan-2-ol in 1,2-xylene. Unreacted
+reagent synthesis, the entire magnesium bed is subject to                 halide and formed side products are detected by quenching
+constant changes. The impact of such changes on the                       the Grignard reagent samples in methanol and subsequent
+residence time distribution and finally on the selectivity of             analysis using a calibrated gas chromatograph (GC) (Varian
+the benchmark synthesis of benzylmagnesium bromide is                     GC 3900 system with Varian 8400 GC-autosampler).
+studied in this work. Furthermore, the influence of the                      Infrared (IR) spectroscopy is used for toluene
+pump-induced flow behaviour and, in particular, the effect of             concentration measurements during the residence time
+
+
+Table 1 Details and operating conditions of pumps used during residence time measurements and during Grignard reagent syntheses
+
+Pump       Pump type             Pump name                            Manufacturer                  Operating conditions
+A          Syringe pump          PN1610 syringe dosing system         Postnova Analytics            Flow rate: max. 20 mL min−1
+                                                                      GmbH                          (2.5 mL syringes)
+
+B          Syringe pump          LA-120                               Landgraf Laborsysteme         Stroke volume: depending on syringe size
+                                                                      HLL GmbH                      No limits on number of withdrawing/dosing
+                                                                                                    cycles per minute noted but pump is not
+                                                                                                    designed for frequent changes
+                                                                                                    Flow rate: max. 35 mL min−1
+                                                                                                    (depending on syringe size)
+
+C          Micro annular         mzr-7205                             HNP Mikrosysteme              Flow rate: 0.048–288 mL min−1
+           gear pump                                                  GmbH                          Dosing precision: variation coefficient <1%
+
+D          Valveless rotary      Reglo-CPF digital with ISM321        Ismatec, Cole-Parmer          Stroke volume: 10–100 μl
+           piston pump           drive and RH1CKC pump head           Instrument Company            Speed: 40–1800 min−1
+                                                                      LTD                           Flow rate: 0.40–180 mL min−1
+
+
+
+2718 | React. Chem. Eng., 2023, 8, 2717–2728                                               This journal is © The Royal Society of Chemistry 2023
+Reaction Chemistry & Engineering                                                                                                  Paper
+
+experiments (Matrix-MF with diamond micro ATR probe,
+Bruker Optik GmbH). The measurement data are recorded by
+using the software OPUS (version 6.5, Bruker Optik GmbH).
+    Batch syntheses are conducted in a 250 mL 4-neck flask
+equipped with a reflux condenser, dropping funnel, magnetic
+stirrer with stirring bar, thermocouple and septa.
+
+Residence time measurements during Grignard reagent
+synthesis
+The residence time measurements are conducted by using the
+displacement marking method (step function), in which a
+tracer-free inlet flow is exchanged for a tracer flow (or vice versa)
+of the same flow rate at time t = 0. The tracer-free solution
+contains the halide in tetrahydrofuran (THF), while 2 mol L−1
+toluene is added to this solution for the tracer-containing
+solution. Unless otherwise specified, the measurement runs are
+performed by introducing the tracer toluene to the reactor
+system. For simultaneous Grignard reagent formation, the
+synthesis of phenylmagnesium bromide from bromobenzene
+and magnesium turnings is chosen. Coarse or fine magnesium
+turnings are used (refer to part 1 for the particle size
+distributions). Residence time measurements are started as soon
+as the Grignard reagent formation reaches a steady state and full
+conversion of the halide is measured by IR and GC analyses.
+    Measurement runs are repeated at least three times to
+obtain mean values for Bodenstein number Bo and mean
+residence time t̄. The procedure for performing the residence
+time measurements and evaluation of the gathered data is
+described in detail in part 1.
+
+Grignard reagent synthesis in a continuous flow reactor                 Fig. 2 Laboratory-scale reactor system to produce magnesium-based
+                                                                        organometallic halide reagents.
+The reactor used for residence time distribution
+measurements is the same reactor used in part 1. It is a
+laboratory-scale reactor designed by Fraunhofer IMM and                 rest for 10 min for initial formation of Grignard reagent and
+manufactured via 3D laser melting for the formation of                  further activation of the magnesium turnings. Afterwards, the
+organometallic halide reagents.10,11 Fig. 2 displays the reactor        pump is turned on again, recording of measured
+in more detail. It consists of a reactor cartridge and a                temperatures is started and the flow rate is reduced compared
+magnesium replenishing unit that can be attached to the                 to that in the initial filling step of the reactor to keep
+main reactor body for replenishing magnesium turnings                   temperatures below the solvent's boiling point. To accelerate
+during Grignard reagent synthesis.                                      the start of the reaction, an elevated temperature of 50 °C is
+    The reactor is charged with magnesium (Mg) turnings                 set. After waiting for about three residence times, samples
+(23 g for coarse magnesium turnings, 27 g for fine turnings)            from the outlet solution are taken and titrated by
+while the jogging motor at the bottom of the reactor is                 thermometric titration to determine the Grignard reagent
+running (9 V). An inert atmosphere in the reactor is realized           concentration. Samples are quenched with methanol as well
+with argon. Four thermocouples are placed along the                     and analysed with GC measurements to determine side
+magnesium bed for temperature monitoring. Before starting               product concentration and residual halide educt
+the synthesis, the reactor is purged for 30 min by an argon             concentration. Depending on the concentration of the halide
+flow, while the magnesium bed is compacted due to                       used, portions of magnesium turnings are replenished at
+vibrations generated by the jogging motor and the reactor               regular time periods (about 30 min) to keep the magnesium
+cartridge is already tempered. Subsequently, the reactor is             mass as constant and equal as possible for the individual
+filled with a solution of educt halide in tetrahydrofuran (THF)         residence time measurements. In the case of residence time
+at an elevated flow rate. This leads to a temperature increase          measurements, the magnesium is replenished in between two
+resulting from the initiation of the exothermic reaction. As            runs to avoid disturbance of the measurement and the flow
+soon as the reactor is completely filled with educt solution,           behaviour. Specific reaction conditions for the investigated
+the pump is turned off and the reactor content is allowed to            Grignard reagents are summarized in Table 2.
+
+
+
+This journal is © The Royal Society of Chemistry 2023                                        React. Chem. Eng., 2023, 8, 2717–2728 | 2719
+Paper                                                                                         Reaction Chemistry & Engineering
+
+Table 2 Reaction conditions for the synthesis of phenylmagnesium    Batch procedure 1: literature reaction conditions
+bromide and benzylmagnesium bromide
+                                                                    To generate a reference data set, initial reaction conditions
+                             Phenylmagnesium Benzylmagnesium        for semi-continuous batch experiments are taken from a
+                             bromide         bromide
+                                                                    reference book12 and the indicated quantities are halved,
+Educt                        Bromobenzene           (Bromomethyl)   resulting in a total liquid volume of 117.19 mL and a
+                                                    benzene         (bromomethyl)benzene concentration of 2.13 mol L−1.
+Concentration starting       1                      0.7                Tetrahydrofuran is used instead of diethyl ether, as this
+material/(mol L−1)                                                  solvent is also used in further Grignard reagent syntheses,
+                                                                    resulting in a different boiling point (66 °C instead of 35 °C).
+Solvent                                        THF
+                                                                    However, the flask is tempered at 35 °C, which corresponds
+Flow rate/(mL min−1)                            2                   to the boiling point of diethyl ether and thus allows
+                                                                    comparability with the literature reaction conditions.
+Hydrodynamic residence                   652 (coarse)                  Coarse magnesium turnings (6.075 g) are filled into the
+time/s                                    583 (fine)
+                                                                    flask, poured over with 25 mL THF, and 1.48 mL of
+Thermostat temperature/°C               50 (initiation)             (bromomethyl)benzene is added while stirring. After
+                                   35 (continued synthesis)         initiation of the reagent formation, the remaining halide 4
+                                                                    (28.21 mL), dissolved in 62.5 mL of THF, is added. Cooling in
+                                                                    an ice bath is applied when boiling is too vigorous.
+Grignard reagent synthesis in a stirred tank (semi-continuous
+batch mode)                                                         Batch procedure 2: 1 : 1 transfer of the flow conditions to
+                                                                    batch synthesis
+Intensely stirred tank reactors possess complete backmixing
+and thus represent one extreme case with respect to the process     For these experiments all parameters that are typically used for
+experience which molecules undergo. The opposite extreme            the continuous synthesis of benzylmagnesium bromide are
+case represents a continuously operated plug flow reactor with      applied for the semi-continuous batch experiments. 23 g
+no backmixing. Thus, comparing batch and continuous mode            magnesium turnings (coarse turnings) or 27 g magnesium
+allows a better assessment of the potential of continuous flow      turnings (fine turnings) are filled into the flask. To this 20 mL (if
+reactors for the use in Grignard reagent syntheses.                 coarse turnings) or 15 mL (if fine turnings) of the (bromomethyl)
+    Generally applicable parameters for each synthesis in the       benzene/THF solution (0.7 mol L−1) are added. This corresponds
+glass flask to allow comparability with continuous syntheses:       to the volume of liquid available in the reactor cartridge. After a
+    • All glassware used are placed in a drying oven at 115 °C      10-min incubation period, the remaining solution (80 mL or
+for at least 12 hours, cooled in a desiccator and flushed with      85 mL, respectively) of halide 4/THF solution is added.
+argon to prevent contamination with air and especially
+moisture to which the Grignard reagent is extremely sensitive.      Batch procedure 3: literature reaction conditions adapted to
+    • Magnesium turnings are stirred dry under argon for            flow conditions
+30 min.                                                             The literature reaction conditions are adjusted to be comparable
+    • Tempering of the flask at 35 °C.                              to the conditions used in the continuous reactor. Thus, the
+    • Waiting for a 10 min incubation period after initial          same amounts of magnesium and halide (0.07 mol each) are
+addition of a first portion of the halide-in-THF solution.          used. With this, high excess of magnesium is avoided while still
+    • Addition of the halide/THF solution at a rate of approx.      maintaining a halide concentration of 0.7 mol L−1 in THF.
+2 mL min−1.                                                         0.07 mol of magnesium turnings (1.7017 g) are introduced into
+    • 30 min post-stirring time after complete addition of the      the flask regardless of the magnesium turning size. In addition,
+halide solution (corresponds to approx. 3 times the residence       0.42 mL of (bromomethyl)benzene and 26 mL of THF are added.
+time in the continuous flow reactor).                               After an incubation period of 10 min, the remaining
+    • Synthesis of benzylmagnesium bromide from                     (bromomethyl)benzene in THF (7.89 mL in 65.49 mL) is added.
+(bromomethyl)benzene and magnesium turnings.
+    In the continuous synthesis process, starting the synthesis     Results
+at 50 °C and using an initially higher flow rate serves solely
+to accelerate the start of the synthesis and to reach steady        Choice of reaction
+state faster, and has no effect on the yield and selectivity        Within this study, the Grignard reagent formation of
+achieved. Since no steady state is reached in a discontinuous       phenylmagnesium bromide 2 from bromobenzene 1 was
+or semi-continuous operation mode, there is no need to              used for the determination of residence time distributions
+accelerate the start-up behaviour in a batch experiment.            under reactive conditions and the Grignard reagent
+Therefore, and for safety reasons, the application of elevated      formation     of  benzylmagnesium    bromide     5   from
+temperatures and feed rates is not used in the batch                (bromomethyl)benzene 4 was performed to study the impact
+experiments.                                                        on selectivity. The halides used and their corresponding
+
+
+
+2720 | React. Chem. Eng., 2023, 8, 2717–2728                                       This journal is © The Royal Society of Chemistry 2023
+Reaction Chemistry & Engineering                                                                                                     Paper
+
+
+
+
+                                                                           Fig. 4 Temperature profile for the synthesis of phenylmagnesium
+                                                                           bromide.
+
+
+
+                                                                           synthesis of benzylmagnesium bromide 5 can sometimes yield
+Fig. 3 Halides (bromobenzene 1, (bromomethyl)benzene 4) and their
+corresponding Grignard reagent (2, 5) and Wurtz coupling product (3, 6).
+                                                                           the Wurtz product quantitatively,1 making this synthesis a
+                                                                           suitable benchmark reaction. Using the same process parameters
+                                                                           (flow rate, thermostatic bath temperature, magnesium mass,
+Grignard reagent and Wurtz coupling product are displayed                  solvent) as for the synthesis of phenylmagnesium bromide 2
+in Fig. 3.                                                                 allows comparability of residence time distributions based on the
+   The synthesis of phenylmagnesium bromide from                           Bodenstein numbers. Only a lower halide concentration was
+bromobenzene was chosen to determine the residence time                    chosen (0.7 mol L−1 instead of 1.0 mol L−1) to avoid precipitation
+distribution under reactive conditions due to the following                of the Wurtz product 6 during the continuous syntheses.
+reasons:                                                                       Benzyl alcohol, a typical product formed by reaction of the
+   (1) It is a well-established and frequently used Grignard               Grignard reagent with oxygen and subsequent hydrolysis,3 was
+synthesis (the synthesis is among the 20 most cited Grignard               detected in the reaction solution. The fraction of benzyl alcohol
+reagents on the platform SciFinder13).                                     was found to be up to 19% and could not be fully avoided. For
+   (2) It is known that this reaction does not tend to form the            the actual synthesis case, less active Grignard reagent is
+Wurtz coupling product 3.10 This is important for the RTD                  available for a subsequent synthesis (e.g. Grignard reaction)
+measurements since the Wurtz coupling product 3 exhibits                   due to the presence of benzyl alcohol. For studying the impact
+bands in the IR spectrum at wavelengths very similar to the band           of the residence time distribution on the selectivity of the
+positions of the IR spectrum of toluene, so the presence of 3              Grignard formation, the consecutive reaction is irrelevant.
+would thwart the calibration of the IR spectrometer for toluene.           Alcohol formation can be suppressed by consistently working
+   (3) The synthesis of benzylmagnesium bromide instead is                 under an inert atmosphere (argon) and by using dry materials
+prone to the formation of the Wurtz coupling product 6.1 The               and chemicals. During the experiments evidence arose that
+Grignard reagent and the Wurtz coupling product both                       during sample collection and especially during sample
+exhibit bands in the IR spectrum at wavelengths similar to                 processing, the alcohol is formed. Since benzyl alcohol
+the band positions used to determine toluene concentration                 formation is a consecutive reaction of benzylmagnesium
+during RTD measurement. Again, this would thwart the                       bromide and does not occur or compete with the actual
+calibration of the IR spectrometer.                                        Grignard synthesis, the fraction of detected benzyl alcohol was
+   A typical temperature profile during the formation of 2 is              stoichiometrically considered as benzylmagnesium bromide
+shown in Fig. 4. Feeding of magnesium turnings into the                    for the selectivity evaluation (further information on the benzyl
+reactor led to small temperature drops at sensor T4,                       alcohol formation can be found in the ESI†).
+indicating the contact of the thermoelement T4 with the
+colder magnesium turnings. If the boiling point of the
+chemicals involved is not exceeded, there is no formation of               Residence time measurements under reactive conditions
+gas bubbles which would influence the flow behaviour within                The determination of the residence time distribution (RTD)
+the reactor cartridge to a considerable extent.                            and the Bodenstein numbers under reactive synthesis
+   In contrast to the use of phenylmagnesium bromide synthesis             conditions provides a more accurate representation of the
+for RTD measurements, influences of pump behaviour on the                  hydrodynamic situation in a reactor with a permanently
+selectivity of Grignard reagent formation are most readily                 changing magnesium bed. Mean Bodenstein numbers under
+demonstrated with syntheses that exhibit a strong affinity for the         reactive conditions were found to be lower than those under
+formation of the Wurtz coupling product. It is reported that the           non-reactive conditions, but standard deviations remain
+
+
+
+This journal is © The Royal Society of Chemistry 2023                                            React. Chem. Eng., 2023, 8, 2717–2728 | 2721
+Paper                                                                                                   Reaction Chemistry & Engineering
+
+Table 3 Mean Bodenstein numbers and residence times for the use of different pump systems in a reactor cartridge filled with coarse or fine
+magnesium turnings and introduction or displacement of the tracer toluene during simultaneous Grignard reagent formation (for distribution functions
+see the ESI†)
+
+            Magnesium                              Introduce/displace     Mean      Standard                    Mean     Δt̄ (mean-       Δt̄ (displ.–
+Column      turnings        Pump                   tracer                 Bo/1      deviation of Bo/1   τ/s     t̄/s     hydrodyn.)/s     introd.)/s
+1           Coarse          Syringe pump A         Displace               26        11                  652     650       −2              11
+2                                                  Introduce              21         8                          639      −13
+
+3           Coarse          Micro annular          Displace               28         6                  652     683       31               2
+4                           gear pump C            Introduce              18        11                          681       29
+
+5           Coarse          Valveless rotary       Displace               29         6                  652     723       71              35
+6                           piston pump D          Introduce              20         4                          688       36
+
+7           Fine            Syringe pump A         Displace               37        25                  583     640       57              31
+8                                                  Introduce              42        23                          609       26
+
+9           Fine            Micro annular gear     Displace               46        12                  583     651       68               8
+10                          pump C                 Introduce              66        37                          643       60
+
+11          Fine            Valveless rotary       Displace               25         8                  583     717      134              38
+12                          piston pump D          Introduce              68        34                          679       96
+
+
+
+higher for fine magnesium turnings than for coarse turnings                 since magnesium turnings react and their size decreases.
+(Table 3 and Fig. 5, for details of the non-reactive experiments            Voids may form within the magnesium packing that may lead
+see part 1, exemplary distribution functions in the ESI†). On               to preferential short-circuit flow paths. Since magnesium
+average, the Bodenstein numbers decreased by about 66% and                  turnings are repeatedly replenished during synthesis, the
+74% for the coarse and fine magnesium turnings, respectively                reactor was operated until steady state and complete
+(mean number of RTD measurements: 3.8 for coarse turnings,                  conversion of the halide reactant 1 were achieved before the
+5.8 for fine turnings). The mean Bo for the use of pump D with              first residence time experiment was started. Thus, a constant
+fine magnesium turnings and displacement of the tracer                      particle size distribution was assumed for every measurement
+toluene by pure THF even decreased by 90%.                                  run. Even though these particle size distributions do not
+   The decrease in Bodenstein numbers occurs regardless of                  exactly match the particle size distribution of the mixed
+the fact that portions of the magnesium turnings are                        turnings in part 1, the impact of the particle size distribution
+replenished during synthesis. The influence of the decreasing               on the residence time distribution is also evident for the
+magnesium mass should be limited to the period of a single                  reactive case in Fig. 5. A broad particle size distribution
+measurement run. This assumption does not consider that                     (coarse Mg turnings) results in higher Bo when the tracer
+the composition of the magnesium bed changes during                         toluene is displaced from the reactor system.
+synthesis. The particle size distribution becomes broader                       For non-reactive measurements a significant influence of
+                                                                            the jogging motor on the axial dispersion was observed. This
+                                                                            effect was also noticeable under reactive conditions. When
+                                                                            coarse magnesium turnings were used and the jogging motor
+                                                                            was omitted, a maximum Bodenstein number of 10 was
+                                                                            measured, regardless of the pump used (see the ESI†). This
+                                                                            value is smaller than the Bodenstein numbers in Table 3 and
+                                                                            Fig. 5 and illustrates the positive effect of the jogging motor
+                                                                            on flow behaviour as already mentioned in part 1 for the
+                                                                            non-reactive case.
+                                                                                For most cases, mean residence times under reactive
+                                                                            conditions are higher than the calculated hydrodynamic
+                                                                            residence time. For the coarse magnesium turnings, on
+                                                                            average, the mean residence time increases by 11% compared
+                                                                            to the unreactive case and by 4% compared to the
+                                                                            hydrodynamic residence time. For the fine magnesium
+                                                                            turnings, on average, the mean residence time increases by
+Fig. 5 Comparison of Bodenstein numbers and standard deviations
+                                                                            26% compared to the unreactive case and by 13% compared to
+for fine and coarse magnesium turnings under reactive and non-              the hydrodynamic residence time. Assuming that the reaction
+reactive conditions. Description of columns according to Table 3.           does not influence the RTD experiments except for the changes
+
+
+
+2722 | React. Chem. Eng., 2023, 8, 2717–2728                                                This journal is © The Royal Society of Chemistry 2023
+Reaction Chemistry & Engineering                                                                                                          Paper
+
+                                                                              data in Fig. 6), the risk for channelling does remain for
+                                                                              packed beds. Most likely there is not only one channel
+                                                                              formed but a few channels with different characteristics, so
+                                                                              that channelling is not quite visible within the recorded data.
+                                                                                 Within the present flow behaviour, most likely both
+                                                                              reasons exist at the same time, but differentiation between
+                                                                              both effects is out of the scope of this study.
+
+
+                                                                              Batch synthesis of benzylmagnesium bromide
+                                                                              Well-stirred batch reactors show a maximum degree of
+                                                                              backmixing, representing one extreme case of residence time
+                                                                              behaviour. The batch synthesis of 5 from 4 in THF is carried
+                                                                              out using various procedures, which are described in detail
+                                                                              in the Experimental section.
+Fig. 6 Example of a fit of a model curve (dispersion model) to the
+                                                                                  Significant amounts of Wurtz product 6 were obtained
+interpolated and normalized measurement data (fine magnesium
+turnings, pump C, introduction of the tracer).                                using the general literature procedure for the synthesis of
+                                                                              Grignard reagents (Table 4, batch procedure 1). The Wurtz
+                                                                              product 6 has a melting point of 52 °C and in this synthesis
+within the magnesium bed, the magnesium bed and its impact                    it was present in such a high concentration that it
+on the flow behaviour is responsible for the increase in t̄.                  precipitated in the flask, forming a thick layer of precipitate,
+   Possible reasons for the increase in residence time could be:              and stirring of the reaction mixture by means of a magnetic
+   (1) Missing compaction. The magnesium bed is subject to                    stirrer was hardly possible (picture in the ESI†). Due to the
+changes occurring due to the reacting magnesium. The                          large amount of Wurtz product, only a low concentration of
+decrease in magnesium mass during one measurement run is                      Grignard reagent would be available for a subsequent
+2.4% and 2% for the coarse and the fine magnesium turnings.                   synthesis. The poor stirrability of the reactor contents also
+Although magnesium turnings are replenished after every                       means that targeted temperature control was hardly possible.
+measurement run, the compaction of the magnesium bed by                           If the synthesis parameters from the continuous synthesis
+means of the jogging motor might be less effective in a dry                   of 5 were adapted to batch synthesis (batch procedure 2), the
+magnesium bed. There might be a small pile up of replenished                  formation of 6 was reduced compared to the literature
+magnesium turnings at the top of the bed right above the                      reaction conditions. This was partly a result of the lower
+product outlet, too small to be visually noticeable by looking                halide concentration. It must be noted that intense mixing
+through the viewing window, but significant enough to form                    was hardly possible due to the high magnesium content in
+an inhomogeneous bed with voids and thus less magnesium in                    the flask (picture in the ESI†). The small volume of the halide
+the reactive zone of the reactor cartridge. Under dry conditions              solution initially introduced was not sufficient to completely
+and independent of the size of the magnesium turnings, 10%                    cover the magnesium turnings. For this reason, the
+less magnesium mass fits into the reactor cartridge when the                  subsequently added halide solution initially only met the
+jogging motor is omitted, showing the importance of the                       bare magnesium surface and rinsed from top to bottom
+jogging motor for the compaction of the bed.                                  through only magnesium turnings before eventually meeting
+   (2) Channelling (short-circuit flow). The formation of                     the Grignard reagent in the sump of the flask. Even in a
+channels within the bed due to the reacting magnesium                         continuous synthesis process, the halide reactant is in more
+would also cause an increase in residence time, if the velocity               intense contact with the Grignard reagent. Due to the high
+within such a channel is increased (less pressure drop) but                   magnesium excess, there is a large magnesium surface area
+the velocity within the remaining homogeneous bed is                          available for Grignard reagent synthesis per drop of halide
+reduced. Although the recorded measurement data do not                        solution. Coarse and fine magnesium turnings have similar
+clearly exhibit a strong channelling behaviour (exemplary                     selectivity in batch synthesis since formation of the Wurtz
+
+Table 4 Conversion and selectivity of reaction mixtures after the syntheses
+
+                                                          Batch procedure
+                                                          1 (coarse Mg         2 (fine Mg      2 (coarse Mg         3 (fine Mg       3 (coarse Mg
+                                                          turnings)            turnings)       turnings)            turnings)        turnings)
+Selectivity/%         Grignard reagent (5)                 11                  81               82                  74               68
+                      Thereof benzyl alcohol                4                  10                8                  11                8
+                      Wurtz coupling product (6)           89                  19               18                  26               32
+
+Conversion/%          Halide (4)                          100                  98              100                  95               95
+
+
+
+This journal is © The Royal Society of Chemistry 2023                                                React. Chem. Eng., 2023, 8, 2717–2728 | 2723
+Paper                                                                                          Reaction Chemistry & Engineering
+
+product can occur only when the halide reactant comes into         case when fine magnesium turnings were used
+contact with the Grignard reagent.                                 (Fig. 7, columns 5–8). Fine magnesium turnings possess a
+    Conducting the Grignard reagent synthesis in a batch under     larger magnesium surface compared to coarse turnings. Since
+the investigated reaction conditions exhibited inadequate          the Grignard reagent formation is a surface reaction between
+temperature control of the exothermic Grignard synthesis due       halide and metallic magnesium, the reaction between
+to the poor stirrability of the magnesium turnings, exhibiting a   magnesium and 4 on a large Mg surface proceeds fast. The
+safety hazard. Considering that Grignard reagents are rarely       data show that not only the size of the magnesium particles
+the desired final product and that in laboratory syntheses in      has an influence on the selectivity but also the type of pump
+batch flasks, the subsequent synthesis such as the Grignard        used. The influence of the particle size is more pronounced
+reaction is carried out in the same flask, the high magnesium      than the influence of the pump type. All pumps used were
+excess requires separation of the magnesium turnings from          calibrated before use, so that a wrong volumetric flow rate
+the Grignard reagent. The influence of remaining magnesium         can be ruled out and the influence can be attributed to the
+turnings can lead to problems ranging from issues with             pumping principle alone. The following order of selectivity
+stirring to insufficient heat dissipation to undesired reactions   towards 5 when using coarse magnesium turnings was found:
+with the magnesium turnings (e.g. in the case of a halogen         pump A > pump D > pump C > pump C + pump B. For the
+atom on the electrophilic substrate for the subsequent             fine magnesium turnings, the following order was obtained:
+synthesis), so that separation of the magnesium turnings may       pump C > pump C + pump D > pump A > pump D.
+be necessary. Separation of a solid from a batch flask is not      Considering only single pumps, the lowest selectivity was
+easy to achieve preparatively and, moreover, opening the flask     measured for pump C for the coarse magnesium turnings. In
+can lead to contamination with, e.g., oxygen and moisture. The     contrast to that, the best selectivity was found for the fine
+latter would lead to yield losses due to the reaction with the     turnings and the same pump. Similar contradictory results
+Grignard reagent and must be avoided urgently. To handle           were obtained for pump A: the highest selectivity was
+these challenges, laboratory syntheses in batch flasks are         registered for the coarse magnesium turnings, while for fine
+typically conducted with stoichiometric amounts of                 turnings a low selectivity was found. Pronounced formation
+magnesium, so that at the end of the Grignard synthesis the        of the Wurtz product 6 may result from limited magnesium
+magnesium is completely consumed. These points were                surface accessibility, limiting the conversion of the educt 4.
+considered during a further adjustment of the literature
+conditions (batch procedure 3) as a compromise between the
+previously investigated conditions. The adjustment of the
+conditions corresponds to what is expected from a laboratory
+synthesis in a batch flask: in the optimum case, complete
+conversion of the magnesium turnings and complete mixing
+of the reactants are achieved so that uniform tempering is
+possible. Independent of the size of the magnesium turnings,
+5% of the halide reactant could not be converted in the flask at
+the end of the synthesis with condition 3, although the flask
+was tempered and stirred for an additional 30 min after the
+addition of the complete halide solution and magnesium
+turnings were still present (picture in the ESI†). This
+comparatively low conversion is related to the smaller
+magnesium surface, although it is not clear why the remaining
+4 did not or could not react with the remaining magnesium.
+When using fine turnings, a higher selectivity was achieved.
+Assuming complete backmixing and since all other reaction          Fig. 7 Selectivity for the synthesis of 5 depending on the pump
+conditions were constant for both types of Mg turnings, the        system used. Description of columns in Table 5.
+influence of the magnesium surface is particularly evident
+here: a larger magnesium surface area leads to a higher yield
+of the Grignard reagent. The formation of side product 6 was       Table 5 Description of columns in Fig. 7
+
+found to be higher compared to that of the batch procedure 2,      Column             Magnesium turnings             Pump
+which is also due to the smaller Mg surface.
+                                                                   1                  Coarse                         Pump A
+                                                                   2                  Coarse                         Pump C
+                                                                   3                  Coarse                         Pump D
+Continuous synthesis of benzylmagnesium bromide using              4                  Coarse                         Pump C + pump B
+different pumps                                                    5                  Fine                           Pump A
+                                                                   6                  Fine                           Pump C
+Lower selectivity was measured when coarse magnesium               7                  Fine                           Pump D
+turnings were used (Fig. 7, columns 1–4) compared to the           8                  Fine                           Pump C + pump D
+
+
+
+2724 | React. Chem. Eng., 2023, 8, 2717–2728                                       This journal is © The Royal Society of Chemistry 2023
+Reaction Chemistry & Engineering                                                                                                Paper
+
+The available Mg surface in a bed of fine turnings is more
+than twice as high as in a bed of coarse turnings (see part 1).
+Another reason for an increasing formation of 6 might be an
+enhanced backmixing that widens the contact zone where 4
+and 5 are simultaneously present. The effect of the available
+Mg surface is clearly observable when comparing the results
+of coarse and fine turnings. When assuming that Mg beds
+with similar sized turnings are comparable, the available Mg
+surface cannot be the reason for the differences in selectivity
+when using the same turnings. Therefore, differences in the
+residence time distribution are likely the reason for
+pronounced Wurtz product formation.
+    When using coarse magnesium turnings, a broader particle
+size distribution is present. Therefore, the magnesium bed as
+                                                                    Fig. 8 Selectivity as a function of Bodenstein number for the use of
+a whole is more inhomogeneous compared to a bed of finer
+                                                                    coarse and fine magnesium turnings.
+turnings. According to the RTD results for non-reactive Mg
+beds, the small amplitudes and high frequencies of pump D
+have only a limited effect on the degree of backmixing.
+Therefore, pump C and pump D exhibit similar selectivity.           the fine magnesium turnings, the Bodenstein numbers
+Although pump A does only pulse with long periods, it does          obtained by displacing the toluene from the reactor system
+exhibit a distinct pulse generated by switching between the         were used, whereas for the coarse magnesium turnings, the
+two alternating syringes, which is noticeable by a brief dip in     Bodenstein numbers obtained by introducing the tracer
+volumetric flow rate (see part 1). This single but distinct pulse   toluene were used. This selection was made based on the
+appears to have a positive effect on the flow behaviour in the      Bodenstein numbers obtained when using a mixture of
+magnesium bed, most likely because the momentum change              coarse and fine magnesium turnings (see part 1 for details),
+of this pulse is large enough to induce movement of the             since the magnesium bed in the steady state of a Grignard
+turnings. For fine turnings, the highest selectivity was            synthesis resembles a mixture of coarser and finer
+recorded with the pulsation-free pump C. Pumps or pump              magnesium turnings due to the reacting magnesium.
+combinations that exhibit pulsed flow led to lower selectivity.     Assigning a Bodenstein number of 0 to the batch synthesis
+It is concluded that for a compacted magnesium bed of fine          enables evaluation of the impact of the residence time
+magnesium turnings, a pulsation-free pump leads to the              distribution on the selectivity towards the Grignard reagent.
+lowest degree of backmixing/axial dispersion. In contrast to        A linear correlation is found for both sizes of Mg turnings,
+the non-reactive RTD measurements, pulsed flow conditions           indicating that a further improvement in Bodenstein
+seemingly do not reduce axial dispersion. For the non-reactive      numbers could lead to a further increase in selectivity.
+RTD measurements (see part 1), an increase of the Bo could
+be realized by tuning the oscillatory Reynolds number Re0.
+Experiments with pump parameters that were found to be              Oscillating flow operation
+most effective without reaction (coarse turnings: Re0 = 1.38,       Due to the changing magnesium bed during Grignard
+f = 0.0416 s−1, x0 = 0.0057 m; fine turnings: Re0 = 0.10,           reagent synthesis, the oscillation amplitude and frequency
+f = 0.6667 s−1, x0 = 0.000065 m) did not prove effective during     parameters identified as optimal for the non-reactive
+Grignard reagent synthesis. Compared to the pulsation-free          operation cannot be transferred when aiming for an increase
+pump C, 4% (coarse turnings) or 3% (fine turnings) less 5 was       in selectivity.
+obtained.                                                              Varying both parameters based on the accessible range of
+                                                                    parameters of pump D did not increase the yield of 5 when
+                                                                    using the fine magnesium turnings compared to synthesis
+Correlation between Bodenstein number and selectivity               using pulsation-free pump C. The selectivity decreased with
+A comparison of batch with continuous experiments reveals           increasing oscillatory Reynolds number (Fig. 9). The highest
+that the yield of the desired Grignard reagent 5 was always         selectivity was still achieved under oscillation-free flow
+greater in the continuous experiments. The best results             conditions. A similar correlation was observed for the
+obtained with the batch synthesis are similar to the worst          oscillation frequencies (Fig. 10). The maximum selectivity
+results obtained with the continuous approach. By using a           thus shifts to smaller oscillatory Reynolds numbers in
+continuous synthesis process, the fraction of 6 can be              benzylmagnesium bromide synthesis. Evaluation of the effect
+reduced, the quality of the product obtained is improved and        of the stroke volume (see Fig. 11) suggests that increasing the
+the efficiency of the synthesis is increased. The positive effect   stroke volume above a value of 100 μL (maximum stroke
+of a continuous synthesis process on the production of              volume for pump D with the used pump head, highest
+Grignard reagents is thus clearly demonstrated (Fig. 8). For        amplitude) could lead to improved selectivity.
+
+
+
+This journal is © The Royal Society of Chemistry 2023                                     React. Chem. Eng., 2023, 8, 2717–2728 | 2725
+Paper                                                                                                Reaction Chemistry & Engineering
+
+
+
+
+Fig. 9 Selectivity as a function of oscillatory Reynolds number for the     Fig. 12 Selectivity as a function of the oscillatory Reynolds number
+use of fine magnesium turnings (pump C + pump D).                           for the use of fine magnesium turnings (pump C + pump B).
+
+
+
+                                                                               While the use of the programmable syringe pump allowed
+                                                                            for an increase in amplitude, only lower oscillation
+                                                                            frequencies could be realized. The oscillating flow conditions
+                                                                            did not lead to an improvement in selectivity (Fig. 12).
+                                                                            Regardless of Re0, the selectivity remained at about 80%. Even
+                                                                            though the same Re0 range was accessed as with pump D, the
+                                                                            selectivity obtained with the syringe pump was lower. Since
+                                                                            only the relation between the amplitude and the frequency of
+                                                                            the pulsation was changed, it can be assumed that in the
+                                                                            reactive case the influence of the amplitude on the selectivity
+                                                                            is more pronounced than the effect of the frequency. Thus,
+                                                                            Re0 does not seem to be the best suited indicator for the
+                                                                            realized flow conditions in a reacting magnesium bed. The
+                                                                            interaction of these two parameters is hidden.
+                                                                               Varying the oscillation parameters when using coarse
+                                                                            magnesium turnings leads to a similar result to that when using
+Fig. 10 Selectivity as a function of oscillation frequency for the use of   the finer magnesium turnings. A slight negative dependency of
+fine magnesium turnings (pump C + pump D).                                  the selectivity on the oscillatory Reynolds number was observed
+                                                                            (Fig. 13). The results scatter more compared to that when using
+                                                                            fine turnings. Interestingly, for some data points selectivity
+
+
+
+
+Fig. 11 Selectivity as a function of oscillation amplitude for the use of   Fig. 13 Selectivity as a function of oscillatory Reynolds number for
+fine magnesium turnings (pump C + pump D).                                  the use of coarse magnesium turnings (pump C + pump B).
+
+
+
+2726 | React. Chem. Eng., 2023, 8, 2717–2728                                               This journal is © The Royal Society of Chemistry 2023
+Reaction Chemistry & Engineering                                                                                                      Paper
+
+                                                                                In contradiction to the hypothesized improvement of the
+                                                                            selectivity by reducing the degree of backmixing, as indicated
+                                                                            by non-reactive RTD measurements, a significant
+                                                                            improvement of the selectivity for both fine and coarse
+                                                                            magnesium turnings could not be proven. This is explained
+                                                                            by the fact that for each positive deflection of amplitude, the
+                                                                            flow velocity across the magnesium bed is briefly increased,
+                                                                            although the total volume of fluid conveyed remains
+                                                                            unchanged. The higher the amplitude at a constant
+                                                                            frequency, the higher the Re0 and also the resulting flow
+                                                                            velocity. The flow rate in a continuous synthesis corresponds
+                                                                            to the feed rate in a batch synthesis and there, too, the faster
+                                                                            addition of the halide reactant leads to increased formation
+                                                                            of the Wurtz coupling product.1 The formation of channels
+Fig. 14 Selectivity as a function of oscillation frequency for the use of   and insufficient compaction of the magnesium bed during
+coarse magnesium turnings (pump C + pump B).
+                                                                            synthesis lead to an inhomogeneous bed which enhances
+                                                                            irregular flow conditions and consequently thwart the efforts
+                                                                            to minimize axial dispersion by means of a superimposed
+                                                                            oscillatory flow as is also reflected in the significantly lower
+                                                                            Bodenstein numbers of the reactive measurements.
+
+
+                                                                            Conclusions
+                                                                            The investigations demonstrate that minimizing the degree of
+                                                                            backmixing represents a valid strategy to deal with Grignard
+                                                                            reagents that are prone to the formation of Wurtz products.
+                                                                            The elaborated correlations between the Bodenstein number
+                                                                            and the selectivity towards the desired Grignard reagent
+                                                                            product, that also include batch syntheses, underline the
+                                                                            general applicability of the concept. This finding is of special
+                                                                            relevance for Wurtz-affine reactions that require advanced
+                                                                            reaction control, which, as has been demonstrated, can be
+Fig. 15 Selectivity as a function of oscillation amplitude for the use of   realized with a suitable reactor or flow conditions.
+coarse magnesium turnings (pump C + pump B).                                Consequently, a change of the solvent and an associated in-
+                                                                            depth change of the entire reaction system and potentially the
+                                                                            product can be avoided. Furthermore, it is evident that Bo of
+values above the value of an oscillation-free flow were recorded            50 or above is required to lead to a significant improvement of
+(Re0 = 0). The data suggest that some positive effect of the                the selectivity. A particular challenge is the realization of a
+oscillating flow might occur when using the coarser magnesium               narrow residence time distribution under reactive conditions.
+turnings. A separate analysis of the influence of the oscillating           Since the magnesium bed participates in the reaction and the
+frequency and the amplitude does not yield a clear picture. The             Mg turnings change their size during the reaction progress,
+selectivity dependency on the frequency scatters strongly around            knowledge gained for the non-reactive case cannot be
+a selectivity of about 75% (Fig. 14). It is concluded that the              transferred directly. The residence time distribution is much
+stroke frequency has no influence on the selectivity for a bed of           broader under reactive conditions and especially a
+coarse magnesium turnings, at least in the applied frequency                manipulation of the hydrodynamics in the magnesium bed by
+range. The influence of the amplitude is not much clearer. At               means of oscillating flows strongly deviates. The
+the highest amplitude, a negative impact on the selectivity can             inhomogeneity of the bed seems to be the most important
+be observed. For the remaining data points scattering is too                parameter in this case, which governs the residence time
+strong to draw a final conclusion (Fig. 15). The significant                distributions that can be realized.
+scattering of the data points leads to the conclusion that the                 Although the applicability of the oscillating flow
+partial positive effect on selectivity is not a result of the               conditions to generate narrow residence time distributions
+oscillating flow, but more likely is related to less uniform and            could not be proven under reactive conditions, the results
+less reproducible magnesium beds due to the broader particle                achieved for the non-reactive case in part 1 of this
+size distribution and larger magnesium turnings. The                        contribution clearly show the potential of this approach.
+characteristics of the magnesium bed seem to dominate when                  These results also give evidence that a meaningful tuning of
+coarse magnesium turnings are used.                                         the oscillatory flow conditions to the characteristics of fixed
+
+
+
+This journal is © The Royal Society of Chemistry 2023                                            React. Chem. Eng., 2023, 8, 2717–2728 | 2727
+Paper                                                                                          Reaction Chemistry & Engineering
+
+beds that participate in the reaction as reactant can open the         including the funding via the Fraunhofer development and
+avenue to a broader application of oscillating flow conditions         career program TALENTA. The authors thank Lisa Pokropp
+as a tool for reaction control.                                        (Fraunhofer IMM) for the creation of the table of contents
+   In general, a continuously operated flow reactor yields             graphic.
+higher selectivity and consequently product quality for
+Grignard reagent syntheses than a synthesis in a semi-                 References
+continuous batch process due to the reduced degree of
+backmixing. The comparatively low reaction volume of flow               1 P. E. Rakita and G. S. Silverman, Handbook of Grignard
+reactors provides a more precise temperature control and                  reagents, ed. M. Dekker, New York, Basel, Hong Kong,
+comes along with a reduced hazard potential that would stem               1996.
+from the release of toxic and hazardous chemicals in the                2 H. Kryk, G. Hessel, W. Schmitt and N. Tefera, Safety aspects
+event of leakage. The resulting smaller reactor dimensions,               of the process control of Grignard reactions, Chem. Eng. Sci.,
+even on a large industrial scale, and the possibility of                  2007, 62, 5198–5200.
+modularization of the production plant allow flexibility of the         3 A. Kadam, M. Nguyen, M. Kopach, P. Richardson, F. Gallou,
+production process in terms of adaptation to different                    Z.-K. Wan and W. Zhang, Comparative performance
+environments and available space. To sum up, the                          evaluation and systematic screening of solvents in a range of
+continuous synthesis of a Grignard reagent has the potential              Grignard reactions, Green Chem., 2013, 15, 1880.
+to improve product quality, increase process safety and                 4 D.       F.     Aycock,         Solvent     Applications   of
+enable process flexibility.                                               2-Methyltetrahydrofuran in Organometallic and Biphasic
+                                                                          Reactions, Org. Process Res. Dev., 2007, 11, 156–159.
+Notation                                                                5 A.-G. Sicaire, M. A. Vian, A. Filly, Y. Li, A. Bily and F.
+                                                                          Chemat, in Alternative Solvents for Natural Products
+                                                                          Extraction, ed. F. Chemat and M. A. Vian, Springer Berlin
+Bo                  Bodenstein number                            1
+f                   Frequency                                    s−1      Heidelberg, Berlin, Heidelberg, 2014, pp. 253–268.
+Re0                 Oscillatory Reynolds number                  1      6 T. van Gerven and A. Stankiewicz, Structure, Energy, Synergy,
+t                   Time                                         s        Time—The Fundamentals of Process Intensification, Ind.
+t̄                  Mean residence time                          s        Eng. Chem. Res., 2009, 48, 2465–2474.
+x0                  Amplitude                                    m
+                                                                        7 M. Saber, J. M. Commenge and L. Falk, Microreactor
+                                                                          numbering-up in multi-scale networks for industrial-scale
+Greek letters                                                             applications: Impact of flow maldistribution on the
+                                                                          reactor performances, Chem. Eng. Sci., 2010, 65,
+τ                  Hydrodynamic residence time                     s
+                                                                          372–379.
+                                                                        8 S. Hafeez, G. Manos, S. M. Al-Salem, E. Aristodemou and A.
+Author contributions                                                      Constantinou, Liquid fuel synthesis in microreactors, React.
+                                                                          Chem. Eng., 2018, 3, 414–432.
+Conceptualization: E. D. (supporting), D. Z. (lead); data               9 S. R. L. Gobert, S. Kuhn, L. Braeken and L. C. J. Thomassen,
+curation: E. D. (lead); formal analysis: E. D. (lead); funding            Characterization of Milli- and Microflow Reactors: Mixing
+acquisition: E. D. (supporting), M. M. (lead); investigation: E.          Efficiency and Residence Time Distribution, Org. Process Res.
+D. (lead); methodology: E. D. (equal), D. Z. (equal); project             Dev., 2017, 21, 531–542.
+administration: E. D. (lead); resources: E. D. (supporting), D.        10 G. Menges-Flanagan, E. Deitmann, L. Gössl, C. Hofmann
+Z. (supporting), G. M.-F. (supporting), M. M. (supporting);               and P. Löb, Scalable Continuous Synthesis of Grignard
+supervision: D. Z. (lead), G. M.-F. (supporting), M. M.                   Reagents from in Situ-Activated Magnesium Metal, Org.
+(supporting); validation: E. D. (lead), D. Z . (supporting);              Process Res. Dev., 2020, 24, 315–321.
+visualization: E. D. (lead); writing – original draft: E. D. (lead);   11 G. Menges-Flanagan, E. Deitmann, L. Gössl, C. Hofmann
+writing – review & editing: E. D. (equal), D. Z. (equal).                 and P. Löb, Scalable Continuous Synthesis of Organozinc
+                                                                          Reagents and Their Immediate Subsequent Coupling
+Conflicts of interest                                                     Reactions, Org. Process Res. Dev., 2021, 25, 427–433.
+There are no conflicts to declare.                                     12 Organikum, Organisch-chemisches Grundpraktikum, Wiley
+                                                                          VCH, Weinheim, 23rd edn, 2009.
+Acknowledgements                                                       13 M. Berton, K. Sheehan, A. Adamo and D. T. McQuade,
+                                                                          Disposable Cartridge Concept for On-Demand Synthesis of
+The authors would like to acknowledge the Fraunhofer IMM                  Turbo Grignards, Knochel-Hauser Amides and Magnesium
+and the Fraunhofer organization for internal funding                      Alkoxides, , Beilstein J. Org. Chem., 2020, 16, 1343–1356.
+
+
+
+
+2728 | React. Chem. Eng., 2023, 8, 2717–2728                                         This journal is © The Royal Society of Chemistry 2023
+

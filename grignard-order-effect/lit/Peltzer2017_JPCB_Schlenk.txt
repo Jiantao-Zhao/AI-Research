@@ -1,0 +1,907 @@
+                                                        This is an open access article published under an ACS AuthorChoice License, which permits
+                                                        copying and redistribution of the article or any adaptations for non-commercial purposes.
+
+
+
+
+                                                                                                                                                          Article
+
+                                                                                                                                              pubs.acs.org/JPCB
+
+
+
+
+How Solvent Dynamics Controls the Schlenk Equilibrium of Grignard
+Reagents: A Computational Study of CH3MgCl in Tetrahydrofuran
+Raphael M. Peltzer,† Odile Eisenstein,†,‡ Ainara Nova,*,† and Michele Cascella*,†
+†
+ Department of Chemistry and Centre for Theoretical and Computational Chemistry (CTCC), University of Oslo, Postbox 1033
+ Blindern, 0315 Oslo, Norway
+‡
+ Institut Charles Gerhardt, UMR 5253 CNRS-Université de Montpellier, Université de Montpellier, cc 1501, Place E. Bataillon,
+ 34095 Montpellier, France
+    *
+    S Supporting Information
+
+
+
+
+                                                                                                                                                                         Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+    ABSTRACT: The Schlenk equilibrium is a complex reaction
+    governing the presence of multiple chemical species in solution of
+    Grignard reagents. The full characterization at the molecular level of
+    the transformation of CH3MgCl into MgCl2 and Mg(CH3)2 in
+    tetrahydrofuran (THF) by means of ab initio molecular dynamics
+    simulations with enhanced-sampling metadynamics is presented.
+    The reaction occurs via formation of dinuclear species bridged by
+    chlorine atoms. At room temperature, the diﬀerent chemical species
+    involved in the reaction accept multiple solvation structures, with
+    two to four THF molecules that can coordinate the Mg atoms. The
+    energy diﬀerence between all dinuclear solvated structures is lower
+    than 5 kcal mol−1. The solvent is shown to be a direct key player
+    driving the Schlenk mechanism. In particular, this study illustrates
+    how the most stable symmetrically solvated dinuclear species,
+    (THF)CH3Mg(μ-Cl)2MgCH3(THF) and (THF)CH3Mg(μ-Cl)(μ-CH3)MgCl(THF), need to evolve to less stable asymmetri-
+    cally solvated species, (THF)CH3Mg(μ-Cl)2MgCH3(THF)2 and (THF)CH3Mg(μ-Cl)(μ-CH3)MgCl(THF)2, in order to yield
+    ligand exchange or product dissociation. In addition, the transferred ligands are always departing from an axial position of a
+    pentacoordinated Mg atom. Thus, solvent dynamics is key to successive Mg−Cl and Mg−CH3 bond cleavages because bond
+    breaking occurs at the most solvated Mg atom and the formation of bonds takes place at the least solvated one. The dynamics of
+    the solvent also contributes to keep relatively ﬂat the free energy proﬁle of the Schlenk equilibrium. These results shed light on
+    one of the most used organometallic reagents whose structure in solvent remains experimentally unresolved. These results may
+    also help to develop a more eﬃcient catalyst for reactions involving these species.
+
+
+■    INTRODUCTION
+In 1900, the presentation by Victor Grignard of a new
+                                                                                 allowing work at very mild conditions and with large functional
+                                                                                 tolerance make organomagnesium reagents very attractive.5−12
+                                                                                    Despite the use of Grignard reagents in organic synthesis,
+compound, completely soluble in ether and formed upon
+                                                                                 their molecular structure in solution has remained elusive so far,
+reaction of magnesium with alkyl halides,1 paved the way to
+                                                                                 even if considerable research eﬀort has been spent on this topic.
+establish one of the most widely used organometallic reagents                    In an illuminating essay, Seyferth described the diﬃculties in
+in organic synthesis, worth the Noble prize in 1912.2 The so-                    characterizing the structures of Grignard reagents, which can be
+called Grignard reagent, with nominal formula RMgX, is used in                   aﬀected by both the solvent, and the halide and organic groups
+nucleophilic addition or substitution reactions, taking advantage                bonded to Mg.13 Solid-state structures determined by X-ray
+of the enriched electron density in the R group coordinated to                   diﬀraction studies revealed a diversity of coordination modes
+the Mg atom.                                                                     for Mg, and of nuclearity for the molecular system. Tetrahedral
+   Initial limitations to the direct use of this reagent were found              coordination is commonly observed in crystals structures
+due to its relatively modest tolerance to diﬀerent functional                    obtained from ether solutions as EtMgBr(OEt2)2,14 where
+groups compared to that of corresponding boron and zinc                          two molecules of solvent are bound to Mg. Instead, both
+metals. However, the use of Ni catalysts in coupling reactions                   trigonal-bipyramidal and square-pyramidal structures were
+using the Grignard reagent, independently developed by Corriu                    found for CH3MgBrTHF3 when working in tetrahydrofuran
+and Massé and Kumada and Tamao, increased the relevance of                      (THF) solvent.15 X-ray data of aggregates of two EtMg2Cl3
+this reagent.3,4 Nowadays, interest in the functionalization of
+phenol-based derivatives involving earth-abundant metal                          Received: March 30, 2017
+catalysts and the development of eﬃcient synthetic protocols                     Published: March 30, 2017
+
+                              © 2017 American Chemical Society            4226                                                           DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                               J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                            Article
+
+moieties showed a greater than four coordination for the Mg                   cases, the total number of ligands at Mg including the solvent
+centers.16,17 Due to lattice packing restrictions, the structures of          was ﬁxed to four. However, both crystallographic30−32 and
+Grignard reagents observed in the crystalline solid state may                 computational studies33 showed that Mg could expand its
+not be necessarily representative of the stable species present in            coordination sphere over more than four ligands, up to
+solution. Investigations using molecular weight,18 calorimetric               hexacoordination. This limitation is probably even more
+measurements,19 and NMR and IR spectroscopy20 support in                      inappropriate when trying to understand the dynamic processes
+fact the existence of structures other than those detected by X-              involved in the Schlenk equilibrium (Scheme 1).
+ray crystallography.                                                             In consideration of the longstanding and recently renewed
+   Determination of the structures of Grignard reagents in                    importance of Grignard in organic synthesis,34−36 it is
+solution is particularly complex because of the presence of                   important to reach a better understanding of its structure and
+multiple chemical species at thermodynamic equilibrium. This                  dynamic behavior in solvent. In this respect, dynamic modeling
+complication has been evident since 1929, when Schlenk father                 approaches may constitute the optimal choice for an accurate
+and son21 proposed that redistribution of ligands yielding MgR2               description of the Grignard reagent. In the past decades, ab
+and MgX2 from RMgX could take place (original Schlenk                         initio molecular dynamics simulations (AIMD) have been
+equilibrium in Scheme 1). At present, it is commonly                          shown to be especially appropriate to study processes in the
+                                                                              liquid phase.37,38 For example, this technique was used to study
+Scheme 1. Schlenk Equilibria                                                  structural properties of various metal ions in solution, including
+
+
+
+
+                                                                                                                                                              Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+                                                                              Na,39 Mg,40,41 or Co and Ag.42 In addition, AIMD with
+                                                                              enhanced sampling methods were eﬀectively used to provide an
+                                                                              accurate description of solvent eﬀects in various organic43,44
+                                                                              and organometallic reactions.45,46 Larger metallo-organic
+                                                                              systems have also been been treated by coupling AIMD to
+                                                                              molecular mechanics schemes.47 This approach was used to
+                                                                              describe, for example, electronic solute−solvent coupling in
+                                                                              photoexcitation dynamics of ruthenium metallo-organic com-
+                                                                              pounds,48 the reaction mechanisms of hydrolysis in zinc β-
+                                                                              lactamases,49,50 the redox properties of copper in azurin,51 the
+                                                                              functional role of Mg2+ ions in ribonuclease H,52 and the design
+                                                                              of organoruthenium anticancer complexes.53
+                                                                                 In this work, this methodology was used to investigate the
+                                                                              equilibria that take place when CH3MgCl, a model of the
+                                                                              Grignard reagent, is dissolved in THF. Our study was also
+                                                                              complemented by DFT static calculations on selected
+recognized that the halide groups in RMgX and MgX2 tend                       structures identiﬁed as minima by ab initio molecular dynamics.
+to form bridges between magnesium atoms to yield dimers and                   The data presented in this work show that multiple structures
+oligomeric structures, which are in equilibrium with monomeric                with diﬀerent solvation patterns are in equilibrium and evidence
+species (generalized Schlenk equilibrium in Scheme 1). This                   how the dynamic exchange of solvent molecules in the Mg
+causes association between the various moieties, eventually                   coordination sphere is key to evolution from the reactant to
+                                                                              product in the Schlenk equilibrium.
+
+                                                                              ■
+favoring ligand exchange. The degree of association among the
+Mg centers is dependent on the solvent, as shown by Ashby
+and Walker, who found a degree of association of around ∼1 in                     COMPUTATIONAL METHODS
+THF and between 1 and 4, depending on the nature of R and                        System Setup. The Schlenk equilibrium was investigated
+X, in diethyl ether.22 Further studies suggested that some                    through a set of simulations describing monomeric reactants,
+complex equilibrium between RMgCl(THF)n, MgR 2(μ-                             monomeric products, and diﬀerent intermediate dimeric states.
+Cl)2Mg(THF)5/4 and RMg2(μ-Cl)3(THF)5 better describes                            Monomeric Species. We built three diﬀerent systems, each
+the traditional Schlenk equilibrium.23,24                                     containing 1 molecule of either CH3MgCl, MgCl2, or
+   Given the complexity of the problem, computational                         Mg(CH3)2 surrounded by 25 molecules of THF in a periodic
+modeling oﬀers an excellent tool to determine in detail the                   box of dimensions 15.0 × 15.0 × 15.0 Å3. The initial
+chemical nature of the species involved in the Schlenk                        coordinates of THF were obtained from a previous 20 ps
+equilibrium. In the past, examination of the Cambridge                        long equilibration run in a similar box containing the pure
+Crystallographic Database and density functional theory                       solvent. The number of solvent molecules was set to be
+(DFT)25−27 calculations for isolated molecules led to establish-              consistent with the experimental density of THF at room
+ing the overwhelming prevalence of structures with two over                   temperature.54 All systems were ﬁrst relaxed for 15 ps in the
+three bridging ligands and a preference for halide over alkyl                 microcanonical ensemble at energies matching an average
+ligands in that position. Moreover, they observed that the                    temperature of 300 K. Relaxation at the target temperature was
+maximum stabilizing eﬀect of the coordinating solvent is                      performed using a canonical sampling/velocity rescaling
+obtained for dimeric moieties.28 Including the solvent as a                   (CSVR) thermostat with a time constant of 10 fs until the
+continuum model in a systematic way and combining                             temperature of the system oscillated around the target value.
+generalized valence bond, second-order Møller−Plesset pertur-                 Production runs were simulated in the NVT ensemble at 300 K.
+bation theory (MP2), and DFT calculations indicated that                      The Nosé−Hoover chain thermostat with a chain length of 3
+radical and charged species may be present at equilibrium,                    and time constant of 1 ps was used for data production.55−57
+although in small concentrations.29 Explicit solvent was limited                 Dimeric Species. The (MgCH3Cl)2 species were simulated
+to the ﬁrst coordination sphere of the Mg atom, and in many                   in an orthorhombic periodic box of dimensions 25.2 × 15.0 ×
+                                                                       4227                                                   DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                    J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                            Article
+
+15.0 Å3, containing 42 THF molecules (Figure 1). A larger box               metadynamics parameters used as well as the associated errors
+of dimensions 25.2 × 20.0 × 20.0 Å3 with 74 THF molecules                   are given in Table S1 of the Supporting Information.
+                                                                               The metadynamics simulations convergence was conﬁrmed
+                                                                            by checking that the calculations reached the diﬀusion limit
+                                                                            within their wall constraints; statistical errors, computed
+                                                                            according to refs 64 and 65, are within 1−3kT (see the
+                                                                            Supporting Information).
+                                                                               AIMD runs were computed using the QUICKSTEP66,67
+                                                                            module of the CP2K 2.5.1 package. Trajectory analysis was
+                                                                            performed using the tools available in the VMD 1.9.2
+                                                                            package.68
+                                                                               Static Calculations and Electronic Structure Analysis.
+                                                                            Chemically relevant geometries sampled by AIMD were fully
+                                                                            optimized at the DFT(PBE+GD3) level by using the
+                                                                            Gaussian09 software package.69 Mg, C, H, and O were
+                                                                            described with the all-electron double-ζ 6-31+G** basis
+Figure 1. Simulation box used in this study. The atoms of the               set.70−72 Vibrational frequencies were computed analytically
+
+
+
+
+                                                                                                                                                              Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+Grignard reagent are represented by spheres and the THF solvent             to verify that the stationary points found were energy minima.
+molecules by sticks in licorice and red. Hydrogen atoms of THF are          In addition to the solvent molecules bound to Mg, implicit
+not shown for clarity.
+                                                                            solvation was modeled by using the SMD solvation model.73 In
+                                                                            selected cases, Gibbs energies were obtained for T = 298.15 K
+was also simulated to verify that there is no signiﬁcant bias due           and p = 1 atm. In the bimolecular steps, these energies were
+to ﬁnite-size eﬀects (see the Supporting Information). The                  corrected for the 1 M standard state (T = 298.15 K and p =
+systems were thermalized following the same protocol as that                24.465 atm). Donor−acceptor interactions were explored by
+described for the monomers.                                                 means of natural bond orbital (NBO) calculations (NBO6
+   Ab Initio Molecular Dynamics Simulations. The                            version).74 The nature of these interactions was determined by
+electronic problem was solved by DFT25,26 using the                         computing the associated natural localized molecular orbitals
+Perdew−Burke−Ernzerhof approximation to the exchange−                       (NLMOs).75
+correlation functional.58 Kohn−Sham orbitals were expanded
+over mixed Gaussian and plane-wave basis functions.59 The
+DZVP basis set for ﬁrst and second row elements and Mg and a
+                                                                            ■   RESULTS
+                                                                            We restricted our investigation to monomers and dinuclear
+molecularly optimized basis set for the chlorine atoms were                 species, excluding higher aggregation states, because exper-
+employed.60 The auxiliary plane-wave basis set was expanded to              imental studies showed that in THF the aggregation is very low,
+a 200 Ry cutoﬀ. The core electrons were integrated using                    mainly consisting of monomeric species.22
+pseudopotentials of Goedecker−Teter−Hutter type.61 Dis-                        Monomeric Structures. The solvation of CH3MgCl,
+persion forces were accounted for using the D3 Grimme                       Mg(CH3)2, and MgCl2 species was investigated over 40 ps of
+approximation.62 AIMD simulations were run over the Born−                   AIMD simulations at 300 K. CH3MgCl and Mg(CH3)2 were
+Oppenheimer surface, with a time step of 0.25 fs, optimizing                found with only two THF molecules in the solvation sphere of
+the energy gradient to a threshold of 10−5 au.                              Mg and tetrahedral coordination at this atom (Figure 2). On
+   Free-Energy Calculations. Exploration of the conforma-
+tional and reactive landscape and determination of the
+corresponding free-energy surface (FES) were performed by
+coupling AIMD to metadynamics simulations.37,63 Solvation of
+diﬀerent chemical species observed during the AIMD runs, as
+well as the transmetalation reaction, was investigated by
+independent metadynamics runs. All collective variables
+(CVs) employed in this study were deﬁned as the coordination
+number of speciﬁc ligand species to individual Mg atoms. The
+coordination number of a species X around Mg at a given time t
+(CN[X](t)) was evaluated according to the formula shown in                  Figure 2. Most likely solvation structures for MgCl2 (left), Mg(CH3)2
+eq 1, as deﬁned in previous works38                                         (middle), and (CH3)MgCl (right). The dotted black lines represent
+                                      p                                     coordination of the ligands to the Mg center.
+
+   CN[X](t ) = ∑
+                   ( )
+                  Nx   1−
+                             di(t )
+                              d0
+                                                                            the contrary, both tetrameric and pentameric coordination were
+                                      q
+                 1−( )
+                             di(t )
+                   i                                                        found for MgCl2. The nature of the solvation of MgCl2 was
+                              d0                              (1)
+                                                                            then further investigated by metadynamics simulations, using
+where NX is the number of species X present in the system, di is            the coordination number of oxygen atoms of THF to Mg as the
+the distance of the ith atom X from Mg, and d0, p, and q are free           CV. These simulations showed that the most likely solvation
+parameters (see the Supporting Information).                                state is MgCl2(THF)3 arranged in trigonal-bipyramidal
+  The time-dependent bias potential was formed by sets of                   coordination at Mg. MgCl2(THF)3 is ∼1.6 and ∼2.8 kcal
+Gaussians of 0.25 kcal mol−1 height and 0.04 width for                      mol−1 more stable than the tetrahedral or octahedral complexes
+coordination variables and added every 50 steps of AIMD for                 with two and four coordinating THF molecules, respectively.
+the dichloride bridged system. Additional details of the                    Thus, at room temperature, the diﬀerent solvation states are in
+                                                                     4228                                                     DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                    J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                         Article
+
+
+
+
+                                                                                                                                                           Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+Figure 3. FES of the Schlenk equilibrium. The CVs for this representation are the diﬀerence in Mg−CH3 coordination number between Mg2 and
+Mg1 (CV1) and the THF coordination number to Mg1 (CV2). The chemical structures drawn in the ﬁgure depict the most representative species
+obtained for wells A−E.
+
+
+
+
+Figure 4. Solvated DClCl structures found by metadynamics simulations (left) and the corresponding FES (right). CV1 and CV2 are deﬁned as the
+coordination numbers of THF at Mg1 and Mg2, respectively, following eq 1. The two minima b correspond to the chemically equivalent DClCl
+                                                                                                                                     12 and
+DClCl                    ClCl
+  21 structures. Only D12 is shown for simplicity.
+
+
+equilibrium in solution in a 0.07:1.0:0.01 ratio for the di-, tri-,          lone pairs’ NLMOs of CH3 and Cl (χMg), which are 10.2 and
+and tetra-solvated complexes, yielding an average                            5.3%, respectively, in CH3MgCl (see Figure S1 and Table S1
+MgCl2(THF)x solvation with value x = 2.9.                                    for further details). This may explain the need for additional
+   DFT optimization of the structures located as minima on the               coordination of THF in MgCl2 to improve the screening of the
+FES showed that they are also minima on the potential energy                 Mg charge.
+surface (PES) with similar structural features (these structures                Dinuclear Structures. The formation of dinuclear species
+are shown in Figure 2). NBO analysis on these optimized                      was ﬁrst studied by performing an AIMD simulation at 300 K
+structures showed higher electron donation of CH3 to Mg                      starting from two molecules of CH3MgCl placed with their
+compared to Cl. This is shown by the Mg contribution on the                  respective Mg atoms at a distance of 9.5 Å. In order to
+                                                                      4229                                                 DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                 J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                         Article
+
+accelerate the dimerization, a bias restraining potential to               in minor amounts in room-temperature samples. Both the
+induce the approach of the two molecules was used (see the                 relative stability and activation energies for the interchange
+Computational Methods section). A dimeric structure with two               between DClCl        ClCl
+                                                                                        11 , D12 , and D22
+                                                                                                            ClCl
+                                                                                                                 are low (less than 5 kcal
+                                                                                −1
+bridging chlorides was formed as soon as the two Mg atoms                  mol ), implying fast interconversion between the diﬀerent
+were at a distance of 5.5 Å.                                               structures at room temperature.
+    Cl/CH3 Exchange Process. Chloride/methyl exchange                         Analysis of the structural changes from DClCl       ClCl
+                                                                                                                        11 to D12 showed
+                                                                                                              2
+between the two Mg centers was investigated combining                      that the addition of THF to Mg (Figure 4) occurs always anti
+AIMD and metadynamics simulations, using as CVs the THF                    to one of the chlorides, producing local trigonal-bipyramidal
+solvation number on one arbitrary Mg atom (CV1) and the                    coordination with the bridging Cl’s in axial and equatorial
+diﬀerence in methyl coordination between the two Mg atoms                  positions. AIMD simulations indicated signiﬁcant lengthening
+(CV2). The CVs where chosen to monitor the free energy                     of the Mg−Clax bond relative to the Mg−Cleq one. Reversible
+change upon methyl transfer between the Mg atoms as a                      cleavage of the axial Cl−Mg bond and the consequential
+function of the local solvation of Mg.                                     formation of transient single chloride bridged structures were
+    The resulting FES (Figure 3) shows ﬁve separated wells (A,             observed during the analysis of AIMD trajectories. In order to
+B, C, D, and E) that can be classiﬁed according to the nature of           analyze the inﬂuence of the solvent on Mg−Cl cleavage, the
+the Mg bridging groups. The most representative structures                 statistical distribution of the Mg−Cl bond lengths in DClCl   11 ,
+captured in each well are shown in Figure 3. Wells A and B                 DClCl           ClCl
+
+
+
+
+                                                                                                                                                           Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+                                                                             12 , and D22       was computed (Figure 5). As expected, an
+correspond to dichloride bridged dinuclear species, C and D                increase in solvation is associated with statistical elongation of
+correspond to the mixed Me and Cl bridged species, and E                   the Mg−Cl bonds.
+encloses monochloride bridged structures of formula ClMg(μ-
+Cl)MgMe2. While wells A and B represent the structures of the
+reactants, well E represents the preproduct state prior to ﬁnal
+dissociation into MgCl2 and Mg(CH3)2.
+    We introduce a notation for describing the nature of the
+dimer D. The notation DXY  ij stands for dimer (D) where i and j
+are the numbers of THF molecules on Mg1 and Mg2,
+respectively, and X and Y describe the nature of the bridging
+ligands. DXY describes the entire family of X and Y bridging
+species regardless of the number of THF molecules on either
+Mg. The FES plot in Figure 3 shows that the ensemble of DClCl
+structures is more stable by ∼3.5 kcal mol−1 than the one for
+DClMe. In addition, the FES shows a clear path connecting the
+A−E wells, thus giving information on the ligand exchange
+reaction. The transformation from wells A and B to D goes
+preferentially via well C, while exchange directly connecting B
+to D does not constitute a similarly viable path. The energy
+barriers for the A−C and C−D transition are ∼8 and ∼6 kcal
+mol−1, respectively, while the free energy barrier between B and
+D is 13 kcal mol−1 higher than that of well A. The preference
+for this path was analyzed by studying more closely the
+solvation structures of DClCl and DClMe.                                   Figure 5. (Top) Mg−Cl distance distributions in DClCl dimeric
+    Solvation of Dichloride Bridged Structures. The                        structures. (Bottom) Mg1−Cl (blue) and Mg2−Cl (red) distance
+                                                                           distributions in DClCl
+                                                                                             12 . Mg−Cl bond cleavage is observed when the
+accessible solvation states of DClCl in the A and B wells
+                                                                           Mg−Cl distance is larger than 3.7 Å.
+(Figure 3) were investigated by metadynamics simulations
+using the coordination number of the oxygen atoms of THF to
+each of the Mg atoms as CVs. The simulations revealed the                     Strikingly, Mg−Cl bond cleavage was observed only in the
+existence of three solvation states, corresponding to distinct             asymmetric DClCl12 structure with statistically signiﬁcant proba-
+free-energy minima reported in Figure 4a−c. The solvation                  bility of ﬁnding Mg−Cl distances with longer values than 3.7 Å,
+state with the lowest free energy corresponds to a symmetric               as shown in the inset of Figure 5 top. On the contrary, both the
+dimeric structure in which each Mg atom is solvated by a single            Mg−Cl bond length distributions of the least and the most
+THF (DClCl11 ). The second most stable solvation state, only 1.3           solvated DClCl        ClCl
+                                                                                       11 and D22 species vanish above 3.7 Å, indicating
+kcal mol−1 higher in energy, corresponds to another symmetric              statistical irrelevance of Mg−Cl bond-cleaved structures.
+adduct with two THF molecules coordinating each Mg (DClCl   22 ).          Analysis of the AIMD trajectory evidenced that in all cases
+In the later, each Mg is ﬁve-coordinated. The interconversion              the cleavage of the Mg−Cl bond occurs between the
+between these two structures occurs through a metastable                   pentacoordinated Mg2 and the Clax bridged atom in axial
+asymmetric solvation state DClCl
+                               12 with one THF solvent on one              position in the trigonal bipypramid, as shown in Figure 5
+Mg and two on the other. This asymmetric solvation state                   bottom. The presence in thermal samples of the monochloride
+                              −1
+DClCl
+   12 , which is 2.7 kcal mol     higher in energy than DClCl
+                                                          11 , is          bridged, unsymmetrically solvated structures appears to be an
+expected to be statistically present in 1% of room-temperature             essential ingredient in ligand exchange at each Mg.
+samples, also taking into account degenerate states. Higher                   Activation of the Mg−Cl bond in the axial position is also
+solvation states with three THF molecules in the ﬁrst solvation            consistent with NBO analysis of DClCl, which shows that the
+shell of a single Mg center are more than 5 kcal mol−1 higher in           pentacoordinated Mg atoms in both DClCl            ClCl
+                                                                                                                   12 and D22 receive the
+energy than DClCl
+                11 and therefore are expected to be present only           smallest electron donation from Cl (χ ≈ 6%). In particular,
+                                                                                                                   Mg
+
+
+                                                                    4230                                                   DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                 J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                           Article
+
+the bridging chloride, axially coordinated to Mg2, Clax, has the
+lowest contribution to this magnesium (χMg ≈ 2%). Such a
+small donation implies an overpolarization of the Clax−Mg2
+bond, which in turn facilitates opening of the dichloride bridged
+moiety of DClCl
+             12 , as observed during AIMD. The asymmetry in
+the donation between the axial and the equatorial Cl explains
+also the selective opening of the ring at the Clax−Mg2 bond.
+   The trigonal-bipyramidal geometry on Mg2 in DClCl 12 was not
+found in DClCl
+             22 . Instead, the coordination geometry of Mg
+atoms took a distorted square-pyramidal geometry, with an
+apical THF, and equatorial Cl atoms, a methyl group, and the
+remaining THF. In all DClCl       ClCl       ClCl
+                           11 , D12 , and D22 , the equilibrium
+values for the Cl−Mg−Cl bond angle are close to 90° (Table
+1), even though the coordination geometries of the Mg atoms
+
+Table 1. Average Angles (αdyn, β1dyn, and β2dyn, in degrees)
+with Associated Standard Deviation (in parentheses)
+
+
+
+
+                                                                                                                                                             Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+Obtained from Cluster Analysis of the Metadynamics
+Trajectory and Angles from DFT Optimization with Implicit
+Solvent (αst, β1st, and β2st, in degrees)
+
+
+
+
+                                                                           Figure 6. FES for the methyl bridged dimer DClMe equilibria using the
+                                                                           THF coordination number to Mg1 (CV1) and the THF coordination
+            αdyn        αst     β1dyn     β1st    β2dyn     β2st           number to Mg2 (CV2) as variables, together with the most
+ DClCl     167(8)     169.7     89(5)     91.3    89(5)     91.6           representative species obtained for wells a−d.
+  11
+ DClCl
+  12       166(9)     165.4     91(7)     92.1    82(6)     83.9
+ DClCl     165(11)    160.6     94(6)     84.1    94(6)     84.2           tetrahedral-coordinated Mg centers bridged by a Cl atom and a
+  22
+                                                                           methyl group (Figure 6a). This structure is favored over the
+                                                                           other ones (Figure 6b−d) by about 3 kcal mol−1. The two
+in the structures are diﬀerent from each other. As an additional           other major structures are dinuclear species with three
+structural feature, it is observed that during AIMD simulations            coordinated solvent molecules, DClMe 21   and DClMeTHF
+                                                                                                                              11     . In the
+the four atoms of the Mg(μ-Cl)2Mg moiety do not lie in the                 former species, the additional THF is bound to the Mg−Cl
+same plane. The average angles between the two MgCl2 planes                moiety, while in the latter, THF bridges the two Mg centers
+are reported in Table 1.                                                   (Figure 6). The free energies of triply bridged species DClMeTHF
+                                                                                                                                       11
+   DFT optimization of DClCl        ClCl      ClCl
+                             11 , D12 , and D22 conﬁrmed that              and the asymmetrically solvated DClMe21   diﬀer by only 0.5 kcal
+the minima on the FES correspond to minima on the PES.                     mol−1, separated by a barrier on the order of 2kT. A well
+However, structural discrepancies are obtained for the species             corresponding to the asymmetric structure with two THF
+with the largest number of THF molecules in the coordination               molecules coordinated to the Mg−CH3 moiety (DClMe        12 ) was
+sphere of the Mg centers. Thus, the Mg centers in DClCl   22 are           also obtained about 5 kcal mol−1 above DClMe    11.   Overall, fast
+trigonal-bipyramidal on the PES, while they are distorted                  interchange between DClMe
+                                                                                                   21 , D11
+                                                                                                           ClMeTHF
+                                                                                                                   , and DClMe
+                                                                                                                             12   is observed
+square-pyramidal on the FES. This indicates that the solvent               with low activation energy barriers of around 4 kcal mol−1.
+cage has an increasing inﬂuence on the structure and dynamics                 All D ClMe structures show tetrahedral and trigonal-
+of the more ﬂexible, solvated species. AIMD simulations also               bipyramidal geometries for the Mg centers solvated by one
+revealed the existence of interchange of THF molecules in the              and two THF molecules, respectively. The bridging methyl (μ-
+Mg solvation shell of DClCl22 taking place through an associative          CH3) interacts diﬀerently with the two Mg atoms in the
+mechanism. In this case, a short-lived octahedral structure was            ClMg(μ-CH3)(μ-Cl)MgCH3 dimer. This is due to the
+formed. The statistical abundance of these structures is however           asymmetric distribution of the ligands at the two Mg atoms
+marginal.                                                                  because Mg1 has a terminal chloride while Mg2 has a terminal
+   Solvation of Methyl Chloride Bridged Structures. The                    methyl group. Moreover, the two Mg atoms can have diﬀerent
+accessible solvation states of the DClMe species in C and D wells          solvation states at room temperature, as shown by the FES in
+(Figure 3) were analyzed by metadynamics simulations using                 Figure 6. In order to quantify the way the bridging CH3 group
+the coordination number of the oxygen atoms of THF to each                 interacts with the two Mg centers in the diﬀerent structures, the
+of the Mg atoms as CVs (Figure 6). Three low-energy solvation              direction of the bridging pz orbital axis relative to the two C−
+structures were obtained. The lowest in energy, DClMe11 , has two          Mg directions was monitored (Figure 7).
+                                                                    4231                                                     DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                   J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                                     Article
+
+                                                                                   bridging or terminal THF results in an increased interaction
+                                                                                   of the bridging methyl group with Mg2 bearing the terminal
+                                                                                   methyl group. In this way, the solvent helps the bridging methyl
+                                                                                   group weaken its interaction with Mg1 and increase that to Mg2,
+                                                                                   assisting the transformation of CH3MgCl into MgCl2 and
+                                                                                   Mg(CH3)2.
+                                                                                     Geometry optimizations on the PES with DFT methods of
+                                                                                   the minima DClMe     ClMe
+                                                                                                 11 , D12 , D11
+                                                                                                               ClMeTHF
+                                                                                                                       , and DClMe
+                                                                                                                              21   on the FES gave
+                                                                                   minima with similar structures, as indicated in Table 2. In all
+
+                                                                                   Table 2. Average angles (αdyn, β1dyn, and β2dyn, in degrees)
+                                                                                   with the Standard Deviations (in parentheses) Obtained
+                                                                                   from Cluster Analysis of the Metadynamics Trajectory and
+                                                                                   Optimized Angles from DFT Calculations with Implicit
+                                                                                   Solvent (αst, β1st, and β2st, in degrees)
+
+
+
+
+                                                                                                                                                                       Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+                                                                                                 αdyn       αst     β1dyn          β1st        β2dyn         β2st
+                                                                                    DClMe
+                                                                                     11         167(11)   175.6    101(10)        103.7        94(7)        100.0
+                                                                                    DClMe
+                                                                                     12         166(8)    179.4    102(7)         110.6        89(7)         93.2
+                                                                                    DClMeTHF
+                                                                                     11         165(6)    154.4    103(7)         102.0        96(7)         99.6
+                                                                                    DClMe
+                                                                                     21         161(7)    172.3     94(7)         100.4       101(7)        102.5
+
+
+
+
+                                                                                   cases, trigonal-bipyramid geometries were found on the
+                                                                                   pentacoordinated Mg atoms with the bridging CH3 and a
+                                                                                   terminal THF in the axial positions. NBO analysis on the
+                                                                                   optimized structures showed slightly higher electron donation
+                                                                                   of the bridged CH3 lone pair to the Mg of the Mg−Cl moiety
+                                                                                   (χMg1 = 5.7, 5.2, and 4.6%) compared to that for the Mg−CH3
+                                                                                   moiety (χMg2 = 3.7, 3.8, and 3.6%) for DClMe             ClMe
+                                                                                                                                    11 , D12 , and
+Figure 7. Orientation of the methyl group in DClMe as a function of the              ClMeTHF
+                                                                                   D11       , respectively. With increasing solvation of Mg1, as in
+solvation state, represented by φ1 and φ2. A larger φ angle is indicative          DClMe , donation  of the bridging methyl group to the two Mg
+                                                                                     21
+of a stronger Mg−CH3 interaction.
+                                                                                   centers becomes equivalent (χMg1 = 4.3%; χMg2 = 4.2%),
+                                                                                   consistent with the distribution of the φ1 and φ2 angles during
+   In both DClMe
+             11   and DClMe
+                       12 , the pz orbital is oriented toward the                  AIMD simulations (Figure 8). Although small, the increased
+Mg1−Cl moiety, with average angles φ1 of approximately 141                         electron donation of the Me group to Mg2, which already bears
+and 149°, respectively. In these two structures, φ2 has average                    the other methyl group, is in agreement with DClMe  21   being the
+values of 127 and 128°, indicating a poorer interaction of the                     most prone of the methyl chloride bridged dimers to yield the
+bridging methyl with the Mg2 pz orbital. In DClMeTHF
+                                                   11    , the μ-                  ﬁnal products MgCl2 and Mg(CH3)2.
+CH3 bridging group is more equally shared between the two                             Reaction Pathway of the Schlenk Equilibrium. The
+Mg centers, as indicated by the values of φ1 and φ2 that                           computational results presented above allow reconstruction of
+oscillate around 145 and 136°, respectively. A larger solvation                    the full reaction pathway of the Schlenk equilibrium in a THF
+for the Mg bound to the terminal Cl than the other Mg atom                         solution. Figure 8 presents the set of structures, localized as
+(DClMe
+    21 ) results in practically equal sharing of the bridging                      minima on the FES, that are involved in the transformation of
+methyl between the two Mg centers. In this case, both angles                       the reactants CH3 MgCl(THF) 2 to the products Mg-
+φ1 and φ2 oscillate around an average value of ∼137°.                              (CH3)2(THF)2 and MgCl2(THF)n (n = 2−4). The scheme
+   The orientation of the bridging methyl group is thus highly                     also highlights the key role played by the solvent in assisting the
+sensitive to the chemical groups and the solvation at each Mg                      Cl/CH3 ligand exchange.
+center. For equal solvation, the methyl interacts more with the                       The Schlenk equilibrium starts by dimerization of (CH3)-
+more electron deﬁcient Mg1 center, that is, the one with the                       MgCl(THF)2 via the two chlorides to form the dichloride
+terminal chloride. Increasing solvation of Mg1 by either                           bridged species DClCl
+                                                                                                      22 . Static calculations show that this reaction
+
+                                                                            4232                                                       DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                             J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                           Article
+
+
+
+
+                                                                                                                                                             Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+Figure 8. Intermediates involved in the Schlenk equilibrium according to dynamic simulations. Arrows indicate the chemical transformations along
+the main pathway leading from monomeric reactants to products (inside of solid squares). The most stable dichloride and methyl chloride bridged
+dinuclear species are inside of dashed squares.
+
+is slightly endoergic by 4.9 kcal mol−1, consistent with                    intermediate DClCl
+                                                                                             12 is 2.7 kcal/mol
+                                                                                                                  −1
+                                                                                                                     with an activation energy
+                                                                                                             −1
+experimental results.22,76                                                  barrier of less than 5 kcal mol (Figure 4). Therefore, all DClCl
+                                                                                                                                          11 ,
+   The coordination geometry of the pentacoordinated Mg                     DClCl          ClCl
+                                                                              12 , and D22 species are expected to coexist and undergo
+atoms in DClCl
+             22    was found to be distorted square-pyramidal               interconversion at room temperature.
+when exploring the FES but trigonal-bipyramidal when                           Interestingly, not all species favor the Mg−Cl bond cleavage
+performing ab initio geometry optimizations on the PES.                     required for the Cl/Me ligand exchange. Analysis of the Mg−Cl
+Such discrepancy evidences a strong inﬂuence of the                         bond distances in DClCl      ClCl        ClCl
+                                                                                                  11 , D22 , and D12 (Figure 5 top) shows
+surrounding solvent molecules on the structural geometry of                 that the formation of monochloride bridged species takes place
+DClCl
+  22 . THF exchange on the Mg atom may occur through                        preferentially from D12    ClCl
+                                                                                                            . NBO analysis indicates that
+addition of one THF to form an octahedral species.77−79 These                                            12 favors Mg −Cl bond cleavage
+                                                                                                                          2  ax
+                                                                            asymmetric solvation of DClCl
+last transient structures are very short lived and thus have not            (step (ii) in Figure 8). In this complex, the higher solvation on
+been included in Figure 8.                                                  Mg2 weakens the Mg2−Cl bond, while the lower solvation on
+   Desolvation of DClCl22   by one THF molecule yields an                   Mg1 makes it prone to accept an extra anionic ligand during the
+asymmetrical dinuclear complex (DClCl 12 ) with tetrahedral and             Cl/CH3 exchange process. Analysis on several trajectories, such
+pyramidal-trigonal geometries for Mg1 and Mg2, respectively.                as the one represented in Figure 9, reaﬃrms that the chloride
+This trisolvated species can lose one THF molecule to produce               involved in the cleavage is the one located in the axial position
+the disolvated (DClCl
+                    11 ), which was found to be the most stable             of Mg2 (Figure 5 bottom). The monobridged species generated
+species in solution. Tetrahedral coordination of Mg is also the             by Mg−Cl bond cleavage (snapshot 2 in Figure 9) is short-lived
+one preferred in the solid state, as shown by reported                      and rapidly evolves into methyl chloride bridged structures
+crystallographic structures of related Mg2X2R2 species.28,80                (DClMe). The methyl group occupying the bridging position
+The diﬀerence in energy between DClCl   11   and the least stable           comes from Mg1, as shown in snapshot 3; this is consistent with
+                                                                     4233                                                    DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                   J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                               Article
+
+
+
+
+                                                                                                                                                                 Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+                                                                      1                              2
+Figure 9. Snapshots for the methyl transfer reaction in DClCl                                                                                    ClCl
+                                                              12 (Mg on the left-hand side and Mg on the right for all snapshots): (1) initial D12
+                                                                       ClMe                           ClMe                                  ClMe
+structure, (2) transition state of the transmetalation reaction, (3) D12 , (4) solvent loss to form D11 , and (5) solvent addition to form D21 and
+(6) DClMeTHF
+      11      . The atoms for the Grignard reagent and the coordinating THF molecules are depicted as balls and/or sticks and colored according to
+standard color codes. Selected neighboring solvent molecules are drawn with thin lines.
+
+the higher electron density on the MgCl(THF)(μ-Cl) fragment                    increase in solvation of both Mg centers is expected to favor the
+compared to that on Mg(THF)2(μ-Cl) calculated for the                          ﬁnal release of the mononuclear MgCl2 and Mg(CH3)2
+structure shown in snapshot 2.                                                 products. The dissociation energy from P21 to CH3MgCl-
+   The ﬁrst DClMe species generated after Mg−Cl bond cleavage                  (THF)2 and the most stable MgCl2(THF)3 has been estimated
+is the DClMe
+          12    complex (snapshot 3 in Figure 9). This species is              to be −8.7 kcal mol−1 in this study (see Figure S4 for further
+however the least stable of the four solvation states observed by              details).
+AIMD, with a free energy diﬀerence of +5 kcal mol−1 (Figure                       Despite their relatively low abundance in solution, as also
+4) over the most stable solvation structure. As in the case of                 experimentally observed,22 formation of dimeric adducts is key
+DClCl species, the most stable DClMe complex is the disolvated                 to the evolution of the Schlenk equilibrium reaction. The
+DClMe
+  11 , in which both Mg atoms have tetrahedral coordination                    reaction pathway identiﬁed in this study highlights the crucial
+geometry. However, DClMe incorporates other trisolvated                        role of the solvent in assisting Cl/Me exchange in the Schlenk
+                                                                −1
+species, DClMeTHF
+             11       and DClMe
+                             21 , which are both 3 kcal mol                    equilibrium. Most importantly, it shows that the tetracoordi-
+            ClMe
+above D11 . Exchange between these species has low
+                                                                               nated Mg species proposed in most computational stud-
+activation energy barriers (smaller than 4 kcal mol−1) and
+                                                                               ies28,81,82 are indeed the most stable structures but are not on
+involves the addition of an external THF either at the bridging
+                                                                               the reactive pathway. Instead, asymmetric solvation on Mg
+position (DClMe11  → DClMeTHF
+                         11      ) or at the terminal position of
+Mg (D11 → DClMe
+    1     ClMe
+                         ). Internal rearrangement of THF from                 atoms is needed to promote the Mg−Cl and Mg−CH3 bond
+                     21
+bridging to terminal is also observed (DClMeTHF     → DClMe                    cleavage to go from MgCH3Cl to Mg(CH3)2 and MgCl2. These
+                                           11           21 ) with
+                                                  −1
+an even lower energy barrier (<0.5 kcal mol ). The higher                      tetra/pentacoordinated Mg dimers (DClCl    12   and DClMe
+                                                                                                                                       21 ) are
+stability of DClMe  compared to that of DClMe   is consistent with             transient intermediates that interchange with the most stable
+                21                          12
+the higher solvation of the most electrophilic Mg atom (Mg1),                  solvation structures at room temperature. In addition, the
+that is, the one with a terminal chloride.                                     bridging ligand involved in the bond-breaking process is located
+   In order to form the ﬁnal products, both Mg2−Cl and Mg1−                    always in the axial position of the pentacoordinated Mg atom.
+CH3 bonds need to be cleaved. This however does not take                       This detailed information on the Schlenk equilibrium
+place simultaneously but consecutively, and solvation plays an                 mechanism will be useful for a better understanding of the
+important role. Because Cl is a much better ligand than CH3,28                 reactivity of the Grignard reagents. In addition, this study may
+the Mg−CH3 bond is the ﬁrst to be broken. Analysis of the                      help to better understand other transmetalation processes, such
+orientation of the formal lone pair in the bridging methyl ligand              as those involved in the Kumada and Negishi cross-coupling
+shows that at equal solvation of Mg atoms in DClMe, μ-CH3 is                   reactions,4,83−86 which are also assisted by solvent.
+
+                                                                               ■
+more strongly bonded to Mg1 than to Mg2 because Mg1 is more
+electrophilic (Figure 7). This preference is however modiﬁed                       CONCLUSIONS
+by increasing the solvation of Mg1 relative to Mg2. Thus, in
+DClMe                                              1
+  21 , the methyl is equally bonded to Mg and Mg . In
+                                                             2                 The here presented AIMD study of the Schlenk equilibrium
+addition, in this species, the axial position occupied by the                  reaction, in which two molecules of CH3MgCl exchange methyl
+bridged methyl group in the coordination sphere of Mg1 also                    and chloride groups to yield Mg(CH3)2 and MgCl2, showed
+favors the Mg1−CaxH3 bond cleavage. An increase in solvation                   how the ether solvent (THF here) has a crucial role in assisting
+of Mg1 thus yields the preproduct of the Schlenk equilibrium                   the reaction. Although coordination of the solvent is needed for
+(P21 and minimum E in Figure 3), consisting of a Mg1Cl2                        stabilizing the various mono- and dinuclear Mg complexes, the
+species bridged by way of a single chloride to Mg2(CH3)2. An                   stabilizing eﬀect is not the only factor at work.
+                                                                        4234                                                     DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                       J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                                  Article
+
+   The reaction goes via the formation of a dinuclear                             (4) Tamao, K.; Sumitani, K.; Kumada, M. Selective Carbon-Carbon
+(CH3)Mg(μ-Cl)2Mg(CH3) intermediate whose most stable                             Bond Formation by Cross-Coupling of Grignard Reagents with
+solvated form (with a single THF at each Mg) is unreactive.                      Organic Halides. Catalysis by Nickel-Phosphine Complexes. J. Am.
+The chloride/methyl exchange is promoted by making the two                       Chem. Soc. 1972, 94, 4374−4376.
+                                                                                  (5) Fürstner, A.; Leitner, A.; Méndez, M.; Krause, H. Iron-Catalyzed
+Mg atoms electronically diﬀerent. The calculations show that
+                                                                                 Cross-Coupling Reactions. J. Am. Chem. Soc. 2002, 124, 13856−13863.
+these diﬀerences are created by diﬀerent solvations of the two                    (6) Frisch, A. C.; Beller, M. Catalysts for Cross-Coupling Reactions
+Mg centers. The cleavage of the Mg−Cl bond and associated                        with Non-activated Alkyl Halides. Angew. Chem., Int. Ed. 2005, 44,
+shift of the methyl group from the terminal to bridging position                 674−688.
+is assisted by increasing the solvation at the Mg involved in the                 (7) Terao, J.; Kato, Y.; Kambe, N. Titanocene-Catalyzed
+bond cleavage while keeping the other Mg less solvated.                          Regioselective Alkylation of Styrenes with Grignard Reagents Using
+   A similar process occurs at the dinuclear (CH3)Mg(μ-                          β-Bromoethyl Ethers, Thioethers, or Amines. Chem. - Asian J. 2008, 3,
+CH3)(μ-Cl)MgCl; the cleavage of the bond between Mg and                          1472−1478.
+the bridging CH3 group to form solvated Mg(CH3)2 and                              (8) Vechorkin, O.; Barmaz, D.; Proust, V.; Hu, X. Ni-Catalyzed
+MgCl2 requires the chloride-rich Mg atom to be more solvated                     Sonogashira Coupling of Nonactivated Alkyl Halides: Orthogonal
+than the methyl-rich Mg one. Increasing solvation at one Mg                      Functionalization of Alkyl Iodides, Bromides, and Chlorides. J. Am.
+favors bond cleavage, while decreasing solvation on the other                    Chem. Soc. 2009, 131, 12078−12079.
+                                                                                  (9) Adrio, J.; Carretero, J. C. Functionalized Grignard Reagents in
+one favors the formation of new terminal bonds.
+
+
+
+
+                                                                                                                                                                    Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+                                                                                 Kumada Cross-Coupling Reactions. ChemCatChem 2010, 2, 1384−
+   The species selected by the dynamics to be on the reaction                    1386.
+pathway are not necessarily minima on the PES, which                              (10) Jana, R.; Pathak, T. P.; Sigman, M. S. Advances in Transition
+emphasizes the need for the former method. Our ﬁndings                           Metal (Pd,Ni,Fe)-Catalyzed Cross-Coupling Reactions Using Alkyl-
+highlight the need of including explicit solvent dynamics in the                 organometallics as Reaction Partners. Chem. Rev. 2011, 111, 1417−
+modeling of such reactions because this is crucial in allowing                   1492.
+the Cl/CH3 group exchange to occur with a low energy barrier.                     (11) Cong, X.; Tang, H.; Zeng, X. Regio- and Chemoselective
+
+
+■
+                                                                                 Kumada−Tamao−Corriu Reaction of Aryl Alkyl Ethers Catalyzed by
+    ASSOCIATED CONTENT                                                           Chromium Under Mild Conditions. J. Am. Chem. Soc. 2015, 137,
+                                                                                 14367−14372.
+*
+S Supporting Information                                                          (12) Neufeld, R.; Teuteberg, T. L.; Herbst-Irmer, R.; Mata, R. A.;
+The Supporting Information is available free of charge on the                    Stalke, D. Solution Structures of Hauser Base iPr2NMgCl and Turbo-
+ACS Publications website at DOI: 10.1021/acs.jpcb.7b02716.                       Hauser Base iPr2NMgCl·LiCl in THF and the Influence of LiCl on the
+                                                                                 Schlenk-Equilibrium. J. Am. Chem. Soc. 2016, 138, 4796−4806.
+     Metadynamics parameters, natural bond orbital analysis,
+                                                                                  (13) Seyferth, D. The grignard reagents. Organometallics 2009, 28,
+     DFT optimized geometries, and solvation properties for                      1598−1605.
+     diﬀerent sizes of the simulation box (PDF)                                   (14) Guggenberger, L. J.; Rundle, R. E. Crystal Structure of the Ethyl
+
+
+■
+                                                                                 Grignard Reagent, Ethylmagnesium Bromide Dietherate. J. Am. Chem.
+    AUTHOR INFORMATION                                                           Soc. 1968, 90, 5375−5378.
+                                                                                  (15) Vallino, M. Structure Cristalline de CH3MgBr·3 C4H8O. J.
+Corresponding Authors                                                            Organomet. Chem. 1969, 20, 1−10.
+*E-mail: ainara.nova@kjemi.uio.no (A.N.).                                         (16) Toney, J.; Stucky, G. D. The Stereochemistry of Polynuclear
+*E-mail: michele.cascella@kjemi.uio.no (M.C.).                                   Compounds of the Main Group Elements [C2H5Mg2Cl3(C4H8O)3]2, a
+ORCID                                                                            Tetrameric Grignard Reagent. J. Organomet. Chem. 1971, 28, 5−20.
+                                                                                  (17) Blasberg, F.; Bolte, M.; Wagner, M.; Lerner, H.-W. An Approach
+Odile Eisenstein: 0000-0001-5056-0311                                            to Pin Down the Solid-State Structure of the “Turbo Grignard.
+Notes                                                                            Organometallics 2012, 31, 1001−1005.
+The authors declare no competing ﬁnancial interest.                               (18) Smith, M. B.; Becker, W. E. The constitution of the grignard
+
+
+■
+                                                                                 reagentIII:The reaction between R2Mg and MgX2 in tetrahydrofur-
+                                                                                 an. Tetrahedron 1967, 23, 4215−4227.
+    ACKNOWLEDGMENTS
+                                                                                  (19) Smith, M. B.; Becker, W. E. The constitution of the Grignard
+This work was supported by the Research Council of Norway                        Reagent - I. The reaction between diethyl magnesium and magnesium
+(RCN) through the CoE Centre for Theoretical and                                 bromide in diethyl ether. Tetrahedron Lett. 1965, 6, 3843−3847.
+Computational Chemistry (CTCC) Grant No. 179568/V30                               (20) Ashby, E. C.; Nackashi, J.; Parris, G. E. Composition of
+and 171185/V30 and by the Norwegian Supercomputing                               Grignard compounds. X. NMR, IR, and molecular association studies
+Program (NOTUR) (Grant No. NN4654K). A.N. thanks the                             of some methylmagnesium alkoxides in diethyl ether, tetrahydrofuran,
+RCN for Grants 221801/F20 and 250044/F20. The authors                            and benzene. J. Am. Chem. Soc. 1975, 97, 3162−3171.
+                                                                                  (21) Schlenk, W.; Schlenk, W. Ü ber die Konstitution der
+thank Elisa Rebolini for enlightening discussion.
+
+■
+                                                                                 Grignardschen Magnesiumverbindungen. Ber. Dtsch. Chem. Ges. B
+                                                                                 1929, 62, 920−924.
+    REFERENCES                                                                    (22) Walker, F. W.; Ashby, E. C. Composition of Grignard
+ (1) Grignard, V. Sur Quelques Nouvelles Combinaisons Organo-                    compounds. VI. Nature of association in tetrahydrofuran and diethyl
+métalliques du Magnésium et Leur Application à des Synthèses                 ether solutions. J. Am. Chem. Soc. 1969, 91, 3845−3850.
+d’Alcools et d’Hydrocabures. C. R. Acad. Sci. 1900, 130, 1322−1324.               (23) Sobota, P.; Duda, B. Influence of MgCl2 on Grignard Reagent
+ (2) Grignard, V. The Use of Organomagnesium Compounds in                        Composition in Tetrahydrofuran. III. J. Organomet. Chem. 1987, 332,
+Preparative Organic Chemistry−Nobel Lecture 1912 Nobel Lectures.                 239−245.
+Chemistry 1921, 1966, 234−246.                                                    (24) Sakamoto, S.; Imamoto, T.; Yamaguchi, K. Constitution of
+ (3) Corriu, R. J. P.; Massé, J. P. Activation of Grignard Reagents by          Grignard Reagent RMgCl in Tetrahydrofuran. Org. Lett. 2001, 3,
+Transition-Metal Complexes. A New and Simple Synthesis of Trans-                 1793−1795.
+Stilbenes and Polyphenyls. J. Chem. Soc., Chem. Commun. 1972, 144a−               (25) Hohenberg, P.; Kohn, W. Inhomogeneous Electron Gas. Phys.
+144a.                                                                            Rev. B 1964, 136, 864−871.
+
+                                                                          4235                                                      DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                          J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                                      Article
+
+  (26) Kohn, W.; Sham, L. J. Self-Consistent Equations Including                    (45) Vidossich, P.; Lledós, A.; Ujaque, G. Realistic Simulation of
+Exchange and Correlation Effects. Phys. Rev. A 1965, 140, 1133−1138.               Organometallic Reactivities in Solution by Means of First-Principles
+  (27) Jiménez-Halla, J. O. C.; Bickelhaupt, F. M.; Solà, M.                     Molecular Dynamics. In Computational Studies in Organometallic
+Organomagnesium clusters: Structure, stability, and bonding in                     Chemistry; Macgregor, S. A., Eisenstein, O., Eds.; Structure and
+archetypal models. J. Organomet. Chem. 2011, 696, 4104−4111.                       Bonding; Springer International Publishing: Berlin, Germany, 2016;
+  (28) Lioe, H.; White, J. M.; O’Hair, R. A. J. Preference for bridging            Vol. 167, pp 81−106.
+versus terminal ligands in magnesium dimers. J. Mol. Model. 2011, 17,               (46) Vidossich, P.; Lledós, A.; Ujaque, G. First-Principles Molecular
+1325−1334.                                                                         Dynamics Studies of Organometallic Complexes and Homogeneous
+  (29) Henriques, A. M.; Barbosa, A. G. H. Chemical Bonding and the                Catalytic Processes. Acc. Chem. Res. 2016, 49, 1271−1278.
+Equilibrium Composition of Grignard Reagents in Ethereal Solutions.                 (47) Laio, A.; VandeVondele, J.; Rothlisberger, U. A Hamiltonian
+J. Phys. Chem. A 2011, 115, 12259−12270.                                           Electrostatic Coupling Scheme for Hybrid Car−Parrinello Molecular
+  (30) Ramirez, F.; Sarma, R.; Chaw, F.; McCaffrey, T. M.; et al.                  Dynamics Simulations. J. Chem. Phys. 2002, 116, 6941−6947.
+Magnesium bromide-tetrahydrofuran complexes: bis(tetrahydrofuran)-                  (48) Moret, M.-E.; Tavernelli, I.; Chergui, M.; Rothlisberger, U.
+magnesium bromide, tris(tetrahydrofuran)magnesium bromide,                         Electron Localization Dynamics in the Triplet Excited State of
+tetrakis(tetrahydrofuran)magnesium bromide, and diaquotetrakis-                    [Ru(bpy)3]2+ in Aqueous Solution. Chem. - Eur. J. 2010, 16, 5889−
+(tetrahydrofuran)magnesium bromide. A reagent for the preparation                  5894.
+of anhydrous magnesium phosphodiester salts. J. Am. Chem. Soc. 1977,                (49) Dal Peraro, M.; Llarrull, L. I.; Rothlisberger, U.; Vila, A. J.;
+99, 5285−5289.                                                                     Carloni, P. Water-Assisted Reaction Mechanism of Monozinc β-
+
+
+
+
+                                                                                                                                                                        Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+  (31) Pirinen, S.; Koshevoy, I. O.; Denifl, P.; Pakkanen, T. T. A                 Lactamases. J. Am. Chem. Soc. 2004, 126, 12661−12668.
+Single-Crystal Model for MgCl2 − Electron Donor Support Materials:                  (50) Dal Peraro, M.; Vila, A. J.; Carloni, P.; Klein, M. L. Role of Zinc
+[Mg3Cl5(THF)4Bu]2 (Bu = n-Butyl). Organometallics 2013, 32, 4208−                  Content on the Catalytic Efficiency of B1Metallo β-Lactamases. J. Am.
+4213.                                                                              Chem. Soc. 2007, 129, 2808−2816.
+  (32) Ashby, E. C.; Becker, W. E. Concerning the Structure of the                  (51) Cascella, M.; Magistrato, A.; Tavernelli, I.; Carloni, P.;
+Grignard Reagent. J. Am. Chem. Soc. 1963, 85, 118−119.                             Rothlisberger, U. Role of Protein Frame and Solvent for the Redox
+  (33) Tammiku-Taul, J.; Burk, P.; Tuulmets, A. Theoretical Study of               Properties of Azurin from Pseudomonas Aeruginosa. Proc. Natl. Acad.
+Magnesium Compounds: The Schlenk Equilibrium in the Gas Phase                      Sci. U. S. A. 2006, 103, 19641−19646.
+and in the Presence of Et2O and THF Molecules. J. Phys. Chem. A                     (52) De Vivo, M.; Dal Peraro, M.; Klein, M. L. Phosphodiester
+2004, 108, 133−139.                                                                Cleavage in Ribonuclease H Occurs via an Associative Two-Metal-
+  (34) Tobisu, M.; Chatani, N. Cross-Couplings Using Aryl Ethers via               Aided Catalytic Mechanism. J. Am. Chem. Soc. 2008, 130, 10955−
+C−O Bond Activation Enabled by Nickel Catalysts. Acc. Chem. Res.                   10962.
+2015, 48, 1717−1726.                                                                (53) Gossens, C.; Tavernelli, I.; Rothlisberger, U. Rational Design of
+  (35) Cahiez, G.; Moyeux, A.; Cossy, J. Grignard Reagents and Non-                Organo-Ruthenium Anticancer Compounds. Chimia 2005, 59, 81−84.
+                                                                                    (54) Metz, D. J.; Glines, A. Density, Viscosity, and Dielectric
+Precious Metals: Cheap and Eco-Friendly Reagents for Developing
+                                                                                   Constant of Tetrahydrofuran between −78 and 30°. J. Phys. Chem.
+Industrial Cross-Couplings. A Personal Account. Adv. Synth. Catal.
+                                                                                   1967, 71, 1158−1158.
+2015, 357, 1983−1989.
+                                                                                    (55) Hoover, W. G. Canonical Dynamics: Equilibrium Phase-Space
+  (36) Tasker, S. Z.; Standley, E. A.; Jamison, T. F. Recent Advances in
+                                                                                   Distributions. Phys. Rev. A: At., Mol., Opt. Phys. 1985, 31, 1695−1697.
+Homogeneous Nickel Catalysis. Nature 2014, 509, 299−309.
+                                                                                    (56) Martyna, G. J.; Klein, M. L.; Tuckerman, M. Nose−Hoover
+  (37) Laio, A.; Parrinello, M. Escaping Free-Energy Minima. Proc.
+                                                                                   chains: The Canonical Ensemble via Continuous Dynamics. J. Chem.
+Natl. Acad. Sci. U. S. A. 2002, 99, 12562−12566.
+                                                                                   Phys. 1992, 97, 2635−2643.
+  (38) Iannuzzi, M.; Laio, A.; Parrinello, M. Efficient Exploration of
+                                                                                    (57) Nosé, S. A Unified Formulation of the Constant Temperature
+Reactive Potential Energy Surfaces Using Car-Parrinello Molecular
+                                                                                   Molecular Dynamics Methods. J. Chem. Phys. 1984, 81, 511−519.
+Dynamics. Phys. Rev. Lett. 2003, 90, 23−26.                                         (58) Perdew, J. P.; Burke, K.; Ernzerhof, M. Generalized Gradient
+  (39) Vuilleumier, R.; Sprik, M. Electronic Properties of Hard and Soft           Approximation Made Simple. Phys. Rev. Lett. 1996, 77, 3865−3868.
+Ions in Solution: Aqueous Na+ and Ag+ Compared. J. Chem. Phys.                      (59) Lippert, G.; Hutter, J.; Parrinello, M. The Gaussian and
+2001, 115, 3454−3468.                                                              Augmented-Plane-Wave Density Functional Method for Ab Initio
+  (40) Lightstone, F. C.; Schwegler, E.; Hood, R. Q.; Gygi, F.; Galli, G.          Molecular Dynamics Simulations. Theor. Chem. Acc. 1999, 103, 124−
+A First Principles Molecular Dynamics Simulation of the Hydrated                   140.
+Magnesium Ion. Chem. Phys. Lett. 2001, 343, 549−555.                                (60) VandeVondele, J.; Hutter, J. Gaussian Basis Sets for Accurate
+  (41) Bernasconi, L.; Baerends, E. J.; Sprik, M. Long-Range Solvent               Calculations on Molecular Systems in Gas and Condensed Phases. J.
+Effects on the Orbital Interaction Mechanism of Water Acidity                      Chem. Phys. 2007, 127, 114105.
+Enhancement in Metal Ion Solutions: A Comparative Study of the                      (61) Goedecker, S.; Teter, M.; Hutter, J. Separable Dual-Space
+Electronic Structure of Aqueous Mg and Zn Dications. J. Phys. Chem. B              Gaussian Pseudopotentials. Phys. Rev. B: Condens. Matter Mater. Phys.
+2006, 110, 11444−11453.                                                            1996, 54, 1703−1710.
+  (42) Blumberger, J.; Bernasconi, L.; Tavernelli, I.; Vuilleumier, R.;             (62) Grimme, S.; Antony, J.; Ehrlich, S.; Krieg, H. A Consistent and
+Sprik, M. Electronic Structure and Solvation of Copper and Silver                  Accurate Ab Initio Parametrization of Density Functional Dispersion
+Ions: A Theoretical Picture of a Model Aqueous Redox Reaction. J.                  Correction (DFT-D) for the 94 Elements H-Pu. J. Chem. Phys. 2010,
+Am. Chem. Soc. 2004, 126, 3928−3938.                                               132, 154104.
+  (43) Guido, C. A.; Pietrucci, F.; Gallet, G. A.; Andreoni, W. The Fate            (63) Hutter, J.; Iannuzzi, M.; Schiffmann, F.; VandeVondele, J.
+of a Zwitterion in Water from Ab Initio Molecular Dynamics:                        Atomistic Simulations of Condensed Matter Systems. WIREs 2014, 4,
+Monoethanolamine (MEA)-CO2. J. Chem. Theory Comput. 2013, 9,                       15−25.
+28−32.                                                                              (64) Laio, A.; Gervasio, F. L. Metadynamics: a Method to Simulate
+  (44) Boero, M.; Ikeshoji, T.; Liew, C. C.; Terakura, K.; Parrinello,             Rare Events and Reconstruct the Free Energy in Biophysics,
+M.; Boero, M.; Ikeshoji, T.; Liew, C. C.; Terakura, K. Hydrogen Bond               Chemistry and Material Science. Rep. Prog. Phys. 2008, 71, 126601.
+Driven Chemical Reactions: Beckmann Rearrangement of Cyclo-                         (65) Laio, A.; Rodriguez-Fortea, A.; Gervasio, F. L.; Ceccarelli, M.;
+hexanone Oxime into ε-Caprolactam in Supercritical Water Hydrogen                  Parrinello, M. Assessing the Accuracy of Metadynamics. J. Phys. Chem.
+Bond Driven Chemical Reactions: Beckmann Rearrangement of                          B 2005, 109, 6714−6721.
+Cyclohexanone Oxime into E-Caprolactam in Supercritical. J. Am.                     (66) Vandevondele, J.; Krack, M.; Mohamed, F.; Parrinello, M.;
+Chem. Soc. 2004, 126, 6280−6286.                                                   Chassaing, T.; Hutter, J. r. Quickstep: Fast and Accurate Density
+
+                                                                            4236                                                        DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                              J. Phys. Chem. B 2017, 121, 4226−4237
+The Journal of Physical Chemistry B                                                                                                             Article
+
+Functional Calculations Using a Mixed Gaussian and Plane Waves                  Alternative Transmetalation Pathways in the Me−Me Coupling of
+Approach. Comput. Phys. Commun. 2005, 167, 103−128.                             ZnMe2 and trans-[PdMeCl(PMePh2)2]. J. Am. Chem. Soc. 2011, 133,
+ (67) Krack, M.; Parrinello, M. In QUICKSTEP: Make the Atoms                    13519−13526.
+Dance; NIC Series; Forschungszentrum Jülich, 2004; p 29.
+ (68) Humphrey, W.; Dalke, A.; Schulten, K. VMD: Visual Molecular
+Dynamics. J. Mol. Graphics 1996, 14, 33−38.
+ (69) Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.;
+Robb, M. A.; Cheeseman, J. R.; Scalmani, G.; Barone, V.; Mennucci,
+B.; Petersson, G. A.; et al. Gaussian 09; Gaussian, Inc.: Wallingford,
+CT, 2009.
+ (70) Hehre, W. J.; Ditchfield, R.; Pople, J. A. SelfConsistent
+Molecular Orbital Methods. XII. Further Extensions of Gaussian
+Type Basis Sets for Use in Molecular Orbital Studies of Organic
+Molecules. J. Chem. Phys. 1972, 56, 2257−2261.
+ (71) Clark, T.; Chandrasekhar, J.; Spitznagel, G. W.; Schleyer, P. V.
+R. Efficient Diffuse Function-Augmented Basis Sets for Anion
+Calculations. III. The 3-21+G Basis Set for First-Row Elements, Li−
+F. J. Comput. Chem. 1983, 4, 294−301.
+
+
+
+
+                                                                                                                                                               Downloaded from pubs.​acs.​org/​jpcbfk/​article-pdf/​121/​16/​4226/​67207692/​acs.​jpcb.​7b02716.​pdf by guest on 01 November 2026
+ (72) Frisch, M. J.; Pople, J. A.; Binkley, J. S. Self-Consistent
+Molecular Orbital Methods 25. Supplementary Functions for Gaussian
+Basis Sets. J. Chem. Phys. 1984, 80, 3265.
+ (73) Marenich, A. V.; Cramer, C. J.; Truhlar, D. G. Universal
+Solvation Model Based on Solute Electron Density and on a
+Continuum Model of the Solvent Defined by the Bulk Dielectric
+Constant and Atomic Surface Tensions. J. Phys. Chem. B 2009, 113,
+6378−6396.
+ (74) (a) Glendening, E. D.; Landis, C. R.; Weinhold, F. NBO 6.0:
+Natural Bond Orbital Analysis Program. J. Comput. Chem. 2013, 34,
+1429−1437. (b) Glendening, E. D., Jr.; Badenhoop, K.; Reed, A. E.;
+Carpenter, J. E.; Bohmann, J. A.; Morales, C. M.; Landis, C. R.;
+Weinhold, F. NBO 6.0; Theoretical Chemistry Institute, University of
+Wisconsin, Madison, WI, 2013.
+ (75) Weinhold, F.; Landis, C. R. Discovering Chemistry with Natural
+Bond Orbitals; Wiley, 2012.
+ (76) Silverman, G. S.; Rakita, P. E. Handbook of Grignard Reagents;
+CRC Press: New York, 1996.
+ (77) Vestergren, M.; Eriksson, J.; Håkansson, M. Absolute
+Asymmetric Synthesis of “Chiral-at-Metal” Grignard Reagents and
+Transfer of the Chirality to Carbon. Chem. - Eur. J. 2003, 9, 4678−
+4686.
+ (78) Vestergren, M.; Eriksson, J.; Håkansson, M. Chiral cis-
+Octahedral Grignard reagents. J. Organomet. Chem. 2003, 681, 215−
+224.
+ (79) Vestergren, M.; Gustafsson, B.; Davidsson, Ö .; Håkansson, M.
+Octahedral Grignard Reagents Can Be Chiral at Magnesium. Angew.
+Chem., Int. Ed. 2000, 39, 3435−3437.
+ (80) Harrison-Marchand, A.; Mongin, F. Mixed AggregAte (MAA):
+A Single Concept for All Dipolar Organometallic Aggregates. 1.
+Structural Data. Chem. Rev. 2013, 113, 7470−7562.
+ (81) Yamazaki, S.; Yamabe, S. A Computational Study on Addition of
+Grignard Reagents to Carbonyl Compounds. J. Org. Chem. 2002, 67,
+9346−9353.
+ (82) Mori, T.; Kato, S. Grignard reagents in solution: Theoretical
+study of the Equilibria and the Reaction with a Carbonyl Compound
+in Diethyl Ether Solvent. J. Phys. Chem. A 2009, 113, 6158−6165.
+ (83) Hölzer, B.; Hoffmann, R. W. Kumada-Corriu Coupling of
+Grignard reagents, Probed with a Chiral Grignard Reagent. Chem.
+Commun. 2003, 2, 732−733.
+ (84) King, A. O.; Okukado, N.; Negishi, E.-i. Highly General Stereo-,
+Regio-, and Chemo-Selective Synthesis of Terminal and Internal
+Conjugated Enynes by the Pd-Catalysed Reaction of Alkynylzinc
+Reagents with Alkenyl Halides. J. Chem. Soc., Chem. Commun. 1977,
+683−684.
+ (85) Negishi, E.-i. Palladium- or Nickel-Catalyzed Cross Coupling. A
+New Selective Method for Carbon-Carbon Bond Formation. Acc.
+Chem. Res. 1982, 15, 340−348.
+ (86) García-Melchor, M.; Fuentes, B.; Lledós, A.; Casares, J. A.;
+Ujaque, G.; Espinet, P. Cationic Intermediates in the Pd-Catalyzed
+Negishi Coupling. Kinetic and Density Functional Theory Study of
+
+                                                                         4237                                                  DOI: 10.1021/acs.jpcb.7b02716
+                                                                                                                     J. Phys. Chem. B 2017, 121, 4226−4237
+

@@ -1,0 +1,38 @@
+{
+ "Agem_like": {
+  "literature_kcal": 8.7,
+  "lit_err": 0.8,
+  "dE_scan_kcal": 8.71,
+  "dE_ts_kcal": 8.13,
+  "n_imag_TS": 0,
+  "imag_cm": [],
+  "dG_rrho_kcal": 12.06,
+  "dG_qrrho_kcal": 9.61,
+  "lowest_modes_TS": [
+   0.1,
+   5.7,
+   19.2,
+   35.3,
+   50.5
+  ],
+  "wall_s": 42788.1
+ },
+ "Bgem_like": {
+  "literature_kcal": 6.5,
+  "lit_err": 0.7,
+  "dE_scan_kcal": 6.94,
+  "dE_ts_kcal": 6.21,
+  "n_imag_TS": 0,
+  "imag_cm": [],
+  "dG_rrho_kcal": 3.3,
+  "dG_qrrho_kcal": 7.08,
+  "lowest_modes_TS": [
+   0.0,
+   0.1,
+   0.5,
+   18.5,
+   40.2
+  ],
+  "wall_s": 819.4
+ }
+}

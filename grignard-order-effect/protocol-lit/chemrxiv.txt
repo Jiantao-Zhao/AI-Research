@@ -1,0 +1,669 @@
+   Mechanochemistry-Amended Barbier Reaction as an Expedient Alternative to
+                           Grignard Synthesis
+     Jagadeesh Varma Nallaparaju,a Tatsiana Nikonovich,a Tatsiana Jarg,a Danylo
+             Merzhyievskyi,a,b Riina Aava* and Dzmitry G. Kananovicha*
+a Department of Chemistry and Biotechnology, Tallinn University of Technology, Akadeemia tee 15, 12618
+
+             Tallinn, Estonia; E-mails: riina.aav@taltech.ee, dzmitry.kananovich@taltech.ee
+ b Department of Chemistry, V. P. Kukhar Institute of Bioorganic Chemistry and Petrochemistry National
+
+               Academy of Sciences of Ukraine, Murmanska str. 1, 02094 Kyiv, Ukraine
+
+
+Abstract: Organomagnesium halides (Grignard reagents) are essential carbanionic building
+blocks widely used in carbon-carbon and carbon-heteroatom bond forming reactions with various
+electrophiles. In the Barbier variant of the Grignard synthesis, the generation of air- and moisture-
+sensitive Grignard reagents occurs concurrently with their reaction with an electrophile. Although
+operationally simpler, the classic Barbier approach suffers from low yields due to multiple side
+reactions, limiting its application scope. Here, we report a mechanochemical adaptation of the Mg-
+mediated Barbier reaction, which overcomes these limitations and makes it suitable for the
+coupling of versatile organic halides (allylic, vinylic, aromatic, aliphatic) with diverse range of
+electrophilic substrates (aldehydes, ketones, esters, amides, O-benzoyl hydroxylamine,
+chlorosilane, borate ester) to assemble C–C, C–N, C–Si, and C–B bonds. In contrast to the classic
+two-step Grignard synthesis, the mechanochemical approach offers the advantages of being
+essentially solvent-free, single step and operationally simple, immune to air, and surprisingly
+tolerant to water and other proton donors. Mechanistic studies clarify the role of
+mechanochemistry in the process, indicating that the reaction predominantly proceeds via
+generation of transient organometallics, which occurs rapidly due to improved mass transfer and
+activation of the surface of magnesium metal.
+
+Introduction
+
+In recent years, mechanochemistry has become increasingly popular as an essentially
+solvent-free methodology for organic synthesis.1a-e Empowered by various instrumental
+techniques,1f-h    mechanochemical          synthesis     allows     to    perform     miscellaneous
+transformations without solvents or by using solvents in catalytic amounts (liquid assisted
+grinding technique, LAG).1e,2 This offers several advantages over traditional solution-
+based methods, such as fast reaction rates, reduced safety hazards and environmental
+impact.3 In addition, mechanochemical activation significantly increases reactivity and
+                                                   1
+catalytic properties of solids, including metals.4 This advantage improves the performance
+of metal-catalyzed transformations and allows preparation of organometallic reagents with
+efficacy that is often unattainable in conventional solution-based chemistry.5
+
+
+
+
+Scheme 1. The keynote previous works on mechanochemical Grignard synthesis and outline of this work.
+
+
+Many classic organic reactions have been adapted to the mechanochemical approach,
+including the venerable Grignard reaction. For the latter, avoiding or minimizing the use
+of flammable and peroxide-forming ethereal solvents (Et2O, THF) allows to substantially
+attenuate safety hazards.6 The mechanochemical Grignard reaction was pioneered by
+Harrowfield and co-workers in 2001,7 who reported the first successful solvent-free
+preparation of a naphthyl Grignard reagent followed by its reaction with ketones (Scheme
+1, a). The reaction delivered a mixture of products besides the anticipated tertiary alcohol.
+Despite a few sporadic examples reported afterwards,8,9 the synthetic utility of the
+mechanochemistry-driven Grignard reaction has not been greatly expanded until very
+
+                                                 2
+recently. In 2021, the groups of Ito, Kubota10 and Bolm11 independently reported the facile
+generation of versatile Grignard reagents using THF or 2-MeTHF as liquid additives by
+ball milling, followed by their subsequent reactions with various electrophiles. However,
+prior preparation of air- and moisture-sensitive Grignard reagents was necessary in these
+works, what resulted in partial oxidation10 of organometallic intermediate or required inert
+atmosphere protection.11
+Here we report that many of synthetically useful transformations of organomagnesium
+nucleophiles can be efficiently performed under mechanochemical conditions by
+generating Grignard reagents in situ from magnesium and the respective organic halide
+(i.e., in the Barbier variant). A variety of electrophilic reaction partners are compatible with
+this single-step reaction design (Scheme 1, b). The proposed alternative is operationally
+simpler, inherently immune to air, and remarkably tolerant to moisture and some other
+proton sources. Furthermore, the mechanochemical approach retains the high efficiency
+of the generic Grignard synthesis, delivering similar yields and exhibiting a broad scope
+of amenable organic halides and electrophilic substrates. This outperforms the traditional
+solution-based Mg-mediated Barbier reaction which delivers low and irregular yields12
+except the reaction of allylic halides.13,14 The previously reported mechanochemical
+Barbier reactions with zinc15 and bismuth16 demonstrate similar scope limitations when
+compared with the newly developed method.
+
+Results and Discussion
+
+During the development of new routes for remediation of persistent organic pollutants, we
+noticed   that   reaction   of   1,2,3-trichloropropane    (TCP)    with   Mg    powder    and
+2-napthaldehyde (1) featured homoallylic alcohol 2a (R = allyl) in much better yield under
+mechanochemical conditions (1 h of ball milling in a shaker mill at 30 Hz) than in THF
+solution (Table 1, Entry 1). Importantly, Mg was essential for the reaction while other
+tested metals (Zn, Al, Mg, In; Scheme S1 in ESI) were ineffective. Similarly, much better
+yields of alcohols 2a-d were obtained under mechanochemical conditions (conditions A,
+Table 1) than in solution (conditions B) by the Barbier reactions of allyl chloride (Entry 2),
+bromoethane (Entry 3), bromobenzene (Entry 4) and 2-phenylethyl bromide (Entry 5). The
+lower yields in the solution-based Barbier syntheses were due to enhanced side
+processes, which produced 2-naphthalenemethanol 3, pinacols 4, and 2-naphthyl ketones
+
+                                               3
+(e.g., 5b for R = Et) as the most abundant by-products. Remarkably, the classic Grignard
+synthesis in THF solution (conditions C) furnished alcohols 2a-d in nearly same yields as
+the mechanochemical Barbier-Grignard reaction. Notably, the latter was performed under
+air without inert atmosphere protection which was essential for the Grignard synthesis.
+Table 1. Synthesis of alcohols 2a-d via the Barbier reaction under mechanochemical conditions (A), in THF
+solution (B), and via addition of Grignard reagents in THF solution (C).
+
+
+
+
+                                                           conditions,a yield (%)b
+                                  organic
+                        entry                  product
+                                   halide
+                                                             A        B        C
+                          1                       2a        72c      38        –d
+
+                          2                       2a        98       73        98
+                          3     EtBr              2b        94e      57        96
+                          4     PhBr              2c        92       57        –d
+                          5                       2d        88       52        90
+                        a A: ball milling, 1 (200 mg, 1.28 mmol), RX (1–1.2 equiv.),
+
+                        activated Mg powder (2 equiv.), THF (3 equiv.), 30 Hz, 60
+                        min, under air. B: in THF solution at stirring, same
+                        reactants as in A, under argon. C: in THF solution with
+                        RMgX (1 equiv.), under argon. b Yields are determined by
+                        1H NMR with internal standard after the hydrolytic workup
+
+                        (aq. NH4Cl). Yields of isolated products are similar, see
+                        ESI. c Performed with non-activated Mg powder. d Not
+                        performed. e 72% yield with non-activated Mg powder.
+The three most important factors enabling high yields of alcohols 2a-d have been revealed
+during the optimization studies for the synthesis of 2a (Table 2): (i) presence of THF (at
+least 3 equiv.) which acts as a Lewis base ligand to stabilize organomagnesium
+intermediate (Entry 1 vs 2 and 3), (ii) milling frequency, with yields of 2a remarkable
+improved at high frequencies (Entry 1 vs 4 and 5, Table S2 in ESI), and (iii) surface area
+of Mg metal, i.e., smaller particles (Entry 6 vs 8) or higher loading (Entry 6 vs 7) resulted
+in better yields (Entries 6–8). The latter factor indicated the on-surface nature of the
+reaction, while the dependence on milling frequency clearly manifested mechanochemical
+
+                                                       4
+origin of the observed yield enhancement. In line with these results, the best outcome
+(98% yield of 2a, Entry 1) was obtained with Mg powder activated by a prior ball milling (3
+h at 30 Hz). After the activation, the powder attained a distinct metal luster because of the
+removed passivating “oxide” layer.17 The beneficial effect of the activated powder was
+especially clear in the Barbier reactions of other halides, e.g., yield of 2b was noticeably
+improved from 72% to 94% (Table S4). The mechanochemical synthesis of 2a was fast
+and delivered 93% yield already after 10 min of milling at 30 Hz (Table S3). Importantly,
+no induction delay was noted. The delay is common for the solution-based Grignard and
+Barbier reactions and may lead to sudden exothermic initiation with risk of thermal
+runaway.6 Inspection with a thermal camera (Fig. S4, ESI) revealed only insignificant
+temperature increase outside and inside the milling jars (did not exceed 29°C). Despite
+the exothermic nature of the reaction, the rather low temperature increase indicated
+efficient heat dissipation and implied that thermal activation is an unlikely cause for the
+short induction period and fast reaction rate.
+Table 2. Selected optimization experiments for the mechanochemical synthesis of homoallylic alcohol 2a.
+                                                                            yield
+                       entry                     conditions
+                                                                            (%)a
+                               optimal conditions: allyl chloride (1.1
+                         1     equiv.), activatedb Mg powder (2 equiv.),     98
+                               THF (3 equiv.), 60 min, 30 Hz, under air
+                                 variation from the optimal conditions:
+                         2     no THF:                                       14
+                         3     1.5 equiv. THF:                               64
+                         4     0 Hz (in a slurry):                           66
+                         5     7 Hz milling frequency:                       78
+                         6     Mg beads, 3 mm (2 equiv.):                    63
+                         7     Mg beads, 3 mm (30 equiv.):                   86
+                         8     non-activated Mg powder (2 equiv.):           96
+
+
+
+
+                       a Yields are determined by 1H NMR with internal standard
+
+                       after the hydrolytic workup (aq. NH4Cl). For more details,
+                       see ESI. b Obtained by ball milling (3 h, 30 Hz) of
+                       commercial Mg powder.
+
+
+                                                     5
+Scheme 2. Dominant side process: Meerwein-Ponndorf-Verley (MPV) reaction of aldehyde 1 with
+magnesium alkoxides 2-Mg. Standard conditions: EtBr (1.1 equiv.), non-activated Mg powder (2 equiv.),
+THF (3 equiv.), 60 min, 30 Hz, under air.
+
+The dominant side process which resulted in generation of alcohol 3 and ketones 5 was
+attributed to the Meerwein-Ponndorf-Verley (MPV) reaction of aldehyde 1 with magnesium
+alkoxides products 2-Mg (Scheme 2). This was evidenced by performing the
+mechanochemical and the solution-state Barbier reactions with deuterium-labeled
+aldehyde 1-d, which featured a double deuterated alcohol 3-d2 and ketone 5b as side
+products (Scheme 2, eq. 1). By contrast, no deuterium incorporation to 3 was observed
+when the same reaction of 1 was carried out with THF-d8, EtBr-d6 or by quenching with
+D2O (eq. 2), what allowed to rule out hydrogen atom abstraction from the solvent, β-
+hydride transfer from ethyl Grignard reagent, or Bouveault-Blanc-type reduction as
+alternative possibilities (see section 4.2 in ESI for more details). As additional evidence,
+the MPV reaction of alkoxide 2a-Mg and aldehyde 1 was attempted and occurred as under
+mechanochemical conditions as in THF solution (eq. 3). Notably, the pinacol coupling of
+
+
+
+
+                                                 6
+1 was suppressed in the mechanochemical experiments, while the parasitic MPV reaction
+was significantly inhibited.
+
+Table 3. Synthesis of tertiary alcohols 6a-e via mechanochemical Barbier-Grignard reaction of ketone 7.
+
+
+
+
+                                                         conditions,a yield (%)b
+                        entry                product        A,             D,
+                                                        no additive with NH4Cl
+                          1                    6a          78c            92d
+                          2     EtBr           6b           57            78
+                          3     PhBr           6c           33            68
+                          4                    6d           53            49
+                          5     PhCH2Br        6e           67            82
+                        a A: ball milling, 7 (200 mg, 1.2 mmol), RX (1.5 equiv.),
+
+                        activated Mg powder (2 equiv.), THF (3 equiv.), 30 Hz, 60
+                        min, under air, followed by hydrolysis (aq. NH4Cl). D:
+                        same as A, but with NH4Cl (1 equiv.), followed by
+                        treatment with EtOAc, filtration and solvent evaporation.
+                        b Yields are determined by 1H NMR with internal standard
+
+                        Yields of isolated products are similar, see ESI. c 8 (7%)
+                        formed as main by-product. d 8 (<1%) formed as the only
+                        by-product.
+
+
+For the mechanochemical synthesis of tertiary alcohol 6a from ketone 7, its enolization
+promoted by basic magnesium alkoxide of 6a was the main side process that led to aldol
+8 (Table 3, Entry 1, conditions A). To our delight, the side process was suppressed by
+performing the reaction with solid ammonium chloride (1 equiv., conditions D) which acted
+as an efficient proton quencher for the alkoxide and delivered alcohol 6a in high 92% yield.
+Moreover, the in situ release of alcohol 6a from the respective alkoxide allowed to bypass
+the conventional hydrolytic work-up and streamlined the preparative protocol (see also
+the discussion on gram-scale preparation of 6a below). Likewise, notably better yields of
+alcohols 6b-e were attained with NH4Cl for other organic halides, with the only exception
+of 6d (Table 3, Entries 2–5). However, the yields were lower compared to the similar
+
+
+                                                    7
+reactions of more reactive aldehyde 1 (Table 1), and the use of activated Mg powder did
+not lead to any improvement in this case (Table S8).
+
+
+
+
+Scheme 3. Tolerance of the mechanochemical Barbier-Grignard reaction of aldehyde 1 to proton sources.
+Proton quenching of alkoxide 2d-Mg and a transient Grignard intermediate 9-Mg.
+
+Table 4. Tolerance of the mechanochemical Barbier-Grignard reactions of aldehyde 1 to water and solid
+ammonium chloride.
+
+
+
+                                                                   yield (%)a,b
+                      entry                product
+                                                         no add.      NH4Cl       H2O
+                        1                     2a           98           62        65
+                        2     EtBr            2b           94           57        61
+                        3     PhBr            2c           92           53        46
+                        4                     2d           88          50c        46d
+                      a Conditions:  1 (200 mg, 1.28 mmol), RBr (1.1 equiv.),
+                      activated Mg powder (2 equiv.), an additive (1 equiv.), THF
+                      (3 equiv.), 60 min, 30 Hz, under air. b Yields are determined
+                      by 1H NMR with internal standard. c 40% of 9 formed. d 28%
+                      of 9 formed.
+
+
+Tolerance of a presumably organomagnesium-mediated processes to Brønsted acid
+(NH4Cl) was extraordinary, since Grignard reagents are known as eager proton acceptors.
+This intriguing outcome led us to investigate the limits of such tolerance in more detail in
+the reactions of aldehyde 1, given high practical significance and mechanistic relevance
+                                                     8
+of these results. We found that the Barbier reactions of aldehyde 1 (Table 4, Scheme 3)
+occurred not only with NH4Cl but also in the presence of water, although the yields of
+alcohols 2a-d were 30–40% lower than those obtained in the additive-free processes.
+Remarkably, water (1 equiv.) completely inhibited the same reactions in THF solution,
+which did not start even after prolonged (24 h) stirring at room temperature or heating.
+The failure could be attributed to passivation of magnesium surface with Mg(OH)2,14 while
+the passive layer is readily removed in the ball milling process. The mechanochemistry-
+initiated reactions of 1 with 2-phenylethyl bromide (Scheme 3) showed that yields of 2d
+were reduced due to competitive protonation of organomagnesium intermediate 9-Mg, a
+process that produced ethyl benzene 9. The generation of transient Grignard reagent
+9-Mg and proton transfer from the ammonium salt have been confirmed in the experiment
+with ND4Cl, which afforded the corresponding deuterium-labelled hydrocarbon 9-d in 40%
+yield. In the reaction with water (1 equiv.), 9 was formed in 28% yield, indicating on
+plausible intermediacy of 9-Mg and its fast addition to a carbonyl group of 1 concurrently
+with hydrolysis.18 The similar behavior of liquid water and solid NH4Cl under
+mechanochemical conditions was also notable (Table 4) and could be explained by
+coordination of water to Mg2+ in a solid phase, a process which may also account for the
+attenuated reactivity of water.18 The extent of protonation for 9-Mg did not correlate with
+pKa values of the selected proton donors, indicating that Brønsted acidity is not a relevant
+factor (Table S9). Besides ammonium chloride, K2HPO4 was identified as a promising Mg
+alkoxide quencher, which afforded 2d in 81% yield (Scheme 3). In contrast to water, the
+Barbier reaction did not occur in the presence of PhOH and i-PrOH.
+After establishing the optimal conditions for the synthesis of alcohols from aldehydes and
+ketones, a broader scope of organic halides and a more diverse set of electrophilic
+reaction partners have been evaluated. Besides additional examples of functionalized
+aldehydes and ketones, we tested the reactions of esters, amides, and several non-
+carbonyl electrophiles that furnish C–Si, C–B and C–N bonds (Scheme 4).
+
+
+
+
+                                             9
+Scheme 4. Synthetic applications of in situ generated organomagnesium nucleophiles. General conditions:
+E+ (0.6–3 mmol), RX (1.1–1.5 equiv.), activated Mg powder (2 equiv.), THF (3 equiv.), ball milling at 30 Hz,
+1 h, under air, followed by hydrolytic work-up (aq. NH4Cl). The reactions were performed with bromides (X
+= Br) except for R = allyl and benzyl (X = Cl). Yields of isolated products are given (column chromatography
+on silica gel). a X = Br. b X = I. c With 12 equiv. of activated Mg powder. Same yield of 2i was obtained in
+reaction with c-C6H11MgBr in THF solution. d Yield after purification by crystallization. e Based on competition
+experiments. See section 2.7 in ESI for details. f No column chromatography was applied. g With NH4Cl (1
+equiv.) as additive.
+
+In its reaction with aldehyde 1, cinnamyl chloride reacted almost exclusively with allylic
+rearrangement, affording alcohol 2e in 70% yield of isolated product and as a 2:1 mixture
+of anti- and syn-diastereomers (Scheme 4, a). Benzyl bromide smoothly produced the
+corresponding alcohol 2f (69% yield). Among additional examples of aliphatic halides, n-
+butyl bromide showed high efficacy and produced 2g in 83% yield, while methyl carbinol
+                                                      10
+2h was obtained in a modest 50% yield in the reaction with methyl iodide. Nevertheless,
+the reaction with CH3I occurred even though the iodide passivates Mg in THF, rendering
+it unsuitable for preparing the respective Grignard reagent.19 The reaction of 1 with
+bromocyclohexane required an excess of activated Mg (12 equiv.) to attain 2i in 50% yield.
+Notably, the reaction of 1 with c-C6H11MgBr in THF solution afforded the same outcome.
+2-Bromopropene featured the corresponding addition product 2j in 73% yield, indicating
+that vinylic bromides are also amenable substrates. Among the functionalized aromatic
+bromides, p-OMe and p-Cl-substituted bromobenzenes have been successfully
+employed, featuring alcohols 2k and 2l. In these two cases, additional activation of Mg
+with a crystal of iodine was required to trigger the reactions. Synthesis of 2l also features
+a chemoselective transformation in which C–Cl bond remained intact due to its much
+lower reactivity in comparison with the arylic C–Br bond. Higher reactivity of bromides over
+chlorides is common for the preparation of the respective Grignard reagents in solution,
+for which the reaction rate decreases in the order C–I > C–Br > C–Cl > C–F.12b For the
+mechanochemical Barbier reaction, we found that aliphatic and aromatic chlorides were
+unreactive in comparison with the respective bromides (Scheme 4, b), while allylic and
+benzylic chlorides demonstrated high reactivity comparable to their corresponding
+bromides. The yield of 2c was lower for iodobenzene (55%) compared to bromobenzene
+(92%) due to an intensified Wurtz coupling reaction that result in biphenyl formation (ca.
+50% yield). Relative reactivity of organic bromides has been investigated in a series of
+competition experiments (see section 2.7 in ESI) and revealed the following order:
+CH2=CHCH2Br > EtBr > PhBr > PhCH2CH2Br. This order was also similar to that observed
+in their reaction with Mg in Et2O solution, leading to the formation of corresponding
+Grignard reagents.20 Notably, more reactive halides usually delivered better yields of
+alcohols in their reactions with carbonyl substrates (Tables 1, 3) and showed better
+tolerance to water and NH4Cl (Table 4). Because of the accompanying protonation of
+organometallic intermediate (Scheme 3), the use of NH4Cl for in situ release of alcoholic
+product from the respective Mg alkoxide is justified only when (i) organic halide delivers
+highly reactive organometallic intermediate, (ii) to suppress undesired enolization, or (iii)
+when a streamlined work-up protocol is advantageous because of technological reasons.
+
+
+
+                                             11
+In a series of p-substituted benzaldehydes (Scheme 4, c), the electron-donating methoxy
+substituent on p-anisaldehyde favored smooth reaction that led to the corresponding
+alcohol 10 in 87% yield. In contrast, benzaldehydes with electron-withdrawing substituents
+(Cl, CF3) were less efficient and delivered lower yields, while p-CN and p-Br-substituents
+were intolerant and resulted in complex mixtures of products. The lower yields obtained
+with electron-deficient aldehydes were due to intensified reductive side processes,
+resulting in the formation of corresponding arylmethanol or pinacol by-products.
+Successful preparation of alcohol 14 (76% yield) demonstrated that steric hindrances
+caused by two o-Me substituents do not significantly impede the allylation reaction.
+Heterocyclic aldehydes with thiophene and pyridine moieties were both amenable
+substrates in their reactions with ethyl bromide, 4-bromo-1,1,1-trifluorobutane and allyl
+chloride respectively, producing the corresponding alcohols 17, 16 and 15 in 62–92%
+yields. The successful preparation of 15 is notable, since 2-pyridinecarboxaldehyde was
+reported unreactive in the mechanochemical Barbier reaction with zinc.15
+Non-enolizable ketones, such as 2,2,2-trifluoroacetophenone and benzophenones, did
+not require NH4Cl additive and furnished the respective carbonyl adducts with allyl
+chloride 18 and 19 in high 87% and 98% yields, respectively (Scheme 4, d). Unprotected
+NH2-moiety was a compatible functional group, as exemplified by the synthesis of
+aminoalcohol 20. The reactions of benzylideneacetone (21) and chalcone (22) occurred
+exclusively as 1,2-addition featuring alcohols 23 and 24. No accompanying 1,4-addition
+process was observed. Diastereoselectivity of the allylation reaction was tested by the
+synthesis of alcohol 25, which was obtained in 75% yield and in a non-stereoselective
+fashion (1:1 dr), alike the analogous reaction with allylmagnesium chloride in solution. 21
+Next, we examined the behavior of less reactive carboxylic esters, which are rarely used
+in the Barbier-type processes (Scheme 4, e). To our delight, ethyl 2-naphthoate produced
+the corresponding tertiary alcohols 26 and 27 in 95% and 70% yields in the reactions with
+allyl chloride and ethyl bromide respectively. The reaction with allyl chloride perfectly
+tolerated NH4Cl additive. TADDOL ligand 28 was prepared from the corresponding methyl
+ester in 52% yield by the reaction with phenyl bromide. Furthermore, we successfully
+prepared ketones 5b and 29 from the respective Weinreb and morpholine amides
+(Scheme 4, f). Ketone 29 is a building block in the synthesis of an anti-cancer drug
+
+
+                                             12
+Carfilzomib and was prepared previously by the Barbier reaction in THF solution.22
+Besides the carbonyl-containing electrophiles, reactions with triethylchlorosilane and O-
+benzoyl-N,N-diethylhydroxylamine allowed to synthesize the respective products 30 and
+31 with newly formed C–Si and C–N bonds. Synthesis of benzylic amine 31 exemplifies
+an umpolung alternative to the conventional synthesis of valuable amines via nucleophilic
+substitution.23 The reaction with pinB(OMe) furnished boronic ester 32 but occurred with
+ca. 50% conversion and therefore delivered only a modest 42% yield. Although no
+additional optimization studies have been performed for these cases, the successful use
+of esters, amides and heteroatom-centered electrophiles implies that further expansion of
+amenable electrophilic substrates can be made.
+
+
+
+
+      Scheme 5. Gram-scale preparations and comparison of two-step and single-step protocols.
+
+
+In a gram-scale preparation of alcohol 2d (Scheme 5), a comparison was made between
+the developed one-step approach and the two-step mechanochemical Grignard synthesis.
+The results revealed the superiority of the single-step Barbier protocol, which produced
+2d in a noticeably better yield (75% vs 49%) from stoichiometric amounts of 1 and
+
+                                                13
+2-phenylethyl bromide. The two-step method was found to be susceptible to oxidation of
+the Grignard intermediate 9-Mg in the presence of air, which resulted in the formation of
+alcohol 33 (12% yield). This led to intensification of the MPV reaction as accompanying
+side process (Table S11). In sharp contrast, the one-step protocol was found to be
+immune to the oxidation process, yielding only a trace of 33. In addition, we successfully
+performed a gram-scale allylation of 2-acetylnaphthalene 7 using NH4Cl as an additive.
+Alcohol 6a was isolated in 96% yield after the treatment of the obtained paste-like reaction
+mixture with ethyl acetate followed by filtration and evaporation of the solvent. Although
+no significant safety hazards have been encountered during our work with Mg powder,
+less reactive Mg beads looked preferable from the safety standpoint, especially in the
+development of upscaled preparations. Keeping in mind that only high surface area of Mg
+is crucial for attaining high yields, gram-scale synthesis of 6a was repeated with excess
+(10 equiv.) of less reactive Mg beads and furnished 6a in 86% yield. The beads were not
+fragmented during milling and eroded from the surface, what allowed easy recovery of the
+excessive Mg (Fig. S9, ESI). Nevertheless, organic halides that may react violently or
+even explosively with Mg (e.g., CF3-containing aromatic bromides)24 must be avoided in
+mechanochemical preparations. For the substrates with unknown reactivity with Mg metal,
+it is advisable to conduct safety investigations25 prior to small-scale test experiments.
+The deuterium quenching experiment using ND4Cl (Scheme 3) provided conclusive
+evidence for Grignard reagent as intermediate, which adds to carbonyl group of 1 to form
+magnesium alkoxide product 2-Mg (Scheme 6, a). A competing MPV reaction of 2-Mg
+with the remaining aldehyde can lead to the formation of side products 3 and 5, especially
+if the consumption of 1 in its reaction with the Grignard reagent is relatively slow. Since
+the addition of Grignard reagents to carbonyl compounds is typically very fast,21,26 we
+concluded that Grignard reagent formation (GRF) is the rate-limiting step of the whole
+process. To minimize the competitive reactions, GRF must be greatly intensified under
+the mechanochemical conditions to ensure fast consumption of aldehyde. This conclusion
+is supported by previous kinetic studies of GRF in solution, which have shown that the
+rate of GRF depends on area and physical characteristics of the magnesium surface (also
+clearly observed in our experiments), the viscosity of the medium, and the stirring
+rate.20,27,28 The latter two factors are important because organic bromides often react with
+
+
+                                             14
+ Scheme 6. (a) Mechanistic interpretation and supporting experiments: (b) dependence of rate on milling
+ frequency for generation of Grignard reagent 9-Mg; (c) radical clock experiment; (d) competitive allylation
+ of p-OMe and p-Cl benzaldehydes.
+magnesium at a transport-controlled rate,20,27 meaning that the delivery of bromide to the
+surface of magnesium is the rate-limiting step of GRF. Therefore, rapid agitation in a ball
+mill which results in improved mass transfer2 should enhance the rate of GRF and,
+consequently, improves yields at higher milling frequencies. As another support, we
+observed a clear increase in the rate of generation of Grignard reagent 9-Mg at higher
+milling frequencies (3 Hz vs 30 Hz, Scheme 6, b). The reaction was found rapid at 30 Hz,
+with full conversion of the starting bromide achieved after just 3 minutes, while the process
+was noticeably slower at 3 Hz. The second important factor that contributes to the
+accelerating effect is activation of magnesium surface17,29 by generation of active sites in
+
+                                                     15
+the ball milling process. The passivation is also prevented2 and the reactive surface of the
+metal is continuously renewed, allowing to start the reaction even in the presence of water.
+Besides increasing the rate of GRF, this factor also reduces the induction delay.
+Although the formation of organometallic intermediates was apparent, the possibility of
+additional radical-mediated pathways could not be entirely disregarded.30,31 These
+pathways have been suggested as alternative mechanism for the Barbier reaction,12c in
+which radical and radical-anion species that mediate GRF17,32 may be intercepted by the
+carbonyl substrate 1 or by the anion-radical 1·− generated from it (Scheme 6, a). The latter
+can also produce pinacols 4, which were formed in significant amounts only in the
+reactions of electron-deficient aldehydes. The organometallic-free mechanism could also
+account for the formation of alcohol products in the presence of water.14,31 Therefore,
+additional mechanistic experiments have been carried out with aim to detect whether the
+contribution of the radical intermediates is significant, especially in the presence of proton
+sources and in the reactions of electron-deficient carbonyl substrates. First,
+cyclopropylmethyl bromide (35) was utilized as a radical clock probe (Scheme 6, c).33 The
+reaction yielded a mixture of alcohols 2m and 2n in almost equal ratios of 1:1, regardless
+of the presence or absence of proton sources (H2O or NH4Cl). The observation of an equal
+ratio of 2m and 2n is consistent with the rapid formation17 of Grignard reagent C from the
+cyclopropylmethyl radical A, which occurs with the same high rate as its intramolecular
+rearrangement into B (k ~ 108 s−1).34 The short-lived alkyl radicals are unlikely to be
+intercepted by 1 or its anion-radical 1·−, as these second-order processes either have
+much lower rate constants (such as the radical addition to 1)35 or require high
+concentrations of radical species (such as 1·−)36 to proceed at a competitive rate.
+Moreover, if the organometallic-mediated pathway does not operate in the presence of
+proton donors, the radical mechanism should predominantly deliver the rearranged
+alcohol 2n. However, both NH4Cl and H2O reduced yields of the alcohols without altering
+their ratio. This outcome is consistent with the competitive protonation and carbonyl
+addition of the organometallic intermediates C and D.18 Based on these findings, we
+anticipated that substrates that generate more stable and long-lived radical or radical
+anion species, such as aromatic aldehydes (particularly those with electron-withdrawing
+substituents) and allyl halides, may be more prone to react via the radical mechanism. To
+
+
+                                             16
+test this hypothesis, we selected the allylation reactions of p-methoxy- and
+p-chlorobenzaldehydes (Scheme 6, d) as an appropriate mechanistic probe due to the
+distinct electronic properties of these substrates (Hammett constants of p-substituents, σp
+= −0.27 and +0.23, respectively). It has been previously shown that the rate of anion-
+radical-mediated Barbier reaction of benzaldehydes is highly sensitive to the nature of
+p-substituents (kCl/kOMe = 37, based on Hammett equation).31 In contrast, the addition of
+allyl Grignard reagents to carbonyl compounds is extremely fast and therefore non-
+selective.21 In the competition experiments we performed, the Barbier reaction in aqueous
+THF produced p-Cl-substituted alcohol 11 as the kinetic product, while the addition of
+allylmagnesium chloride in THF solution was non-selective. The mechanochemical
+Barbier reaction (with and without NH4Cl and H2O additives) delivered product ratios close
+to 1:1.5 in slight favour of p-Cl-substituted product 11. Notable, p-chlorobenzaldehyde was
+also involved into accompanying pinacol coupling. These results indicate on operation of
+the anion-radical-mediated pathway, however as a minor contributor that becomes
+apparent for electron-deficient aldehydes. A greater contribution of the radical mechanism
+could be expected for carbonyl substrates which are more prone to single electron
+reduction and produce long-living ketyl radicals, such as benzophenones. However, this
+hypothesis has not been verified in our study.
+
+Conclusions
+
+In conclusion, here we demonstrate that Grignard synthesis can be expediently performed
+in a single step under mechanochemical conditions via organomagnesium intermediates
+generated in situ in the presence of several electrophilic reaction counterparts (Barbier
+conditions). Essentially, high reactivity of organomagnesium compounds and reduced
+side processes enabled by mechanochemistry allowed to expand the scope of Barbier
+reaction beyond the conventional allylation of aldehydes. A broad range of usable
+electrophiles   (aldehydes,   ketones,   esters,   amides,    chlorosilane,   borate   ester,
+hydroxylamine) and organic halides (allylic, aromatic, aliphatic) are compatible with the
+single-step reaction design, which is essentially solvent-free, features short reaction times
+and operationally simple protocol. The yields of products obtained from 2-naphthaldehyde
+were considerably better than in analogous solution based Barbier reaction and attained
+high efficiency of the classic Grignard synthesis. By contrast to the latter, the developed
+
+                                             17
+one-step process is resistant to air oxidation, can be performed without protective inert
+atmosphere and shows unusually high tolerance to water and some other proton donors.
+The solid proton-donating salts (e.g., NH4Cl) can be used to release the alcoholic products
+from the respective alkoxides in situ, streamlining the work-up protocol and suppressing
+enolization side process. Mechanistic studies have indicated that the organomagnesium-
+mediated pathway is the dominant mechanism at least in the reactions of aldehydes, with
+ball milling process resulting in accelerated generation of transient Grignard reagents by
+improving mass transfer and activating the surface of magnesium metal. The contribution
+of alternative radical-mediated mechanistic scenarios has been evaluated and their minor
+input in the reactions of aromatic aldehydes has been demonstrated. The developed
+approach provides a convenient alternative to traditional Grignard synthesis, while the
+established reactivity trends and mechanistic insights offer a starting point for further
+innovations towards the greener and safer implementation of industrial organometallic
+processes.
+
+Experimental Section
+Detailed information about optimization studies, experimental methods and the
+corresponding structure characterization data are given in the ESI.
+
+Data availability
+Data for all compounds reported in this manuscript are available in the ESI, which includes
+experimental details, characterisation, copies of 1H and 13C NMR spectra.
+
+Author contributions
+J.V., T.N., D.M. carried out the investigation and formal analysis of the data. T.J. carried
+out HRMS analysis, assisted with analytical chemistry measurements and data analysis.
+D.K. conceptualised the project and prepared the original draft of the manuscript. D.K.
+and R.A. were involved with supervision and funding acquisition. All authors were involved
+in reviewing and editing.
+
+Conflict of interest
+There are no conflicts to declare.
+
+
+
+                                            18
+Acknowledgements
+
+The research was supported by the Estonian Research Council grant PRG399 and COST
+Action CA18112 “Mechanochemistry for Sustainable Industry”. Danylo Merzhyievskyi is
+grateful to the Education and Youth Board of Estonia for financial support of his research
+stay at Tallinn University of Technology. Jaagup Kuuskla and Fred Järv (Nõo
+Reaalgümnaasium, Tallinn, Estonia) are greatly acknowledged for their assistance in
+performing the preliminary screening experiments.
+
+Keywords: mechanochemistry • Grignard reagent • Barbier reaction • magnesium •
+mechanism
+
+References
+
+[1]  For recent reviews, see: (a) F. Cuccu, L. De Luca, F. Delogu, E. Colacino, N. Solin, R. Mocci and A.
+     Porcheddu, ChemSusChem, 2022, 15, e202200362; (b) S. Pagola, Crystals, 2023, 13, DOI
+     10.3390/cryst13010124; (c) T. Friščić, C. Mottillo and H. M. Titi, Angew. Chem. Int. Ed., 2020, 59,
+     1018–1029; (d) P. Ying, J. Yu and W. Su, Adv. Synth. Catal., 2021, 363, 1246–1271; (e) J.-L. Do and T.
+     Friščić, Synlett, 2017, 28, 2066–2092; (f) J. L. Howard, Q. Cao and D. L. Browne, Chem. Sci., 2018, 9,
+     3080–3094; (g) R. R. A. Bolt, J. A. Leitch, A. C. Jones, W. I. Nicholson and D. L. Browne, Chem. Soc.
+     Rev., 2022, 51, 4243–4260; (h) L. Gonnet, C. B. Lennox, J.-L. Do, I. Malvestiti, S. G. Koenig, K.
+     Nagapudi and T. Friščić, Angew. Chem. Int. Ed., 2022, 61, e202115030.
+[2] G. A. Bowmaker, Chem. Commun., 2013, 49, 334–348.
+[3] (a) P. Sharma, C. Vetter, E. Ponnusamy and E. Colacino, ACS Sustainable Chem. Eng., 2022, 10,
+     5110–5116; (b) O. Galant, G. Cerfeda, A. S. McCalmont, S. L. James, A. Porcheddu, F. Delogu, D. E.
+     Crawford, E. Colacino and S. Spatari, ACS Sustainable Chem. Eng., 2022, 10, 1430–1439.
+[4] For reviews, see: (a) A. C. Jones, J. A. Leitch, S. E. Raby-Buck and D. L. Browne, Nature Synthesis,
+     2022, 1, 763–775; (b) S. Hwang, S. Grätz and L. Borchardt, Chem. Commun., 2022, 58, 1661–1671;
+     (c) A. Porcheddu, E. Colacino, L. De Luca and F. Delogu, ACS Catal., 2020, 10, 8344–8394.
+[5] For recent examples, see: (a) G.-F. Han, F. Li, Z.-W. Chen, C. Coppex, S.-J. Kim, H.-J. Noh, Z. Fu, Y. Lu,
+     C. V. Singh, S. Siahrostami, Q. Jiang and J.-B. Baek, Nature Nanotechnology, 2021, 16, 325–330; (b)
+     P. Gao, J. Jiang, S. Maeda, K. Kubota and H. Ito, Angew. Chem. Int. Ed., 2022, 61, e202207118; (c)
+     W. I. Nicholson, J. L. Howard, G. Magri, A. C. Seastram, A. Khan, R. R. A. Bolt, L. C. Morrill, E.
+     Richards and D. L. Browne, Angew. Chem. Int. Ed., 2021, 60, 23128–23133.
+[6] (a) D. J. am Ende, P. J. Clifford, D. M. DeAntonis, C. SantaMaria and S. J. Brenek, Org. Process Res.
+     Dev., 1999, 3, 319–329; (b) A. Kadam, M. Nguyen, M. Kopach, P. Richardson, F. Gallou, Z.-K. Wan
+     and W. Zhang, Green Chem., 2013, 15, 1880–1888.
+[7] J. M. Harrowfield, R. J. Hart and C. R. Whitaker, Aust. J. Chem., 2001, 54, 423–425.
+[8] I. R. Speight and T. P. Hanusa, Molecules, 2020, 25, DOI 10.3390/molecules25030570.
+[9] H. Chen, J. Fan, Y. Fu, C.-L. Do-Thanh, X. Suo, T. Wang, I. Popovs, D. Jiang, Y. Yuan, Z. Yang and S.
+     Dai, Advanced Materials, 2021, 33, 2008685.
+[10] R. Takahashi, A. Hu, P. Gao, Y. Gao, Y. Pang, T. Seo, J. Jiang, S. Maeda, H. Takaya, K. Kubota and H.
+     Ito, Nat. Commun., 2021, 12, 6691.
+[11] V. S. Pfennig, R. C. Villella, J. Nikodemus and C. Bolm, Angew. Chem. Int. Ed., 2022, 61, e202116514.
+
+                                                     19
+[12] For reviews, see: (a) C. Blomberg, The Barbier Reaction and Related One-Step Processes, Springer,
+     Berlin, Heidelberg, 1993; (b) C. L. Raston and G. Salem, in The Metal—Carbon Bond, 1987, pp. 159–
+     306; (c) P. Cintas, in Activated Metals in Organic Synthesis, CRC Press, Boca Raton, 1993, pp. 154–
+     190.
+[13] G. J. Sormunen and D. E. Lewis, Synth. Commun., 2004, 34, 3473–3480.
+[14] (a) C.-J. Li and W.-C. Zhang, J. Am. Chem. Soc., 1998, 120, 9102–9103; (b) W.-C. Zhang and C.-J. Li, J.
+     Org. Chem., 1999, 64, 3230–3236.
+[15] J. Yin, R. T. Stark, I. A. Fallis and D. L. Browne, J. Org. Chem., 2020, 85, 2347–2354.
+[16] S. Wada, N. Hayashi and H. Suzuki, Org. Biomol. Chem., 2003, 1, 2160–2163.
+[17] J. F. Garst and M. P. Soriaga, Coord. Chem. Rev., 2004, 248, 623–652.
+[18] G. Osztrovszky, T. Holm and R. Madsen, Org. Biomol. Chem., 2010, 8, 3402–3404.
+[19] H. G. Richey Jr. and R. Bittman, Methylmagnesium Bromide, in Encyclopedia of Reagents for
+     Organic Synthesis, 2001. https://doi.org/10.1002/047084289X.rm206.pub2
+[20] H. R. Rogers, C. L. Hill, Y. Fujiwara, R. J. Rogers, H. L. Mitchell and G. M. Whitesides, J. Am. Chem.
+     Soc., 1980, 102, 217–226.
+[21] N. D. Bartolo, J. A. Read, E. M. Valentín and K. A. Woerpel, Chem. Rev., 2020, 120, 1513–1619.
+[22] E. Içten, A. J. Maloney, M. G. Beaver, X. Zhu, D. E. Shen, J. A. Robinson, A. T. Parsons, A. Allian, S.
+     Huggins, R. Hart, P. Rolandi, S. D. Walker and R. D. Braatz, Org. Process Res. Dev., 2020, 24, 1876–
+     1890.
+[23] T. Dalidovich, J. V. Nallaparaju, T. Shalima, R. Aav, D. G. Kananovich, ChemSusChem, 2022, 15,
+     e202102286.
+[24] W. Tang, M. Sarvestani, X. Wei, L. J. Nummy, N. Patel, B. Narayanan, D. Byrne, H. Lee, N. K. Yee and
+     C. H. Senanayake, Org. Process Res. Dev., 2009, 13, 1426–1430.
+[25] I. Priestley, C. Battilocchio, A. V. Iosub, F. Barreteau, G. W. Bluck, K. B. Ling, K. Ingram, M. Ciaccia, J.
+     A. Leitch and D. L. Browne, Org. Process Res. Dev., 2023, 27, 269–275.
+[26] T. Holm, J. Org. Chem. 2000, 65, 1188–1192.
+[27] H. R. Rogers, J. Deutch and G. M. Whitesides, J. Am. Chem. Soc., 1980, 102, 226–231.
+[28] K. S. Root, J. Deutch and G. M. Whitesides, J. Am. Chem. Soc., 1981, 103, 5475–5479.
+[29] A. Fürstner, Angew. Chem. Int. Ed., 1993, 32, 164–189.
+[30] (a) C. Wu, T. Ying, X. Yang, W. Su, A. V. Dushkin and J. Yu, Org. Lett., 2021, 23, 6423–6428; (b) C.
+     Wu, T. Ying, H. Fan, C. Hu, W. Su and J. Yu, Org. Lett., 2023, 25, 2531–2536.
+[31] J. H. Dam, P. Fristrup and R. Madsen, J. Org. Chem., 2008, 73, 3228–3235.
+[32] H. M. Walborsky, Acc. Chem. Res., 1990, 23, 286–293.
+[33] (a) D. J. Patel, C. L. Hamilton and J. D. Roberts, J. Am. Chem. Soc. 1965, 87, 5144–5148; (b) E. P.
+     Künding and C. Perret, Helv. Chim. Acta, 1981, 64, 2606–2613.
+[34] D. Griller and K. U. Ingold, Acc. Chem. Res., 1980, 13, 317–323.
+[35] (a) R. M. Drew and J. A. Kerr, Inter. J. Chem. Kinet., 1983, 15, 281–291; (b) H. Knoll, Á. Nacsa, S.
+     Förgeteg and T. Bérces, React. Kin. Catal. Lett., 1981, 15, 481–485.
+[36] J. F. Garst, C. D. Smith, J. Am. Chem. Soc., 1976, 98, 1520–1526.
+
+
+
+
+                                                       20
+Graphical Abstract
+
+
+
+
+Shaken, not stirred: mechanochemistry enables the rapid in situ generation of Grignard
+reagents, thereby overcoming the longstanding limitations of the Mg-mediated Barbier
+reaction.
+
+
+
+
+                                         21
+

@@ -1,0 +1,740 @@
+                                                      This is an open access article published under a Creative Commons Non-Commercial No
+                                                      Derivative Works (CC-BY-NC-ND) Attribution License, which permits copying and
+                                                      redistribution of the article, and creation of adaptations, all for non-commercial purposes.
+
+
+
+
+pubs.acs.org/JACS                                                                                                                                         Article
+
+
+
+The Grignard Reaction − Unraveling a Chemical Puzzle
+Raphael Mathias Peltzer, Jürgen Gauss, Odile Eisenstein,* and Michele Cascella*
+      Cite This: J. Am. Chem. Soc. 2020, 142, 2984−2994                                Read Online
+
+
+ACCESS                        Metrics & More                              Article Recommendations                      *
+                                                                                                                       sı Supporting Information
+
+
+ABSTRACT: More than 100 years since its discovery, the
+mechanism of the Grignard reaction remains unresolved.
+Ambiguities arise from the concomitant presence of multiple
+
+
+
+
+                                                                                                                                                                         Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+organomagnesium species and the competing mechanisms
+involving either nucleophilic addition or the formation of radical
+intermediates. To shed light on this topic, quantum-chemical
+calculations and ab initio molecular dynamics simulations are used
+to study the reaction of CH3MgCl in tetrahydrofuran with
+acetaldehyde and ﬂuorenone as prototypical reagents. All organo-
+magnesium species coexisting in solution due to the Schlenk
+equilibrium are found to be competent reagents for the nucleophilic
+pathway. The range of activation energies displayed by all of these
+compounds is relatively small. The most reactive species are a
+dinuclear Mg complex in which the substrate and the nucleophile initially bind to diﬀerent Mg centers and the mononuclear
+dimethyl magnesium. The radical reaction, which requires the homolytic cleavage of the Mg−CH3 bond, cannot occur unless a
+substrate with a low-lying π*(CO) orbital coordinates the Mg center. This rationalizes why a radical mechanism is detected only in
+the presence of substrates with a low reduction potential. This feature, in turn, does not necessarily favor the nucleophilic addition,
+as shown for the reaction with ﬂuorenone. The solvent needs to be considered as a reactant for both the nucleophilic and the radical
+reactions, and its dynamics is essential for representing the energy proﬁle. The similar reactivity of several species in fast equilibrium
+implies that the reaction does not occur via a single process but by an ensemble of parallel reactions.
+
+
+■    INTRODUCTION
+The Grignard reaction is a prominent textbook process to form
+                                                                                 and polymetallic molecules that coexist at equilibrium (eq 2)
+                                                                                 and whose relative abundance depends on the nature of R and
+carbon−carbon bonds.1 In this reaction, the so-called Grignard                   X as well as the experimental conditions.4,6
+reagent, an organomagnesium species RMgX where R is an                              2RMgCl ⇋ MgR 2 + MgCl2                                                       (2)
+organic residue and X is a halogen (usually Cl or Br), promotes
+the addition of its organic residue to an electrophilic substrate.               Furthermore, while the polarity of the C −Mg             (δ−)
+                                                                                                                                               bond    (δ+)
+
+Discovered by Victor Grignard2 already in 1900, Grignard                         suggests that the Grignard reagent acts as a nucleophile, it has
+reagents rapidly became important compounds for organic                          been argued that an electron-transfer mechanism may occur in
+synthesis in research laboratories and in industry.3 Even                        the presence of appropriate substrates.5
+though the reaction today is applied to a large variety of                          This multifaceted aspect of the Grignard chemistry is per se
+electrophiles, the prototypic substrates are carbonyl moieties                   fascinating; in fact, the lack of understanding of its molecular
+R1R2(CO) yielding a magnesium-alcoholate (eq 1). The R1                         mechanisms has slowed progress in the rational design of more
+and R2 residues usually include hydrogen as well as alkyl-,                      eﬃcient variants of the reaction. Indeed, while the eﬃciency of
+vinyl-, or aryl- groups. The Grignard reaction usually takes                     Grignard reagents has been heuristically improved, for example
+place in ethereal solvents, the ﬁnal alcohol product being                       by the synergistic eﬀect of additives like alkali ions, the reasons
+obtained by hydrolysis.                                                          for these improvements remain unclear.7 Elucidation of the
+                                                                                 mechanism of the basic Grignard reaction is the required step
+    RMgX + R1C(O)R2 → R1C(OMgX)(R)R2                                (1)          to better understand a wide variety of related reactions.
+   Despite more than 100 years of extensive studies, the
+mechanism of this reaction has remained elusive, with little                     Received: November 2, 2019
+quantitative information and missing consensus. Diﬃculties in                    Published: January 17, 2020
+elucidating this mechanism are prominently related to the fact
+that the ethereal solutions of Grignard reagents contain a
+variety of chemical species.4,5 In fact, the nominal reactant
+RMgX is just a condensed representation of numerous mono-
+
+                                     © 2020 American Chemical Society                                                          https://dx.doi.org/10.1021/jacs.9b11829
+                                                                          2984                                                J. Am. Chem. Soc. 2020, 142, 2984−2994
+Journal of the American Chemical Society                                               pubs.acs.org/JACS                                          Article
+
+  Although the nucleophilic mechanism (also known as the                      subject of only a few studies.28 In particular, in 2002 Yamazaki
+polar mechanism) is currently recognized in the literature as a               and Yamabe used density functional theory (DFT) calculations
+route to the alcohol product, no experimental study was able to               together with implicit solvation models to suggest that
+assign the relative reactivity of the various forms of the                    dinuclear Grignard moieties are more reactive in a nucleophilic
+organomagnesium species. In parallel, experimental evidence                   addition than are monomeric species.29 Similar results were
+consistently supported the presence of an alternative                         obtained with second-order Møller−Plesset perturbation
+mechanism (called radical or single electron-transfer mecha-                  theory together with implicit solvation models.30 Yamazaki
+nism) involving the formation of radical intermediates (Figure                and Yamabe suggested that a mechanism going through Mg−C
+1). In particular, products were detected, which could not                    homolytic cleavage could be preferred in the case of bulky
+                                                                              organic residues, for which the nucleophilic addition is
+                                                                              sterically hindered.29
+                                                                                 Recently, some of us carried out an ab initio molecular
+                                                                              dynamics (AIMD) study of CH3MgCl in tetrahydrofuran
+                                                                              (THF) to get insight on the role of the solvent in the Schlenk
+                                                                              equilibrium.31 Among other ﬁndings, this study showed that
+                                                                              the magnesium centers of the mononuclear and dinuclear
+                                                                              species can accommodate a variable number of solvent
+
+
+
+
+                                                                                                                                                                 Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+                                                                              molecules in their ﬁrst coordination spheres and that the
+                                                                              interchange of the methyl and chloride groups between the
+                                                                              two magnesium centers is associated with a change in the
+                                                                              solvation number.31 This study thus revealed that it was
+                                                                              essential to allow a synergy between the solvent contribution
+                                                                              and the chemical event at the Mg centers and to represent the
+Figure 1. Schematic representation of possible mechanisms for the             associated solvent reorganization, an eﬀect that cannot be
+Grignard reaction: (a) polar mechanism, heterolytic Mg−C bond
+                                                                              properly described by a static approach.
+breaking, with subsequent formation of a nucleophilic carbon that
+adds to the electrophilic carbonyl carbon; or (b) radical mechanism,             The purpose of the present study is to use computational
+homolytic Mg−C bond breaking, with subsequent recombination of                approaches to determine the factors that drive the Grignard
+the species with unpaired electrons.                                          reaction toward preferred pathways (in particular nucleophilic
+                                                                              vs single electron transfer) in the presence of prototypical
+originate from a nucleophilic addition but could be only                      carbonyl substrates, as well as to elucidate the mechanistic
+obtained through a combination of organic radicals.8−15                       details for each speciﬁc transformation. The employment of ab
+Furthermore, electron spin resonance spectroscopy identiﬁed                   initio molecular dynamics and enhanced-sampling methods in
+the presence of ketyl radicals in benzophenone/Grignard                       explicit solvent facilitates an unbiased exploration of the
+reagent mixtures.16 Factors favoring the radical mechanism                    conformational space. In particular, it allows a thorough
+were searched. Thus, using the distribution of products as an                 sampling of the solvation states of all organomagnesium
+indicator for the mechanism, Ashby and co-workers inferred                    species and a reliable description of solvent dynamics. Finally,
+that an electron-transfer mechanism depends on the reduction                  state-of-the-art quantum-chemical calculations provide solid
+potential of the substrate, the oxidation potential of the                    data to understand the factors that promote a single electron-
+Grignard reagent, and the polarity of the solvent. Ketones with               transfer pathway.
+low reduction potential favored the radical mechanism. Indeed,
+a radical-type reaction was established for aromatic and
+conjugated ketones (such as benzophenone and ﬂuorenenone)
+                                                                              ■   COMPUTATIONAL METHODS
+                                                                                 Ab Initio Molecular Dynamics Simulations. Simulation
+in the case of tertiary as well as primary Grignard reagents.14               Protocol. The thermodynamically equilibrated structures of the
+   Chiral Grignard reagents were also used to probe the                       Grignard reagent in THF in diﬀerent protomeric and solvated
+reaction pathway. It was in this way shown that chiral                        forms were determined in a previous study.31 In this work, the initial
+secondary Grignard reagents react largely, but not exclusively,               geometry of each reactive complex was built starting from that of the
+by a radical mechanism with benzophenone, but essentially by                  respective Grignard reagent by replacing one THF coordinated to Mg
+nucleophilic addition with benzaldehyde.17,18 The secondary                   with a substrate molecule. All systems were simulated in an
+                                                                              orthorhombic periodic box of dimensions 25.2 × 15.0 × 15.0 Å3,
+H/D kinetic isotope eﬀect indicated that the competition
+                                                                              containing 41 THF molecules. The quantum-chemical problem was
+between the nucleophilic and the single electron-transfer                     solved at the DFT32,33 level using the Perdew−Burke−Ernzerhof
+mechanisms depends on the reagent (i.e., magnesium or                         (PBE) exchange correlation (xc) functional.34 The Kohn−Sham
+lithium organometallic species) and the substrate.19 Recently,                orbitals were expanded over mixed Gaussian and plane-wave basis
+it was shown that the Grignard reaction with aliphatic                        functions. The DZVP basis set for ﬁrst and second row elements and
+aldehydes does not involve single electron transfer.20 These                  a molecular optimized basis set for chlorine were employed.35 The
+last results point at a clear preference for nucleophilic addition            auxiliary plane-wave basis set was expanded up to a 200 Ry cutoﬀ.
+for aliphatic aldehyde and a possible competition between the                 The core electrons were integrated out using pseudopotentials of the
+radical and nucleophilic pathways for substrates with lower                   Goedecker−Teter−Hutter type (GTH).36 Dispersion forces were
+                                                                              included using the D3 Grimme approximation.37 AIMD simulations
+reduction potential, that is, aromatic or conjugated aldehydes
+                                                                              were run over the ground-state potential energy surface, adopting a
+or ketones.                                                                   threshold for the energy gradient of 10−5 au as numerical convergence
+   While various aspects of the chemistry of Grignard species,                criterion for the electronic energy. The equations of motion were
+including their formation,21−23 their structure, and their                    integrated employing the velocity Verlet algorithm38 with a time-step
+thermodynamics in solution,24−27 were addressed by computa-                   of 0.25 fs. Relaxation to the target temperature was ﬁrst performed
+tional approaches, the Grignard reaction itself has been the                  using a canonical sampling/velocity rescaling (CSVR) thermostat39
+
+                                                                       2985                                            https://dx.doi.org/10.1021/jacs.9b11829
+                                                                                                                      J. Am. Chem. Soc. 2020, 142, 2984−2994
+Journal of the American Chemical Society                                                pubs.acs.org/JACS                                         Article
+
+
+
+
+                                                                                                                                                                 Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+Figure 2. Organomagnesium complexes considered as reactants for the polar mechanism, classiﬁed as a function of the relative positions of the
+substrate (ACA) and nucleophile (methyl group). The labels geminal, vicinal, and bridging describe the initial position of the reactive groups with
+respect to the Mg center(s). The activation free energies, ΔA⧧, deﬁned as the diﬀerence in free energy between the TS and the related reactant
+species, are given in kcal mol−1.
+
+
+
+
+Figure 3. Geminal reaction for compound Bgem. Representative geometries for the reactant, transition state, and product. The Mg atom and its
+ligands are represented as balls-and-sticks. Other solvating THF molecules are drawn as lines. The color codes are mauve for magnesium, red for
+oxygen, gray for carbon, and white for hydrogen.
+
+with a time constant of 10 fs until the temperature of the system               formation energy in a simpliﬁed model (Table S1). The reference
+oscillated around the target value. A Nosé−Hoover chain thermostat             energies were obtained using the CC singles and doubles (CCSD)
+with a chain length of 3 and a time constant of 1 ps then was used for          approximation augmented by a perturbative treatment of triple
+data production.40−42 Trajectory analysis was performed using the               excitations (CCSD(T))49 with an energy convergence threshold of
+tools available in the VMD 1.9.2 package.43                                     10−9 hartree, using a cc-pVTZ basis set.50 The CCSD(T) calculations
+   Polar Mechanism − Activation Energies. The activation barriers               were carried out using the CFOUR package.51
+for the nucleophilic addition were estimated by constraint dynamics
+in the blue-moon ensemble44 using the distance between the methyl
+group and the carbonyl carbon as reaction coordinate λ. The
+                                                                                ■    RESULTS AND DISCUSSION
+                                                                                   Polar Mechanism. Alkyl carbonyl substrates have been
+constraint force f(λ) was collected over independent AIMD runs at
+nine ﬁxed values of λ spaced by 0.2−0.1 Å. The average value of f at
+                                                                                shown to prefer a nucleophilic pathway in their reaction with
+each λ point (⟨f⟩λ) converged with steady mean values of ∼0.5 kcal              Grignard reagents.20 For this reason, we modeled the reaction
+mol−1 Å−1 within ∼2 ps of simulations. The activation free energy               of acetaldehyde (ACA hereafter) with CH3MgCl in THF. All
+ΔA⧧ was computed by trapezoidal integration of ⟨f⟩λ between λ values            forms of CH3MgCl identiﬁed in our previous study as stable
+corresponding to the reactant and the TS. This last point was                   species coexisting at thermal equilibrium in THF31 were
+identiﬁed as the value of λ at which ⟨f⟩λ = 0. The work reports                 considered as potential reactive systems after replacing one
+Helmholtz free energies as AIMD are performed at constant volume                coordinated THF by ACA.31
+conditions.                                                                        Figure 2 shows the labels used throughout this work to
+   Radical Formation Energy. The dissociation energy associated                 identify the organometallic mononuclear and binuclear species
+with the homolytic cleavage of the Mg−methyl bond for diﬀerent                  and the associated possible pathways, which are characterized
+Grignard reagent/substrate complexes was estimated as the diﬀerence             by the position of the reactive groups on the Mg centers. The
+between the total energy of the reactant and that of the individual             pathway is called geminal if the two groups are on the same
+fragments. THF molecules directly bound to Mg were explicitly
+considered in the model, while the rest of the solvent was treated
+                                                                                magnesium atom and is called vicinal if they are on two
+implicitly using a continuum dielectric model.45 The electronic                 diﬀerent magnesiums. Finally, a pathway where the methyl
+problem was solved at the DFT level using the M06-2X xc                         group bridges the two magnesium atoms was also considered.
+functional46 and the 6-31+G(d,p) basis set.47 Calculations were                    Reaction with Geminal and Bridging Groups. Both
+performed using the Gaussian 09 package.48 The choice of the M06-               mononuclear and dinuclear Mg species can be associated
+2X functional was done after assessing the quality of diﬀerent xc               with geminal pathways. Of the two mononuclear systems, Bgem
+functionals in reproducing coupled-cluster (CC) data for the radical            gives the energetically lowest transition state (TS), with an
+                                                                         2986                                          https://dx.doi.org/10.1021/jacs.9b11829
+                                                                                                                      J. Am. Chem. Soc. 2020, 142, 2984−2994
+Journal of the American Chemical Society                                           pubs.acs.org/JACS                                            Article
+
+ΔA⧧ of 6.5 ± 0.7 kcal mol−1 (Figure 2). The pathway starting
+from CH3MgCl (Agem) has a higher lying TS with ΔA⧧ = 8.7 ±
+0.8 kcal mol−1. Egem is the most reactive dinuclear complex via
+a geminal pathway. This species is a variant of Bgem in which
+the coordinated THF is replaced by a Cl-coordinated
+MgCl2(THF)2 moiety. It is thus not surprising that the TSs
+associated with Bgem and Egem have similar activation energies.
+However, our earlier study on the Schlenk equilibrium31
+indicated that Egem is less abundant than Bgem. This suggests
+that Egem may contribute only marginally to the formation of
+the product. Species Cgem and Dgem are instead characterized
+by a signiﬁcantly higher activation energy (both around 13 kcal
+mol−1, Figure 2). Finally, the bridging methyl group is unlikely
+to act as a nucleophile, as indicated by the high activation
+energy of ΔA⧧ = 22.6 kcal mol−1 for Dbrd. As could be
+expected, a nucleophile is less reactive at a bridging than at a
+terminal position.
+
+
+
+
+                                                                                                                                                               Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+   Structural Features of the Geminal Reaction. The reaction
+in Bgem is used here as a representative case to describe the             Figure 4. Transition state structures of the geminal and vicinal
+structural details of the geminal pathway (Figure 3). In THF,             reactions (Bgem, Fvic). Left: Evidence of the structural similarity of the
+Mg(CH3)2 forms Mg(CH3)2(THF)2. This complex has a                         two TSs. Balls-and-sticks are used to represent the reacting moiety,
+distorted tetrahedral structure with an angle of 135 ± 9°                 while the rest of the system is drawn as transparent cylinders. THF
+between the two Mg−CH3 bonds, larger than that formed by                  molecules not bound to Mg are not shown. The green line marks the
+the two Mg−O bonds (92 ± 8°, Figure S1). Replacement of                   incipient C−CH3 bond and its associated distance. Top right:
+one THF molecule by ACA yields compound Bgem, which also                  Schematic deﬁnition of the angles formed by the C3 axis of the
+has a distorted tetrahedral structure with obtuse                         nucleophile methyl group. Bottom right: Distances and angles formed
+                                                                          by the atoms involved in the four-center TS. Distances are reported in
+CH3−Mg−CH3 and O(ACA)−Mg−O(THF) angles (153 ±                             angstroms, and angles are in degrees. ϕX is the angle at the vertex X in
+9° and 137 ± 9°, respectively) and an O(ACA)−Mg−CH3                       the four-member ring (top right panel). The color code is as in Figure
+angle of 92 ± 11° (Figure S2). This arrangement leads to a                3.
+close proximity between the nucleophilic and the electrophilic
+groups.
+   In the reactant, the methyl group is tightly bound to Mg               out-of-plane angle (deﬁned by the improper CH3−C−O−H
+with an average Mg−C bond distance of 2.15 ± 0.08 Å. In                   dihedral angle) of 161 ± 7°, closer to the ideal value of 180°
+contrast, ACA is more loosely bound, with a Mg−O distance                 for an sp2 atom than 120° for an sp3 one. Both ACA and the
+of 2.4 ± 0.2 Å, which is longer than the Mg−THF distance of               methyl groups are slightly farther away from the Mg center
+2.2 ± 0.1 Å. The Mg atom lies in the plane of ACA with a                  than in the reactant geometry, as indicated by the Mg−CH3
+C−O−Mg angle of 118 ± 9°, indicating that the magnesium                   and Mg−O distances of 2.23 ± 0.07 and 2.5 ± 0.3 Å,
+ion interacts with the two lone pairs of the carbonyl oxygen.             respectively.
+   At the TS, the addition of one THF molecule from the bulk                 In the relaxed product CH3Mg(OCH(CH3)2)(THF)2, the
+solvent leads to a complex with a distorted trigonal-                     Mg atom is again tetracoordinated, with the CH3−Mg−O(iso-
+bipyramidal structure where ACA and the approaching THF                   propanol) and O(THF)−Mg−O(THF) angles similar to those
+reside at the apical sites with an average                                in the reactant geometry (134 ± 8° and 93 ± 7°, respectively,
+O(ACA)−Mg−O(THF) angle of 164 ± 10° (Figure 4).                           Figure S3).
+Reaching the TS also requires a rotation of ACA around the                   The coordination of the solvent assists the heterolytic
+CO axis to establish the interaction of the nucleophile with             cleavage of the Mg−CH3 bond by donating electron density to
+the carbonyl π system (Figure 4). The formation of the bond               the Mg atom. It appears that the reactivity of the Mg complex
+between the two carbon atoms is also promoted by a slight                 increases when the coordinated ligands are better electron
+bending of ACA toward the methyl group, indicated by a                    donors and/or more ligands coordinate to the magnesium
+decrease in the C−O−Mg angle to a value of 97 ± 3°. On the                center. These electron-donating ligands screen the charge on
+contrary, the CH3−Mg−O(ACA) angle of (93 ± 3°) remains                    the Mg center, making the nucleophilic CH3 a better leaving
+similar to that in Bgem.                                                  group. In particular, Mg(CH3)2 is found to be slightly more
+   The geminal reaction occurs via a concerted mechanism,                 reactive than CH3MgCl, which is consistent with the known
+with the TS showing partial formation and cleavage of the                 greater electron-donating ability of a methyl group relative to
+C−C and Mg−CH3 bonds, respectively. An informative                        chloride in these magnesium complexes as it also appeared in
+parameter is the direction of the C3 axis of the methyl                   our previous study.31 Moreover, the slightly higher reactivity of
+group, which is signiﬁcantly displaced away from the CH3−Mg               the mononuclear over dinuclear species correlates to the fact
+direction, but not yet aligned to the new C−C direction (ϕ1,              that terminal ligands are better electron donors than are the
+ϕ2 angles in Figure 4). The four atoms involved in the bond               bridging ones.
+rearrangement are coplanar (Figure 4), with a CH3···C−O                      Reaction with Vicinal Groups. The vicinal reaction was
+angle of attack of 107 ± 4°, consistent with expected values for          studied for species Cvic and Fvic (Figure 2). The most solvated
+a nucleophilic addition to a carbonyl group.52,53 The four-               dinuclear complex Fvic, with two pentacoordinated Mg atoms,
+centered TS has a reactant-like geometry, with a relatively long          has an activation energy for the C−C bond formation of ΔA⧧
+C···C bond distance of 2.55 Å and the ACA carbon with an                  ∼ 4.8 kcal mol−1. This is the lowest activation energy that has
+                                                                   2987                                              https://dx.doi.org/10.1021/jacs.9b11829
+                                                                                                                    J. Am. Chem. Soc. 2020, 142, 2984−2994
+Journal of the American Chemical Society                                               pubs.acs.org/JACS                                           Article
+
+
+
+
+Figure 5. Vicinal reaction for Fvic. Representative geometries for the reactant, transition state, and product. The Mg atoms (left Mg1, right Mg2) and
+ﬁrst coordination sphere ligands are represented as balls-and-sticks. Other solvating THF molecules are drawn as lines. The color code is cyan for
+chlorine and green for the nucleophilic methyl, while the other elements are colored as in Figure 3.
+
+
+
+
+                                                                                                                                                                  Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+Figure 6. Red: Activation energies of all Grignard species derived from CH3MgCl in THF solution when reacting with acetaldehyde. Blue: Relative
+free energies of the species involved in the Schlenk equilibrium (data from ref 31). The green box highlights the intrinsically most reactive species
+identiﬁed in this work.
+
+been calculated for all mononuclear and dinuclear species                      Mg2−CH3 direction, and a favorable CH3···CO angle52,53 of
+considered in this study. According to our previous study, Fvic                114 ± 10° (Figure 4). Also, in this case, the ACA carbon
+is also one of the most abundant species in the Schlenk                        essentially retains an sp2 hybridization at the transition, similar
+equilibrium, with a free energy of only 1.3 kcal mol−1 higher                  to that found earlier for Bgem.
+than that of the most stable dichloro-bridged compound                           Relaxation from the transition state yields a product where
+(Cvic).31 Fvic is therefore a key contributor to the formation of              the alcoholate bridges the two magnesium atoms (Figure 5).
+product by way of the nucleophilic addition. The most reactive                 The chlorine atom that is anti to the nucleophilic CH3 in the
+species has ACA and the nucleophilic methyl group initially                    reactant leaves its bridging position to occupy a terminal site at
+coordinated to two distinct magnesium atoms (Mg1 and Mg2,                      Mg2. Reorganization of the bridging ligands yields the ﬁnal
+respectively) and thus rather far from each other. Considerable                product where Mg 1 is tetracoordinated and Mg 2 is
+structural reorganization is occurring on the way to the                       pentacoordinated (Figure 5).
+transition state. At the TS, characterized by a C···C distance of                The signiﬁcantly higher activation energy (ΔA⧧ ∼ 13.0 kcal
+2.6 Å, ACA enters in the coordination sphere of Mg2 while still                mol−1) required for the most stable dinuclear species Cvic
+interacting with Mg1, as shown by the similar Mg1−O and                        (Figure 2) to undergo the nucleophilic reaction highlights the
+Mg2−O distances of 2.12 ± 0.07 and 2.27 ± 0.19 Å,                              role of the coordinated solvent. Both Fvic and Cvic have two
+respectively (Figure 4). Consequently, Mg 1 retains a                          bridged chloride ligands and a terminal methyl group on each
+pentacoordinated structure at the TS. In parallel, Mg2 acquires                magnesium atom. Thus, the diﬀerence between them resides in
+an octahedral coordination (Figure 5), with an O-                              the number of THF solvent molecules coordinated to each
+(ACA)−Mg2−CH3 angle between the two reacting cis-ligands                       magnesium, the more reactive species being more solvated.
+of ∼90°.                                                                       The least solvated Cvic is in fact a rigid species in which ACA
+   The four-center TS shares strong similarities with that found               cannot approach the nucleophilic methyl group coordinated to
+for the geminal reaction, with an elongated Mg2−CH3 bond                       the other magnesium. Interestingly, the calculations indicate
+(∼2.3 Å), a methyl lone-pair axis twisted ∼30° away from the                   that an additional THF binds Cvic on the ACA-bonded
+                                                                        2988                                            https://dx.doi.org/10.1021/jacs.9b11829
+                                                                                                                       J. Am. Chem. Soc. 2020, 142, 2984−2994
+Journal of the American Chemical Society                                          pubs.acs.org/JACS                                         Article
+
+
+
+
+                                                                                                                                                           Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+Figure 7. Mg−CH3 BDE and spin-density localization (in fractions of e) for MgCl(Sub)(THF)nCH3 (Sub = substrate). The green wire-frame
+shows the isosurface of the spin density map at a value of 0.0065 au.
+
+magnesium prior to reaching the transition state. This event              other ligands (Figure 5). At the bridging position, the
+occurs when the carbon−carbon distance is ∼4 Å, still more                electrophilicity of ACA is signiﬁcantly increased. In the same
+than 1 Å longer than at the TS. The formation of a                        time, the coordination of Mg2 augments from ﬁve to six, which
+pentacoordinated species on the ACA-coordinated Mg                        in turn helps in the departure of the nucleophilic methyl group.
+facilitates the migration of ACA toward the methyl bearing                Thus, through diﬀerent coordination to the Mg centers, the
+Mg, enabling the reaction. The solvent thus appears to be a key           solvent has contributed to make the substrate ACA more
+factor in the reaction by increasing the ﬂexibility of the Mg             electrophilic and the methyl group more nucleophilic. The
+complex, thus lowering the energy needed for getting the                  entropic factor also favors the vicinal reaction in this dinuclear
+electrophile and nucleophile close to each other (Figure 5).              complex relative to the most favorable geminal reaction.
+   A previous work proposed that the Grignard reaction would              Indeed, in the latter, the coordination of an additional THF is
+occur starting from a dinuclear structure characterized by a              necessary at the transition state, while in the former, there is no
+single bridging chloride and two methyl groups each bound to              need for a THF from the bulk of the solvent to enter the
+a diﬀerent Mg atom.30 Nonetheless, the calculations showed                coordination sphere of any of the two magnesium centers. The
+that this complex was not stable in solution and it rapidly               dinuclear complex needs only to modify the position of the
+evolved into a dichloro-bridged structure. This is consistent             various ligands and coordinated solvent to reach the transition
+with what has been already observed in our previous work: the             state. Thus, cleaving the terminal Mg2−CH3 bond is
+monochloride bridged structures were not associated with free-            accompanied by the displacement of a bridging chloride to a
+energy minima, but they corresponded to the transition states             terminal position to ensure appropriate anionic coordination at
+during the transmetalation step in the Schlenk equilibrium.31             Mg2. Two coordinating THF solvent molecules are suﬃcient
+Because of their instability, and the already high reactivity of          to stabilize the pentacordinated Mg2 linked also to a terminal
+more stable compounds, it is unlikely that such moieties play a           Cl and to the bridging alcoholate and chloride ligands.
+signiﬁcant role in the Grignard reaction.                                    In practice, the Grignard reaction can be viewed as a variant
+   Role of the Schlenk Equilibrium in the Nucleophilic                    of the Schlenk equilibrium where the nonreactive solvent is
+Grignard Reaction. Figure 6 compiles the activation energies              replaced by an unsaturated substrate that becomes a strong
+of the reaction pathways considered in this work, together with           electrophile when entering the coordination sphere of Mg. The
+the relative stability of the various organomagnesium species             energetically easy exchange between terminal and bridging
+involved in the Schlenk equilibrium as previously derived.31              ligands under the assistance of the solvent is at the heart of this
+   The Schlenk equilibrium is driven by the dynamics of the               chemistry.
+coordinating solvent in the Grignard reagent dimers,31 and its               While the vicinal pathway through the dinuclear Mg
+mechanism shares structural similarities with the vicinal                 complex (Fvic) looks intrinsically the most reactive, the
+pathway. Speciﬁcally, in the Schlenk equilibrium, the increased           geminal pathway should nevertheless be considered as a
+coordination of the solvent assists the displacement of the               competitive alternative. In particular, mononuclear species
+ionic ligands from the terminal to the bridging positions by              have activation energies only slightly higher than that of the
+increasing the ﬂexibility of the organomagnesium complex. In              most reactive dinuclear complex. Thus, the preferred pathway
+the Grignard reaction, the most reactive structure Fvic has two           for the Grignard reaction would be determined by the relative
+pentacoordinated Mg centers, Mg1 with one THF and ACA,                    abundance of the mononuclear and dinuclear compounds.
+and Mg2 with two THF molecules. This high coordination of                 Likely, several forms may be active simultaneously in the
+the two Mg centers facilitates the shift of ACA from a terminal           complex mixture formed by the Grignard reagent in solution. It
+to a bridging position while minimizing the motion of the                 should be kept in mind that the Grignard reagent forms
+                                                                   2989                                          https://dx.doi.org/10.1021/jacs.9b11829
+                                                                                                                J. Am. Chem. Soc. 2020, 142, 2984−2994
+Journal of the American Chemical Society                                           pubs.acs.org/JACS                                         Article
+
+
+
+
+Figure 8. Energetics of the Grignard reaction mechanisms for ﬂuorenone. Top panel: Activation free energy of the nucleophilic addition with
+Mg(CH3)2. Bottom panel: Bond dissociation energy. All energy values are in kcal mol−1. On the right is the distribution of the spin density in
+Mg(CH3)(ﬂuorenone)THF2: 33% of the unpaired electron localizes on the carbonyl carbon, 16% on the carbonyl oxygen, and 45% on the
+remaining π system.
+
+
+
+
+                                                                                                                                                            Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+clusters whose nature and relative abundance depend on the                 BDE, as shown by its decrease from acetaldehyde (37.9 kcal
+solvent and the halide ligand in a nontrivial manner.6,54                  mol−1) to carbonyl diﬂuoride (24.8 kcal mol−1) (Figure 7,
+   Our ﬁndings stress the importance of an unbiased                        values for two bound THFs). The strong inﬂuence of the
+exploration of the conformational space and, in particular, of             substrate on the BDE can be rationalized by considering the
+the explicit treatment of the solvent. In fact, the solvent is a           localization of the unpaired electron on the organomagnesium
+direct player in all reactive pathways identiﬁed in the present            radical product. As shown in Figure 7, the electron spin density
+work, in particular by structurally and dynamically aﬀecting the           mostly resides on the substrate carbonyl group and not on the
+coordination sphere of Mg. This is particularly relevant for the           Mg atom regardless of the nature of the substrate and the
+determination of the free energy barrier in the geminal reaction           number of bound THFs. Consequently, the BDE correlates to
+where the C−C bond formation, associated with a cleavage of                the energy of the singly occupied π*(CO) Kohn−Sham orbital
+the Mg−CH3 bond, occurs with the assistance of an incoming                 in the radical product, as indicated by the corresponding
+solvent entering the coordination sphere of Mg. This ensures               orbital energies of −0.18057, −0.18846, and −0.25703 au for
+that the magnesium is coordinated to at least four ligands as it           acetaldehyde, formaldehyde, and carbonyl diﬂuoride, respec-
+was found to be required.31 The direct role of the solvent in              tively.
+modulating the reaction is the main reason for the                            The role of a low-lying empty π* orbital at the substrate in
+discrepancies found with the preceding studies by Yamazaki                 the stabilization of the radical species rationalizes the high BDE
+and Yamabe29 and by Mori and Kato.30 In particular, our study              values in the absence of any coordinated carbonyl substrate. In
+contrasts with their hypothesis that mononuclear species may               fact, in the case of MgCl(THF)•2 radical, the unpaired electron
+be signiﬁcantly less able to promote the Grignard reaction. In             remains located on Mg, with about 0.8 e of the spin density.
+fact, such divergences arise because of, in these previous                 The previous analysis also explains why the degree of solvation
+investigations, a ﬁxed number of ligands at the magnesium                  has a stronger inﬂuence for the BDE in the substrate-bound
+centers, in particular disregarding the dynamic role of the                species than in the substrate-free Grignard reagent. In the
+solvent and its capability of entering in the coordination sphere          presence of the substrate, the delocalization of the unpaired
+during the reaction.                                                       electron produces an eﬀective increase of the electrostatic
+   Radical Mechanism. Quantum-chemical calculations                        charge on the Mg atom, which can be stabilized by additional
+indicate that the homolytic cleavage of the Mg−CH3 bond                    electron-donating ligands. Thus, increased solvation decreases
+in the solvated Grignard reagent CH3MgCl(THF)n requires a                  the Mg−CH3 BDE. The eﬀect of the solvent depends only
+high energy of 66.6 kcal mol−1 for n = 2, which is not lowered             slightly on the nature of the coordinated substrate because the
+by increasing solvation (66.4 kcal mol−1 for n = 3). The                   stabilization is from 13 to 10 kcal mol−1 for acetaldehyde to
+calculated values compare well with those determined                       carbonyl diﬂuoride, respectively. For a similar reason,
+experimentally for CH3MgBr in diethyl ether55 (∼61 kcal                    Mg(CH3)2 promotes the homolytic dissociation of the methyl
+mol−1), suggesting a marginal inﬂuence of the halide and                   radical more than does CH3MgCl, with a decrease in the BDE
+solvent on the Mg−CH3 bond dissociation energy (BDE).                      by roughly 10%.
+   The high value of the Mg−CH3 BDE indicates that alkyl                      Nucleophilic Attack versus Homolytic Cleavage: The
+radicals cannot be formed in pure solutions of the Grignard                Case of Fluorenone. The quantum-chemical calculations of
+reagent.56 Indeed, the experiment reports the presence of                  the Mg−CH3 BDE presented here show that the formation of
+organic radicals only when electrophilic substrates of low                 radical species by cleavage of the Mg−CH3 bond is unlikely in
+reduction potential are present.14 This suggests that the                  the absence of a coordinated substrate with a low-lying empty
+substrate may promote the homolytic cleavage.                              orbital. This observation accounts for previous conclusions by
+   The M−CH3 BDEs were thus calculated for complexes with                  Otte and Woerpel20 that the Grignard reaction does not
+coordinated substrates. Figure 7 reports the Mg−CH3 BDE for                proceed via a radical mechanism with alkyl aldehydes and
+substrates of decreasing reduction potential (acetaldehyde >               ketones. The same ﬁnding is also consistent with the
+formaldehyde > carbonyl diﬂuoride) with one or two                         experimental evidence that a radical mechanism is often
+coordinated THF molecules. Indeed, the nature of the                       preferred for aromatic ketones and, in particular, for
+coordinated substrate inﬂuences signiﬁcantly the Mg−CH3                    benzophenone and ﬂuorenone.8−15
+                                                                    2990                                          https://dx.doi.org/10.1021/jacs.9b11829
+                                                                                                                 J. Am. Chem. Soc. 2020, 142, 2984−2994
+Journal of the American Chemical Society                                             pubs.acs.org/JACS                                       Article
+
+   To evaluate the competition between the radical and                       ﬂuorenone originates in good part from a larger structural
+nucleophilic addition pathways in aromatic substrates, we                    reorganization going from reactant to TS.
+considered the case of the ﬂuorenone. The calculations were                     The present calculations help in understanding why the
+carried out with monomeric Mg(CH3)2. This form of the                        radical mechanism was observed with substrates characterized
+Grignard reagent was selected because it is only slightly less               by a low reduction potential. Interestingly, such substrates are
+reactive than the most reactive dinuclear complex, while it                  often bulky due to the presence of aryl groups and other
+allows faster ab initio MD simulations.                                      conjugated substituents. These large groups may thus require
+   The Mg−CH3 BDE in CH3MgCl(ﬂuorenone)(THF)2 is                             larger structural rearrangement on the way to the TS for the
+16.5 kcal mol−1, a value more than 20 kcal mol−1 smaller than                nucleophilic addition, which can further disfavor such a
+that for ACA. Such a drastic lowering of the BDE is associated               mechanism against the radical one, as shown in the
+with a signiﬁcant delocalization of the unpaired electron over               representative case of ﬂuorenone.
+the extended π system of ﬂuorenone (Figure 8). In particular,
+the spin density surrounding the carbonyl carbon integrates to
+only 0.5 e, as compared to values larger than 0.8 e for the other
+                                                                             ■    CONCLUSIONS
+                                                                             The activation of both the nucleophilic and the radical
+substrates (Figure 7), with the rest of the spin density being               mechanisms depends in a complex way on the nature of the
+distributed on the conjugated aromatic ring (Figure 8).                      substrate, on its binding to the Mg center, and on solvent
+Considering an entropic contribution to the free energy                      dynamics. The combination of these subtle eﬀects is the cause
+(−TΔS) for a bond dissociation on the order of 10 kcal mol−1,
+
+
+
+
+                                                                                                                                                            Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+                                                                             of the diﬃculties in determining and predicting the preferred
+the formation of a methyl radical would reach an overall free                pathways for the Grignard reaction.
+energy cost of only ∼6 kcal mol−1, which is in the same range                   The nucleophilic reaction occurs between the substrate and
+of the most favorable free energy barriers for the nucleophilic              the nucleophile, which are both in the coordination sphere of
+addition mechanism with ACA.                                                 Mg centers. Several organomagnesium species that coexist at
+   Interestingly, ab initio MD simulations reveal that                       thermal equilibrium in solution can promote the nucleophilic
+ﬂuorenone is signiﬁcantly less reactive than ACA via the                     reaction with similar activation energies. This implies that
+nucleophilic pathway. For Mg(CH3)2(ﬂuorenone)(THF), we                       several pathways involving diﬀerent forms of the Grignard
+estimated an activation energy of 14.5 ± 1.2 kcal mol−1 (Figure              reagent may occur in parallel. The number of Mg atoms in the
+8), a value around 8 kcal mol−1 higher than that for ACA.                    Mg species does not appear to inﬂuence signiﬁcantly its
+   The TS for the nucleophilic addition to ﬂuorenone has                     reactivity because the two most reactive species with very
+structural features similar to those for ACA, as indicated by a              similar activation energies are a dinuclear and a mononuclear
+C···C bond distance of 2.5 Å, a C out-of-plane angle of 164 ±                compound. Likewise, similar activation energies are found
+4°, and an approach angle of 106 ± 4°. However, the                          when the substrate and the nucleophile are initially
+geometries of the reactant states are signiﬁcantly diﬀerent in               coordinated on the same or on nearby Mg atoms.
+the two species. For ACA, the Mg−CH3 and CO bonds in                           The solvent plays an essential role in the reaction. More
+the reactant state are essentially eclipsed, as shown by a                   solvated Mg species are more reactive. This seems to be due to
+CH3−Mg−O−C dihedral angle of 14 ± 15° (Figure 9).                            the higher ﬂexibility of the entire Mg species, which favors the
+                                                                             structural reorganization from the reactant to the transition
+                                                                             state. In less solvated species, additional coordination of
+                                                                             solvent molecules coming from the bulk is still needed to
+                                                                             promote the reaction, but the associated entropic cost makes
+                                                                             these species less reactive. Thus, in all pathways, the solvent
+                                                                             should be considered as one of the reactants. Similar eﬀects
+                                                                             probably apply in numerous organometallic reactions notably
+                                                                             involving alkali, alkali-earth metals, and related lanthanide
+                                                                             complexes, which are all known to be highly sensitive to
+                                                                             solvent eﬀects.
+                                                                                Like for the nucleophilic addition, the radical mechanism is
+                                                                             strongly dependent on the coordination of the Mg center. The
+                                                                             pure Grignard reagent is unlikely to release an organic radical
+                                                                             even if heavily solvated. However, when one of the coordinated
+Figure 9. Structural reorganization from (left) reactant to (right)          ligands is a substrate with a low-lying empty π orbital and when
+transition state in the nucleophilic pathway for (top) ACA and               the solvation is high, the Mg−carbon bond breaks much more
+(bottom) ﬂuorenone. The CH3−Mg−O−C dihedral angle (corre-                    easily. Interestingly, the substituents able to lower the
+sponding to the blue arrow) is 14 ± 15° for ACA and 114 ± 30° for            reduction potential of the substrate are often rather bulky,
+ﬂuorenone.                                                                   which in turn disfavors the nucleophilic pathway. The
+                                                                             combination of electronic eﬀects stabilizing the radical species
+Therefore, a rotation of the ACA around the CO axis by                      and steric hindrance hampering the nucleophilic addition
+∼90° is the main structural change required to reach the TS                  explains why a radical pathway has been observed with
+(Figure 9). For ﬂuorenone, the bulky aryl group precludes an                 substrates like ﬂuorenone or benzophenone but not with
+eclipsed conformation for the Mg−CH3 and CO bonds, as                       benzaldehyde.
+indicated by an average CH3−Mg−O−C dihedral of 114 ±                            The coexistence of multiple species in rapid exchange due to
+30° (Figure 9). Consequently, in this case, an additional                    the Schlenk equilibrium and the evidence that the activation
+rotation around the Mg−O bond is required to reach the TS.                   energy range of all possible reactions is relatively modest
+This suggests that the higher barrier calculated in the case of              indicate that the Grignard reaction should not be described by
+                                                                      2991                                        https://dx.doi.org/10.1021/jacs.9b11829
+                                                                                                                 J. Am. Chem. Soc. 2020, 142, 2984−2994
+Journal of the American Chemical Society
+
+                                                                                ■
+                                                                                         pubs.acs.org/JACS                                            Article
+
+an individual process. Instead, it should rather be thought of as                    ACKNOWLEDGMENTS
+an ensemble of transformations that can occur simultaneously                    This work was supported by the Research Council of Norway
+in solution. It is likely that improvements of the Grignard
+                                                                                (RCN) through the CoE Hylleraas Center for Quantum
+reaction, for example, by alkali7,57 or copper salt additives,58,59
+                                                                                Molecular Sciences (Grant number 262695) and by the
+occur by interference with one or more of the possible
+                                                                                Norwegian Supercomputing Program (NOTUR) (Grant
+pathways. In fact, the determination of all possible reaction
+                                                                                number NN4654K). M.C. and J.G. acknowledge funding by
+pathways for the Grignard reaction and the key factors
+                                                                                the Deutsche Forschungsgemeinschaft (DFG) within the
+regulating them establishes the foundation for rational
+                                                                                project B5 of the TRR 146 (project number 233630050).
+improvements of this process.
+                                                                                We thank Mats Tilset for being at the right place at the right
+   In this respect, it is noticeable that most reactive dinuclear
+                                                                                time to ask the right question. We also thank Filippo Lipparini
+species found in this study share strong similarities with the
+                                                                                for useful discussions.
+
+                                                                                ■
+two-metal ion mechanism universally found in nature in the
+general class of catalytic RNA or metalloendonuclease
+enzymes.60 In these cases, hydrolysis of a phosphate ester by                        REFERENCES
+a nucleophilic water involves binding to two Mg’s with                            (1) Vollhardt, K.; Schore, N. Organic Chemistry: Structure and
+nonequal 5-, 6-fold coordination, and a vicinal mechanism                       Function; W. H. Freeman: New York, 2014.
+where the substrate moves into a bridging position with a                         (2) Grignard, V. C. Sur quelques nouvelles combinaisons organo-
+
+
+
+
+                                                                                                                                                                     Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+trigonal geometry, to form a four-center TS with the                            métalliques du magnésium et leur application à des synthèses
+nucleophile hydroxyl group attacking from its Mg-coordinating                   daalcools et d’hydrocarbures. Compt. Rend. Hebd. Séances Acad. Sci.
+position.61−65 The structural analogy between the two                           1900, 130, 1322−24.
+                                                                                  (3) Rappoport, Z., Marek, I., Eds. The Chemistry of Organo-
+reactions suggests that the evolutionary pressure has selected                  magnesium Compounds; Wiley-VCH: Weinheim, Germany, 2008.
+among the many chemically possible pathways the most                              (4) Schlenk, W.; Schlenk, W. Ü ber die Konstitution der
+advantageous organization of the Mg ions and their                              Grignardschen Magnesiumverbindungen. Ber. Dtsch. Chem. Ges. B
+coordinating groups to catalyze a nucleophilic attack having                    1929, 62, 920−924.
+both the substrate and the nucleophile as initial coordinating                    (5) Seyferth, D. The Grignard Reagents. Organometallics 2009, 28,
+ligands to the metal centers. The Grignard reaction puzzle is                   1598−1605.
+ﬁnally assembling together with potential impacts on related                      (6) Silverman, G. S.; Rakita, P. E. Handbook of Grignard Reagents;
+chemistry.                                                                      CRC Press: New York, 1996.
+
+
+■
+                                                                                  (7) Robertson, S. D.; Uzelac, M.; Mulvey, R. E. Alkali-metal-
+       ASSOCIATED CONTENT                                                       mediated synergistic effects in polar main group organometallic
+                                                                                chemistry. Chem. Rev. 2019, 119, 8332−8405.
+* Supporting Information
+ sı
+                                                                                  (8) Fauvarque, J.; Rouget, E. Compt. Rend. Hebd. Séances Acad. Sci.,
+The Supporting Information is available free of charge at                       Ser. C 1968, 257, 1355.
+https://pubs.acs.org/doi/10.1021/jacs.9b11829.                                    (9) Blomberg, C.; Mosher, H. A radical process in a reaction of a
+                                                                                Grignard compound. J. Organomet. Chem. 1968, 13, 519−522.
+      Reference coupled-cluster calculations and benchmark
+                                                                                  (10) Blomberg, C.; Grootveld, H.; Gerner, T.; Bickelhaupt, F.
+      BDE calculations, and structures of Mg(CH3)2, Mg-                         Radical formation during reactions of Grignard reagents with
+      (CH3)2(CH3CHO), and CH3Mg(OCH(CH3)2) in                                   quinones. J. Organomet. Chem. 1970, 24, 549−553.
+      THF (PDF)                                                                   (11) Ashby, E. C.; Nackashi, J.; Parris, G. E. Composition of
+
+
+■
+                                                                                Grignard compounds. X. NMR, IR, and molecular association studies
+       AUTHOR INFORMATION                                                       of some methylmagnesium alkoxides in diethyl ether, tetrahydrofuran,
+                                                                                and benzene. J. Am. Chem. Soc. 1975, 97, 3162−3171.
+Corresponding Authors                                                             (12) Ashby, E. C.; Lopp, I. G.; Buhler, J. D. Mechanisms of Grignard
+      Odile Eisenstein − Department of Chemistry and Hylleraas                  reactions with ketones. Polar vs. single electron transfer pathways. J.
+       Centre for Quantum Molecular Sciences, University of Oslo,               Am. Chem. Soc. 1975, 97, 1964−1966.
+       Oslo 0315, Norway; ICGM, Université de Montpellier, CNRS,                 (13) Ashby, E. C. A detailed description of the mechanism of
+       ENSCM, , Montpellier 34095 Cedex 5, France; orcid.org/                   reaction of Grignard reagents with ketones. Pure Appl. Chem. 1980,
+       0000-0001-5056-0311; Email: odile.eisenstein@                            52, 545−569.
+       umontpellier.fr                                                            (14) Ashby, E. C.; Bowers, J. R. Organometallic reaction
+      Michele Cascella − Department of Chemistry and Hylleraas                  mechanisms. 17. Nature of alkyl transfer in reactions of Grignard
+                                                                                reagents with ketones. Evidence for radical intermediates in the
+       Centre for Quantum Molecular Sciences, University of Oslo,               formation of 1,2-addition product involving tertiary and primary
+       Oslo 0315, Norway; orcid.org/0000-0003-2266-5399;                        Grignard reagents. J. Am. Chem. Soc. 1981, 103, 2242−2250.
+       Email: michele.cascella@kjemi.uio.no                                       (15) Lund, T.; Pedersen, M. L.; Frandsen, L. A. Does the reaction
+                                                                                between fluorenone and grignard reagents involve free fluorenone
+Authors                                                                         anion radicals? Tetrahedron Lett. 1994, 35, 9225−9226.
+      Raphael Mathias Peltzer − Department of Chemistry and                       (16) Blomberg, C.; Salinger, R. M.; Mosher, H. S. Reaction of
+        Hylleraas Centre for Quantum Molecular Sciences, University of          Grignard reagent from neopentyl chloride with benzophenone. A
+        Oslo, Oslo 0315, Norway                                                 nuclear magnetic resonance study. J. Org. Chem. 1969, 34, 2385−
+      Jürgen Gauss − Department Chemie, Johannes Gutenberg-                    2388.
+        Universität Mainz, Mainz 55128, Germany                                  (17) Hoffmann, R. W.; Hölzer, B. Concerted and stepwise Grignard
+                                                                                additions, probed with a chiral Grignard reagent. Chem. Commun.
+Complete contact information is available at:                                   2001, 491−492.
+https://pubs.acs.org/10.1021/jacs.9b11829                                         (18) Hoffmann, R. W. The quest for chiral Grignard reagents. Chem.
+                                                                                Soc. Rev. 2003, 32, 225−230.
+Notes                                                                             (19) Gajewski, J. J.; Bocian, W.; Harris, N. J.; Olson, L. P.; Gajewski,
+The authors declare no competing ﬁnancial interest.                             J. P. Secondary deuterium kinetic isotope effects in irreversible
+
+                                                                         2992                                              https://dx.doi.org/10.1021/jacs.9b11829
+                                                                                                                          J. Am. Chem. Soc. 2020, 142, 2984−2994
+Journal of the American Chemical Society                                                  pubs.acs.org/JACS                                            Article
+
+additions of hydride and carbon nucleophiles to aldehydes: a                       (43) Humphrey, W.; Dalke, A.; Schulten, K. VMD: Visual molecular
+spectrum of transition states from complete bond formation to single             dynamics. J. Mol. Graphics 1996, 14, 33−38.
+electron transfer. J. Am. Chem. Soc. 1999, 121, 326−334.                           (44) Carter, E. A.; Ciccotti, G.; Heynes, J. T.; Kapral, R. Constrained
+  (20) Otte, D. A. L.; Woerpel, K. A. Evidence that Additions of                 reaction coordinate dynamics for the simulation of rare events. Chem.
+Grignard Reagents to Aliphatic Aldehydes do Not Involve Single-                  Phys. Lett. 1989, 156, 472−477.
+Electron-Transfer Processes. Org. Lett. 2015, 17, 3906−3909.                       (45) Marenich, A. V.; Cramer, C. J.; Truhlar, D. G. Universal
+  (21) Garst, J. F.; Soriaga, M. P. Grignard reagent formation. Coord.           solvation model based on solute electron density and on a continuum
+Chem. Rev. 2004, 248, 623−652.                                                   model of the solvent defined by the bulk dielectric constant and
+  (22) Chen, Z.-N.; Fu, G.; Xu, X. Theoretical studies on Grignard               atomic surface tensions. J. Phys. Chem. B 2009, 113, 6378−6396.
+reagent formation: radical mechanism versus non-radical mechanism.                 (46) Zhao, Y.; Truhlar, D. G. The M06 suite of density functionals
+Org. Biomol. Chem. 2012, 10, 9491−9500.                                          for main group thermochemistry, thermochemical kinetics, non-
+  (23) Shao, Y.; Liu, Z.; Huang, P.; Liu, B. A unified model of                  covalent interactions, excited states, and transition elements: two new
+Grignard reagent formation. Phys. Chem. Chem. Phys. 2018, 20,                    functionals and systematic testing of four M06-class functionals and
+11100−11108.                                                                     12 other functionals. Theor. Chem. Acc. 2008, 120, 215−241.
+  (24) Axten, J.; Troy, J.; Jiang, P.; Trachtman, M.; Bock, C. W. An ab            (47) Ditchfield, R.; Hehre, W. J.; Pople, J. A. Self-consistent
+initio molecular orbital study of the Grignard reagents CH3MgCl and              molecular-orbital methods. IX. An extended Gaussian-type basis for
+[CH3MgCl]2: the Schlenk equilibrium. Struct. Chem. 1994, 5, 99−                  molecular-orbital studies of organic molecules. J. Chem. Phys. 1971,
+108.                                                                             54, 724−728.
+  (25) Ehlers, A. W.; van Klink, G. P. M.; van Eis, M. J.; Bickelhaupt,            (48) Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.;
+
+
+
+
+                                                                                                                                                                      Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+F.; Nederkoorn, P. H. J.; Lammertsma, K. Density-Functional study of             Robb, M. A.; Cheeseman, J. R.; Scalmani, G.; Barone, V.; Petersson,
+(solvated) Grignard complexes. J. Mol. Model. 2000, 6, 186−194.                  G. A.; Nakatsuji, H.; Li, X.; Caricato, M.; Marenich, A. V.; Bloino, J.;
+  (26) Tammiku, J.; Burk, P.; Tuulmets, A. 1,10-phenanthroline and               Janesko, B. G.; Gomperts, R.; Mennucci, B.; Hratchian, H. P.; Ortiz, J.
+its complexes with magnesium compounds. Disproportionation                       V.; Izmaylov, A. F.; Sonnenberg, J. L.; Williams-Young, D.; Ding, F.;
+equilibria. J. Phys. Chem. A 2001, 105, 8554−8561.                               Lipparini, F.; Egidi, F.; Goings, J.; Peng, B.; Petrone, A.; Henderson,
+  (27) Tammiku-Taul, J.; Burk, P.; Tuulmets, A. Theoretical study of             T.; Ranasinghe, D.; Zakrzewski, V. G.; Gao, J.; Rega, N.; Zheng, G.;
+magnesium compounds: The Schlenk equilibrium in the gas phase                    Liang, W.; Hada, M.; Ehara, M.; Toyota, K.; Fukuda, R.; Hasegawa, J.;
+and in the presence of Et2O and THF molecules. J. Phys. Chem. A                  Ishida, M.; Nakajima, T.; Honda, Y.; Kitao, O.; Nakai, H.; Vreven, T.;
+2004, 108, 133−139.                                                              Throssell, K.; Montgomery, J. A., Jr.; Peralta, J. E.; Ogliaro, F.;
+  (28) Yamabe, S.; Yamazaki, S. In The Chemistry of Organomagnesium              Bearpark, M. J.; Heyd, J. J.; Brothers, E. N.; Kudin, K. N.; Staroverov,
+Compounds; Rappoport, Z., Marek, I., Eds.; Wiley-VCH: Weinheim,                  V. N.; Keith, T. A.; Kobayashi, R.; Normand, J.; Raghavachari, K.;
+Germany, 2008; pp 369−402.                                                       Rendell, A. P.; Burant, J. C.; Iyengar, S. S.; Tomasi, J.; Cossi, M.;
+  (29) Yamazaki, S.; Yamabe, S. A computational study on addition of             Millam, J. M.; Klene, M.; Adamo, C.; Cammi, R.; Ochterski, J. W.;
+grignard reagents to carbonyl compounds. J. Org. Chem. 2002, 67,                 Martin, R. L.; Morokuma, K.; Farkas, O.; Foresman, J. B.; Fox, D. J.
+9346−9353.                                                                       Gaussian 09, revision B.01; Gaussian, Inc.: Wallingford, CT, 2016.
+  (30) Mori, T.; Kato, S. Grignard reagents in solution: Theoretical               (49) Raghavachari, K.; Trucks, G. W.; Pople, J. A.; Head-Gordon, M.
+study of the equilibria and the reaction with a carbonyl compound in             A fifth-order perturbation comparison of electron correlation theories.
+diethyl ether solvent. J. Phys. Chem. A 2009, 113, 6158−6165.                    Chem. Phys. Lett. 1969, 157, 479−483.
+  (31) Peltzer, R. M.; Eisenstein, O.; Nova, A.; Cascella, M. How                  (50) Dunning, T. H. Gaussian basis sets for use in correlated
+solvent dynamics controls the Schlenk equilibrium of Grignard                    molecular calculations. I. The atoms boron through neon and
+reagents: A computational study of CH3MgCl in tetrahydrofuran. J.                hydrogen. J. Chem. Phys. 1989, 90, 1007−1023.
+Phys. Chem. B 2017, 121, 4226−4237.                                                (51) CFOUR, a quantum-chemical program package written by
+  (32) Hohenberg, P.; Kohn, W. Inhomogeneous electron gas. Phys.                 Stanton, J. F.; Gauss, J.; Cheng, L.; Harding, M. E.; Matthews, D. A.;
+Rev. 1964, 136, B864−B871.                                                       Szalay, P. G. with contributions from Auer, A. A.; Bartlett, R. J.;
+  (33) Kohn, W.; Sham, L. J. Self-consistent equations including                 Benedikt, U.; Berger, C.; Bernholdt, D. E.; Bomble, Y. J.; Christiansen,
+exchange and correlation effects. Phys. Rev. 1965, 140, 1133.                    O.; Engel, F.; Faber, R.; Heckert, M.; Heun, O.; Hilgenberg, M.;
+  (34) Perdew, J. P.; Burke, K.; Ernzerhof, M. Generalized gradient              Huber, C.; Jagau, T.-C.; Jonsson, D.; Jusélius, J.; Kirsch, T.; Klein, K.;
+approximation made simple. Phys. Rev. Lett. 1996, 77, 3865−3868.                 Lauderdale, W. J.; Lipparini, F.; Metzroth, T.; Mück, L.A.; O’Neill, D.
+  (35) VandeVondele, J.; Hutter, J. Gaussian basis sets for accurate             P.; Price, D. R.; Prochnow, E.; Puzzarini, C.; Ruud, K.; Schiﬀmann, F.;
+calculations on molecular systems in gas and condensed phases. J.                Schwalbach, W.; Simmons, C.; Stopkowicz, S.; Tajti, A.; Vázquez, J.;
+Chem. Phys. 2007, 127, 114105.                                                   Wang, F.; Watts, J. D. and the integral packages MOLECULE (Almlöf,
+  (36) Goedecker, S.; Teter, M.; Hutter, J. Separable dual-space                 J.; Taylor, P. R.), PROPS (Taylor, P. R.), ABACUS (Helgaker, T.;
+Gaussian pseudopotentials. Phys. Rev. B 1996, 54, 1703−1710.                     Jensen, H. J. Aa.; Jørgensen, P.; Olsen, J.), and ECP routines by Mitin,
+  (37) Grimme, S.; Antony, J.; Ehrlich, S.; Krieg, H. A consistent and           A. V. and van Wüllen, C.; website: http://www.cfour.de.
+accurate ab initio parametrization of density functional dispersion                (52) Buergi, H. B.; Dunitz, J. D.; Shefter, E. Geometrical reaction
+correction (DFT-D) for the 94 elements H-Pu. J. Chem. Phys. 2010,                coordinates. II. Nucleophilic addition to a carbonyl group. J. Am.
+132, 154104.                                                                     Chem. Soc. 1973, 95, 5065−5067.
+  (38) Swope, W. C.; Andersen, H. C.; Berens, P. H.; Wilson, K. R. A               (53) Buergi, H. B.; Lehn, J. M.; Wipff, G. Ab initio study of
+computer simulation method for the calculation of equilibrium                    nucleophilic addition to a carbonyl group. J. Am. Chem. Soc. 1974, 96,
+constants for the formation of physical clusters of molecules:                   1956−1957.
+Application to small water clusters. J. Chem. Phys. 1982, 76, 648.                 (54) Walker, F. W.; Ashby, E. C. Composition of Grignard
+  (39) Bussi, G.; Donadio, D.; Parrinello, M. Canonical sampling                 compounds. VI. Nature of association in tetrahydrofuran and diethyl
+through velocity rescaling. J. Chem. Phys. 2007, 126, 014101.                    ether solutions. J. Am. Chem. Soc. 1969, 91, 3845−3850.
+  (40) Nosé, S. A unified formulation of the constant temperature                 (55) Holm, T. Thermochemical bond dissociation energies of
+molecular dynamics methods. J. Chem. Phys. 1984, 81, 511−519.                    carbon-magnesium bonds. J. Chem. Soc., Perkin Trans. 2 1981, 2,
+  (41) Hoover, W. G. Canonical dynamics: Equilibrium phase-space                 464−467.
+distributions. Phys. Rev. A 1985, 31, 1695−1697.                                   (56) We consider here thermodynamically equilibrated solutions of
+  (42) Martyna, G. J.; Klein, M. L.; Tuckerman, M. NoséHoover                  the Grignard reagent. In fact, the formation of the Grignard reagent
+chains: The canonical ensemble via continuous dynamics. J. Chem.                 may occur via a radical mechanism; see, for instance, the recent study:
+Phys. 1992, 97, 2635−2643.                                                       Henriques, A. M.; Barbosa, A. G. H. Chemical bonding and the
+
+                                                                          2993                                              https://dx.doi.org/10.1021/jacs.9b11829
+                                                                                                                           J. Am. Chem. Soc. 2020, 142, 2984−2994
+Journal of the American Chemical Society                                          pubs.acs.org/JACS                               Article
+
+equilibrium composition of Grignard reagents in ethereal solution. J.
+Phys. Chem. A 2011, 115, 12259−12270.
+ (57) Ziegler, D. S.; Wei, B.; Knochel, P. Improving the halogen−
+magnesium exchange by using new turbo-Grignard reagents. Chem. -
+Eur. J. 2019, 25, 2695−2703.
+ (58) Harutyunyan, S. R.; Lopez, F.; Browne, W. R.; Correa, A.; Pena,
+D.; Badorrey, R.; Meetsma, A.; Minaard, A. J.; Feringa, B. L. On the
+mechanism of the copper-catalyzed enantioselective 1,4-addition of
+Grignard reagents to α, β-unsaturated carbonyl compounds. J. Am.
+Chem. Soc. 2006, 128, 9103−9118.
+ (59) Lopez, F.; Minaard, A. J.; Feringa, B. L. Catalytic
+enantioselective conjugate addition with Grignard reagents. Acc.
+Chem. Res. 2007, 40, 179−188.
+ (60) Seitz, T. A.; Seitz, J. A. A general two-metal-ion mechanism for
+catalytic RNA. Proc. Natl. Acad. Sci. U. S. A. 1993, 90, 6498−6502.
+ (61) De Vivo, M.; Dal Peraro, M.; Klein, M. L. Phosphodiester
+cleavage in ribonuclease H occurs via an associative two-metal-aided
+catalytic mechanism. J. Am. Chem. Soc. 2008, 130, 10955−10962.
+ (62) Rosta, E.; Nowotny, M.; Yang, W.; Hummer, G. Catalytic
+
+
+
+
+                                                                                                                                                 Downloaded from pubs.​acs.​org/​jacsat/​article-pdf/​142/​6/​2984/​67544554/​jacs.​9b11829.​pdf by guest on 01 November 2026
+mechanism of RNA backbone cleavage by ribonuclease H from
+quantum mechanics/molecular mechanics simulations. J. Am. Chem.
+Soc. 2011, 133, 8934−8941.
+ (63) Casalino, L.; Palermo, G.; Rothlisberger, U.; Magistrato, A.
+Who activates the nucleophile in ribozyme catalysis? An answer from
+the splicing mechanism of group II introns. J. Am. Chem. Soc. 2016,
+138, 10374−10377.
+ (64) Genna, V.; Vidossich, P.; Ippoliti, E.; Carloni, P.; De Vivo, M. A
+self-activated mechanism for nucleic acid polymerization catalyzed by
+DNA/RNA polymerases. J. Am. Chem. Soc. 2016, 138, 14592−14598.
+ (65) Genna, V.; Donati, E.; De Vivo, M. The catalytic mechanism of
+DNA and RNA polymerases. ACS Catal. 2018, 8, 11103−11118.
+
+
+
+
+                                                                           2994                        https://dx.doi.org/10.1021/jacs.9b11829
+                                                                                                      J. Am. Chem. Soc. 2020, 142, 2984−2994
+

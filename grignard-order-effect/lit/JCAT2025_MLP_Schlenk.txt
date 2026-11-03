@@ -1,0 +1,682 @@
+     The influence of the organic residue and the solvent in the
+        Schlenk equilibrium for Grignard reagents in THF. A
+     molecular dynamics study with machine learning potentials
+           Marco Bortoli, Sigbjørn Løland Bore, Odile Eisenstein, Michele Cascella
+
+
+
+      To cite this version:
+     Marco Bortoli, Sigbjørn Løland Bore, Odile Eisenstein, Michele Cascella. The influence of the organic residue
+     and the solvent in the Schlenk equilibrium for Grignard reagents in THF. A molecular dynamics study with
+     machine learning potentials. Journal of Catalysis, 2026, 454, pp.116619. ⟨10.1016/j.jcat.2025.116619⟩. ⟨hal-
+     05441570⟩
+
+
+
+
+                                        HAL Id: hal-05441570
+                        https://hal.umontpellier.fr/hal-05441570v1
+                                           Submitted on 13 May 2026
+
+
+
+
+    HAL is a multi-disciplinary open access archive             L’archive ouverte pluridisciplinaire HAL, est des-
+for the deposit and dissemination of scientific re-        tinée au dépôt et à la diffusion de documents scien-
+search documents, whether they are published or not.       tifiques de niveau recherche, publiés ou non, émanant
+The documents may come from teaching and research          des établissements d’enseignement et de recherche
+institutions in France or abroad, or from public or pri-   français ou étrangers, des laboratoires publics ou
+vate research centers.                                     privés.
+
+
+           Distributed under a Creative Commons CC BY 4.0 - Attribution - International License
+                                                                   Journal of Catalysis 454 (2026) 116619
+
+
+                                                                 Contents lists available at ScienceDirect
+
+
+                                                                     Journal of Catalysis
+                                                          journal homepage: www.elsevier.com/locate/jcat
+
+
+
+
+The influence of the organic residue and the solvent in the Schlenk
+equilibrium for Grignard reagents in THF. A molecular dynamics study with
+machine learning potentialsI
+                              ,∗                                                                                                         ,∗
+Marco Bortoli a                 , Sigbjørn Løland Bore a , Odile Eisenstein a,b , Michele Cascella a
+a Hylleraas Centre for Quantum Molecular Sciences, Department of Chemistry, University of Oslo, Sam Sælands vei 26, Oslo, 0371, Norway
+b ICGM, Univ Montpellier, CNRS, ENSCM, Montpellier, France
+
+
+
+
+ARTICLE                 INFO                            ABSTRACT
+
+Dataset link: https://doi.org/10.11582/2025.as          The Schlenk equilibrium is an essential characteristic of the Grignard reagents. However, its quantitative
+ccuz5x                                                  aspects remain poorly understood. In this work, we perform molecular dynamics simulations to characterise
+Keywords:                                               how the Schlenk reaction is affected by varying the alkyl R groups (Me, Et, i-Pr, t -Bu). For each R group, the
+Grignard                                                reactivity profiles were obtained through enhanced sampling on fully solvated dinuclear species, leveraging a
+Disproportionation                                      newly developed machine learning potential trained on ab initio data. While the topologies of the Helmholtz
+Aggregates                                              energy maps are qualitatively similar, the energy ranges vary significantly with the R groups. Bulkier R groups
+Steric effect                                           disfavour higher solvation of the magnesium centre, with direct implications for the activation and mechanism
+Free energy landscape                                   of the Schlenk exchange. With respect to dichloro-bridged species, the concentrations of monochloro-bridged
+Solvent effects                                         and separated species increase with the size of R and the degree of solvation. The energy barrier for ligand
+Machine learning potentials
+                                                        exchange increases with the size of R, and it is particularly noticeable for R = t -Bu, in agreement with
+                                                        experimental data. As excess solvation of one of the magnesium centres is associated with the most important
+                                                        reaction pathways, it can be deduced that early formation of monochloro-bridged species favours the Cl/R
+                                                        exchange, especially for large R groups. The formation of these species is favoured by higher Mg solvation for
+                                                        small R groups, and by the steric volume of R itself for large R, pointing at a constructive effect of the solvent
+                                                        and R promoting Cl/R exchange. Our study shows that a full characterisation of the speciation of Grignard
+                                                        reagents in solution is possible at reasonable computational costs with machine-learning potentials.
+
+
+
+1. Introduction                                                                             discovered by William Schlenk, father and son, and named after them
+                                                                                            [4], indicates the presence of at least three monomers, opening the
+    Since its discovery in 1900 [1], the Grignard reaction has been                         route for a diversity of species that may operate in this reaction, and
+one of the prominent tools in a chemist’s arsenal for forming new                           eventually facilitate it [5]. In fact, not only it is highly challenging to
+C–C bonds and is therefore widely used in academic research and                             identify the nature of all the diverse species in solution, but quantitative
+industry [2]. It involves the addition of an organic group R from                           data relating to their thermodynamics and kinetics, obtained under
+RMgX (X = halide), the so-called Grignard reagent, to the carbon of                         comparable conditions, is scarce [6].
+an electrophilic molecule such as an aldehyde or a ketone. However,                             Further studies revealed that the picture outlined by the original
+the apparent simplicity of this reaction, presented in any undergrad-                       Schlenk equilibrium as written in (Eq. 1) is too restrictive, suggest-
+uate organic chemistry textbook, hides multiple layers of complexity.                       ing the presence of diverse aggregates of higher nuclearity [7–9]. A
+Quoting Dietmar Seyferth: ‘‘Generally written as ‘‘RMgX’’ in textbooks,                     generalised Schlenk equilibrium, represented in Fig. 1, gives a clearer
+monographs and research papers, the Grignard reagents in ethereal solution                  picture of the complexity of Grignard solutions and the challenge they
+are more complicated than this simple formula indicates’’ [3].                              pose to experimental investigations [3]. The species in equilibrium, and
+    In particular, a redistribution reaction:                                               their relative abundance are influenced by numerous factors [10,11],
+                                                                                            including the solvent [12–14], the concentration [14], the temperature,
+2 RMgX ←←↽
+         ←←←←←←←←←←⇀
+                   ←←←←←← MgR2 + MgX2                                         (Eq. 1)       and the halide [14,15]. Among these factors, the effect of the organic R
+
+
+ I This article is part of a Special issue entitled: ‘Molecular Dynamics in Catalysis’ published in Journal of Catalysis.
+ ∗ Corresponding authors.
+     E-mail addresses: marco.bortoli@kjemi.uio.no (M. Bortoli), michele.cascella@kjemi.uio.no (M. Cascella).
+
+https://doi.org/10.1016/j.jcat.2025.116619
+Received 12 September 2025; Received in revised form 25 November 2025; Accepted 5 December 2025
+Available online 8 December 2025
+0021-9517/© 2025 The Author(s). Published by Elsevier Inc. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+M. Bortoli et al.                                                                                                              Journal of Catalysis 454 (2026) 116619
+
+
+group on the Schlenk redistribution process is of particular interest, be-
+cause of its direct involvement as the reactive group in the subsequent
+Grignard reaction. These complex effects on the speciation in solution
+are not exclusive to the Grignard reagents, but have been observed
+also for other elements such as calcium, beryllium, and zinc [16–19].
+Moreover, the speciation in solution could also be connected to the
+beneficial effect of novel types of solvent, such as binary mixtures of
+deep eutectic solvents/THF on Grignard reactions [20].
+    In view of the relative scarcity of quantitative experimental data,
+computational studies based on molecular dynamics offer a comple-
+mentary approach to investigate reactions in solution in a systematic
+manner [21], with enhanced sampling techniques providing direct
+access to the thermodynamics [22]. Recently, ab initio molecular dy-
+namics (AIMD), which can represent chemical reactions involving bond
+formation and cleavage from first principles, was successfully used to           Fig. 1. Selected structures found in the extended Schlenk equilibrium. The
+get insight into the Schlenk equilibrium in tetrahydrofuran (THF) for            dashed box (top) contains the original Schlenk equilibrium as proposed in [4].
+CH3 MgCl as the model Grignard [9]. This study led to the sugges-                Colour code: Mg pink, Cl cyan. (For interpretation of the references to colour
+tion that the Grignard reaction occurs through competing pathways                in this figure legend, the reader is referred to the web version of this article.)
+initiated by structural variants of the Grignard reagent, RMgX, all
+present in solution in comparable amounts [5]. Further studies using
+the same protocols produced preliminary data on the influence of                 tetrahedral structure with an average O-Mg-O angle of 85◦ and R-Mg-Cl
+added ingredients such as LiCl [23]. However, all these results were             or R-Mg-R angles of 135◦ (Table S1 in the Supporting Information), in
+obtained with CH3 MgCl, a representative, yet rarely used, Grignard              agreement with previous computational studies [5,47]. This tetracoor-
+reagent. Extending this study to include Grignard reagents that contain          dinated species is the most stable structure for all the R groups with the
+other R groups than methyl is needed to gain a broader and more                  exception of MeMgCl, for which a pentacoordinated organisation with
+comprehensive understanding of the chemistry of this essential reagent.          Mg ligating three THF lies within thermal energy (∼2 kJ mol−1 ) from
+Unfortunately, achieving the required level of accuracy and enabling             the tetrahedral one. From Et to i-Pr, and t -Bu, the tri-solvated RMgCl
+the necessary wide exploration of chemical space with AIMD would                 compounds are instead energetically higher than the di-solvated ones
+require an impractically large amount of computing power. Recently,              by 5, 10 and 18 kJ mol−1 , respectively (Fig. 2, top). Tetra-solvation is
+machine learning potentials (ML) have been developed [24–31], which              even less favourable with the corresponding minima being very shallow
+can be trained to predict forces of DFT calculations in milliseconds,            at 5, 17 and 40 kJ mol−1 for Me, Et, and i-Pr respectively, whereas for
+reducing computational cost by several orders of magnitude. The in-              t -Bu a high energy plateau was found at about 62 kJ mol−1 with no
+tegration of machine learning potentials with MD (ML-MD) opens up                defined minimum. In the case of MgR2 , the results are similar with an
+for ab initio exploration of larger chemical spaces on longer length-            even stronger preference for the di-solvation (Fig. 2, bottom).
+and time-scales than before. Among other topics, this method was                     For MgCl2 , the tri-solvated trigonal bi-pyramidal and tetra-solvated
+used to re-examine the role of solvent in SN 2 reactions [32,33], as             octahedral structures are essentially isoenergetic (1 kJ mol−1 of dif-
+well as to understand nanoclusters formation [34]. Its power was also            ference in Helmholtz energy). Thus, ML-MD calculations bring these
+established in the study of the structure of porous materials [35],              two species significantly closer in terms of their Helmholtz energies,
+proton hopping kinetics in zeolites [35], in operando reactions [36–             reducing the original AIMD estimate of 8 kJ mol−1 [9]. We believe this
+38], CO2 capture by MOFs [39], to study the catalytic reduction of               is due to increased sampling time in the ML-MD simulations, as shown
+CO2 on metal surfaces [40–42], to achieve very long simulations in               by Figure S2 in the Supporting Information. A similar discrepancy
+lithium batteries [43], and to clarify the role of proton transfer in the        between AIMD and ML-MD associated with short sampling times was
+tautomerisation of nucleobases [44]. ML-MD was also used to establish            previously observed in the case of solvated LiCl clusters [45]. The
+the dependence of X on the structural preference of Li4 X4 (X = halide)          preferred coordination sites of the chloride ligands (cis di-equatorial in
+in THF [6,45].                                                                   the trigonal bipyramid and trans di-axial in the octahedron), show that
+    In this work, we leverage the computational efficiency of ML-MD              the preferred structure is not determined by the minimisation of the
+to perform an extensive study on how different R-groups affect the               internuclear Cl⋯Cl repulsion which would set these two atoms trans to
+structure of Grignard reagents and energetics of the Schlenk equilib-            each other. The pentahedral structure corresponds to the one identified
+rium. We consider Grignard reagents of general formula RMgCl in THF              by metadynamics [48] in our previous AIMD study [9]. The octahedral
+solution, expanding from previous work [9] on Me to also include Et, i-          structure corresponds to the one reported by X-ray diffraction of the
+Pr, and t -Bu R-groups (Fig. 1). Therefore, we developed a ML potential          crystalline state of THF-solvated MgCl2 [49], and also proposed by
+for these systems with the PBE-D3 functional, applying the protocol              earlier DFT calculations [47]. These ML-MD calculations recover the
+as described in the Computational Methods Section. To quantify the               known fact that increasing the polarity of the magnesium species (Cl
+Helmholtz energy landscape of these systems, we performed on-the-fly             vs. R) increases the solvation and establish that increasing the bulk of
+probability enhanced sampling (OPES) runs [46] using ML-MD.                      R disfavours it [47,50].
+
+2. Results and discussion                                                        2.2. Association of RMgCl in THF
+
+2.1. Solvation of monomeric Grignard species (RMgCl, MgR2 , MgCl2 )                  The Schlenk equilibrium requires the implication, either as interme-
+                                                                                 diate or transition state, of polynuclear species in which the halide/R
+    The study of the solvation of the monomeric species RMgCl and                exchange can be achieved. Even if a number of species of high nucle-
+MgR2 , with R = Me, Et, i-Pr, and t -Bu, using the Mg⋯THF coordination           arity have been characterised by various spectroscopies (see [6] and
+number as the bias collective variable, shows how the increasing bulk            references therein), there is evidence for low association of Grignard
+of R disfavours the solvation of the molecular species ( Fig. 2). For            compounds in THF [51]. Consequently, this study considered only the
+all R groups as well as for both RMgCl and MgR2 , coordination with              dimeric species. The dimerisation energy of RMgCl was estimated using
+two solvent molecules results in a stable species that has a distorted           the total coordination of the magnesium centres to Cl, and to THF as
+
+                                                                             2
+M. Bortoli et al.                                                                                                              Journal of Catalysis 454 (2026) 116619
+
+
+                                                                                     the more stable. Finally, bulkier R groups increasingly favours the
+                                                                                     monomers over any form of dimers. This agrees with the observed
+                                                                                     trends that monomers are in general favoured, especially in coordinat-
+                                                                                     ing solvent like THF [53]. Similar conclusion have been obtained for
+                                                                                     analogous arylberyllium systems [18].
+
+
+                                                                                     2.3. Solvation of dimeric (RMgCl)2 adducts
+
+                                                                                         We showed that increasing the size of the R group diminishes the
+                                                                                     coordination number of THF at the magnesium centre for monomeric
+                                                                                     Grignard reagents. One can thus expect a similar trend for the dimeric
+                                                                                     species. However, the solvent, itself, can modify the relative Helmholtz
+                                                                                     energies of the three forms, M, B-1, and B-2, that are present in
+                                                                                     solution. To analyse this influence of the solvent, we determined the
+                                                                                     relative concentrations of these three species at a given solvation. For
+                                                                                     this purpose, we determined the Helmholtz energy surfaces (FES) using
+                                                                                     the Mg-O(THF) coordination numbers at the two Mg atoms, CV(Mg1 -
+                                                                                     O) and CV(Mg2 -O) (see Computational Methods for details). Due to
+Fig. 2. Helmholtz energy profiles for the solvation of RMgCl (top) and MgR2          the equivalent chemical nature of Mg1 and Mg2 , the resulting FESs
+(bottom) monomers calculated at 300 K. The shaded areas represent the                are symmetrical. Consequently, for simplicity, the basins corresponding
+standard deviation calculated from the data of five replicas. The energy range       to different values of CV(Mg1 -O) and CV(Mg2 -O) will be mentioned
+of the plot has been limited to 100 kJ mol−1 .                                       by only a single set of values with the convention CV(Mg1 -O) <
+                                                                                     CV(Mg2 -O).
+Table 1                                                                                  Even though the respective FES for all the R groups share qualita-
+Helmholtz energies of reaction in kJ mol−1 for the association for RMgCl in          tively similar features, the nature of R significantly affects the relative
+THF including structures with zero (M), one- (B-1) and two-bridging chlorides        Helmholtz energies of the basins (Fig. 3). For R = Me, basins of different
+(B-2). Colour code: Mg pink, Cl cyan, R grey.
+                                                                                     depths appear along the diagonal for [CV(Mg1 -O), CV(Mg2 -O)] = {1,1}
+ R                     M                     B-1                   B-2
+                                                                                     and {2,2}, corresponding to equal solvation of the two magnesium
+ Me                    0                       −2                    −8              centres, and off the diagonal for {1,2}, {1,3}, and {2,3}. Shallower
+ Et                    0                       12                     7
+ i-Pr                  0                       16                    12
+                                                                                     minima are found at higher solvation around {1,4}, {2,4} and {3,4}.
+ t -Bu                 0                      118                   116              This shows that while one of the two magnesium centres can coordinate
+                                                                                     up to four THF molecules, high coordination of both centres is usually
+                                                                                     disfavoured. As the size of R increases, high solvation becomes less
+                                                                                     favourable. For R = Et, the basins for high values of CV, such as {1,3},
+                                                                                     {2,3} and also {1,4} and {2,4}, are shallower, and highly solvated
+                                                                                     basins like {3,4} disappear. This trend is confirmed through R = i-Pr,
+                                                                                     and t -Bu.
+                                                                                         The analysis of the structures populating the {1,1}, {1,2}, {2,2}
+                                                                                     basins shows a strong influence of the solvent as well as of R on the
+                                                                                     relative concentration of M, B-1 and B-2 (Fig. 4). As expected, low
+collective variables (see Figure S3 in the Supporting Information). The
+                                                                                     solvation, such as in {1,1}, favours B-2 for all R groups, even t -Bu.
+inclusion of both solute-solute contact formation and metal desolvation
+                                                                                     Also, not surprisingly, increasing solvation of the magnesium centres
+to correctly estimate the dimerisation energy in solution follows early
+                                                                                     favours the less compact bridging mode B-1. Thus, in the case of {1,2},
+evidence by Laio and Parrinello in the case of NaCl in water [48].
+                                                                                     B-1 concentration increases with the bulk of R (29, 35, 62 and 73 % for
+    The calculations reveal that the dimer adopts two different bridging
+modes for the chloride, defined by the number of Cl connecting the                   Me, Et, i-Pr and t -Bu, respectively) (Fig. 4). At these solvation states,
+two magnesium centres. Indeed, they can be linked by two bridging                    the population of M is negligible. M contributes at higher solvation,
+chlorides (labelled B-2) or by one bridging chloride (labelled B-1).                 especially for R larger than methyl (Fig. 4), and is dominating for
+B-2 is the most widely accepted form for the dimer and is the one                    solvation states higher than {2,2}.
+found in the solid-state [52]. However, our calculations suggest that                    Thus, a general trend is that both, increasing the solvation and
+the mono-bridged compounds are important contributors in solution.                   the bulk of the R groups, contribute to decreasing the number of
+As reported in Table 1, there is a marked influence of the alkyl group               Mg⋯Cl bridges between the two RMgCl species, eventually favouring
+on the relative energies of B-1 and B-2, and the monomeric species                   the separation into monomers. Nonetheless, a larger number of sol-
+M. Thus, for R = Me, B-2 is preferred over B-1 by 6 kJ mol−1 and                     vent molecules coordinating to the metal is disfavoured by the steric
+over M by 8 kJ mol−1 . This modest preference in Helmholtz energy for                hindrance of bulkier R groups. This results in an antagonistic effect,
+the dimeric species is in fact unique to the small methyl group. For R               whereby the lower solvation, promoted by the bulkier R groups encour-
+= Et, i-Pr, the balance changes with a small energetic preference for                ages aggregation, opposing the preference for less compact structures
+the monomeric form M over B-2 and B-1 (7 kJ mol−1 and 12 kJ mol−1 ,                  imposed by the sterics. As a result, the energetic balance along the
+respectively). Unlike the other groups, t -Bu shows a marked preference              Me, Et, i-Pr series is rather constant. However, in the case of t -Bu,
+for the monomeric forms, which are more stable than the dimeric forms                the steric effect of R dominates, and is responsible for the monomer
+by at least 116 kJ mol−1 .                                                           being significantly preferred over both B-1 or B-2. Finally, the strong
+    This analysis shows how the R group influences the aggregation                   preference for the monomeric and less solvated forms in the case of R =
+state of the reagents. It also establishes that two states of aggregation            t -Bu could also influence its reactivity towards a C – O bond, as it was
+exist, one in which the two magnesium atoms are held by two bridging                 recently shown that the most favourable pathway involves a dimeric
+chlorides and another with a single one, the former being always                     structure and that higher solvation promotes reactivity [5].
+
+                                                                                 3
+M. Bortoli et al.                                                                                                              Journal of Catalysis 454 (2026) 116619
+
+
+
+
+Fig. 3. Helmholtz energy surfaces for the solvation states of (RMgCl)2 , using the Mg-O coordination number for the two Mg atoms as collective variables.
+Calculated at 300 K. See the Computational Methods section for the definitions of the two CVs. The Helmholtz energy surfaces were symmetry-averaged.
+
+
+
+
+Fig. 4. Relative abundance of Mg(𝜇-Cl)2 Mg, Mg(𝜇-Cl)Mg dimeric, and monomeric structures populating the most relevant solvation Helmholtz energy basins of
+(RMgCl)2 as bar graph (fraction) and tabulated data (percent). The black lines and the uncertainties in the table are obtained from the standard deviation of five
+replicas. See Table 1 for M, B-1, and B-2 example structures.
+
+
+
+                                                                                4
+M. Bortoli et al.                                                                                                                   Journal of Catalysis 454 (2026) 116619
+
+
+2.4. Effect of R on the Schlenk equilibrium of (RMgCl)2                           Table 2
+                                                                                  Helmholtz energies for the Schlenk equilibrium in kJ mol-1 . In parentheses the
+    The previous results demonstrate that the increased lability of the           values of CV(R) for each structure.
+bridging chlorine atoms is due to the presence of sterically hindered              R                       Reactant                      TS                      Product
+R substituents, rather than solvent dynamics. This, on the one hand,               Me                         0 (0.0)                 53 (1.5)                     6 (2.0)
+favours the appearance of B-1 structures, expected to be more com-                 Et                         0 (0.0)                 45 (1.1)                     5 (2.0)
+                                                                                   i-Pr                       0 (0.0)                 63 (0.8)                     9 (2.0)
+petent for the Schlenk equilibrium and, on the other hand, it may
+                                                                                   t -Bu                      0 (0.0)                 84 (0.7)                   −15 (2.0)
+induce the separation of the adduct into monomeric units, which could
+limit it. Thus, as noted in a previous study [9], the solvent dynamics
+appears crucial for the control of the Schlenk redistribution reaction.                Table 3
+In order to quantify the role of R and solvent, the Schlenk equilibrium                Selected experimental and computational values for equilibrium
+for RMgCl was investigated using a two-dimensional Helmholtz energy                    constants (K) for the reactions 2 RMgCl ←←↽
+                                                                                                                                 ←←←←←←←←←←⇀
+                                                                                                                                           ←←←←←← MgR2 + MgCl2 in THF.
+                                                                                       Calculated Helmholtz energies (𝛥A) in kJ mol−1 . A more extensive
+mapping on the collective variables already employed in the earlier
+                                                                                       list is shown in Ref. [47].
+work for MeMgCl [9]. The collective variable CV(R) describes the
+                                                                                           R       T (K)              𝛥A                   K             Ref.
+difference in the coordination of the two magnesium centres to the alkyl
+                                                                                           Me      298                             1.0                   [55]
+groups (CV(R) = CV(Mg2 -R) – CV(Mg1 -R)), while the collective vari-                               298                             0.22                  [56]
+able, CV(Mg1 -O) describes the solvation at Mg1 (see the Computational                             300           6 ± 1             0.09 ± 0.04           This work
+                                                                                           Et      298                             0.18                  [13]
+Methods section and the Supporting Information for further details).                               300           5 ± 2             0.13 ± 0.11           This work
+    The topology of the FESs for the Schlenk equilibrium is similar for                    t -Bu   303                             0.89                  [55]
+all the R groups but differences are found in the respective range of the                          300         −15 ± 12          409    ± 1967           This work
+Helmholtz energy values. The reactants, corresponding to (CV(R) = 0)
+are described by three basins that are associated with three solvation
+states for Mg1 (CV(Mg1 -O) = 1, R1; 2, R2 and 3, R3 in Fig. 5). These             the reaction is slightly endothermic for all R with the exception of
+basins correspond to {1,1}, {1, 2}, and {1,3} in Fig. 3. For the products,        t -Bu where it is found to be exothermic (Table 2). Comparison with
+the FESs also feature three basins corresponding to CV(Mg1 -O) = 2, P2;           experimental values of K, shown in Table 3 and Refs. [6,13], is
+3, P3; and 4, P4 (Fig. 5). The high CV(Mg1 -O) value in the products              challenging since measured K values are rare and do not concern the
+relative to the reactants is likely due to the high solvation of MgCl2            groups studied here. An interesting proton NMR study gives a ratio of
+at the end of the Cl/R exchange. Relevant Helmholtz energy values                 MeMgCl/MgMe2 close to 1 in THF at a temperature around −70° [54].
+averaged over all the solvation states are reported in Table 2.                   A general preference for RMgX is indicated for aryl derivatives but not
+    The FESs show that the redistribution of the ligands from RMgCl               studied here. Additional experimental values have been collected in
+to MgR2 and MgCl2 occurs through a wide, rather flat transition state             ref [47]. These data illustrate the challenges in measuring K values
+region around CV(R) = 1. This area corresponds to a region with an                as they vary significantly with the selected measurement method. The
+abundance of B-1 forms in which one R group is translocating into                 globally observed small differences in energy between the two sides of
+a shared position. Interestingly, only for R = Me the topology of the             the Schlenk equilibrium is well reproduced by the present calculations.
+FES suggests the presence of metastable intermediate around CV(R) =               Interestingly, the low values in the Helmholtz energy of this reaction
+1 (Fig. 5, I). This is found to be either in a B-1 or B-2 configuration, as       are more difficult to reproduce with a static representation [50]. For
+the small size of the R group allows it to move to a bridging position            R = t -Bu, temperature dependent measurements of NMR indicate that
+even for a B-2 geometry. In the case of R = Me only, the TS occurs                the proportion of RMgCl augments with the temperature, a result
+for a value of CV(R) around ∼ 1.5 (Fig. 5, TS with yellow background).            that is reproduced by the present simulations [55]. Past experiments
+For the other R groups, the mechanism appears as concerted, with a                also established that the Schlenk equilibrium is slow in the case of
+TS located at CV(R) around 1 (Fig. 5, TS in grey background for R                 t -Bu [55], a fact that is also qualitatively reproduced in this work.
+= i-Pr). For all four R groups, the Mg1 -Mg2 distance decreases until             This is probably related to a reduced tendency to dimerisation, and
+the transition state region and then increases again, but the pattern is          higher reaction barrier during ligand redistribution. It thus appears
+different for Me, Et, and i-Pr on one side and t -Bu on the other. For the        that our calculations reproduce fairly well, even with the limitation
+first group, the distance decreases only slightly, from about 3.4 to 2.8 Å,       of considering only monomers and dimers, the main behaviour of alkyl
+                                                                                  Grignard complexes in THF.
+whereas the decrease is more important for t -Bu with a difference of
+                                                                                      In the early study of the Schlenk equilibrium for R = Me [9], it
+about 0.9 Å (from 3.7 to 2.8 Å). The FESs for the Schlenk equilibrium
+                                                                                  was found that non equal solvation of the two magnesium centres, like
+indicate that multiple pathways connect the reactant to the product
+                                                                                  in {1,2}, was crucial to activate the otherwise strongly associated B-2
+basins with similar TS energies, occurring at different values of the
+                                                                                  structure of (MeMgCl)2 . This allowed the cleavage of a Mg-Cl bond,
+solvation of Mg1 . At low solvation (e.g. CV(Mg1 -O) = 1), regardless of
+                                                                                  and the transient formation of a B-1 structure that could produce an
+the nature of the R group, the reaction is disfavoured as the Helmholtz
+                                                                                  intermediate structure with a bridging methyl. Here, ML-MD with much
+energy increases strongly when CV(R) becomes larger than 1. For R
+                                                                                  longer simulation times reveals that increasing the size of the R group
+= Me, the optimal pathway occurs at CV(Mg1 -O) = 2; all other R                   leads in general to more flexible, less compact adducts species that
+groups have a preference for a reaction with a highly solvated Mg1                accept more easily single-Cl-bridged configurations. The bulky groups
+centre (CV(Mg1 -O) around 3) (Fig. 5). The activation energy for the              are also less able to reside at a bridging position, likely due to steric
+Schlenk equilibrium increases significantly from Me to t -Bu with a               hindrance. Thus, also in this case, the mechanism of Schlenk equilib-
+barrier almost twice as high for the latter. It is thus clear that bulky R        rium proceeds with an initial fluctuation of the solvent at Mg1 which
+groups make the exchange more difficult, also taking into account their           favours the formation of a flexible, single-bridged species, with a highly
+augmented tendency to dissociate. The products of the reaction, P2, P3            solvated magnesium bonded to the terminal and the bridging chloride
+and P4, are found to be dimeric complexes of MgR2 and highly solvated             ligands. Unlike for Me, heavier R groups are then directly transferred
+MgCl2 that share one or two chloride ligands with MgR2 (Fig. 5). As               to the other Mg in one step, without going via intermediates. The
+MgR2 can only accept two additional interactions, it is not solvated              formation and stabilisation of the final products are achieved by further
+in the di-chloro bridged species P4 and it is mono-solvated in the                increasing the solvation of the magnesium atoms, especially the one
+mono-chloro bridged products.                                                     bearing the two chlorides. This confirms that the flexibility in the
+    The thermodynamic balance indicates weak differences in                       coordination sphere of Mg is a key requirement for the feasibility of
+Helmholtz energies between the reactants and the products. Overall,               the reaction.
+
+                                                                              5
+M. Bortoli et al.                                                                                                               Journal of Catalysis 454 (2026) 116619
+
+
+
+
+Fig. 5. Helmholtz energy surfaces for the Schlenk equilibrium of RMgCl dimers in THF at 300 K. See text and the Computational Methods section for the definitions
+of the two CVs. The white dots represent the minimum Helmholtz energy path. Relevant structures from Me (yellow background) and i-Pr (grey background)
+FESs are shown. THF molecules are represented by an oxygen atom. In each depicted structure, Mg1 is on the left and Mg2 is on the right. Colour code: Mg pink,
+Cl cyan, C grey, H white, O red. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+
+Conclusion                                                                           but the Helmholtz energies of these highly solvated minima increase
+                                                                                     with the number of THF molecules and R size. Thus, increasing the
+    In this work we have developed a machine learning potential to                   bulk of the R group decreases the number of solvent molecules in the
+efficiently run all-atom molecular dynamics for a wide exploration of                first coordination sphere of the magnesium. MgCl2 is the most solvated
+the chemical space for RMgCl (R = Me, Et, i-Pr and t -Bu) focused on                 species with 3 or 4 THF molecules in the first coordination sphere
+monomers and dimers. An investigation of the solvation structures in                 equally favoured.
+explicit THF with enhanced sampling techniques was carried out for                       Analogous structural features are found for (RMgCl)2 with the
+all the species considered. All monomeric RMgCl and MgR2 structures                  important additional factor that R and the solvent determine the way
+show a preference for coordination by two solvent molecules. This                    the two monomers are linked: (i) a large size R group disfavours high
+established result [6] was previously reproduced by AIMD [9]. How-                   solvation and also disfavours compact structures like dichloro-bridged
+ever, the possibility of higher solvation (up to 4 THF) is also found                species, (ii) high solvation by itself also disfavours compact structures,
+
+                                                                                 6
+M. Bortoli et al.                                                                                                           Journal of Catalysis 454 (2026) 116619
+
+
+(iii) even if species with large R groups are less solvated, the influence         3. Computational methods
+of R dominates leading to preference for a less compact structure. Over-
+all, the effect of a more strongly bonded R dominates over solvation;              3.1. Systems preparation
+nevertheless, changes in solvation still affect the initiation and control
+of the Schlenk equilibrium pathway. Dimeric structures have been                        The systems were prepared using packmol [59]. For the monomers,
+thought to involve two bridging chlorides, but it appears that mono-               a cubic box of 17.5×17.5×17.5 Å3 was prepared filled with one RMgCl
+bridged species are important participants to the possible structures of           and 40 THF molecules, corresponding to a concentration of about 0.3
+RMgCl in solution, with contribution increasing with the size of R.                M. For the dimeric species, a 30×30×30 Å3 cubic box was created
+     The Schlenk equilibrium reaction pathways have energy barriers                filled with 196 THF and two RMgCl molecules, which translates to a
+that increase with the size of R, and are thus the highest for t -Bu, the          concentration of RMgCl of about 0.12 M.
+largest R group in this work. This is in good agreement with exper-
+                                                                                   3.2. Enhanced sampling simulations
+imental observations. Several pathways differing by the solvation of
+Mg are shown to be possible. Earlier findings on (MeMgCl)2 suggested
+                                                                                   Collective variables. The various Helmholtz energy surfaces relevant for
+a pathway at low solvation of the Mg that releases the R group to
+                                                                                   this study were explored using the coordination numbers (CN) of Mg
+yield MgCl2 . While this mechanism was observed in this work, a more
+                                                                                   with the oxygens of THF, Cl or the R groups as collective variables,
+extensive exploration of the FESs revealed the presence of alternative
+                                                                                   defined as:
+favourable routes with a more highly solvated magnesium releasing the                         ∑
+R group. These pathways dominate for larger R groups. Our calcula-                 CN(i-j) =     𝑠(j)                                                   (1)
+tions also show that the Cl/R exchange best occurs via the formation of                      𝑗𝜖𝑋
+
+a highly flexible mono-bridged B-1 dimeric species. The products of the            and
+redistribution are found to be mono and di-chloro bridged complexes of                           (          )𝑛
+                                                                                                     𝑟(j)
+                                                                                            1−
+Mg 2R2 and highly solvated Mg 1Cl2 . The absence of monomeric MgR2                                    𝑟0
+                                                                                   𝑠(j) =        (          )𝑚                                                (2)
+in presence of MgCl2 clearly indicates how the steric hindrance of                          1−
+                                                                                                     𝑟(j)
+                                                                                                      𝑟0
+R prevents solvation and favours other type of stabilisation, such as
+a bridging chloride. The computed thermodynamics of the reactions                  where 𝑟(𝑗) is the distance of an appropriate atom 𝑗 from the magnesium
+are in most cases close to athermicity, with the exception of t -Bu for            centre of relevance, and 𝑟0 is a characteristic distance of 2.75, 3.00 and
+which it is in favour of the redistributed products. These results are in          3.00 Å for O, Cl, R, respectively as derived from a previous work for
+reasonable agreement with limited available experimental data on the               Me [9] and confirmed to be suitable values for all R groups (see Figure
+globally small equilibrium constant, K.                                            S4 in the Supporting Information). The exponents of the numerator (n
+                                                                                   in Eq. (2)) and the denominator (m in Eq. (2)) were set as 12 and 24
+     This study therefore demonstrates the significant impact of the
+                                                                                   respectively.
+solvation on the chemistry of these highly polar magnesium com-
+pounds. It also illustrates that these species are highly fluxional and that       Enhanced sampling simulations with ML-MD. ML-MD simulations were
+each chemical group (here R) has a strong influence on the structural              carried out using a DeePMD machine learning potential (see below)
+properties. We believe that these structural effects will influence also           interfaced with LAMMPS [60]. The simulations were run in the NVT
+the reactive properties of these systems, although further investigation           ensemble at 300 K and with a time step of 0.25 fs, using the CSVR
+is needed to determine the quantitative effects. In particular, this study         thermostat [61] with a coupling constant of 0.5 ps. To compute the
+establishes that the steric bulk of R favours less compact association             Helmholtz energy along the collective variables, we performed en-
+like mono-bridged and separated species and that the solvation also                hanced sampling using the on-the-fly probability enhanced sampling
+favours less compact association and separated species. These effects              protocol (OPES) [46] implemented in plumed 2.8.2. [62,63] To accel-
+are subtle though, since in the solid state, the Grignard reagents have            erate the convergence, we utilised the multiple walker functionality of
+been in general isolated as compact multi-nuclear species with min-                PLUMED [63] with eight parallel simulations sharing the bias potential.
+imum number of solvent molecules. This highlights the difference in                The final Helmholtz energy plots presented in the text were obtained
+structural preference in the solid-state and in solution. The ability to           by reweighting data from all the eight replicas with simulations lasting
+dissect at the microscopic level the effect of both the solvent and the            10 ns. The minimum energy paths were obtained with a python code
+nature of the organic group opens the way to a deeper understanding of             publicly available at https://github.com/tzelleke/mepfinder under the
+the growingly complex reactivity of these systems being continuously               MIT license.
+discovered. For example, the reported impact on the Grignard reaction
+                                                                                   3.3. Machine learning potential for RMgCl in THF
+by exotic setups like binary mixtures of non-miscible deep eutectic
+solvent/THF [20], which have been very recently shown to promote
+                                                                                   Machine learning potential architecture. For ML-MD simulations we used
+the chemical process at the interface between the two solvents [57],
+                                                                                   the DeePMD machine learning potential [64,65]. In detail, we used the
+may again be connected to a change in the relative abundance of the
+                                                                                   se_e2_a architecture and 25, 50, 100 neurons for the hidden embedding
+Schlenk species due to the different environment. Probing the existence
+                                                                                   layer, with the submatrix of the embedding matrix using 16 neurons.
+of the predicted species in solution remains challenging, but theoretical
+                                                                                   A distance cutoff of 6 Å was used with a smoothing region of 0.5 Å.
+models on X-ray absorption spectra predict that such structures, how-              The potential is represented by a fully connected deep neural network
+ever similar, have distinguishable spectroscopic fingerprints that may             with three layers of 240 neurons each. These are standard settings
+be used for their identification [58].                                             benchmarked to optimise accuracy of the se_e2_a architecture [64]. All
+     Finally, the efficient development of a machine learning model                the same atoms were represented by one atom type each, except for C,
+through an active learning procedure can produce a potential that can              where two atom types were used: one to represent the central C in the
+be used to explore the free energy landscapes of organomagnesium                   R groups and another one to address all the other carbon atoms. The
+reagents at DFT accuracy, but at a much lower computational cost.                  training of the DeePMD model was performed on energies and atomic
+The ability to study the reaction pathways with chemical variants of               forces, with the final model using 3 × 106 steps. The typical accuracy
+a given reagent using MD with ab initio accuracy could facilitate the              achieved by the DeePMD and ML-MD models is 20 to 40 meV/Å for
+exploration and discovery of reactive processes and catalytic setups in            forces, depending on system [64], which is close to the numerical
+operando conditions.                                                               accuracy/choice of basis sets of standard DFT calculations.
+
+                                                                               7
+M. Bortoli et al.                                                                                                              Journal of Catalysis 454 (2026) 116619
+
+
+
+
+                                    Fig. 6. Active learning workflow. The shapes show the software used in each step.
+
+
+PBE-D3 calculations for training set data. We used CP2K [66] to cal-            Acknowledgements
+culate the reference energies, forces, and virials for the training set
+data of the MLIPs, using density functional theory with PBE approx-                This work was carried out using the open-source, community-
+imation [67] for the exchange correlation functional and D3 disper-             developed PLUMED library [63], version 2.8.2 [62]. This work was
+sion corrections [68]. The atomic core electrons were described using           supported by the Research Council of Norway through the Centre of
+Goedecker–Teter–Hutter (GTH) pseudopotentials, while valence elec-              Excellence Hylleraas Centre for Quantum Molecular Sciences (Grant
+tron molecular orbitals were expanded in double-zeta single-polarised           n. 262695) and the Pioneer Research Grant MetalSynergy (Grant n.
+basis sets (DZVP) optimised for the PBE functional. The kinetic energy          314009), and by the Norwegian Supercomputing Program (NOTUR) for
+cutoff for the plane-wave expansion of the density was set to 800 Ry,           computing hours and storage facilities (Grant ns. NN4654K, NS4654K).
+which was required to get a numerical accuracy of ∼10 meV/Å for the             MB thanks the EuroHPC Joint Undertaking for project access to the
+forces.
+                                                                                LUMI supercomputer (Grant n. EHPC-REG-2023R02-064), as well as
+Training set generation by active learning. To build our machine learning       the European Union for support through the HE-MSCA-PF grant RATIO
+potential for R-MgCl in THF, we used the active learning procedure              (Grant n. 101059679).
+as illustrated in Fig. 6. The idea is to build progressively a training
+set, which is composed of structures and associated forces and energies         Appendix A. Supplementary data
+from DFT, on which the final model is trained. First, a small training
+set containing 100 structures for each system were obtained from ab                 Supplementary material related to this article can be found online
+initio molecular dynamics. From this small training set, a few machine          at https://doi.org/10.1016/j.jcat.2025.116619.
+learning potentials are trained. Then, ML-MD OPES simulations using
+machine learning potentials were employed to obtain new structures.
+                                                                                Data availability
+Such enhanced sampling is recognised as an important part of active
+learning to achieve accurate free energy predictions [29]. On these
+                                                                                   The final model used and the relative training sets are available at
+structures, we estimate prediction errors by a query by committee
+approach from four models. In detail, on the generated structures,              https://doi.org/10.11582/2025.asccuz5x.
+deviations between four models are computed, structures found to have
+a model deviation between 0.5 and 75 eV Å−1 were selected to augment
+                                                                                References
+the training set. The threshold values were selected to avoid adding
+structures which are already well described by the models (below
+                                                                                 [1] V.C. Grignard, Sur quelques nouvelles combinaisons organo-métalliques du
+threshold) or structures that may have non-physical configurations
+                                                                                     magnésium et leur application à des synthèses, Compt. Rend. Hebd. Séances
+(above threshold). Additionally, structures which contained an atom
+                                                                                     Acad. Sci. 130 (1900) 1322–1324.
+with a total force of more than 10 eV Å−1 were excluded from the final           [2] Z. Rappoport, I. Marek (Eds.), The Chemistry of Organomagnesium Compounds,
+training set. This procedure was repeated iteratively to obtain training             John Wiley & Sons, Ltd, 2008.
+sets containing structures spanning all the Helmholtz energy regions             [3] D. Seyferth, The Grignard reagents, Organometallics 28 (6) (2009) 1598–1605,
+sampled during simulations presented in our production simulations in                http://dx.doi.org/10.1021/om900088z.
+the results section.                                                             [4] W. Schlenk, W. Schlenk, Jr., Über die Konstitution der Grignardschen Mag-
+                                                                                     nesiumverbindungen, Ber. Dtsch. Chem. Ges. 62 (4) (1929) 920–924, http:
+CRediT authorship contribution statement                                             //dx.doi.org/10.1002/cber.19290620422.
+                                                                                 [5] R.M. Peltzer, J. Gauss, O. Eisenstein, M. Cascella, The Grignard reaction –
+   Marco Bortoli: Writing – original draft, Visualization, Validation,               unraveling a chemical puzzle, J. Am. Chem. Soc. 142 (2020) 2984–2994, http:
+Resources, Project administration, Investigation, Funding acquisition,               //dx.doi.org/10.1021/jacs.9b11829.
+Formal analysis, Data curation. Sigbjørn Løland Bore: Writing – re-              [6] M. Cascella, S.L. Bore, O. Eisenstein, The fellowship of the Grignard: 21st
+view & editing, Validation, Software, Methodology, Data curation.                    century computational tools for hundred-year-old chemistry, Chem. Sci. 16
+                                                                                     (2025) 8196–8216, http://dx.doi.org/10.1039/D5SC01078K.
+Odile Eisenstein: Writing – review & editing, Supervision, Funding
+                                                                                 [7] P. Sobota, B. Duda, Influence of MgCl2 on Grignard reagent composition in
+acquisition, Conceptualization. Michele Cascella: Writing – review
+                                                                                     tetrahydrofuran. III, J. Organomet. Chem. 332 (3) (1987) 239–245, http://dx.
+& editing, Supervision, Project administration, Methodology, Funding
+                                                                                     doi.org/10.1016/{0022}-328X(87)85090-{{8}}.
+acquisition, Conceptualization.                                                  [8] S. Sakamoto, T. Imamoto, K. Yamaguchi, Constitution of Grignard reagent RMgCl
+                                                                                     in tetrahydrofuran, Org. Lett. 3 (12) (2001) 1793–1795, http://dx.doi.org/10.
+Declaration of competing interest                                                    1021/ol010048x.
+                                                                                 [9] R.M. Peltzer, O. Eisenstein, A. Nova, M. Cascella, How solvent dynamics controls
+    The authors declare that they have no known competing finan-                     the schlenk equilibrium of Grignard reagents: A computational study of CH3 MgCl
+cial interests or personal relationships that could have appeared to                 in tetrahydrofuran, J. Phys. Chem. B. 121 (2017) 4226–4237, http://dx.doi.org/
+influence the work reported in this paper.                                           10.1021/acs.jpcb.7b02716.
+
+
+                                                                            8
+M. Bortoli et al.                                                                                                                            Journal of Catalysis 454 (2026) 116619
+
+
+[10] A.M. Henriques, A.G. Barbosa, Chemical bonding and the equilibrium composi-             [30] H. Zhang, V. Juraskova, F. Duarte, Modelling chemical processes in explicit
+     tion of Grignard reagents in ethereal solutions, J. Phys. Chem. A 115 (44) (2011)            solvents with machine learning potentials, Nat. Commun. 15 (2024) 6114,
+     12259–12270, http://dx.doi.org/10.1021/jp202762p.                                            http://dx.doi.org/10.1038/s41467-024-50418-6.
+[11] A. Harrison-Marchand, F. Mongin, Mixed aggregate (maa): A single concept for            [31] J. Xia, Y. Zhang, B. Jiang, The evolution of machine learning potentials for
+     all dipolar organometallic aggregates. 1. Structural data, Chem. Rev. 113 (10)               molecules, reactions and materials, Chem. Soc. Rev. 54 (2025) 4790–4821,
+     (2013) 7470–7562, http://dx.doi.org/10.1021/cr300295w, pMID: 23952819.                       http://dx.doi.org/10.1039/D5CS00104H.
+[12] M.B. Smith, W.E. Becker, The constitution of the grignard reagent - i.                  [32] D. Kuryla, G. Csányi, A.C.T. van Duin, A. Michaelides, Efficient exploration of
+     the reaction between diethyl magnesium and magnesium bromide in di-                          reaction pathways using reaction databases and active learning, J. Chem. Phys.
+     ethyl ether, Tetrahedron Lett. 6 (43) (1965) 3843–3847, http://dx.doi.org/                   162 (11) (2025) 114122, http://dx.doi.org/10.1063/5.0235715.
+     10.1016/S0040-4039(01)89135-8, URL https://www.sciencedirect.com/science/               [33] Anmol T. Karmakar, Unveiling the role of solvent in solution phase chemical
+     article/pii/S0040403901891358.                                                               reactions using deep potential-based enhanced sampling simulations, J. Phys.
+[13] M. Smith, W. Becker, The constitution of the grignard reagent—iii: The reaction              Chem. Lett. 15 (39) (2024) 9932–9938, http://dx.doi.org/10.1021/acs.jpclett.
+     between R2Mg and MgX2 in tetrahydrofuran, Tetrahedron 23 (11) (1967)                         4c02224.
+     4215–4227, http://dx.doi.org/10.1016/S0040-4020(01)88819-0, URL https://                [34] V. Tiwari, T. Karmakar, Atomistic details of nanocluster formation from machine-
+     www.sciencedirect.com/science/article/pii/S0040402001888190.                                 learned-potential-based simulations, Nano Lett. 25 (14) (2025) 5940–5946, http:
+[14] E.C. Ashby, A detailed description of the mechanism of reaction of grignard                  //dx.doi.org/10.1021/acs.nanolett.5c01340.
+     reagents with ketones, Pure Appl. Chem. 52 (3) (1980) 545–569, http://dx.doi.           [35] M. Bocus, R. Goeminne, A. Lamaire, M. Cools-Ceuppens, T. Verstraelen, V.V.
+     org/10.1351/pac198052030545, [cited 2025-11-14].                                             Speybroeck, Nuclear quantum effects on zeolite proton hopping kinetics explored
+[15] W. Schienk jun, Über die natur der grignard-lösungen, Berichte Dtsch. Chem.                  with machine learning potentials and path integral molecular dynamics, Nat.
+     Ges. (A B Ser.) 64 (4) (1931) 734–736, http://dx.doi.org/10.1002/cber.                       Commun. 14 (2023) 1008, http://dx.doi.org/10.1038/s41467-023-36666-y.
+     19310640403, arXiv:https://chemistry-europe.onlinelibrary.wiley.com/doi/pdf/            [36] V. Van Speybroeck, M. Bocus, P. Cnudde, L. Vanduyfhuys, Operando modeling of
+     10.1002/cber.19310640403, URL https://chemistry-europe.onlinelibrary.wiley.                  zeolite-catalyzed reactions using first-principles molecular dynamics simulations,
+     com/doi/abs/10.1002/cber.19310640403.                                                        ACS Catal. 13 (17) (2023) 11455–11493, http://dx.doi.org/10.1021/acscatal.
+[16] K.M. Birkhoff, I. Lin, S. Yruegas, Manipulation of solvent donor effects to over-            3c01945.
+     come the calcium schlenk equilibrium, Inorg. Chem. 64 (16) (2025) 8185–8197,            [37] M. Bocus, S. Vandenhaute, V. Van Speybroeck, The operando nature of isobutene
+     http://dx.doi.org/10.1021/acs.inorgchem.5c00374, pMID: 40238992.                             adsorbed in zeolite H-SSZ-13 unraveled by machine learning potentials beyond
+[17] M.R. Buchner, L.R. Thomas-Hargreaves, C. Berthold, D.F. Bekiş, S.I. Ivlev,                   dft accuracy, Angew. Chem. Int. Ed. 64 (1) (2025) e202413637, http://dx.doi.
+     A preference for heterolepticity - schlenk type equilibria in organometallic                 org/10.1002/anie.202413637.
+     beryllium systems, Chem. – A Eur. J. 29 (60) (2023) http://dx.doi.org/10.               [38] A. Omranpour, J. Elsner, K.N. Lausch, J. Behler, Machine learning potentials for
+     1002/chem.202302495, arXiv:https://chemistry-europe.onlinelibrary.wiley.com/                 heterogeneous catalysis, ACS Catal. 15 (3) (2025) 1616–1634, http://dx.doi.org/
+     doi/pdf/10.1002/chem.202302495 URL https://chemistry-europe.onlinelibrary.                   10.1021/acscatal.4c06717.
+     wiley.com/doi/abs/10.1002/chem.202302495, e202302495.                                   [39] R. Oktavian, R. Goeminne, L.T. Glasby, P. Song, R. Huynh, O.T. Qazvini, O.
+[18] C. Helling, C. Jones, Schlenk-type equilibria of grignard-analogous arylberyllium            Ghaffari-Nik, N. Masoumifard, J.L. Cordiner, P. Hovington, V.V. Speybroeck, P.Z.
+     complexes: Steric effects, Chem. – A Eur. J. 29 (60) (2023) http://dx.doi.org/10.            Moghadam, Gas adsorption and framework flexibility of CALF-20 explored via
+     1002/chem.202302222, arXiv:https://chemistry-europe.onlinelibrary.wiley.com/                 experiments and simulations, Nat. Commun. 15 (2024) 3898, http://dx.doi.org/
+     doi/pdf/10.1002/chem.202302222 URL https://chemistry-europe.onlinelibrary.                   10.1038/s41467-024-48136-0.
+     wiley.com/doi/abs/10.1002/chem.202302222, e202302222.                                   [40] M. del Cueto, X. Zhou, L. Zhou, Y. Zhang, B. Jiang, H. Guo, New perspectives
+[19] J. Rio, Q. Pessemesse, M. Cascella, P.-A. Payard, M.-E.L. Perrin, Organozinc                 on CO2–pt(111) interaction with a high-dimensional neural network potential
+     reagents in solution: Insights from ab initio molecular dynamics and X-ray                   energy surface, J. Phys. Chem. C 124 (9) (2020) 5174–5181, http://dx.doi.org/
+     absorption spectroscopy, Inorg. Chem. 64 (30) (2025) 15774–15782, http://dx.                 10.1021/acs.jpcc.9b10883.
+     doi.org/10.1021/acs.inorgchem.5c02580, pMID: 40698763.                                  [41] V. Sumaria, P. Sautet, Co organization at ambient pressure on stepped pt surfaces:
+[20] C. Vidal, J. García-Álvarez, A. Hernán-Gómez, A.R. Kennedy, E. Hevia, Intro-                 first principles modeling accelerated by neural networks, Chem. Sci. 12 (2021)
+     ducing deep eutectic solvents to polar organometallic chemistry: Chemoselective              15543–15555, http://dx.doi.org/10.1039/D1SC03827C.
+     addition of organolithium and grignard reagents to ketones in air, Angew. Chem.         [42] X. Tian, A. Tosello Gardini, U. Raucci, H. Xiao, Y. Zhuo, M. Parrinello,
+     Int. Ed. 53 (2014) 5969–5973, http://dx.doi.org/10.1002/anie.201400889.                      Electrochemical potential-driven water dynamics control CO2 electroreduction at
+[21] S.A. Hollingsworth, R.O. Dror, Molecular dynamics simulation for all, Neuron 99              the Ag/H2O interface, 2025, http://dx.doi.org/10.26434/chemrxiv-2025-n41q2,
+     (6) (2018) 1129–1143, http://dx.doi.org/10.1016/j.neuron.2018.08.011.                        ChemRxiv.
+[22] W. Shen, T. Zhou, X. Shi, Enhanced sampling in molecular dynamics simulations           [43] L. Xu, W. Shao, H. Jin, Q. Wang, Data efficient and stability indicated sampling
+     and their latest applications—a review, Nano Res. 16 (2023) 13474–13497,                     for developing reactive machine learning potential to achieve ultralong simula-
+     http://dx.doi.org/10.1007/s12274-023-6311-9.                                                 tion in lithium-metal batteries, J. Phys. Chem. C 127 (50) (2023) 24106–24117,
+[23] M. de Giovanetti, S.H. Hopen Eliasson, A.C. Castro, O. Eisenstein, M. Cascella,              http://dx.doi.org/10.1021/acs.jpcc.3c05522.
+     Morphological plasticity of LiCl clusters interacting with Grignard reagent in          [44] Y. Tao, T.J. Giese, D.M. York, Electronic and nuclear quantum effects on proton
+     tetrahydrofuran, J. Am. Chem. Soc. 145 (2023) 16305–16309, http://dx.doi.org/                transfer reactions of guanine–thymine (G-T) mispairs using combined quantum
+     10.1021/jacs.3c04238.                                                                        mechanical/molecular mechanical and machine learning potentials, Molecules 29
+[24] J. Behler, M. Parrinello, Generalized neural-network representation of high-                 (11) (2024) http://dx.doi.org/10.3390/molecules29112703.
+     dimensional potential-energy surfaces, Phys. Rev. Lett. 98 (2007) 146401, http:         [45] M. de Giovanetti, S.H. Hopen Eliasson, S.L. Bore, O. Eisenstein, M. Cascella,
+     //dx.doi.org/10.1103/PhysRevLett.98.146401.                                                  Morphology of lithium halides in tetrahydrofuran from molecular dynamics
+[25] J. Behler, Perspective: Machine learning potentials for atomistic simulations, J.            with machine learning potentials, Chem. Sci. 15 (2024) 20355–20364, http:
+     Chem. Phys. 145 (17) (2016) 170901, http://dx.doi.org/10.1063/1.4966192.                     //dx.doi.org/10.1039/D4SC04957H.
+[26] V. Botu, R. Batra, J. Chapman, R. Ramprasad, Machine learning force fields:             [46] M. Invernizzi, M. Parrinello, Rethinking metadynamics: From bias potentials
+     Construction, validation, and outlook, J. Phys. Chem. C 121 (1) (2017) 511–522,              to probability distributions, J. Phys. Chem. Lett. 11 (7) (2020) 2731–2736,
+     http://dx.doi.org/10.1021/acs.jpcc.6b10908.                                                  http://dx.doi.org/10.1021/acs.jpclett.0c00497.
+[27] M.F. Calegari Andrade, H.-Y. Ko, L. Zhang, R. Car, A. Selloni, Free energy              [47] J. Tammiku-Taul, P. Burk, A. Tuulmets, Theoretical study of magnesium com-
+     of proton transfer at the water–TiO2 interface from ab initio deep potential                 pounds: The Schlenk equilibrium in the gas phase and in the presence of
+     molecular dynamics, Chem. Sci. 11 (2020) 2335–2341, http://dx.doi.org/10.                    Et2 O and THF molecules, J. Phys. Chem. A 108 (1) (2004) 133–139, http:
+     1039/C9SC05116C.                                                                             //dx.doi.org/10.1021/jp035653r.
+[28] O.T. Unke, S. Chmiela, H.E. Sauceda, M. Gastegger, I. Poltavsky, K.T. Schutt, A.        [48] A. Laio, M. Parrinello, Escaping free-energy minima, Proc. Natl. Acad. Sci. USA
+     Tkatchenko, K.-R. Muller, Machine learning force fields, Chem. Rev. 121 (16)                 99 (20) (2002) 12562–12566, http://dx.doi.org/10.1073/pnas.202427399.
+     (2021) 10142–10186, http://dx.doi.org/10.1021/acs.chemrev.0c01111.                      [49] H. Nöth, M. Schmidt, R. Waldhör, Die Verbindung MgCl2 ⋅ 2AsCl3 ⋅ 5thf: ein
+[29] M. Yang, L. Bonati, D. Polino, M. Parrinello, Using metadynamics to build neural             Tetrachloroarsenat(III) oder ein AsCl3 -Solvat des MgCl2 ⋅ 4THF? / The compound
+     network potentials for reactive events: The case of urea decomposition in water,             MgCl2 ⋅ 2AsCl3 ⋅ 5THF: A tetrachloroarsenate(III) or an AsCl3 solvate of MgCl2 ⋅
+     Catal. Today 387 (2022) 143–149, http://dx.doi.org/10.1016/j.cattod.2021.03.                 4THF? Z. Naturforsch. B 51 (7) (1996) 1033–1036, http://dx.doi.org/10.1515/
+     018.                                                                                         znb-1996-0720.
+
+
+                                                                                         9
+M. Bortoli et al.                                                                                                                                 Journal of Catalysis 454 (2026) 116619
+
+
+[50] A.W. Ehlers, G.P.M. van Klink, M.J. van Eis, F. Bickelhaupt, P.H.J. Nederkoorn,            [63] M. Bonomi, G. Bussi, C. Camilloni, G.A. Tribello, P. Banáš, A. Barducci, M.
+     K. Lammertsma, Density-functional study of (solvated) grignard complexes, Mol.                  Bernetti, P.G. Bolhuis, S. Bottaro, D. Branduardi, R. Capelli, P. Carloni, M.
+     Model. Annu. 6 (2000) 186–194, http://dx.doi.org/10.1007/s0089400060186.                        Ceriotti, A. Cesari, H. Chen, W. Chen, F. Colizzi, S. De, M.D.L. Pierre, D.
+[51] F.W. Walker, E.C. Ashby, Composition of Grignard compounds. VI. nature of                       Donadio, V. Drobot, B. Ensing, A.L. Ferguson, M. Filizola, J.S. Fraser, H. Fu,
+     association in tetrahydrofuran and diethyl ether solutions, J. Am. Chem. Soc. 91                P. Gasparotto, F.L. Gervasio, F. Giberti, A. Gil-Ley, T. Giorgino, G.T. Heller,
+     (14) (1969) 3845–3850, http://dx.doi.org/10.1021/ja01042a027.                                   G.M. Hocky, M. Iannuzzi, M. Invernizzi, K.E. Jelfs, A. Jussupow, E. Kirilin,
+[52] L.J. Guggenberger, R.E. Rundle, Crystal structure of the ethyl Grignard reagent,                A. Laio, V. Limongelli, K. Lindorff-Larsen, T. Löhr, F. Marinelli, L. Martin-
+     ethylmagnesium bromide dietherate, J. Am. Chem. Soc. 90 (20) (1968)                             Samos, M. Masetti, R. Meyer, A. Michaelides, C. Molteni, T. Morishita, M. Nava,
+     5375–5378, http://dx.doi.org/10.1021/ja01022a007.                                               C. Paissoni, E. Papaleo, M. Parrinello, J. Pfaendtner, P. Piaggi, G. Piccini, A.
+[53] J.F. Liebman, T. Holm, S.W. Slayden, The thermochemistry of organomagnesium                     Pietropaolo, F. Pietrucci, S. Pipolo, D. Provasi, D. Quigley, P. Raiteri, S. Raniolo,
+     compounds, in: Z. Rappoport, I. Marek (Eds.), The Chemistry of Organomagne-                     J. Rydzewski, M. Salvalaglio, G.C. Sosso, V. Spiwok, J. Šponer, D.W.H. Swenson,
+     sium Compounds, John Wiley & Sons, Ltd, 2008, pp. 101–129, http://dx.doi.                       P. Tiwary, O. Valsson, M. Vendruscolo, G.A. Voth, A. White, T.P. consortium,
+     org/10.1002/9780470751879.ch2, Ch. 2.                                                           Promoting transparency and reproducibility in enhanced molecular simulations,
+[54] D.F. Evans, G.V. Fazakerley, Studies on grignard reagents. part iii. proton                     Nat. Methods 16 (2019) 670–673, http://dx.doi.org/10.1038/s41592-019-0506-
+     resonance spectra of alkyl and aryl grignard reagents, J. Chem. Soc. A (1971)                   8.
+     184–189, http://dx.doi.org/10.1039/J19710000184.                                           [64] J. Zeng, D. Zhang, D. Lu, P. Mo, Z. Li, Y. Chen, M. Rynik, L. Huang, Z. Li, S. Shi,
+[55] E.C. Ashby, G.E. Parris, Composition of Grignard compounds. VII. composition of                 Y. Wang, H. Ye, P. Tuo, J. Yang, Y. Ding, Y. Li, D. Tisi, Q. Zeng, H. Bao, Y. Xia,
+     methyl- and tert-butylmagnesium halides and their dialkylmagnesium analogs in                   J. Huang, K. Muraoka, Y. Wang, J. Chang, F. Yuan, S.L. Bore, C. Cai, Y. Lin, B.
+     diethyl ether and tetrahydrofuran as inferred from nuclear magnetic resonance                   Wang, J. Xu, J.-X. Zhu, C. Luo, Y. Zhang, R.E.A. Goodall, W. Liang, A.K. Singh, S.
+     spectroscopy, J. Am. Chem. Soc. 93 (5) (1971) 1206–1213, http://dx.doi.org/                     Yao, J. Zhang, R. Wentzcovitch, J. Han, J. Liu, W. Jia, D.M. York, W. E, R. Car, L.
+     10.1021/ja00734a030.                                                                            Zhang, H. Wang, Deepmd-kit v2: A software package for deep potential models,
+[56] R.M. Salinger, H.S. Mosher, Infrared spectral studies of grignard solutions, J. Am.             J. Chem. Phys. 159 (5) (2023) 054801, http://dx.doi.org/10.1063/5.0155600.
+     Chem. Soc. 86 (9) (1964) 1782–1786, http://dx.doi.org/10.1021/ja01063a026.                 [65] J. Zeng, D. Zhang, A. Peng, X. Zhang, S. He, Y. Wang, X. Liu, H. Bi, Y. Li, C.
+[57] I. Manasi, M. Bortoli, D.T. Bowron, M. Campana, O.S. Hammond, T.F. Headen,                      Cai, C. Zhang, Y. Du, J.-X. Zhu, P. Mo, Z. Huang, Q. Zeng, S. Shi, X. Qin, Z.
+     J. Hooton, E. Hevia, M. Cascella, O. Eisenstein, K.J. Edler, Are grignard reactions             Yu, C. Luo, Y. Ding, Y.-P. Liu, R. Shi, Z. Wang, S.L. Bore, J. Chang, Z. Deng,
+     in deep eutectic solvents interface-driven? Angew. Chem. Int. Ed. Early Access                  Z. Ding, S. Han, W. Jiang, G. Ke, Z. Liu, D. Lu, K. Muraoka, H. Oliaei, A.K.
+     (2025) http://dx.doi.org/10.1002/anie.202513649.                                                Singh, H. Que, W. Xu, Z. Xu, Y.-B. Zhuang, J. Dai, T.J. Giese, W. Jia, B. Xu,
+[58] L. Restaino, R. Mincigrucci, M. Kowalewski, Distinguishing organomagnesium                      D.M. York, L. Zhang, H. Wang, Deepmd-kit v3: A multiple-backend framework for
+     species in the Grignard addition to ketones with X-ray spectroscopy, Chem. Eur.                 machine learning potentials, J. Chem. Theory Comput. 21 (9) (2025) 4375–4385,
+     J. 30 (70) (2024) e202402099, http://dx.doi.org/10.1002/chem.202402099.                         http://dx.doi.org/10.1021/acs.jctc.5c00340.
+[59] L. Martínez, R. Andrade, E.G. Birgin, J.M. Martínez, Packmol: A package for                [66] T.D. Kühne, M. Iannuzzi, M. Del Ben, V.V. Rybkin, P. Seewald, F. Stein, T.
+     building initial configurations for molecular dynamics simulations, J. Com-                     Laino, R.Z. Khaliullin, O. Schütt, F. Schiffmann, D. Golze, J. Wilhelm, S. Chulkov,
+     put. Chem. 30 (13) (2009) 2157–2164, http://dx.doi.org/10.1002/jcc.21224,                       M.H. Bani-Hashemian, V. Weber, U. Borštnik, M. Taillefumier, A.S. Jakobovits, A.
+     arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.21224 URL https://                    Lazzaro, H. Pabst, T. Müller, R. Schade, M. Guidon, S. Andermatt, N. Holmberg,
+     onlinelibrary.wiley.com/doi/abs/10.1002/jcc.21224.                                              G.K. Schenter, A. Hehn, A. Bussy, F. Belleflamme, G. Tabacchi, A. Glöß, M. Lass,
+[60] A.P. Thompson, H.M. Aktulga, R. Berger, D.S. Bolintineanu, W.M. Brown, P.S.                     I. Bethune, C.J. Mundy, C. Plessl, M. Watkins, J. VandeVondele, M. Krack, J.
+     Crozier, P.J. in ’t Veld, A. Kohlmeyer, S.G. Moore, T.D. Nguyen, R. Shan, M.J.                  Hutter, CP2K: An electronic structure and molecular dynamics software package
+     Stevens, J. Tranchida, C. Trott, S.J. Plimpton, LAMMPS - a flexible simulation                  - Quickstep: Efficient and accurate electronic structure calculations, J. Chem.
+     tool for particle-based materials modeling at the atomic, meso, and continuum                   Phys. 152 (19) (2020) 194103, http://dx.doi.org/10.1063/5.0007045.
+     scales, Comp. Phys. Comm. 271 (2022) 108171, http://dx.doi.org/10.1016/j.cpc.              [67] J.P. Perdew, K. Burke, M. Ernzerhof, Generalized gradient approximation made
+     2021.108171.                                                                                    simple, Phys. Rev. Lett. 77 (1996) 3865–3868, http://dx.doi.org/10.1103/
+[61] G. Bussi, D. Donadio, M. Parrinello, Canonical sampling through velocity                        PhysRevLett.77.3865.
+     rescaling, J. Chem. Phys. 126 (1) (2007) 014101, http://dx.doi.org/10.1063/                [68] S. Grimme, J. Antony, S. Ehrlich, H. Krieg, A consistent and accurate ab initio
+     1.2408420.                                                                                      parametrization of density functional dispersion correction (DFT-D) for the 94
+[62] G.A. Tribello, M. Bonomi, D. Branduardi, C. Camilloni, G. Bussi, Plumed 2:                      elements H-Pu, J. Chem. Phys. 132 (15) (2010) 154104, http://dx.doi.org/10.
+     New feathers for an old bird, Comput. Phys. Comm. 185 (2014) 604–613,                           1063/1.3382344.
+     http://dx.doi.org/10.1016/j.cpc.2013.09.018.
+
+
+
+
+                                                                                           10
+

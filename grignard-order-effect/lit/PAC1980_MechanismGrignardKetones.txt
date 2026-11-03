@@ -1,0 +1,1837 @@
+Pure & Appi. Chem., Vol.52, pp.545—569.
+Pergann Press Ltd. 1980. Printed in Great Britain.
+© IUPAC
+
+
+
+
+          A DETAILED DESCRIPTION OF THE MECHANISM OF REACTION OF GRIGNARD REAGENTS
+          WITH KETONES.
+
+
+
+          E. C. Ashby
+
+          School of Chemistry, Georgia Institute of Technology, Atlanta, Georgia 30332 U.S.A.
+
+
+
+          Abstract - A detailed description of the reaction of Grignard reagents with ketones
+          is presented based on several studies. The composition of Grignard reagents in
+          Et20 and THF is described based on molecular association and NMR studies. The
+          cause and mechanisms of formation of pinacol and hydrol in the reaction of "CH3MgBr"
+          with benzophenone is also described. Several probes to detect the radical nature
+          of the R group in RMgX and the radical anion nature of the ketyl produced in the
+          reduction of the ketone, were used to study the electron transfer nature of Grig-
+          nard reagent addition to ketones. The results of thesestudies show clearly that
+          Grignard reagents react with ketones by both a polar and electron transfer pathway.
+          Which of these two pathways involves the lowest energy depends on the nature of the
+          R group of the Grignard, the purity of the magnesium used to prepared the Grignard
+          reaaent. the nature of the ketone and the solvent.Grignard reagents that are diffi-
+          cult to oxidize (e.g. 1° R group), ketones that are difficult to reduce (e.g. ace-
+          tone), solvents of low polarity (e.g., Et,O) and Grignard reagents made from pure
+          magnesium metal favor a polar pathway, an usually only 1,2-addition product is
+          formed. On the other hand, Grignard reagents that are easily oxidized (e.g. 3°
+          R group), ketones that are easily reduced. (e.g., Ph2C=O) solvents of high polarity
+          (e.g., THF, HMPA) and Grignard reagents made from magnesium containing 1st row
+          transition metals, favor an electron transfer pathway. Usually 1,2- and 1,6-addi-
+          tion products are formed as well as some pinacol.
+
+
+
+          INTRODUCTION
+
+ I am, of course, deeply honored to be invited to present our work carried out at Georgia
+ Tech concerning the mechanism of Grignard compound addition to ketones which began in 1964,
+ and which is still in progress (see note a). To have spent so many years studying the
+ mechanism of a single reaction type, I believe, requires some justification. However, in
+ this particular case, I believe such effort is justified in that the reaction of Grignard
+ reagents with ketones is undoubtedly one of the most fundamental reactions in all of organic
+ chemistry, and therefore should be understood in some depth. In addition, whatever has been
+ learned in this study, hopefully can be applied in a broader way to other reactions
+ involving main group organometallic systems, e.g. organolithium and organoaluminum, since
+ detailed mechanistic studies of reactions in main group metal chemistry are rare indeed.
+ We have also made several discoveries of a practical nature during these mechanistic studies
+ which in themselves could easily justify the time and effort spent in this area. The
+ years spent in this work have not been dull since every time we seemed to be coming closer
+ to the end of our study, another major problem in understanding arose which necessitated
+ more effort. There have been a number of times during the past 14 years that the thought of
+ abandoning our efforts crossed our minds as we met what seemed like insurmountable problems.
+ However, because of the unusual experimental skill and determination of my students, who did
+ this work,I am happy to report that we have finally arrived at what we believe to be the
+ beginning of a much better understanding of the mechanism of Grignard reactions.
+
+          COMPOSITION OF GRIGNARD REAGENTS IN ETHER SOLVENTS
+
+ In order to study the mechanism of Grignard reagent addition to any organic substrate, it is
+ necessary first to understand the nature of Grignard reagents in solution. If Grignard
+ reagents consist of a number of species in soltution, it is also important then to determine
+ which of these species is the most reactive toward the organic substrate being studied. A
+
+
+ Note a. I would like to dedicate this presentation in honor of a very prominent chemist
+ who has contributed greatly to the field of Grignard chemistry, Professor Henri Normant on
+ the occasion of his 72nd birthday.
+
+
+
+                                              545
+546                                                       E.. C. ASHBY
+
+
+
+study of the prior art inthisarea of solution composition shows an evolution of thought
+(Table 1) over the years until 1957 when Dessy presented what appeared to be incontro-
+
+
+          Table 1. Composition of Grignard Reagents in Ether Solvents. A History. (1-6)
+
+
+          YEAR                    CONTRIBUTOR                              COMPOSITION
+
+          1901                      Gri gnard                       RMgX
+
+          1912                      Jol i boi S
+                                                                    R2Mg •MgX2
+
+          1929           Schlenk and Schlenk                        2RMgXR2Mg + MgX2
+          1957                       Dessy                          R2Mg .MgX2
+
+
+          1963                       Ashby
+
+
+
+vertable evidence (28Mg isotopic labeling experiments) supporting the representation of
+Grignard reagents by an unsymmetrical dimeric structure (RMg.MgX2). For some years, the
+unsymmetrical dimeric representation of Grignard reagents received wide acceptance as
+evidenced by reports from several research groups (7-9) representing the mechanism of Grig-
+nard reagent addition to ketones as involving RMg•MgX2 in the transition state (eq. 1).
+
+
+
+
+                                                         R2C'" Mg-X
+                 R2C=O +                                                                      (1)
+                                 R'2MgMgX2'                                      R2COM9()MR
+                                                                                  R1
+
+
+
+
+                                                              \7'
+
+
+ In 1963, we questioned the representation of Grignard reagents by a single di'nerlc structure
+ (5), and we also questioned (6) the non-exchange studies involving EtMg and 28Mg Br2 which
+ proved (?) the non-existence of RMgX species in solution. Our initial doubt was based on
+ the fact that we and others had shown earlier that RAl, R3B and RHg compounds do exchange
+ readily with their corresponding halides to form R2A1X, R2BX and RHgX species and could see
+ no particular reason why RMg compounds would not redistribute with magnesium halides.
+ Initially we were able to show that bromo- and iodo-Grignard reagents are not best repre-
+ sented by a dimeric structure in solution, especially at low concentration.
+
+ The following Figures(l-3) display the association curves of various Grignard reagents in
+ ether solvents. Figure 1 shows that typical Grignard reagents (where the halogen is Br or
+
+
+                                                   CH3MgBr
+
+
+
+
+             0     0.5     .0       .5      2.0   2.5   3.0   3.5
+                                Concentration Cm)
+
+           Fig. 1. Association of Alkyl- and Arylmagrwsium bromides and iodides(
+           in Et2O.
+                               .              Reactions of Grignard reagents with ketones      547
+
+
+I), are monomeric at low concentration and associate in a linear polymeric fashion at
+higher concentrations (10,11). The deviation from a straight line at concentrations > lm
+have been shown by equilibrium constant calculations to be due to deviations from ideality
+at the higher concentrations.
+
+Figure 2 shows that Grignard reagents (where the halogen is chlorine)are predominantly
+dimeric over a wide concentration range with deviation from ideality greatest for the non-
+branched reagents (10,11).
+         4.0
+
+
+         3.5
+
+         3.0                                                C2H5MQCI
+
+
+
+
+       j2s3H;Mc1
+         050             0.5       1.0      (.5     2.0    2.5     3.0       3.5
+                                         Concentration (ml
+
+
+
+Fig. 2. Association of Alkylmagnesium chlorides in Et20
+Figure 3 shows that unlike diethyl ether, in THF, RMgX compounds (where X = Cl, Br and R)
+are monomeric even at high concentration. We did find later that RMgF and RMgOR compounds
+
+
+               2.0
+
+
+
+
+         —     (.5
+
+
+
+
+         I     (.0
+
+
+
+
+                     0               0.5              1.0              1.5         2.0   2.5
+                                                     Concentration (ml
+
+
+
+Fig. 3. Association of R2Mg and RMgX compounds in THF.
+
+are dimeric even in THF due to the stronger bridging characterics of F and OR groups com-
+pared to Cl, Br and R. Thus, it is clear that both the solvent and the nature of the X
+group is important in describing the nature of Grignard compounds in solution.
+
+Although the association data just presented provide valuable information concerning the
+degree of association of the various species in Grignard solutions, the data say nothing
+about the identity of the species In solution. Figure 4 shows the results of a variable
+temperature NMR study of the Grignard reagent prepared from CH3Br and magnesium metal in
+diethyl ether (12). The spectra show that although the exchange of methyl groups is fast
+on the NMR time scale at room temperature such that only one average signal is observed;
+at temperatures of -100°C., two distinct singlet signals are observed. The lower field
+signal is assigned to the CH3MgBr species since addition of MgBr2 to the Grignard solution
+increased the intensity of this signal relative to the higher field signal. The higher
+field signal is assigned to (CH3)2Mg since it has exactly the same chemical shift as pure
+(CH3)2Mg. Thus both the RMgX and RMg species in Grignard reagents have been identified
+and shown to account for the major species in solution.
+
+The following conclusions, shown in Figure 5, can be drawn from these studies. In diethyl
+ether, Grignard reagents (where X = Br, I) are best described by the Schlenk equilibrium
+with monomeric species present at low concentration and linear polymeric association taking
+548                                           E. C. ASHBY
+
+
+
+
+                                                       +300
+
+
+
+
+                      11 :oo                         l2.OO
+                                        T
+
+         Fig. 4. 100 MHz spectra of CH3Br Grignard reagent in Et2O.
+
+
+
+          Et20
+
+
+                               T    D       RMgX       R2Mg + MgX2    D   T
+
+
+
+                      X =   F, Cl
+                                            R\ /X\ OEt2
+                                        OEt'
+                                          2
+                                             MgMg
+
+                      X = Br, I
+
+
+
+
+          THF
+
+                      X =   Cl, Br,I        2 RMgX      R2Mg + MgX2
+
+
+                      X = F, OR
+                                              RN /X\ ,THF
+                                                     Mg' Mg
+
+         FIG. 5.   Composition of Grignard reagents in solution.
+
+
+
+place at higher concentration. However, when X = Cl and F, Grignard reagents are best
+described by a double halogen bridged dimer at all concentrations. On the other hand, in
+THF all Grignard reagents, where X = Cl, Br and I as well as R2Mg and MgX compounds, are
+monomeric at all concentrations. Only RMgF and RMgOR compounds are dimeric in THF.
+
+The results of the solution composition studies are significant in that they established
+that both RMgX and R2Mg species exist in solution and thus both species are capable of
+reacting with carbonyl compounds. Secondly, it is clear that mechanistic studies involving
+Grignard reagent addition to organic substrates should be carried out using an "RMgBr"
+                         Reactions of Grignard reagents with ketones                         549
+
+
+compound at low concentration in order to avoid the existence of higher associated species
+in solution which would complicate an already difficult kinetic interpretation.
+
+Table 2 describes the problems associated with theiechanistic interpretation of the reaction
+of
+
+         TABLE 2. Reactions of Grignard reagents with ketones. Major areas of Dispute
+
+
+                                                     H 0+
+          R'.MgX +           —4 R                    —----*
+                     R2C=O          2-COMgX                    R2-COH
+                                      R'                         R'
+
+
+
+           1. Reaction Order of Grignard Reagent
+
+           2. Nature of Reactive species (RMgX, R2Mg, etc.)
+
+           3. Origin of By-Product Formation
+
+          4. Nature of Alkyl Transfer (Polar or SET Mechanism)
+
+
+
+Grignard reagents with ketones. Prior to 1972, the integral order behavior of the organo-
+magnesium reactant had not been determined unequivocally, and it was not known whether
+RMgX, R2Mg or some other species was the actual alkylating agent. In the reaction of
+"CH3MgBr' with Ph2C=0,both Ph2C(H)OH and Ph2C(H)OHC(H)OHPh2 had been observed in significant
+yield under certain reaction conditions without any evidence for the pathway of formation.
+Finally, it would be important to determine if the R group from RMgX transfers to the car-
+bonyl carbon atom via an electron transfer (radical) or polar pathway. We believe that we
+have satisfying answers to all of these questions.
+
+The system that we chose to study is shown in Table 3. In order to determine unequivocally
+
+
+         TABLE 3. Model system selected for kinetic studies.
+
+
+
+
+                                              Et20       Ha0
+          'CH3MgBr' +
+
+                                CH3                                     3 CH3
+
+         1. Kinetics determined in excess ketone.
+
+         2. Concentration of Grignard < 0.lM.
+
+         3. Grignard prepared from single crystal Mg (>99.9995% pure)
+
+         4. No enolization or reduction possible
+
+         5. Yield of product, 100%.
+
+
+
+the integral order behavior of the Grignard reagent, kinetic studies were carried out in
+excess ketone (13). This kind of study had not been attempted earlier since it was assumed
+that small differences in Grignard concentration would be difficult to determine; however,
+it turns out that the change in concentration of the Grignard reagent and ketone with time
+can be determined accurately by following the disappearance of the uv absorption band due
+to the complex formed between the Grignard reagent and the ketone.
+It was important to keep the Grignard concentration below O.lm so that associated species
+would not present a problem in the interpretation of kinetic data. It was also important
+to prepare the Grignard reagent from unusually pure magnesium metal since we had found
+that even ppm of certain transition metal impurities in Grignard reagents cause the
+formation of by-products in significant amounts. The system studied is particularly
+attractive since enolizaton of the ketone is not possible (no ce-hydrogen present in the
+ketone) and reduction of the ketone is not possible (no s-hydrogen present in the Grignard
+reagent).
+550                                                    E. C. ASHBY
+
+
+Figure 6 shows that the reaction of 'CH3MgBr" with 2-methylbenzophenone (2-MBP) does not ex-
+hibit a simole first order disappearance of Grignard reaqent, but that the reaction is more
+                      0.8
+                      0.6
+                      0.4
+
+         A
+                      0.2
+          A0
+                      0.1
+
+
+
+
+                      0.04
+
+                                      200      400     600       800
+                                                 time (seconds)
+         Fig. 6. Reaction of "CH3MgBr" with 2-MBP in Et20.
+
+complex. Therefore,our approach was to carry out a pseudo first-order initial rate study
+so that we might determine the integral order behavior of the Grignard reagent in the initial
+stages of the reaction before the complicating features set in.
+
+In this connection, we proposed a model to describe what we thought might be happening in
+the initial stages of the reaction (Figure 7). In this model, all magnesium species react
+
+
+
+               2 CH3MgBr                                     +
+                                              (CH3)Mg                MgBr2
+
+
+
+               K1JI R2C=0                   K2J1R2C0             K3JI R2C=0
+
+                                                                              Br
+                                            R C=0 •              R,C=0 .
+               R2C=0                         2
+                                CH3                          3         ( 3)
+                   (C1)                         (C2)
+
+
+                  k1j,
+                                               k2
+
+
+             R2C-OMgBr                      R2C-OMgCH3
+
+
+                CH3                           CH3
+
+
+          Fig. 7. Model for initial stages of reaction.
+
+
+
+rapidly to form a complex with the ketone, the complex then dissociates to form product ex-
+cept in the case of C3. All of the                parameters Cl, C2, C3 and K1, K2, K3 and
+k2 (14) were determined individually by established methods, and k1, the rate of reaction
+of the CH3MgBr species with 2-MBP, was determined experimentally as shown in Table 4. A
+differential rate expression (eq. 2) describing the disappearance of C1 in terms of all of
+the constants described in eq. 2 was derived for the model system in Fig. 7. The important
+observation is that for a series of kinetic experiments, the rate constant (k1) isreasonably
+constant indicating that the proposed model is correct and that all of the
+parameters substituted in the differential rate expression are also correct.
+
+
+
+         d[C1]
+         ____         =
+                            (k2[k(l+K3[K]) + k)[K]
+                            ____________________________                                 (2)
+                                                                 rc110
+                            (1+K[K] + 2/içTi+K3[iiT
+                        Reactions of Grignard reagents with ketones                      551
+
+
+
+        TABLE 4. Determination of k1. Rate Constants Calculated for Reaction of
+        0.0124M "CH3MgRr" with 2-MBP.
+
+
+
+         [K]0,M         Initial kObS(sec')             k1 ( mole1 sec1)
+
+         0.128              0.00445                        0.0284
+         0.230              0.00685                        0.0253
+         0.343              0.00879                        0.0215
+         0.448              0.0108                          0.0213
+         0.563              0.0138                         0.0245
+         0.668              0.0149                          0.0222
+                                                       Ave. 0.0239
+
+
+
+
+In order to test this conclusion further, MgBr2 was added to 'CH3MgBr' in order to shift the
+Schlenk equilibrium to the RMgX side followed by reaction of this reagent with 2-MBP. In
+this way, k1 (rate constant for reaction of CH3MgBr species with ketone) could be determined
+directly. Much to our surprise (Figure 8), the first order plot indicating disappearance of
+
+
+
+                 0.7
+
+                 0.5
+
+
+                 0.3
+
+
+          A 0.2
+
+
+                 0.1
+
+                 0.08
+
+                                       100      U
+                                      time (seconds)
+         Fig. 8. Pseudo 1st order plot for the reaction of 'CH3MgBr' (with added
+         MgBr) with 2-MBP.
+
+reagent was linear unlike the result when the Grignard reagent was used without any extra
+added MgBr2. This result was most fortunate in that it indicates that the reason for the
+observed curvature in the pseudo 1st order plot involving only the Grignard reagent (no
+extra added MgBr) is due to the fact that the Grignard reagent is disappearing in a more
+complex way (involving the Grignard reagent in the complexity), whereas when excess MgBr is
+added, the MgBr2 serves to eliminate this complication. The suggestion at this point is
+that the Grignard reagent disappears in a 1st order fashion in its reaction with ketone but
+it also disappears by complexation with the product to form RMgXR0MgX; however, when excess
+MgBr is. present, the product can complex the stronger Lewis acid (MgBr) and hence the
+Grignard reagent disappears in a true 1st order fashion.
+
+In any event, the kinetic results for a series of experiments (Table 5) show not only that
+kl is relatively constant, but that k1 compares very favorably with k1 calculated from the
+differential rate expression described earlier (eq. 2).    Thus, from these results, the
+initial stages of the reaction appear to be as described in the model with the complication
+of first order kinetic deviation due to reaction of Grignard reagent with product. The
+latter part of the reaction was studied by adding stoichiometric amounts of preformed pro-
+duct to the Grignard reagent before addition of the ketone. It was possible to show that
+the Grignard reagent complexes with product in both 1:1 (GP) and 1:2 (GP2) ratio and that
+these new complexes then react with the ketone at a slower rate than the pure Grignard
+reagent (Figure 9). We were able to prepare GP and GP2 separately and show that the MMR
+spectra are the same as the spectra exhibited by the species formed in the Grignard reaction
+in the probe of the NMR spectrometer at -70°C. We were also able to study the rate of
+552                                                 E. C. ASHBY
+
+
+
+         TABLE 5. Reaction of 0.0124 M methylmagensium bromide with 0.462 M
+         2-methylbenzophenone in the presence of added magensium bromide.
+
+                                                        Ratio of
+                              Initial kobsd              MgBr2:                      k1 ,emo11
+          [MgBr], M                   sec 1             Gri gnard                — sec
+
+          0.0480                   0. 00680                 4:1                      0.0251
+          0.0240                   0.00672                  2:1                      0.0243
+          0. 01 20                 0.00672                  1:1                      0.0239
+          0.00623                  0.00693                                 Av. 0.0244
+          0.00268                  0. 00872
+
+          0.00156                  0.00930
+          0.000                    0.0104
+
+
+
+
+                                              GP [ketonel)
+                                                    k4
+                                                           product
+
+          G + K-+ product
+
+                                              G•2 [ketone]
+                                                     k5
+                                                           product
+
+
+
+
+                                                                                 R
+
+
+
+                                                                                          -Br
+
+
+                       R
+
+                     (G•P)
+                                                                        (G•P2)
+         Fig. 9. Latter stages of the reaction of Grignar reagent with ketone.
+
+reaction of GP and GP2 with 2-MBP and show that these are concurrent pseudo 1st order
+reactions.
+
+Thus it appears clear that the kinetic aspects of the reaction can be described in some
+detail by the following series of reactions:
+
+                             2 CH3MgBr —.                                 +
+                                                     (CH3)2Mg                         MgBr2
+
+
+                                      R2C=0                   R2C=0                       R2C=0
+
+                             R2C=0.                  R2C=0,                           R2C=0
+                                       'Mg-Br
+                               I        I                                                        'Mg-Br
+                                                              '1g-CH3
+                                       CR3                        CR3                            Br
+
+
+                           R2C-OMgBr                R2C-OMgCH3
+
+                              CR3                     CR3
+
+                               (A)                          (B)
+                           Reactions of Grignard reagents with ketones                           553
+
+
+
+
+               R2C-OMgCH3
+                                  +
+                                           MgBr2
+                                                          —+    R2C-OMgBr
+                                                                                   +
+                                                                                       CH3MgBr
+
+                  CH3                                             CH3
+
+                    (B)                     (C)                      (A)
+
+
+
+                                                               /B\
+                    R2C-OMgBr + CH3MgBr             ± CHMg           ,,,Mg—Br
+                                                                 0
+                        CH3                                    R2CCH3
+
+                    (A)                                         (GP)
+
+
+
+
+                                                                              R2CCH3
+
+
+                                                            /B\ /O\
+                2 R2C-OMgBr +         CH3MgBr             CH3M/M\/M_Br
+                     CH3
+
+                    (A)                                          R2C-CH3
+
+
+                                                                           (GP2)
+
+
+
+
+                                           RC=O
+                  GP + R2C0                 CH3ti()MgBr —                    2R2C0:gBr
+
+
+                                                    R2CCH3                         (A)
+
+
+
+
+                                                               R2CCH3
+
+
+                 GP2 +        R2C=O
+                                      __
+                                            R2C=0
+                                                    / r\
+                                                      B
+                                                       \
+                                            CH3MgMgMgBr-.-3R2C-OMgBr
+                                                      1                                   CH3
+                                                    R2CCH
+                                                                                         (A)
+
+
+
+
+This series of equations shows that both the CH3MgBr and (CH3)Mg species react with the
+ketone. Although the reaction of (CH3)Mg with ketone in ether is approximately 10 times
+faster than CH3MgBr, there is about 10 times more CH3MgBr than (CH3)2Mg in an ether solution
+of Grignard reagent prepared from methyl bromide and magnesium. Therefore, there is roughly
+as much reaction taking place via CH3MgBr as (CH3)2Mg species.
+
+Although (B) is capable of reacting further with ketone, we have found that this reaction is
+relatively slow compared to the reaction of (B) with MgBr2. This latter reaction produces
+the product plus more Grignard reagent and is very fast on the reaction time scale. There-
+fore, the formation of(B)cannot account for the observed pseudo 1st order deviation of the
+reaction. The Grignard reagent then reacts with the product in 1:1 and 1:2 ratio to form
+GP and GP2 which then react further with ketone to form more product. The complication of
+forming GP and GP2, of course, is observed because the reaction is carried out in excess
+ketone. When the reaction is carried out in excess Grignard reagent, this complication
+should not take place since plenty of MgBr is available to complex the product without
+involving RMgX or RMg species.
+Two questions were resolved by the kinetic studies just described: (1) the controversy con-
+cerning the integral order behavior of the Grignard reagent was settled, i.e. it was shown
+554                                       E.. C. ASHBY
+
+
+unequivocally that the reaction is 1st order in organomagnesium compound and (2) the
+question concerning the nature of the reactive species was settled, i.e. that reaction in
+ether proceeds by reaction of both the RMgX and R2Mg species to about the same extent.
+
+         ELECTRON TRANSFER NATURE OF THE REACTION .         PINACOL FORMATION.
+
+While these questions were being pursued, several reports appeared in the literature
+begining in 1968, suggesting that the reactions of Grignard reagents with ketones are radi-
+cal reactions involving electron transfer from the Grignard reagent to the ketone forming a
+free radical and a ketyl as intermediates. The work of Fauvarque was both early and very
+important in this connection (15). It was reported (Table 6) that ketyl spectra could be
+
+         TABLE 6. ESR observations in the reaction of (PhCH)Mg (O.375M) with
+         fluorenone (O.345r1).
+
+          Solvent                          %Ketyl
+
+           Et20
+           THF                              >0.1
+
+           DME                                  0.5
+
+           Et3N                             >0.2
+
+           HMPA                                 36
+
+
+
+observed by e.s.r. spectroscopy when fluorenone was allowed to react with dibenzylmagnesium
+in various polar solvents. The concentration of ketyl was found to be proportional to the
+polarity of the solvent with a substantial amount of ketyl (36%) being observed in HMPA.
+The amount of ketyl observed was also proportional to the particular organomagnesium com-
+pound used with electron transfer being observed to a greater degree with those RMg com-
+pounds whose R group forms the most stable radical.
+
+Fauvarque suggested a mechanism of organomagnesium compound addition to ketones very similar
+to that suggested a year later by Blomberg and Mosher(l6). The mechanism suggests that
+1,2-addition product can be formed not only through a pathway involving a complex (kl),
+
+
+                                                                k
+                                                  ,Cl
+         t-BuCH2MgC1 + Ph2C=O     Ph2C=0. . •Mg                 —--
+                                                                          Ph2C-OMgC1
+
+                                                                             H2But
+
+                    1k3
+
+
+                  Ph2C-OMgC1 + t-BuCH2•   —f—
+                                                     Ph2C
+                                                            —   Ph2
+                                                                      +
+                                                                            t-BuCH3
+                                                        OMgC1 OMgCl
+
+
+
+but also by a SET pathway (k5) involving coupling of R with the ketyl . The ketyl can also
+couple with itself to form the pinacol and does so in approximately 20% yield. It is sig-
+nificant that neopentane is also formed in 20% yield. The work of Holm (17) with respect
+to the SET nature of Grignard reactions is most significant. Holm proposed a mechanism in
+1971 similar to that proposed by Fauvarque and Blornberg-Mosher and presented strong sup-
+porting arguments based on linear free energy studies. His conclusions were broader than
+previous workers stating that t-butyl Grignard reagents react with aromatic ketones via a
+SET process and methyl Grignard reagents react via a polar process. Evidence was presented
+sometime later to support the SET nature of ketone reduction by Grignard reagents.
+
+We were very much aware of these reports appearing between 1968 and 1971 concerning the
+radical nature of Grignard reactions. We also made some observations during this time that
+caused us to believe that the reaction was more complicated than the normally depicted polar
+process. However, at the time, we hadall the problems we could handle simply trying to
+determine the kinetics of the reaction. For example, we found (Fig. 10) that the observed
+rate constant varied with the initial ketone concentration (upper curve); however, when the
+Grignard reagent was prepared from single crystal magnesium in excess CH3Br, there was no
+                     1
+                         Reactions of Grignard reagents with ketones                     555
+
+
+
+
+                           Concentration
+
+
+
+
+         Fig. 10. Effect of initial ketone concentration on rate constants.
+
+
+no variation and the overall reaction (lower curve) was slower (18). The second observation
+involved the effect of magnesium metal purity and excess magnesium or CH3Br in the pre-
+paration of the Grignard reagent on the yield of 1,2-addition product (Table 7) (19).
+
+
+         TABLE 7. Product analysis for the Reaction of "CH3MgBr' with Ph2C=0 in
+         Et20 at 25°C.
+
+
+                                                         ----% Addition—
+
+          Grignard Prepared                         Doubly          Single
+             in_excess           _________          Sublimed Mg    Crystal Mg
+
+
+                Mg                    57                92             96
+                                     112               85              95
+                                     470                73             88
+
+
+
+             CH3Br
+                                      60                98             98
+                                     117                97             98
+                                     487                92             95
+
+
+
+
+It is clear from these data that the ratio of Grignard reagent to ketone, the purity of the
+magnesium metal used to prepare the Grignard reagent, and whether the Grignard reagent is
+prepared in excess magnesium or excess CH3Br, are all important in determining the yield of
+1 ,2-addition product.
+
+Since the purity of magnesium might possibly be an important factor in the results of Table
+7, it was decided to study the effect of pinacol formation in the reaction of "CH3MgBr" with
+benzophenone in Et20 with respect to added transition metal halide (20). All first row
+transition metal halides were found to be effective in pinacol formation; particularly
+iron (Table 8). These data show that "CH3MgBr' addition to benzophenone is very sensitive
+to transition metal impurities in the magnesium metal whereas 't-Bu-MgCl" reaction with
+benzophenone is independent of transition metal impurity in the magnesium metal. The
+suggestion is that the methyl Grignard reagent proceeds predominantly via a polar pathway
+when the reagent is prepared from pure magnesium; however, a SET pathway can be effected
+by transition metal catalysis. The data also indicate that the tertiary Grignard reagent
+is already proceeding by a SET process and therefore addition of catalytic amounts of
+transition metal halide have little effect on the reaction pathway,including pinacol for-
+mation.
+
+If the reaction of 'CH3MgBr' with benzophenone in the presence of added FeCl3 produces
+556                                      E. C. ASHBY
+
+
+
+         TABLE 8. Comparison of the reaction of benzophenone with Grignard
+         reagents in a 1 .5:1 ratio with added FeC13
+
+
+
+          Grignard       FeC1 3(ppm)     1 ,2—Addition     1 ,6-Addition         Pinacol
+
+
+                               0            100                                      0
+          CH3MgBr
+             'I
+                              40             97                                      3
+
+                             400             81                                     19
+
+                            4000             54                                     46
+
+
+
+          t-BuMgC1             0             42                 48                  10
+
+             II
+                             400             38                 49                  12
+
+
+
+
+benzopinacol, it isimportant to determine if the ketyl is the precursor of the pinacol, and
+if so, which ketyl is involved. We prepared by unequivocal methods the four possible ketyls
+(Figure l1)formedinthe reaction and compared their esr spectra to the spectrum obtained for
+
+
+
+
+         Ph2C-OMgBr        Ph2C-OMgCH3       (Ph2C-ö)2        Ph2C-g0CPh2
+
+                                                                           CH3
+
+              (C)              (D)                (E)                (F)
+
+
+
+         Fig. 11. Possible ketyls formed in the reaction of 'CH3MgBr" with Ph2C=0
+
+
+the reaction in progress at low temperature in the esr cavity (21). Ketyl (C) was shown to
+have the same esr spectrum as that observed during the course of the reaction of "CH3MgBr'
+and benzophenone in the esr cavity. Furthermore, when the reaction was quenched at any
+time, the amount of pinacol formed was that calculated based on the absorption of the ketyl
+as determined by u.v. analysis.
+
+When the reaction of 'CH3MgBr' with 2-MBP in the presence of FeC13 was allowed to take place
+at -30°C and then quenched, two pinacols (in nearly equal amounts) were formed, the erythro
+and threo isomers (20).    However, if the reaction mixture was allowed to warm to room
+temperature, only one isomer was formed. Therefore one pinacol is the kinetic product and
+the pinacol produced at room temperature is the thermodynamic product. It is interesting
+to note that the pinacol to 1 ,2-addition ratio is constant (1 .5) throughout the reaction
+indicating that both reactions proceed via the same intermediate (Table 9). The assignment
+of the erythro and threo pinacols was based on the rate of oxidation of a mixture of the
+two pinacols (Figure 12) formed in the reaction at -30°C. These results indicate that the
+kinetic product is the threo pinacol since the threo pinacol can more easily assume the
+eclipsed conformationwherethe OH groups are syn to each other compared to the erythro pina-
+col where the bulky 2-methylphenyl groups are eclipsed when the OH groups are syn.
+
+Figure 13 shows how the ketyls can combine to form the threo product. The threo product
+should be the most easily formed (and hence the kinetic product) because of the initial acid-
+base     attraction between magnesium and oxygen. Of course, the threo pinacol can
+dissociate to the thermodynamically more stable product where the large OMgBr groups are
+staggared and anti to each other. In time, the — 50/50 threo/erythro pinacol equilibrates
+to a 5/95 mixture at equilibrium.
+
+Single electron transfer to form ketyl is believed to take place via low valent iron
+(probably Fe') reduction of the ketone according to the scheme shown (eqs. 4 - 8). The for-
+mation of MeFe'i'Cl2 results in dissociation to Fe" Cl2 which is alkylated followed by dis-
+sociation to Fe1C1 which then reduces the ketone to the ketyl. Studies reported earlier
+indicate that the reducing agent is neither Fe" nor Fe" and that magnesium in some form
+is attached to the iron reducing agent.
+                                Reactions of Grignard reagents with ketones                               557
+
+
+
+              TABLE 9. Reaction of 'CH3MgBr" (O.20M) with 2-MBP (O.O21) in Et20 at
+              _300 in the presence of FeC13
+
+
+                               Recovered                           Pinacol(%)—1
+              Time(min.)       Ketone(%)   1 ,2-Addn%)    Erythro         Threo       Pinacol/addition
+
+                   40            82            7               7           4                1.5
+
+                  120            47           21              19           13               1.5
+
+                  210            24           31              28           17               1.5
+
+
+
+
+                                60
+
+
+
+
+                                40
+                                                                                           1,2 Addition
+                % Products
+                                                                                           Erythro
+
+                                20
+                                                                                           Threo
+
+
+
+                                0
+
+                                                          % Reaction
+
+
+
+
+                   Reactant                                                 Product
+
+              45% Kinetic Pinacol                                  34% Kinetic Pinacol
+                                               Pb(OAc)4
+                           +                                                    +
+                                                   3   days
+              55% Thermodynamic Pinacol                            55% Thermodynamic Pinacol
+                                                                             +
+                                                                   11% Ketone
+
+
+
+
+              Fig. 12. Determination of the structure of the pinacols.
+
+
+PAAC 52/3—B
+558                                                 E. C. ASHBY
+
+
+
+
+                         Br                                                       Br
+                          I
+                                                                               ,Mg,
+
+                 0,Mg                   MgBr                               o           '%%0MgBr
+
+                 I
+                          —
+                                    I
+                              - _..;i                                Ph"
+                                                                           /   Ar A'          Ph
+           Ph        Ar Ar              Ph
+                                                                           threo
+                                                                     (kinetic product)
+
+                     1
+
+
+                         Br                                                MgBr
+
+
+
+
+            Ph       Ar         0                                                      MgBr
+                                MgBr
+                                                                           erythro
+                                                                   (thermodynamic product)
+
+
+         Fig. 13. Formation of kinetic and thermodynamic pinacols.
+
+
+
+         MeMgBr +
+                     Fe1C13                  —*   MeFe1C12
+                                                                + MgBrC1                           (4)
+
+
+
+
+         MeFeILEC12
+                                             —p   CH4
+                                                        +
+                                                            C2H6 + FeLIC12                         (5)
+
+
+
+         MeMgBr +
+                     FeCl2                   —÷   CH4
+                                                        + C2H6 + MeFeCl + MgBrC1                   (6)
+
+
+
+         MeFeC1                              —p   CH4
+                                                        + C2H6 + Fe'Cl                             (7)
+
+
+
+                                    —' Ph2C-OFeCl       MeMgBr
+         Fe'Cl +
+                     Ph2C=O                                         Ph2C-OMgBr + MeFeC1            (8)
+
+
+
+         HYDROL FORMATION
+
+Having a reasonable understanding of the mechanism of pinacol formation, we shifted our
+attention toward the formation of another by-product in the reaction of "CH3MgBr" with 2-MBP,
+i.e. 2-methylbenzhydrol. We found (Table 10) thatat high Grignard:ketone ratios (800:1), a
+substantial amount (56%) of 2-methylbenzhydrol was formed (22). The formation of 2-methyl-
+benzhydrol in this reaction is highly unexpected since no s-hydrogen exists on the alkyl
+group of the Grignard reagent in order to effect a s-hydrogen reduction. Since the amount
+of 2-methylbenzhydrol increases as the G/K ratio increases, one might assume that some
+impurity in the Grignard reagent is causing this reduction. It also is clear that although
+the impurity exists in low concentration (-" 0.2%) this impurity can be substantial when the
+G/K ratio is 800:1, and a substantial amount of benzhydrol can be produced.
+
+When the reaction of "CH3MgBr" with 2-MBP was carried out in ether at -30°, it was shown
+that benzhydrol is formed quickly and early in the reaction, even more rapidly than the
+1,2-addition product and that the formation of hydrol is essentially complete before much
+1,2-addition product is formed (20). This result is expressed in Table 11 and also Figure
+14. It was thought initially that possibly some transition metal impurity was causing the fOr-
+mation of hydrol just like iron and other first row transition metals caused the formation
+of pinacol. However, doping experiments showed that no 1st, 2nd or 3rd row transition
+metals caused the formation of 2-methylbenzhydrol when the reactants were allowed to react
+in 1:1 ratio (20). We were further concerned that possibly the intermedidate ketyl, in
+the presence of a large excess ofGrignard reagent, was abstracting hydrogen from solvent, or
+even possibly a dianion was formed which abstracted a proton from solvent to form the
+                                   Reactions of Grignard reagents with ketones                                                  559
+
+
+
+           TABLE 10. Effect of Grignard:ketone ratio on products from the reaction
+           of "CH3MgBr' with 2_1BP in ether at room temperature.
+
+
+                                                                                            %YIEL0—
+            [MeMgBrJ      [2-MBP]
+           moles/e        moles/e           G/K                l,2-Addn'         Pinacol         2-metFylbenzhydrol
+
+           0.010              0.99         1:100                   100                 0                     0
+           0.010              0.11         1:10                    100                 0                     0
+            1.50              1.50         1:1                     100                 0                     0
+           1.50               0.15         10:1                     99                0.6                   0.4
+           1.50               0.015        100:1                    89                 2                     9
+
+           1.50               0.00375     400:1                     62                 2                     36
+            1.50              0.001875    800:1                     40                 4                     56
+
+
+
+
+           TABLE 11. Reaction of "CH3MgBr with 2-MBP in Et20 at -30°C.
+
+
+                              Unreacted                 (%)                     (%)                    (%)         By-Product
+           Time(hrs.)         ketone(%)          1,2-addition            2-methylbenzhydrol           Pinacol      :addition
+
+              0.2                    68              2.7                          28                    1.7            10.8
+              1                      46            18                             34                    2.0            2.0
+              4                      11            48                             39                    2.3            0.85
+             12                       0            56                            41                     2.5            0.77
+
+
+
+
+                              60
+                                                                                                        1 ,2-Addn'
+
+
+                        4-,
+                        U 40
+                                                                                                        (Hydrol)
+                        0
+
+                              20
+
+
+
+
+                                                                                                            Pinacol)
+
+                                             20               40           60               80        100
+
+                                                                   % Reaction
+
+
+                                      Fig. 14. Graphical             representation of data in Table 11.
+
+
+
+
+hydrol - However, the ketyl of 2.418P was prepared by adding a 1rge excess of 'CH3MgBr" to
+the pinacol and the ketyl allowed to stand for 2 days (eqs. 9-10). When the reaction
+mixture was hydrolyzed,only the pinacol was regenerated.
+
+The above results indicated the necessity of determining the origin of the hydrogen that is
+reducing the ketene to the hydrol. We carried out a series of experiments (Table 12) that
+indicate that the hydrogen that reduces the ketone comes from the solvent and that the
+560                                           E. C. ASHBY
+
+
+
+
+         CH3MgBr (excess) +
+                              Ph2C—.CPh2       —, Ph2C.—.—.—CPh2 ± 2 Ph2C-OMgBr (9)
+
+                                                          MgBr MgBr
+
+
+
+
+             .-+                              —.-+         EtO         H
+         Ph2C-OMgBr +   CH3MgBr
+                                     —4 Ph2C-OMgBr                Ph2C-OMgBr
+
+                                                                                           (10)
+
+                              H
+                            Ph2COMgBr
+
+
+
+
+         TABLE 12. Origin of hydrogen involved in the formation of hydrol from ketone.
+
+                                                                 CH
+                                          H30    H
+                              Et20
+          "CH3MgBr + PhCAr                —p Ph-COH        + Ph-C-OH
+
+                                                   Ar            Ar
+                                                                           H       0
+
+                                                                       Ph-C-OH   Ph-C-OH
+
+           Grignard Formed in             Reaction Carried out in          Ar      Ar
+
+                                                                           59
+            CH3CH2OCH2CH3                  CH3CH2OCH2CH3
+
+                                                                           0       27
+            CH3CD2OCD2CH3                  CH3CD2OCD2CH3
+
+                                                                           65          0
+            CH3CH2OCH2CH3                  CH3CD2OCD2CH3
+
+
+
+
+reducing species is formed in the Grignard preparation and not during the reaction with
+ketone (22). The first two experiments show that the hydrogen involved in reduction of the
+ketone comes from the solvent and since it is the ct-D that is abstracted, the hydrogen atom
+is abstracted by a radical • The low (27%) yield of the deuterium compound is a result of a
+primary deuterium kinetic isotope effect. The final experiment in which the Grignard
+reagent is prepared in protio diethyl ether and then the solvent replaced by the cx-deuterio
+ether before reaction with ketone, shows that only the protio reduction product is formed.
+This result indicates that the hydride reagent that reduces the ketone is formed during
+the Grignard formation step. Since the magnesium used in these experiments is at least
+99.99% pure, the immediate suggestion is that MgH2 is formed as a result of radical abstrac-
+tion of hydrogen from solvent during the Grignard preparation (Figure 14).
+
+
+
+
+           CH3-Br                 CH3.         •MgBr —) CH3MgBr
+          Mg surface              escape from surface
+
+
+                                     SH              SH
+
+
+                                  CH4           HMgBr l/2MgH2 + l/2MgBr2
+
+
+
+         Fig. 14 Formation of Mg-H species in Grignard formation.
+                           Reactions of Grignard reagents with ketones                       561
+
+
+
+Considerable evidence to establish this point was accumulated by doping Grignard reagent
+with MgH (prepared independently) and showing that reduction takes place readily to give
+the same yield and stereochemistry with several ketones as was obtained from a Grignard
+reagent that produced reduction product without being doped with MgH2.
+
+An interesting point here is that some Grignard reagent preparations gave substantial
+amounts of reduction product and others did not. We could not relate this difference to
+purity of magnesium metal, but did relate it to the particle size of the magnesium used in
+the Grignard preparation. The data reported in Table 13 show that when the magnesium
+
+
+           TABLE 13. Importance of magnesium shaving size in the preparation of
+           "CH3MgBr" prior to reaction with 2-MBP at 400:1 ratio in Et20
+
+
+                                                            %Yield-
+           Mg Shaving    CH3MgBr Flow
+             Size        Rate(cc/mm)         1,2-Addition           Hydrol
+
+
+             Fine             214                      41             59
+
+             Fine             682                      74             27
+
+           Medium             682                      84              16
+
+
+            Large             682                      91                  9
+
+
+
+
+particle size is small, reaction of magnesium metal with CH3Br takes place rapidly and the
+M9H2 formed can reduce ketone to hydrol. However, as the CH3Br addition rate is increased
+and the magnesium metal particle size increased, the amount of excess CH3Br at any time is
+large and when the MgH by-product is formed, it reacts with the excess CH3Br. Thus, the
+amount of hydrol produced in every case was a function of the size of the magnesium shavings
+rather than magnesium purity. When an experiment was carried out using fine magnesium
+shavings at a CH3Br addition of 214 cc/mm and then excess CH3Br added after the Grignard
+preparation was complete,followed by ketone addition, only 3% hydrol was formed.
+
+           The Nature of Alkyl Transfer from the Grignard Reagent to the Carbonyl
+           Carbon Atom
+
+The final problem to be discussed involves the question of the exact manner in which the R
+group from the Grignard reagent attacks the carbonyl carbon atom. Previous workers (14-16)
+have suggested a mechanism shown earlier and slightly expanded upon here (Fig. 15). It is
+
+
+
+
+            "RMgX" + Ph2C=0
+                              f[ -gxj
+                                    rPh2C=0 1
+
+
+
+                                                       /21
+                                                               Ph C-OMgX
+
+
+                                                   +        R.J
+                               [h2C-0MgBr
+
+                                          escape
+                                        I from
+                                          solvent
+                                          cage
+                                    .-+
+                                Ph2C-OMgBr
+
+                                                            j,SH
+
+                                Ph2C—CPh2
+
+                                    MgBr MgBr
+
+           Fig. 15.   Suggested mechanism of Grignard reagent addition to ketones
+562                                      E. C. ASHBY
+
+
+suggested that 1,2-addition product can be formed either bya polar or SET mechanistic path-
+way. If 1,2-addition product is actually formed via a SET pathway, then evidence might be
+obtained for the intermediacy of the free radical and the radical anion. In this con-
+nection, probes could be used to detect both the free radical and the ketyl, provided that
+the rate of coupling of the radical and ketyl to form 1,2-addition product does not greatly
+exceed the rate by which the probes isomerize , cyclize , etc. For this reason, we have
+used a number of probes to test the intermediacy of the ketyl and the radical. We shall
+discuss first ketyl probes.
+
+The first ketyl probe used (23) is a cis enone that has the ability to isomerize to the
+trans enone, if indeed it is reduced to a ketyl (Figure 17). If the cis-enone is reduced to
+
+
+
+
+                                                   Isomerized      l,2-Addn' Product
+          Enone Probe         Radical Anion        Radical Anion    for SET Process
+
+               0                     -
+               II        -                                                   RPH
+
+
+                                                       I
+
+
+         Fig. 16. Detection of a ketyl intermediate using a cis enone.
+
+         TABLE 14. Results of enone probe.
+
+
+         Grignard    Recovered Enone                 rl,2additi0n(%)
+         Reagent     (%)cis (%)trans l.,4-Addition(%) trans  fl      1,2-Reductton(%)
+
+         t-BuMgCl        4      96            12           25       3           60
+
+
+         MeMgBr         83      17            41           40      19            0
+
+
+         AllylMgBr      99       1             0            1      99            0
+
+
+
+
+the ketyl, it will rapidly isomerize to the trans ketyl which on coupling with R' will pro-
+duce the trans-l ,2-addition product. Experiments (Table 14) were carried out such that the
+enone was used in 100% excess so that unreacted enone could be recovered. The data show
+that when t-BuMgC1 was allowed to react with 100% molar excess of cis enone, most (96%) of
+the recovered enone isomerized to the trans enone and most of the 1,2-addition product also
+exhibited trans stereochemistry. Hence, it appears that the predominant pathway for the
+reaction of a 30 Grignard reagent, even with a ketone that is less easily reduced     than
+benzophenone, is an electron transfer pathway producing a ketyl as an intermediate. The
+results with MeMgBr, however, are not so straightforward. In this case, not nearly as
+extensive isomerization has taken place either in the recovered enone probe or in the 1,2-
+addition product. The conclusion is that either there are two competing reaction pathways
+(polar and SET or that coupling of the ketyl and free radical are somewhat faster than the
+rate of isomerization. The allyl Grignard presents a very interesting case in that no
+isomerization was observed either in the enone probe recovered or the 1,2-addition product.
+Since the allyl Grignard would be expected to reduce the enone faster than the other
+Grignard reagents and the resulting allyl radical should be more stable than either Me
+or t-Bu. toward further reaction, one should have observed significant isomerization if a SET
+process was in effect. It would appear that this reaction may proceed by a polar process
+since the allyl carbanion is also more stable than Me- or t—Bu- carbanion and should effect
+1 ,2-addition via a polar process more easily than MeMgBr or t-BuMgC1.
+
+Another ketyl probe involves the trapping of the ketyl and thus short circuiting the
+                              Reactions of Grignard reagents with ketones                                            563
+
+
+formation of 1,2-addition product (24). Kornblum has shown that p-dinitrobenzene, which
+is more easily reduced,        will capture an electron from a radical anion whose conju-
+gate ketone has a higher reduction potential (25). Consequently,we have added p-DNB to a
+mixture of Grignard reagent and ketone in order to trap any ketyl formed in the reaction
+and thus prevent the formation of 1,2-addition product (eqs. 11 and 12). The results
+of these experiments (eqs. 13 and 14) show that both "CH3MgBr" and "t-BuMgCl"
+                                                              - +
+          "RMgX'    +
+                        Ph2C=O
+                                 —p
+                                 SET
+                                              Ph2C-OMgBr
+                                                                          +    R —. Ph2C-OMgBr                      (11)
+                                                                                         R
+
+
+                                                                                 .+
+          p-DNB +       Ph2C-OMgBr
+                                     —.                             +    [p-DNB]MgBr                                (12)
+                                              Ph2C=O
+
+
+
+
+           "CH MgBr' +
+                           Ph2CO
+                                     +       1o]                                                                    (13)
+                                             '(                            (1) Rate of 1 ,2-addition not affected
+                                              NO2                          (2) Pinacol formation completely
+                                                                               inhibited
+
+
+           't-BuMgCl +                   +                                                                          (14)
+                            Ph2CO
+
+                                                  NO2
+
+
+
+
+react with Ph2C=O at the same rate in the presence or absence of p-DriB, but that pinacol
+formation is completely inhibited. It is clear then that p-DriB will indeed capture the
+radical anion if it is free and there is sufficient time for reaction of the p-DriB with the
+radical anion. However, the fact that the formation of 1,2-addition product is not affected
+by p-DriB indicates either that the ketyl is not free and is bound as a tight radical pair
+with a radical cation ([RMgX]-i-) and hence cannot be trapped by the p-DriB before it reacts
+to form 1 ,2-addition product or that the ketyl is free but simply reacts much too fast with
+the alkyl radical (R.) to be trapped by the p-DNB.
+A further probe into the reality of a ketyl intermediate was made by use of a ketyl cross-
+over experiment (26). The crossover experiment is based on the premise that if a ketyl and
+a free radical aregenerated during the reaction, the additionof another ketyl of appropriate
+reduction potential will cause the formation of 1 ,2-addition product corresponding to
+the added ketyl in addition to the expected product (eq. 15).                             In order to test this
+hypothesis, 2-methylbenzophenone and fluorenone ketyl were allowed to react independently
+with 'CH3MgBr' and t_BurigClh (eqs. 16 and 17). In each case, it was shown that no 2-methyl-
+
+
+                                           +
+            R2C0
+                    + R'MgX      —* R2C-O MgX + R'. k-18
+                                                     —0>
+                                                         R2C-OMgX
+
+                                                        II'             . —+                                        (15)
+                                                               R'2C-OMgX
+
+
+                                             R"
+                                               2-C-OMgX
+
+
+
+
+benzophenone was recovered and that the 2-MBP ketyl did not admix with the fluorenone ketyl;
+otherwise, the fluorenone ketyl would also have been coupled by the free radical to form
+1 ,2-addition product.
+
+It appears then that the ketyl probes cited here have given some evidence of the formation
+of ketyls, but that these ketyls react rapidly with the free radical compared to the probe.
+The result is that the probes are not entirely effective in the unequivocal establishment
+of the integrity of the ketyl as the precursor to 1,2-addition product. Of course,
+564                                           E. C. ASHBY
+
+
+
+
+         JJJ +   0
+                                              + CH3MgBr        Et?,                                           +
+
+
+
+                                                                                                CH3
+
+                                                                                                                      (16)
+
+
+
+
+                            +          _t      + t-BuMgCl       ___ H3O                                           +
+
+
+                 o                    CH3                                                        CH3
+                 0
+                                                                                                                      (17)
+
+
+
+
+                                               OH
+                                                           +
+                                                                tBu©                 CH3
+
+
+
+
+detection of free radicals would be indirect evidence to support the intermediacy of ketyls
+since the ketyl and radical are formed as co-products.
+
+
+Evidence for Radical Intermediates
+
+We have investigated several systems as probes for radical intermediates. We prepared cis-
+propenylmagnesium bromide for reaction with benzophenone (eq. 18 and 19) so that if a free
+
+
+                                                                               CH3
+                 CH3MgBr J9                        k.=108 sec
+                                                                                                                      (18)
+
+
+
+
+                                                                OH
+           CH
+                                                                    I                      CH
+             3       MgBr                              3            C—Ph
+                                +            I!L                           2     +
+             \__/                   Ph2C=0
+                                                                                                                      (1 9)
+
+            ()
+           (cis/trans)
+                                                               ()                                      C-OH
+
+
+                                                                                                       Ph2
+
+
+
+ radical is formed in the reaction, isomerization to the trans propenyl radical would take
+ place (27). Detection of such an event takes place by characterization of the 1,2-addition
+ product and determining whether the added group is a cis or trans propenyl group. In the
+ present case, there was no detection of an isomerized product. Either the free radical
+ was not formed or it coupled so fast with the ketyl that isomerization was not possible on
+ the reaction time scale. In the latter case, the rate constant of the coupling reaction
+ would have to be about lOlO_lOll sec-1.
+
+ Another probe investigated involves the cyclization of an alkyl radical containing a ter-
+ minal double bond (Figure 17) (27). It is known that the hexenyl radical cyclizes at the
+ rate, k=l X l0 sec-1 (28); therefore, if such a radical is formed in the reaction of
+ hexenyl Grignard reagents with ketones, cyclized 1,2-addition product should    be observed.
+ When such a reaction was carried out with 5-hexenylmagnesium chloride and benzophenone in
+                         Reactions of Grignard reagents with ketones                                        565
+
+
+
+
+                          MgC1
+                                    —4
+                                                                   yc
+                                                                         =     sec
+                                                                                                6
+                                                                                          (%)         (%)
+                                                      KETQNE        SOLVENT      1 ,2-ADDITION       HYDROL
+
+                                                                                          51            49
+                                    + ketone    —4    Ph2C=O            Et20
+                                                                                       (uncyc.)
+
+                                                             0
+                                                                         THF              28            72
+                                                     q__cLph                           (uncyc.)
+                                                       CH3
+
+
+
+
+          Fig. 17. 5-Hexenylmagnesium chloride as a free radical probe
+
+
+
+                                                     CH3                                        CH
+                                                       \
+                             MgC1                                   k          lO
+                                     —-4                                cyc
+
+                                                           CH3
+                       CH3                                                              C3\-J
+
+
+
+                                                           l,2-ADDN(           1 ,6-ADDN'(
+                          MgCl
+                                     + Ph C=O                 39                  61
+                                                           (0% cyc)            (73% cyc)
+                        CH3                     N4
+                                                              58                  42
+                                                           (41% cyc)           (81% cyc)
+
+
+
+          Fig. 18. l,l-Dimethyl-5-hexenylmagnesium chloride as a free radical probe.
+
+
+Et20 or with 2-MBP in THF, no cyclized 1,2-addition product was observed. The conclusion
+once again is either that SET does not take place to produce a free radical or if the
+radical is formed it couples with the ketyl more rapidly than it can cyclize.
+
+In order to test the concept of free radical cyclization in Grignard-ketone reactions,
+we allowed a tertiary Grignard probe to react with benzophenone (Figure 18 ). The results
+show that although no cyclization of the 1,2-addition product is observed in the reaction
+of the 3° Grignard probe with Ph2C=O in Et20, in THF the 1,2-addition product is 41%
+cyclized. This is the most direct evidence that 3° Grignard reagents form 1,2-addition
+product by an electron transfer process producing a free radical as an intermediate (17).
+In both Et20 and THF, the 1,6-addition product was found to be substantially cyclized
+indicating a breakage of the C-Mg bond to form 1,6-addition product. However, in Et20, the
+C—Mg bond may stay intact in forming 1,2-addition product since non cyclization of the probe
+was observed and yet the rates of formation of 1,2- and 1,6-addition product were comparable.
+
+The indications are that the rate determining step in 1,2-addition is electron transfer
+followed by a very rapid coupling of the radical or incipient radical with ketyl to form pro-
+duct. Cyclizationof R, when R=3° radical, takes place because the rate of 3° radical cou-
+pling with ketyl is slower than primary radical coupling due to the greater stability of the 3°
+566                                     E. C. ASHBY
+
+
+radical. In addition, cyclized 1,2-addition product was observed in THF ( and not in Et20);
+a solvent that should stabilize the ketyl. If this premise is correct, then we might be
+able to observe cyclization of a 10 Grignard probe, if indeed a free radical is formed, by
+simply slowing down the very fast coupling step so that the 10 Grignard probe would have
+time to cyclize. In this conncection, we prepared neooctenylmagnesium chloride and allowed
+it to react with Ph2C=0 in Et20 (eqs. 20 and 21). In this case, only 1,2-addition product
+
+
+
+
+                                                                                       (20)
+
+
+
+
+                                 + Ph2C=o
+                                                          Ph2C""\"\ +
+                                                                 (88%)                (21)
+
+
+                                     Ph2— CH2
+                                        (12%)
+
+
+was formed, 12% of which was cyclized (26). This is the first definitive evidence showing
+that even 10 Grignard reagents react with Ph2C=0 at least to some extent by SET. When a
+similar reaction was carried out with 2-MBP in ether, no cyclized 1,2-addition product was
+formed; however, 14% 1,6-addition product was formed which was 68% cyclized. This is the
+first reported case of a 10 Grignard reagent giving 1,6-addition product.
+
+ The last and possibly strongest evidence showing the broad relationship between polar and
+ SET reactions with respect to the nature of the Grignard and ketone studied comes from a
+ relative rate study (Table 15) (29). These results show that with a ketone that is diffi-
+
+
+           TABLE 15. Relative rates of reactions of Grignard reagents with ketones.
+
+                                 0              0
+                                 H              H
+                                            Ph-C-Ph
+               R(in RMgX)    CH3C-CH3
+
+
+                  CH3-       1,114               30
+
+
+                C2H5-        2,324              408
+
+                   H
+
+               CH3-C-          272          4,027
+
+                   CH3
+
+                   CH3
+
+               CH3-C-            9          5,363
+
+                   CH3
+
+
+
+
+  cult to reduce     (such as acetone), the order of Grignard reaction rates is Me> Et>
+ i-Pr>t-Bu as would be expected for a polar reaction. However, when the ketoneis so easily
+ reduced                       that electron transfer (as in the case of aromatic ketones)
+ can take place the order is just the opposite, i.e. t-Bu>i-Pr> Et>Me. It is demonstrated
+                        Reactions of Grignard reagents with ketones                            567
+
+
+that the mechanistic pathway (polar or SET) depends both on the nature of the ketone
+(reduction potential), the nature of the Grignard reagent (oxidation potential) and pro-
+bably to some extent, the nature of the solvent and the nature of the halogen. Thus, SET
+is favored by 3° over 1° Grignard reagents, ketones more easily reduced         over those
+more difficultly reduced    and by highly polar solvents. Still to be studied thoroughly is
+the effect of halogen in RMgX on electron transfer.
+It appears then that a rather general picture can be drawn to represent the transition
+state involving alkyl group transfer in the reaction of 10, 2° and 3° Grignard reagents with
+aromatic ketones. In this transition state, electron transfer has already taken place in the
+prior step such that partial radical character exists at the R group of the Grignard, the
+
+
+               Ph   .C0%
+                      0
+                                  "Mg-X
+
+                             6'
+
+
+
+          Fig. 19. Transition state depicting alkyl group transfer
+
+
+carbonyl carbon and the 2 and 4 positions of the phenyl group. When the R group is 1°,
+such as methyl, the CH3.radical (if formed) is short lived because it is so reactive. Pri-
+mary Grignard reagents give exclusively 1,2-addition product and have not had time to
+cyclize or isomerize before coupling with the carbonyl carbon. If, however, the rate of
+coupling can be slowed down such as in the case of the 1° neooctenyl Grignard probe, then
+the radical has time to cyclize and even add to the 4-position of the phenyl ring to give
+1,6-addition product. In the case of 3° Grignard reagents, the dissociation of the R-Mg
+bond takes place more readily due to the stability of the incipient 3° alkyl radical. When
+the radical is formed, it has sufficient stability that it can cyclize and add to any of
+the available radical positions. In the case of 1° Grignard reagents, it is easy to see
+that there is also the possibility that a "free" radical is not formed or if it is, it
+couples so quickly with the carbonyl carbon as to be undetectable. Such a process would
+be difficult if not impossible to distinguish from a polar process.
+
+We can now write a mechanism which fits all of the data obtained so far (eqs. 22 and 23).
+
+
+
+             RMgX + Ph2C=O                Ph2CO             2!) Ph2CO                         (22)
+                                                  'Mg-X
+                                              R
+                                                                          R
+
+
+
+
+             PhN&Q                I                       1,2-, 1,4-, 1,6- addition product
+
+                                                                                              (23)
+
+
+
+                              J                              H3O
+                                          solvent cage -' pinacol + RH
+
+The first step is a diffusion controlled acid-base reaction forming a ci-complex. The next
+step involves electron transfer which is the rate determining step of the reaction. R.
+coupling of the three positions possessing radical character produces 1,2-, 1,4-, and 1,6-
+addition product whereas escape of the radical anion and radical cation from the solvent
+cage results in R. abstraction of hydrogen from solvent and dimerization of the radical
+anion to form the magnesium salt of the pinacol.
+
+The overall scheme depiciting all of the different reaction pathways in which a Grignard
+reagent can react with a ketone is shown in Figure 22. In this presentation, we and others
+568                                      E. C. ASHBY
+
+
+
+
+                                                                            R
+                                                                         Ph2C-OMgX (1 ,2-Addn')
+                                          Ph2C-OMgX
+                       -H
+                                or7
+                              -MgH7                                       — Ph
+            RMgX +
+                              , SET                                  )       =C—OMgX (l,4-Addn')
+                     Ph2C=O               Ph2C-O,
+                                                                            HR
+                     polar
+                     addition
+                                                                                      Ph
+                                               diffusion
+
+                                                           +
+                                                                           )oI   —   =C—OMgX (l,6-Addn')
+
+            Ph2COMgX
+               R
+                                                ir             ISH
+                                          Ph   C—CPh           RH
+
+                                               00
+                                               Mg Mg
+                                               xx
+
+            Fig. ZO. Pathways involved in the reaction of Grignard reagents with ketones
+
+
+  have considered and established the integrity of each individual pathway. The electron
+  transfer pathway is a recently established pathway compared to the other pathways and has
+  shed some light on the overall understanding of this important reaction. It is not only
+  conceivable, but probable that a better understanding of such an important reaction will
+  lead to even more important discoveries involving the use of Grignard reagents in the
+  future.
+
+  Special recognition and thanks go to a very unique and capable group of colleagues who
+  contributed to these results and very special thanks to the National Science Foundation
+  who has supported this work from its inception to the present time.
+
+                         Dr. Roy Duke - Marathon Oil Co., Littleton, Colorado
+                         Dr. Frank Walker - Kennesaw College, Kennesaw, Georgia
+                         Dr. Joseph Laemmle - Alcoa, Alco, Pennsylvania
+                         Dr. Jerry Buhler - Eli Lilly, Indianpolis, Indiana
+                         Dr. Irene Lopp, Atlanta, Georgia
+                         Dr. Tom Wiesemann - Union Camp, Trenton, New Jersey
+                         Dr. Joseph Bowers - Tennessee Eastman, Kingsport, Tennessee
+                         Mr. Scott Smith - Georgia Tech, Atlanta, Georgia
+                        Reactions of Grignard reagents with ketones                       569
+
+
+
+
+1. V. Grignard, Compt. rend., 130, 1322 (1900).
+
+2. P. Jolibois, Compt. rend.,155, 353 (1912).
+
+3. W. Schlenk and W. Schlenk, Jr., Ber., 62B, 920 (1929).
+
+4. R. E. Dessy, G. S. Handler, J. H. Wotiz and C. A. Holingsworth, J. Amer. Chem. Soc.,
+   79, 3476 (1957).
+
+5. E. C. Ashby and W. E. Becker, J. Amer. Chem. Soc., 85, 118 (1963).
+
+6. E. C. Ashby and M. B. Smith, J. Amer. Chem. Soc., 86, 4363 (1964).
+
+7. J. Miller, H. S. Mosher and G. Grigoriu J. Amer. Chem. Soc., 83, 3966 (1961).
+
+8. R. Hamelin and coworkers, Compt. rend., 252, 1616 (1961).
+
+9. W. M. Bikales and E. I. Becker, Canad. J.Chem., 41, 1329 (1962).
+
+10. E. C. Ashby, Bull. Soc_. Chem. Fr., 2133 (1972).
+
+11. F. Walker and E. C. Ashby, J. Amer. Chem. Soc., 91, 3845 (1969).
+
+12. E. C. Ashby, G. E. Parris and F. Walker, J. Chem. Soc., Chern. Comm., 1464 (1969).
+
+13. E. C. Ashby, J. Laemmle and H. N. Neumann, J.Amer. Chem. Soc., 94, 5421 (1972).
+
+14. J. Laemmle, E. C. Ashby and H.M. Neumann, J.Amer. Chem. Soc., 93, 5120 (1971).
+
+15. J. F. Fauvarque and E. Rouget, C. R. Acd. Sci., Ser. C., 267, 1355 (1968).
+
+16. C. Blomberg, R.M. Salinger and H.S. Mosher, J. 0. Chem., 34, 2385 (1969).
+
+17. 1. Holm and I. Crossland, Acta Chem. Scand., 25, 59 (1971).
+
+18. E. C. Ashby, J. Laemmle and H. M. Neumann, Accts. Chem. Res., 7, 272 (1974).
+
+19. E. C. Ashby, H. M. Neumann, F. W. Walker, J. Laemmle and Li-Chung Chao, J. Amer. Chem.
+    Soc., 95, 3330 (1973).
+
+20. E. C. Ashby, J.D. Buhler, I.G. Lopp, T.L. Wiesemann, J. S. Bowers and J.T. Laemmle,
+    J.Amer. Chem. Soc., 98, 6561 (1976).
+
+21. E. C. Ashby, I.G. Lopp and J.D. Buhler, J. Amer. Chem. Soc., 97, 4966 (1975).
+
+22. E. C. Ashby, 1. L. Wiesemann, J.S. Bowers, Jr., and J. 1. Laemmle, Tetrahedron Lett.,
+    21 (1976).
+
+23. E. C. Ashby and T. L. Wiesemann, J. Amer. Chem. Soc., 100, 3101 (1978).
+
+24. E. C. Ashby and 1. L. Wiesemann, J. Amer. Chem. Soc., 100, 189 (1978).
+
+25. N. Kornblum, Angew. Chem. mt. Ed. Enl., 14(11), 734 (1975).
+
+26. E. C. Ashby and J. S. Bowers, Jr. (unpublished work).
+
+27. E. C. Ashby and J.S. Bowers, Jr., J. Amer. Chem. Soc., 99, 8504 (1977).
+
+28. C. Walling and A. Cioffari, J. Amer. Chem. Soc., 94, 6059 (1972).
+
+29. E. C. Ashby and R. S. Smith (unpublished results).
+

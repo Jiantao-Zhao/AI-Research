@@ -1,0 +1,8 @@
+#!/bin/bash
+# MACE-POLAR 操作台包装脚本：自动设好缓存与线程环境变量
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export XDG_CACHE_HOME="${XDG_CACHE_HOME:-/Users/jiantao/Desktop/Copilot/.tmp/cache}"
+export KMP_DUPLICATE_LIB_OK=TRUE
+export MPLCONFIGDIR="${MPLCONFIGDIR:-/tmp/mpl}"
+PY="${MP_PYTHON:-/Users/jiantao/Desktop/Copilot/.tools/venv_mace/bin/python}"
+exec "$PY" "$DIR/mp.py" "$@"
