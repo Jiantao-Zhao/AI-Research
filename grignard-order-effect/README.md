@@ -26,9 +26,13 @@ reaction, and delimits where the framework fails.
 
 ## Limitations (read before citing)
 
-- Barriers are constrained-scan maxima, **not verified transition states**. The dimer/frequency
-  check that was supposed to confirm the saddle used `.real` on complex frequencies, so
-  imaginary modes register as zero; the true number of imaginary modes is unknown.
+- Barriers come from constrained scans. The dimer/frequency check initially used `.real` on
+  complex frequencies, so imaginary modes registered as zero. **Re-run after the fix:** the
+  addition-path stationary point has one significant imaginary mode (356.9 cm⁻¹, the C–C
+  forming stretch), i.e. it *is* a first-order saddle along that coordinate. However the
+  low-frequency part of the spectrum is unreliable — the reference minimum itself shows three
+  imaginary modes (up to 76.9 cm⁻¹) — so ZPE and entropy corrections from these Hessians are
+  not usable.
 - All barriers are **single conformer, single path**. Two conformers of the same system at
   r = 4.40 Å differ by 3.84 kcal/mol, larger than the literature uncertainty (±0.8).
 - The MPV entropy correction is an assumed bimolecular value; the predicted gap is sensitive

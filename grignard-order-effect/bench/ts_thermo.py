@@ -71,6 +71,10 @@ def dimer_ts(atoms, vec, fmax=0.02, steps=400, dimer_log=None):
 
 
 def freqs(atoms, name):
+    """返回复数频率（cm^-1）。虚频是复数的虚部，不能取 .real。
+
+    ASE 的 get_frequencies() 对负本征值返回纯虚数；`.real` 会把虚频变成 0。
+    """
     at = atoms.copy()
     at.calc = atoms.calc          # Atoms.copy() drops the calculator
     if at.calc is None:
@@ -79,9 +83,17 @@ def freqs(atoms, name):
     at.set_cell([0, 0, 0])
     vib = Vibrations(at, name=name, delta=0.01)
     vib.run()
-    f = vib.get_frequencies().real
+    f = np.asarray(vib.get_frequencies(), dtype=complex)
     vib.clean()
-    return np.sort(f)
+    return f[np.argsort(f.real)]
+
+
+def split_modes(f, thresh=1.0):
+    """把复数频率拆成 (真实振动模, 虚频幅值)。"""
+    imag_mask = np.abs(f.imag) > thresh
+    real_modes = f.real[~imag_mask]
+    imag_mag = np.abs(f.imag[imag_mask])
+    return np.sort(real_modes), np.sort(imag_mag)[::-1]
 
 
 def rrho_thermo(freq_cm, scale_low=None):
@@ -168,26 +180,31 @@ if __name__ == "__main__":
         # ---- 3. frequencies
         f_ts = freqs(ts, f"{name}_ts")
         f_min = freqs(prec, f"{name}_min")
-        n_imag_ts = int((f_ts < 0).sum())
-        imag = f_ts[f_ts < 0]
-        print(f"  TS imaginary frequencies: {n_imag_ts} -> {np.round(imag, 1)}", flush=True)
-        print(f"  lowest TS real modes: {np.round(f_ts[f_ts > 0][:3], 1)}", flush=True)
+        real_ts, imag_ts = split_modes(f_ts)
+        real_min, imag_min = split_modes(f_min)
+        n_imag_ts = int(len(imag_ts))
+        print(f"  TS imaginary modes: {n_imag_ts} -> {np.round(imag_ts, 1)}", flush=True)
+        print(f"  lowest TS real modes: {np.round(real_ts[:3], 1)}", flush=True)
+        print(f"  reactant imaginary modes: {len(imag_min)} -> {np.round(imag_min, 1)}", flush=True)
+        if n_imag_ts != 1:
+            print(f"  WARNING: 一阶鞍点应恰有 1 个虚频，实测 {n_imag_ts} 个", flush=True)
 
-        # ---- 4. thermochemistry (exclude the imaginary mode)
-        dG_rrho, Ev, S = rrho_thermo(f_ts[f_ts > 0])
-        dG_rrho_min, _, _ = rrho_thermo(f_min[f_min > 0])
-        dG_q, _, _ = rrho_thermo(f_ts[f_ts > 0], scale_low=100.0)
-        dG_q_min, _, _ = rrho_thermo(f_min[f_min > 0], scale_low=100.0)
+        # ---- 4. thermochemistry (exclude imaginary modes)
+        dG_rrho, Ev, S = rrho_thermo(real_ts)
+        dG_rrho_min, _, _ = rrho_thermo(real_min)
+        dG_q, _, _ = rrho_thermo(real_ts, scale_low=100.0)
+        dG_q_min, _, _ = rrho_thermo(real_min, scale_low=100.0)
         dE = (e_ts - e0) * KCAL
         out[name] = {
             "literature_kcal": lit, "lit_err": err,
             "dE_scan_kcal": round(float(e_scan), 2),
             "dE_ts_kcal": round(float(dE), 2),
             "n_imag_TS": n_imag_ts,
-            "imag_cm": [round(float(x), 1) for x in imag],
+            "imag_cm": [round(float(x), 1) for x in imag_ts],
+            "n_imag_reactant": int(len(imag_min)),
             "dG_rrho_kcal": round(float(dE + (dG_rrho - dG_rrho_min) * KCAL), 2),
             "dG_qrrho_kcal": round(float(dE + (dG_q - dG_q_min) * KCAL), 2),
-            "lowest_modes_TS": [round(float(x), 1) for x in f_ts[f_ts > 0][:5]],
+            "lowest_modes_TS": [round(float(x), 1) for x in real_ts[:5]],
             "wall_s": round(time.time() - t0, 1),
         }
         print(f"  ΔE‡={dE:.2f}  ΔG‡(RRHO)={out[name]['dG_rrho_kcal']:.2f}  "
