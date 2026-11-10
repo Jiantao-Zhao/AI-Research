@@ -9,10 +9,19 @@ plt.rcParams["font.family"] = ["Hiragino Sans GB", "PingFang HK", "Arial Unicode
 plt.rcParams["axes.unicode_minus"] = False
 
 
-def run(workdir="run", T=300.0, nbins=120, tol=1e-9, maxiter=50000):
+def run(workdir="run", T=300.0, nbins=120, tol=1e-9, maxiter=20000):
+    """标准一维 WHAM。
+
+    p(b) = sum_i n_ib / sum_i N_i exp(f_i - V_i(b)) / kT
+    f_i  = -kT ln sum_b p(b) exp(-V_i(b)/kT)
+    两者交替迭代。
+    """
     umb = os.path.join(workdir, "umb")
-    metas = sorted(glob.glob(os.path.join(umb, "w_*.json")))
-    metas = [json.load(open(m)) for m in metas]
+    metas = [json.load(open(m)) for m in glob.glob(os.path.join(umb, "w_*.json"))]
+    if not metas:                       # 兼容旧格式：单个 meta.json
+        meta = json.load(open(os.path.join(umb, "meta.json")))
+        kk = meta.get("k", 2.0)
+        metas = [{"w": w["w"], "r0": w["r0"], "k": kk} for w in meta["windows"]]
     metas.sort(key=lambda m: m["r0"])
     r0s = np.array([m["r0"] for m in metas])
     ks = np.array([m["k"] for m in metas])
@@ -24,21 +33,25 @@ def run(workdir="run", T=300.0, nbins=120, tol=1e-9, maxiter=50000):
     N = hist.sum(axis=1)
     nb = hist.sum(axis=0)
     kT = T * units.kB
-    bias = 0.5 * ks[:, None] * (centers[None, :] - r0s[:, None]) ** 2
+    bias = 0.5 * ks[:, None] * (centers[None, :] - r0s[:, None]) ** 2   # (nwin, nbins)
+    expb = np.exp(-bias / kT)
     f = np.zeros(len(r0s))
+    p = np.zeros_like(centers)
     for it in range(maxiter):
-        denom = np.where(nb > 0,
-                         (N[:, None] * np.exp(f[:, None] - bias) / kT).sum(axis=0), 1.0)
-        newf = -kT * np.log(np.where(nb > 0, nb / denom, 1.0))
+        denom = (N[:, None] * np.exp(f[:, None] / kT) * expb).sum(axis=0)
+        p = np.where(denom > 0, nb / np.maximum(denom, 1e-300), 0.0)
+        newf = np.array([-kT * np.log(max((p * expb[i]).sum(), 1e-300))
+                         for i in range(len(r0s))])
         newf -= newf[0]
         if np.max(np.abs(newf - f)) < tol:
-            f = newf; break
+            f = newf
+            break
         f = newf
-    denom = np.where(nb > 0, (N[:, None] * np.exp(f[:, None] - bias) / kT).sum(axis=0), 1.0)
-    pmf = -kT * np.log(np.where(nb > 0, nb / denom, 1.0)) * 23.0605
+    denom = (N[:, None] * np.exp(f[:, None] / kT) * expb).sum(axis=0)
+    p = np.where(denom > 0, nb / np.maximum(denom, 1e-300), 0.0)
+    pmf = -kT * np.log(np.maximum(p, 1e-300)) * 23.0605
     m = nb > 0
-    r, p = centers[m], pmf[m]
-    return r, p, nb, len(metas)
+    return centers[m], pmf[m], nb, len(r0s)
 
 
 if __name__ == "__main__":

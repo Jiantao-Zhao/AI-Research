@@ -44,6 +44,17 @@ reaction, and delimits where the framework fails.
   unreacted-aldehyde recovery nor quantitative yields of the MPV by-products.
 - The model's fit does not test the quantum-chemical rate constants: k_G sits in an
   insensitive regime, and k_MPV contributes only ~16% of the gap.
+- **Six of the twelve kinetic parameters have no source** (K_S, K_RX, k_red, k_wurtz,
+  k_pin, k_D) and five of them are sensitive: scanning each over four orders of magnitude
+  moves the predicted gap by 0.15–0.96. K_S alone spans −0.98 to −0.02.
+- Those sensitive parameters are all **magnesium surface chemistry**, which MACE-POLAR
+  (a molecular model) cannot compute. The modelling bottleneck sits in surface science,
+  not in the addition barrier.
+- The gap is bounded by the experimental yields to **≥55% supply-limited** and
+  **≤45% side reaction** — this part is data-driven, not model-inferred.
+- Three explicit-solvent PMF attempts failed. The third had adequate coverage
+  (deviations ≤0.12 Å) but produced a monotonic PMF with no reactant well, showing the
+  1D C–C distance is not a valid reaction coordinate.
 
 ## Layout
 
